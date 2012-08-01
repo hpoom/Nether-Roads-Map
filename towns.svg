@@ -1,10 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
 
-    <line x1="110" y1="60" x2="110" y2="200" stroke="black" stroke-width="1.5" />
+    <line x1="1130" y1="1000" x2="1180" y2="1000" stroke="black" stroke-width="2" />
 
-    <g transform="translate(100,50)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="silver" />
-        <text x="2" y="14" fill="black" font-size="12px">CF</text>
+    <g transform="translate(293,291)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">MA</text>
+    </g>
+    <g transform="translate(194,846)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Cb</text>
+    </g>
+    <g transform="translate(600,600)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">00</text>
+    </g>
+    <g transform="translate(516,599)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Lb</text>
+    </g>
+    <g transform="translate(819,365)">
+        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="grey" font-size="12px">Rt</text>
+    </g>
+    <g transform="translate(790,294)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">SC</text>
+    </g>
+    <g transform="translate(806,468)">
+        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="grey" font-size="12px">Cr</text>
+    </g>
+    <g transform="translate(243,239)">
+        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="grey" font-size="12px">YF</text>
+    </g>
+    <g transform="translate(756,407)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ag</text>
+    </g>
+    <g transform="translate(570,417)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">NK</text>
     </g>
 
 </svg>
