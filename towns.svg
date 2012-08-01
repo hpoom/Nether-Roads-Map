@@ -42,5 +42,160 @@
         <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
         <text x="2" y="14" fill="black" font-size="12px">NK</text>
     </g>
-
+    <g transform="translate(561,340)">
+        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="grey" font-size="12px">IK</text>
+    </g>
+    <g transform="translate(607,337)">
+        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="grey" font-size="12px">Ti</text>
+    </g>
+    <g transform="translate(835,330)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Wi</text>
+    </g>
+    <g transform="translate(41,328)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ar</text>
+    </g>
+    <g transform="translate(863,258)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">At</text>
+    </g>
+    <g transform="translate(640,500)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">GS</text>
+    </g>
+    <g transform="translate(479,720)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Va</text>
+    </g>
+    <g transform="translate(311,974)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ki</text>
+    </g>
+    <g transform="translate(212,151)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">CC</text>
+    </g>
+    <g transform="translate(804,342)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Lz</text>
+    </g>
+    <g transform="translate(140,744)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Am</text>
+    </g>
+    <g transform="translate(200,896)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ax</text>
+    </g>
+    <g transform="translate(263,969)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">BB</text>
+    </g>
+    <g transform="translate(111,474)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">CF</text>
+    </g>
+    <g transform="translate(598,249)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ge</text>
+    </g>
+    <g transform="translate(628,413)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ho</text>
+    </g>
+    <g transform="translate(58,354)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Tk</text>
+    </g>
+    <g transform="translate(230,217)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Av</text>
+    </g>
+    <g transform="translate(190,376)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">De</text>
+    </g>
+    <g transform="translate(258,844)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ra</text>
+    </g>
+		<g transform="translate(373,1003)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Bj</text>
+    </g>
+    <g transform="translate(870,800)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ge</text>
+    </g>
+    <g transform="translate(364,523)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Sa</text>
+    </g>
+    <g transform="translate(65,246)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Im</text>
+    </g>
+    <g transform="translate(93,322)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Sk</text>
+    </g>
+    <g transform="translate(381,754)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">JH</text>
+    </g>
+    <g transform="translate(396,718)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">OP</text>
+    </g>
+    <g transform="translate(180,516)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Io</text>
+    </g>
+    <g transform="translate(331,390)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">AS</text>
+    </g>
+    <g transform="translate(243,799)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Le</text>
+    </g>
+		<g transform="translate(880,873)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Co</text>
+    </g>
+    <g transform="translate(844,715)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Cm</text>
+    </g>
+    <g transform="translate(248,185)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Pr</text>
+    </g>
+    <g transform="translate(636,466)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Tr</text>
+    </g>
+    <g transform="translate(408,539)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ep</text>
+    </g>
+    <g transform="translate(418,600)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">An</text>
+    </g>
+    <g transform="translate(265,646)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">So</text>
+    </g>
+    <g transform="translate(601,531)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ro</text>
+    </g>
+    <g transform="translate(799,674)">
+        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
+        <text x="2" y="14" fill="black" font-size="12px">Ko</text>
+    </g>
 </svg>
