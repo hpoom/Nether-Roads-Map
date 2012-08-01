@@ -1,0 +1,49 @@
+Mount Augusta:-614:73:-618
+Columbia:-811:61:492
+00:1:65:0
+Libery:-168:67:-1
+Rift:438:72:-470
+Sable City:380:55:-612
+Cresmopolis:413:77:-263
+Yellow Flower:-713:47:-721
+Agora:312:64:-385
+NewKrumsville:-59:65:-366
+In Kind:-78:56:-520
+Tinto:15:56:-526
+Winterfell:470:76:-540
+Aristopolis:-1118:90:-543
+Ancapistan:527:65:-683
+The Great Sunflower:80:70:-200
+Vanaheimr:-242:60:240
+Kizantium:-577:54:748
+Central City:-776:36:-898
+Lazuli:409:33:-515
+Atmora:-920:64:289
+Alexandria:-800:35:593
+Barnabie Beaches:-673:61:738
+Cutlasso's Fort:-978:67:-251
+Gorgeview:-3:70:-701
+Hoyt:56:66:-373
+TokieStan:-1083:76:-492
+Avernum:-739:61:-766
+Derpenshire:-819:69:-448
+Rapture:-684:73:488
+Bjornstahl:-453:65:806
+Gerald:540:68:400
+Saga:-471:66:-154
+Immelopolis:-1070:52:-708
+Sky City:-1013:90:-556
+Jacks Hold:-438:68:309
+Obsidian Plains:-407:63:237
+Io:-840:49:-167
+Alpha Sierra:-538:68:-419
+Leningrad:-714:68:398
+Constanstinople:560:65:546
+Communa:489:68:231
+Prisma:-704:68:-830
+Traith:72:73:-267
+Epicus:-384:82:-121
+Avalon:-364:68:0
+Sovngarde:-669:77:93
+Rothbard:2:65:-137
+Kodiak:398:67:148
