@@ -1,10 +1,10 @@
 Mount Augusta:-614:73:-618
 Columbia:-811:61:492
-00:1:65:0
-Libery:-168:67:-1
+0,0:1:65:0
+Liberty:-168:67:-1
 Rift:438:72:-470
 Sable City:380:55:-612
-Cresmopolis:413:77:-263
+Cressemopolis:413:77:-263
 Yellow Flower:-713:47:-721
 Agora:312:64:-385
 NewKrumsville:-59:65:-366
@@ -12,7 +12,7 @@ In Kind:-78:56:-520
 Tinto:15:56:-526
 Winterfell:470:76:-540
 Aristopolis:-1118:90:-543
-Ancapistan:527:65:-683
+Atlantis:527:65:-683
 The Great Sunflower:80:70:-200
 Vanaheimr:-242:60:240
 Kizantium:-577:54:748
