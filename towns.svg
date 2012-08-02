@@ -1,201 +1,248 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<!--
+	CivCraft Nether Roads Map
+	https://github.com/hpoom/Nether-Roads-Map
+-->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1800">
+	<style type="text/css">
+	<![CDATA[
 
-    <line x1="1130" y1="1000" x2="1180" y2="1000" stroke="black" stroke-width="2" />
+		circle.portal {
+			stroke: black;
+			stroke-width: 1.5;
+			fill: silver;
+		}
+		
+		text.portal {
+			fill: black;
+			font-size: 13px;
+			text-anchor: middle;
+		}
+		
+		text.portal_small {
+			fill: black;
+			font-size: 11px;
+			text-anchor: middle;
+		}
+		
+		line.road {
+			stroke: #444;
+			stroke-width: 1.5;
+		}
 
-    <g transform="translate(293,291)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">MA</text>
-    </g>
-    <g transform="translate(194,846)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Cb</text>
-    </g>
-    <g transform="translate(600,600)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">00</text>
-    </g>
-    <g transform="translate(516,599)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Lb</text>
-    </g>
-    <g transform="translate(819,365)">
-        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="grey" font-size="12px">Rt</text>
-    </g>
-    <g transform="translate(790,294)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">SC</text>
-    </g>
-    <g transform="translate(806,468)">
-        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="grey" font-size="12px">Cr</text>
-    </g>
-    <g transform="translate(243,239)">
-        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="grey" font-size="12px">YF</text>
-    </g>
-    <g transform="translate(756,407)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ag</text>
-    </g>
-    <g transform="translate(570,417)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">NK</text>
-    </g>
-    <g transform="translate(561,340)">
-        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="grey" font-size="12px">IK</text>
-    </g>
-    <g transform="translate(607,337)">
-        <rect width="20" height="20" stroke="grey" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="grey" font-size="12px">Ti</text>
-    </g>
-    <g transform="translate(835,330)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Wi</text>
-    </g>
-    <g transform="translate(41,328)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ar</text>
-    </g>
-    <g transform="translate(863,258)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">At</text>
-    </g>
-    <g transform="translate(640,500)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">GS</text>
-    </g>
-    <g transform="translate(479,720)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Va</text>
-    </g>
-    <g transform="translate(311,974)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ki</text>
-    </g>
-    <g transform="translate(212,151)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">CC</text>
-    </g>
-    <g transform="translate(804,342)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Lz</text>
-    </g>
-    <g transform="translate(140,744)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Am</text>
-    </g>
-    <g transform="translate(200,896)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ax</text>
-    </g>
-    <g transform="translate(263,969)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">BB</text>
-    </g>
-    <g transform="translate(111,474)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">CF</text>
-    </g>
-    <g transform="translate(598,249)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ge</text>
-    </g>
-    <g transform="translate(628,413)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ho</text>
-    </g>
-    <g transform="translate(58,354)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Tk</text>
-    </g>
-    <g transform="translate(230,217)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Av</text>
-    </g>
-    <g transform="translate(190,376)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">De</text>
-    </g>
-    <g transform="translate(258,844)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ra</text>
-    </g>
-		<g transform="translate(373,1003)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Bj</text>
-    </g>
-    <g transform="translate(870,800)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ge</text>
-    </g>
-    <g transform="translate(364,523)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Sa</text>
-    </g>
-    <g transform="translate(65,246)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Im</text>
-    </g>
-    <g transform="translate(93,322)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Sk</text>
-    </g>
-    <g transform="translate(381,754)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">JH</text>
-    </g>
-    <g transform="translate(396,718)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">OP</text>
-    </g>
-    <g transform="translate(180,516)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Io</text>
-    </g>
-    <g transform="translate(331,390)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">AS</text>
-    </g>
-    <g transform="translate(243,799)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Le</text>
-    </g>
-		<g transform="translate(880,873)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Co</text>
-    </g>
-    <g transform="translate(844,715)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Cm</text>
-    </g>
-    <g transform="translate(248,185)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Pr</text>
-    </g>
-    <g transform="translate(636,466)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Tr</text>
-    </g>
-    <g transform="translate(408,539)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ep</text>
-    </g>
-    <g transform="translate(418,600)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">An</text>
-    </g>
-    <g transform="translate(265,646)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">So</text>
-    </g>
-    <g transform="translate(601,531)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ro</text>
-    </g>
-    <g transform="translate(799,674)">
-        <rect width="20" height="20" stroke="black" stroke-width="1.5" fill="lightgrey" />
-        <text x="2" y="14" fill="black" font-size="12px">Ko</text>
-    </g>
+	]]>
+	</style>
+	<!--
+		Change this translation to subtract the top left portal of the map.
+		If the top left corner is 50, 70 then this translation should be
+		-50, -70; likewise 200, -4400 is a translation of -200, 4400.
+	-->
+	<g transform="translate(1180,930)">
+	
+		<!-- Road Lines -->
+		<g>
+			<line class="road" x1="-1118" y1="-541" x2="409"  y2="-541" />
+			<line class="road" x1="-612"  y1="-612" x2="-616" y2="289" />
+		</g>
+		
+		<!-- Portals -->
+		<g>
+			<g transform="translate(-614,-618)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">MA</text>
+			</g>
+			<g transform="translate(-811,492)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Co</text>
+			</g>
+			<g transform="translate(1,0)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">00</text>
+			</g>
+			<g transform="translate(-168,1)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Li</text>
+			</g>
+			<g transform="translate(438,-470)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ri</text>
+			</g>
+			<g transform="translate(380,-612)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">SC</text>
+			</g>
+			<g transform="translate(413,-263)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Cr</text>
+			</g>
+			<g transform="translate(-713,-721)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">YF</text>
+			</g>
+			<g transform="translate(312,-385)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ag</text>
+			</g>
+			<g transform="translate(-59,-366)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">NK</text>
+			</g>
+			<g transform="translate(-78,-520)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">IK</text>
+			</g>
+			<g transform="translate(15,-526)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ti</text>
+			</g>
+			<g transform="translate(470,-540)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Wi</text>
+			</g>
+			<g transform="translate(-1118,-543)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ar</text>
+			</g>
+			<g transform="translate(527,-683)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">Atl</text>
+			</g>
+			<g transform="translate(80,-200)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">TGS</text>
+			</g>
+			<g transform="translate(-242,240)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">Va</text>
+			</g>
+			<g transform="translate(-577,748)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">Ki</text>
+			</g>
+			<g transform="translate(-776,-898)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">CC</text>
+			</g>
+			<g transform="translate(409,-515)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">La</text>
+			</g>
+			<g transform="translate(-920,289)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">Atm</text>
+			</g>
+			<g transform="translate(-800,-593)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Al</text>
+			</g>
+			<g transform="translate(-673,738)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">BB</text>
+			</g>
+			<g transform="translate(-978,-251)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Cf</text>
+			</g>
+			<g transform="translate(-3,-701)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Go</text>
+			</g>
+			<g transform="translate(56,-373)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ho</text>
+			</g>
+			<g transform="translate(-1083,-492)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">To</text>
+			</g>
+			<g transform="translate(-739,-766)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Av</text>
+			</g>
+			<g transform="translate(-819,-448)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">De</text>
+			</g>
+			<g transform="translate(-684,488)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ra</text>
+			</g>
+			<g transform="translate(-453,806)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Bj</text>
+			</g>
+			<g transform="translate(540,400)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ge</text>
+			</g>
+			<g transform="translate(-471,-154)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Sa</text>
+			</g>
+			<g transform="translate(-1070,-708)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Im</text>
+			</g>
+			<g transform="translate(-1013,-556)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">Sky</text>
+			</g>
+			<g transform="translate(-438,309)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">JH</text>
+			</g>
+			<g transform="translate(-407,237)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">OP</text>
+			</g>
+			<g transform="translate(-840,-167)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Io</text>
+			</g>
+			<g transform="translate(-538,-419)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">AS</text>
+			</g>
+			<g transform="translate(-714,-398)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Le</text>
+			</g>
+			<g transform="translate(560,546)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">Con</text>
+			</g>
+			<g transform="translate(489,231)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">Com</text>
+			</g>
+			<g transform="translate(-704,-830)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Pr</text>
+			</g>
+			<g transform="translate(72,-267)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Tr</text>
+			</g>
+			<g transform="translate(-384,-121)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ep</text>
+			</g>
+			<g transform="translate(-364,0)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Av</text>
+			</g>
+			<g transform="translate(-669,93)">
+				<circle class="portal" r="14" />
+				<text class="portal_small" y="4">Sov</text>
+			</g>
+			<g transform="translate(2,-137)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ro</text>
+			</g>
+			<g transform="translate(398,148)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ko</text>
+			</g>
+		</g>
+	</g>
+
 </svg>
