@@ -29,15 +29,26 @@
 	]]>
 	</style>
 	
-	<!-- Road Link -->
-	<image xlink:href="roads.svg" x="0" y="0" height="100%" width="100%"/>
-	
 	<!--
 		Change this translation to subtract the top left portal of the map.
 		If the top left corner is 50, 70 then this translation should be
 		-50, -70; likewise 200, -4400 is a translation of -200, 4400.
 	-->
 	<g transform="translate(1180,930)">
+	
+		<!-- Roads -->
+		<g>
+			<line class="road" x1="-1118" y1="-545" x2="409" y2="-545" /><!-- North Road -->
+			<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
+			<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
+			<line class="road" x1="-981" y1="-263" x2="-981" y2="-545" /><!-- North Road/Cutlasso's Fort -->
+			<line class="road" x1="-981" y1="-263" x2="-863" y2="-145" /><!-- Cutlasso's Fort/Io -->
+			<line class="road" x1="-889" y1="-171" x2="-841" y2="-171" /><!-- Cutlasso's Fort/Io -->
+			<line class="road" x1="-821"  y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
+			<line class="road" x1="-159" y1="-58" x2="328" y2="-545" /><!-- Liberty/Lazuli Road -->
+			<line class="road" x1="-159" y1="-84" x2="-159" y2="0" /><!-- Hub road near Liberty -->
+			<line class="road" x1="-612"  y1="-612" x2="-616" y2="289" /><!-- Mt Augusta Road  -->
+		</g>
 		
 		<!-- Portals -->
 		<g>
