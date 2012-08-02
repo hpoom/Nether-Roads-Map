@@ -1,8 +1,10 @@
 <!--
 	CivCraft Nether Roads Map
 	https://github.com/hpoom/Nether-Roads-Map
+	
+	Town/Portal List
 -->
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1800">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink" version="1.1" width="1800" height="1800">
 	<style type="text/css">
 	<![CDATA[
 
@@ -24,25 +26,18 @@
 			text-anchor: middle;
 		}
 		
-		line.road {
-			stroke: #444;
-			stroke-width: 1.5;
-		}
-
 	]]>
 	</style>
+	
+	<!-- Road Link -->
+	<image xlink:href="roads.svg" x="0" y="0" height="100%" width="100%"/>
+	
 	<!--
 		Change this translation to subtract the top left portal of the map.
 		If the top left corner is 50, 70 then this translation should be
 		-50, -70; likewise 200, -4400 is a translation of -200, 4400.
 	-->
 	<g transform="translate(1180,930)">
-	
-		<!-- Road Lines -->
-		<g>
-			<line class="road" x1="-1118" y1="-541" x2="409"  y2="-541" />
-			<line class="road" x1="-612"  y1="-612" x2="-616" y2="289" />
-		</g>
 		
 		<!-- Portals -->
 		<g>
