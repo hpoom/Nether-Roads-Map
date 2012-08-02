@@ -28,7 +28,7 @@
 		
 		line.road {
 			stroke: #444;
-			stroke-width: 1.5;
+			stroke-width: 2.5;
 		}
 		
 		rect.background {
@@ -76,6 +76,18 @@
 			<line class="road" x1="-357" y1="-36" x2="-467" y2="-145" /><!-- Saga/Avalon -->
 			<line class="road" x1="-357" y1="-36" x2="-357" y2="-1" /><!-- Saga/Avalon -->
 			<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
+			
+			<line class="road" x1="0" y1="-1" x2="191" y2="-187" /><!-- 0,0/Road Kink -->
+			<line class="road" x1="191" y1="-187" x2="395" y2="-263" /><!-- Road Kink/Cress -->
+			<line class="road" x1="395" y1="-263" x2="413" y2="-263" /><!-- Cress Road -->
+			<line class="road" x1="395" y1="-263" x2="418" y2="-291" /><!-- Cress Junction -->
+			<line class="road" x1="418" y1="-291" x2="418" y2="-430" /><!-- Old Rift Road -->
+			<line class="road" x1="418" y1="-430" x2="439" y2="-457" /><!-- Old Rift Road -->
+			<line class="road" x1="439" y1="-457" x2="408" y2="-457" /><!-- Lazuli Road -->
+			<line class="road" x1="408" y1="-457" x2="410" y2="-545" /><!-- Lazuli Road -->
+
+			<line class="road" x1="23" y1="-240" x2="78" y2="-187" /><!-- TGS Road -->
+			<line class="road" x1="78" y1="-187" x2="191" y2="-187" /><!-- TGS Road -->
 			
 		</g>
 		
