@@ -1,8 +1,10 @@
 <!--
 	CivCraft Nether Roads Map
 	https://github.com/hpoom/Nether-Roads-Map
+	
+	Town/Portal List
 -->
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1800">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink" version="1.1" width="1800" height="1800">
 	<style type="text/css">
 	<![CDATA[
 
@@ -28,9 +30,10 @@
 			stroke: #444;
 			stroke-width: 1.5;
 		}
-
+		
 	]]>
 	</style>
+	
 	<!--
 		Change this translation to subtract the top left portal of the map.
 		If the top left corner is 50, 70 then this translation should be
@@ -38,10 +41,23 @@
 	-->
 	<g transform="translate(1180,930)">
 	
-		<!-- Road Lines -->
+		<!-- Roads -->
 		<g>
-			<line class="road" x1="-1118" y1="-541" x2="409"  y2="-541" />
-			<line class="road" x1="-612"  y1="-612" x2="-616" y2="289" />
+			<line class="road" x1="-1118" y1="-545" x2="409" y2="-545" /><!-- North Road -->
+			<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
+			<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
+			<line class="road" x1="-981" y1="-263" x2="-981" y2="-545" /><!-- North Road/Cutlasso's Fort -->
+			<line class="road" x1="-981" y1="-263" x2="-863" y2="-145" /><!-- Cutlasso's Fort/Io -->
+			<line class="road" x1="-889" y1="-171" x2="-841" y2="-171" /><!-- Cutlasso's Fort/Io -->
+			<line class="road" x1="-863" y1="-145" x2="-467" y2="-145" /><!-- Io/Saga Road -->
+			<line class="road" x1="-821"  y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
+			<line class="road" x1="-159" y1="-58" x2="328" y2="-545" /><!-- Liberty/Lazuli Road -->
+			<line class="road" x1="-159" y1="-84" x2="-159" y2="-1" /><!-- Hub road near Liberty -->
+			<line class="road" x1="-612"  y1="-612" x2="-616" y2="289" /><!-- Mt Augusta Road  -->
+			<line class="road" x1="-357" y1="-36" x2="-467" y2="-145" /><!-- Saga/Avalon -->
+			<line class="road" x1="-357" y1="-36" x2="-357" y2="-1" /><!-- Saga/Avalon -->
+			<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
+			
 		</g>
 		
 		<!-- Portals -->
