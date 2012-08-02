@@ -146,7 +146,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal_small" y="4">Atm</text>
 			</g>
-			<g transform="translate(-800,-593)">
+			<g transform="translate(-800,593)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Al</text>
 			</g>
