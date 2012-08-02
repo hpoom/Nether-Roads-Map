@@ -258,6 +258,14 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Ko</text>
 			</g>
+			<g transform="translate(-808,-592)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Ha</text>
+			</g>
+			<g transform="translate(-249,-2)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Po</text>
+			</g>
 		</g>
 	</g>
 
