@@ -62,17 +62,32 @@
 	
 		<!-- Roads -->
 		<g>
-			<line class="road" x1="-1118" y1="-545" x2="409" y2="-545" /><!-- North Road -->
+			<line class="road" x1="-1180" y1="-545" x2="409" y2="-545" /><!-- North Road -->
+			<line class="road" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
+			<line class="road" x1="-1178" y1="-272" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
+			<line class="road" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
+			<line class="road" x1="-1169" y1="-151" x2="-1178" y2="-151" /><!-- North Road/Vilvos -->
+			<line class="road" x1="-1169" y1="-151" x2="-1169" y2="-158" /><!-- North Road/Vilvos -->
 			<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
 			<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
+			<line class="road" x1="-1061" y1="-709" x2="-1061" y2="-492" /><!-- Tokiestan/Immelopolis -->
+			<line class="road" x1="-821"  y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
+			<line class="road" x1="-1082" y1="-492" x2="-1061" y2="-492" /><!-- North Road/Tokiestan -->
 			<line class="road" x1="-981" y1="-263" x2="-981" y2="-545" /><!-- North Road/Cutlasso's Fort -->
 			<line class="road" x1="-981" y1="-263" x2="-863" y2="-145" /><!-- Cutlasso's Fort/Io -->
 			<line class="road" x1="-889" y1="-171" x2="-841" y2="-171" /><!-- Cutlasso's Fort/Io -->
 			<line class="road" x1="-863" y1="-145" x2="-467" y2="-145" /><!-- Io/Saga Road -->
-			<line class="road" x1="-821"  y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
+			<line class="road" x1="-777"  y1="-895" x2="-777" y2="-545" /><!-- North Road/Central City -->
+			<line class="road" x1="-777"  y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
+			<line class="road" x1="-777"  y1="-750" x2="-614" y2="-587" /><!-- Central City / Mt Augusta -->
+			<line class="road" x1="-715"  y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
+			<line class="road" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
+			<line class="road" x1="-741"  y1="-714" x2="-741" y2="-766" /><!-- Avernum -->
+			<line class="road" x1="-614"  y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
+			<line class="road" x1="-614"  y1="-540" x2="-159" y2="-84" /><!-- Mt Augusta Road / Liberty -->
+			<line class="road" x1="-538"  y1="-464" x2="-538" y2="-417" /><!-- Alpha Sierra -->
 			<line class="road" x1="-159" y1="-58" x2="328" y2="-545" /><!-- Liberty/Lazuli Road -->
 			<line class="road" x1="-159" y1="-84" x2="-159" y2="-1" /><!-- Hub road near Liberty -->
-			<line class="road" x1="-616"  y1="-612" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
 			<line class="road" x1="-357" y1="-36" x2="-467" y2="-145" /><!-- Saga/Avalon -->
 			<line class="road" x1="-357" y1="-143" x2="-357" y2="-1" /><!-- Saga/Avalon -->
 			<line class="road" x1="-357" y1="-143" x2="-385" y2="-143" /><!-- Epicus/Avalon -->
@@ -128,7 +143,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Cr</text>
 			</g>
-			<g transform="translate(-713,-721)">
+			<g transform="translate(-715,-721)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">YF</text>
 			</g>
@@ -152,7 +167,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Wi</text>
 			</g>
-			<g transform="translate(-1118,-543)">
+			<g transform="translate(-1121,-547)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Ar</text>
 			</g>
@@ -172,7 +187,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal_small" y="4">Ki</text>
 			</g>
-			<g transform="translate(-776,-898)">
+			<g transform="translate(-778,-899)">
 				<circle class="portal" r="14" />
 				<text class="portal_small" y="4">CC</text>
 			</g>
@@ -204,11 +219,11 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Ho</text>
 			</g>
-			<g transform="translate(-1083,-492)">
+			<g transform="translate(-1082,-490)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">To</text>
 			</g>
-			<g transform="translate(-739,-766)">
+			<g transform="translate(-739,-772)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Ave</text>
 			</g>
@@ -232,7 +247,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Sa</text>
 			</g>
-			<g transform="translate(-1070,-708)">
+			<g transform="translate(-1071,-713)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Im</text>
 			</g>
@@ -252,7 +267,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Io</text>
 			</g>
-			<g transform="translate(-538,-419)">
+			<g transform="translate(-537,-417)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">AS</text>
 			</g>
@@ -268,7 +283,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal_small" y="4">Com</text>
 			</g>
-			<g transform="translate(-704,-830)">
+			<g transform="translate(-701,-831)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Pr</text>
 			</g>
@@ -303,6 +318,10 @@
 			<g transform="translate(-249,-2)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Po</text>
+			</g>
+			<g transform="translate(-1171,-165)">
+				<circle class="portal" r="14" />
+				<text class="portal" y="4">Vi</text>
 			</g>
 		</g>
 	</g>
