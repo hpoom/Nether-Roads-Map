@@ -72,11 +72,19 @@
 			<line class="road" x1="-821"  y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
 			<line class="road" x1="-159" y1="-58" x2="328" y2="-545" /><!-- Liberty/Lazuli Road -->
 			<line class="road" x1="-159" y1="-84" x2="-159" y2="-1" /><!-- Hub road near Liberty -->
-			<line class="road" x1="-612"  y1="-612" x2="-616" y2="289" /><!-- Mt Augusta Road  -->
+			<line class="road" x1="-616"  y1="-612" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
 			<line class="road" x1="-357" y1="-36" x2="-467" y2="-145" /><!-- Saga/Avalon -->
-			<line class="road" x1="-357" y1="-36" x2="-357" y2="-1" /><!-- Saga/Avalon -->
+			<line class="road" x1="-357" y1="-143" x2="-357" y2="-1" /><!-- Saga/Avalon -->
+			<line class="road" x1="-357" y1="-143" x2="-385" y2="-143" /><!-- Epicus/Avalon -->
 			<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
-			
+			<line class="road" x1="0" y1="-136" x2="0" y2="-1" /><!-- Rothbard/0,0 -->
+			<line class="road" x1="-920" y1="289" x2="-645" y2="289" /><!-- Atmora Road -->
+			<line class="road" x1="-357" y1="1" x2="-725" y2="369" /><!-- Avalon/Columbia Road -->
+			<line class="road" x1="-737" y1="369" x2="-725" y2="369" /><!-- Avalon/Columbia Road Leg 1 -->
+			<line class="road" x1="-737" y1="369" x2="-811" y2="443" /><!-- Avalon/Columbia Road Leg 2 -->
+			<line class="road" x1="-811" y1="493" x2="-811" y2="443" /><!-- Avalon/Columbia Road Leg 3 -->
+			<line class="road" x1="-436" y1="79" x2="-436" y2="308" /><!-- JH/OP North/South road -->
+			<line class="road" x1="-664" y1="306" x2="-436" y2="308" /><!-- JH East/West road -->
 			<line class="road" x1="0" y1="-1" x2="191" y2="-187" /><!-- 0,0/Road Kink -->
 			<line class="road" x1="191" y1="-187" x2="395" y2="-263" /><!-- Road Kink/Cress -->
 			<line class="road" x1="395" y1="-263" x2="413" y2="-263" /><!-- Cress Road -->
@@ -85,7 +93,6 @@
 			<line class="road" x1="418" y1="-430" x2="439" y2="-457" /><!-- Old Rift Road -->
 			<line class="road" x1="439" y1="-457" x2="408" y2="-457" /><!-- Lazuli Road -->
 			<line class="road" x1="408" y1="-457" x2="410" y2="-545" /><!-- Lazuli Road -->
-
 			<line class="road" x1="23" y1="-240" x2="78" y2="-187" /><!-- TGS Road -->
 			<line class="road" x1="78" y1="-187" x2="191" y2="-187" /><!-- TGS Road -->
 			
@@ -173,7 +180,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">La</text>
 			</g>
-			<g transform="translate(-920,289)">
+			<g transform="translate(-923,290)">
 				<circle class="portal" r="14" />
 				<text class="portal_small" y="4">Atm</text>
 			</g>
@@ -269,7 +276,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Tr</text>
 			</g>
-			<g transform="translate(-384,-121)">
+			<g transform="translate(-385,-143)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Ep</text>
 			</g>
