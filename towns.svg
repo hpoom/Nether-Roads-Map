@@ -110,7 +110,11 @@
 			<line class="road" x1="408" y1="-457" x2="410" y2="-545" /><!-- Lazuli Road -->
 			<line class="road" x1="23" y1="-240" x2="78" y2="-187" /><!-- TGS Road -->
 			<line class="road" x1="78" y1="-187" x2="191" y2="-187" /><!-- TGS Road -->
-			
+			<line class="road" x1="16" y1="4" x2="0" y2="4" /><!-- Constantinople Road -->
+			<line class="road" x1="16" y1="4" x2="558" y2="546" /><!-- Constantinople Road -->
+			<line class="road" x1="540" y1="398" x2="410" y2="398" /><!-- Gerald Road -->
+			<line class="road" x1="243" y1="231" x2="490" y2="231" /><!-- Communa Road -->
+			<line class="road" x1="162" y1="149" x2="399" y2="149" /><!-- Kodiak Road -->
 		</g>
 		
 		<!-- Portals -->
