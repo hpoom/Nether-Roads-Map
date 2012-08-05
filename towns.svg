@@ -275,7 +275,7 @@
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">AS</text>
 			</g>
-			<g transform="translate(-714,-398)">
+			<g transform="translate(-714,398)">
 				<circle class="portal" r="14" />
 				<text class="portal" y="4">Le</text>
 			</g>
