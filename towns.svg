@@ -126,9 +126,11 @@
 			<line class="road" x1="-787" y1="512" x2="-810" y2="512" /><!-- Kizantium/Columbia Road -->
 			<line class="road" x1="-810" y1="512" x2="-810" y2="492" /><!-- Kizantium/Columbia Road -->
 			<line class="road" x1="-800" y1="511" x2="-800" y2="593" /><!-- Alexandria Road -->
-			
-
-			
+			<line class="road" x1="-810" y1="480" x2="-685" y2="480" /><!-- Rapture Road -->
+			<line class="road" x1="-714" y1="358" x2="-714" y2="399" /><!-- Leningrad Road -->
+			<line class="road" x1="-592" y1="237" x2="-244" y2="237" /><!-- Obsidian Plains Road -->
+			<line class="road" x1="-237" y1="237" x2="-237" y2="255" /><!-- Vanahiemer Road -->
+			<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
 		</g>
 		
 		<!-- Portals -->
