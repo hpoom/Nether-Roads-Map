@@ -115,6 +115,20 @@
 			<line class="road" x1="540" y1="398" x2="410" y2="398" /><!-- Gerald Road -->
 			<line class="road" x1="243" y1="231" x2="490" y2="231" /><!-- Communa Road -->
 			<line class="road" x1="162" y1="149" x2="399" y2="149" /><!-- Kodiak Road -->
+			<line class="road" x1="0" y1="0" x2="0" y2="18" /><!-- Kizantium Road -->
+			<line class="road" x1="0" y1="18" x2="-575" y2="593" /><!-- Kizantium Road -->
+			<line class="road" x1="-575" y1="593" x2="-575" y2="748" /><!-- Kizantium Road -->
+			<line class="road" x1="-570" y1="756" x2="-518" y2="756" /><!-- Bjornstahl Road -->
+			<line class="road" x1="-518" y1="756" x2="-468" y2="806" /><!-- Bjornstahl Road -->
+			<line class="road" x1="-468" y1="806" x2="-457" y2="806" /><!-- Bjornstahl Road -->
+			<line class="road" x1="-575" y1="707" x2="-591" y2="707" /><!-- Kizantium/Columbia Road -->
+			<line class="road" x1="-591" y1="707" x2="-787" y2="512" /><!-- Kizantium/Columbia Road -->
+			<line class="road" x1="-787" y1="512" x2="-810" y2="512" /><!-- Kizantium/Columbia Road -->
+			<line class="road" x1="-810" y1="512" x2="-810" y2="492" /><!-- Kizantium/Columbia Road -->
+			<line class="road" x1="-800" y1="511" x2="-800" y2="593" /><!-- Alexandria Road -->
+			
+
+			
 		</g>
 		
 		<!-- Portals -->
