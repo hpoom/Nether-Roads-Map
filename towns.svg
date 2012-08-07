@@ -87,8 +87,20 @@
 		
 		rect.background {
 			fill: white;
-			stroke: #888;
+			stroke: lightgreen;
 			stroke-width: 1.5;
+		}
+		
+		text.range {
+			fill: green;
+			font-size: 11px;
+			text-anchor: middle;
+		}
+		
+		text.range_v {
+			fill: green;
+			font-size: 11px;
+			text-anchor: end;
 		}
 	]]>
 	</style>
@@ -102,10 +114,6 @@
 	</defs>
 	
 	<rect fill="url(#background)" x="0" y="0" width="100%" height="100%"/>
-	
-	
-	
-    
 	
 	<!-- Key -->
 	<g transform="translate(920, 1420) scale(.9)">
@@ -384,7 +392,7 @@
 	
 	
 	<!-- Compass and Scale -->
-	<g transform="translate(100, 100)">
+	<g transform="translate(150, 150)">
 		<text class="compass" y="-72">North</text>
 		<g transform="translate(0, 20)">
 			<polygon class="compass_north" transform="translate(0, -10) rotate(180,0,-40) scale(2.0)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
@@ -428,7 +436,47 @@
 		Remember to check the width and height of the SVG at the top.
 	-->
 	<g transform="translate(1200,1000)">
-				
+	
+		<!-- Range indicators -->
+		<g transform="translate(0,-980)">
+			<text class="range" x="-1100">-1100</text>
+			<text class="range" x="-1000">-1000</text>
+			<text class="range" x="-900">-900</text>
+			<text class="range" x="-800">-800</text>
+			<text class="range" x="-700">-700</text>
+			<text class="range" x="-600">-600</text>
+			<text class="range" x="-500">-500</text>
+			<text class="range" x="-400">-400</text>
+			<text class="range" x="-300">-300</text>
+			<text class="range" x="-200">-200</text>
+			<text class="range" x="-100">-100</text>
+			<text class="range" x="0">0</text>
+			<text class="range" x="100">+100</text>
+			<text class="range" x="200">+200</text>
+			<text class="range" x="300">+300</text>
+			<text class="range" x="400">+400</text>
+			<text class="range" x="500">+500</text>
+		</g>
+		<g transform="translate(590,4)">
+			<text class="range_v" y="-900">-900</text>
+			<text class="range_v" y="-800">-800</text>
+			<text class="range_v" y="-700">-700</text>
+			<text class="range_v" y="-600">-600</text>
+			<text class="range_v" y="-500">-500</text>
+			<text class="range_v" y="-400">-400</text>
+			<text class="range_v" y="-300">-300</text>
+			<text class="range_v" y="-200">-200</text>
+			<text class="range_v" y="-100">-100</text>
+			<text class="range_v" y="0">0</text>
+			<text class="range_v" y="100">+100</text>
+			<text class="range_v" y="200">+200</text>
+			<text class="range_v" y="300">+300</text>
+			<text class="range_v" y="400">+400</text>
+			<text class="range_v" y="500">+500</text>
+			<text class="range_v" y="600">+600</text>
+			<text class="range_v" y="700">+700</text>
+			<text class="range_v" y="800">+800</text>
+		</g>
 	
 		<!-- Roads -->
 		<g>
