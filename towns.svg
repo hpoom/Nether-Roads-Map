@@ -11,19 +11,73 @@
 		circle.portal {
 			stroke: black;
 			stroke-width: 1.5;
-			fill: silver;
+			fill: lightcyan;
 		}
 		
 		text.portal {
 			fill: black;
-			font-size: 13px;
+			font-size: 17px;
+			font-weight: bold;
 			text-anchor: middle;
 		}
 		
 		text.portal_small {
 			fill: black;
-			font-size: 11px;
+			font-size: 15px;
+			font-weight: bold;
 			text-anchor: middle;
+		}
+
+		text.portal_name {
+			fill: black;
+			font-size: 17px;
+			font-weight: bold;
+		}
+		
+		
+		text.compass {
+			fill: black;
+			font-size: 28px;
+			font-weight: bold;
+			font-variant: small-caps;
+			text-anchor: middle;
+		}
+		
+		polygon.compass {
+			fill: cyan;
+			stroke: black;
+			stroke-width: 2;
+		}
+		
+		polygon.compass_north {
+			fill: cyan;
+			stroke: black;
+			stroke-width: 1;
+		}
+		
+		text.scale {
+			fill: black;
+			font-size: 12px;
+			font-weight: bold;
+		}
+
+		text.scale_right {
+			fill: black;
+			font-size: 12px;
+			font-weight: bold;
+			text-anchor: end;
+		}
+		
+		rect.scale_light {
+			fill: white;
+			stroke: black;
+			stroke-width: 1;
+		}
+		
+		rect.scale_dark {
+			fill: cyan;
+			stroke: black;
+			stroke-width: 1;
 		}
 		
 		line.road {
@@ -39,6 +93,8 @@
 	]]>
 	</style>
 	
+	
+	<!-- Background -->
 	<defs>
 		<pattern id="background" width="100" height="100" patternUnits="userSpaceOnUse">
 			<rect class="background" x="0" y="0" width="101" height="101" />
@@ -46,6 +102,320 @@
 	</defs>
 	
 	<rect fill="url(#background)" x="0" y="0" width="100%" height="100%"/>
+	
+	
+	
+    
+	
+	<!-- Key -->
+	<g transform="translate(920, 1420) scale(.9)">
+		<defs>
+		    <linearGradient id="key_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+			    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+			    <stop offset="90%" style="stop-color:rgb(255,255,0);stop-opacity:.4" />
+			    <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:.0" />
+			</linearGradient>
+		</defs>
+		<rect x="-20" y="-20" width="740" height="545" fill="url(#key_gradient" />
+	
+		<g transform="translate(0,0)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">00</text>
+			<text class="portal_name" x="25" y="5">0,0</text>
+		</g>
+		<g transform="translate(0,36)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ag</text>
+			<text class="portal_name" x="25" y="5">Agora</text>
+		</g>
+		<g transform="translate(0,72)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Al</text>
+			<text class="portal_name" x="25" y="5">Alexandria</text>
+		</g>
+		<g transform="translate(0,108)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ar</text>
+			<text class="portal_name" x="25" y="5">Aristopolis</text>
+		</g>
+		<g transform="translate(0,144)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">AS</text>
+			<text class="portal_name" x="25" y="5">Alpha Sierra</text>
+		</g>
+		<g transform="translate(0,180)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Atl</text>
+			<text class="portal_name" x="25" y="5">Atlantis</text>
+		</g>
+		<g transform="translate(0,216)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Atm</text>
+			<text class="portal_name" x="25" y="5">Atmora</text>
+		</g>
+		<g transform="translate(0,252)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Ava</text>
+			<text class="portal_name" x="25" y="5">Avalon</text>
+		</g>
+		<g transform="translate(0,288)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Ave</text>
+			<text class="portal_name" x="25" y="5">Avernum</text>
+		</g>
+		<g transform="translate(0,324)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">BB</text>
+			<text class="portal_name" x="25" y="5">Barnabie Beaches</text>
+		</g>
+		<g transform="translate(0,360)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Bj</text>
+			<text class="portal_name" x="25" y="5">Bjornstahl</text>
+		</g>
+		<g transform="translate(0,396)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">CC</text>
+			<text class="portal_name" x="25" y="5">Central City</text>
+		</g>
+		<g transform="translate(0,432)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Col</text>
+			<text class="portal_name" x="25" y="5">Columbia</text>
+		</g>
+		<g transform="translate(0,468)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Com</text>
+			<text class="portal_name" x="25" y="5">Communa</text>
+		</g>
+		<g transform="translate(0,504)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Con</text>
+			<text class="portal_name" x="25" y="5">Constanstinople</text>
+		</g>
+    	<g transform="translate(180,0)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Cr</text>
+			<text class="portal_name" x="25" y="5">Cressemopolis</text>
+		</g>
+		<g transform="translate(180,36)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">CF</text>
+			<text class="portal_name" x="25" y="5">Cutlasso's Fort</text>
+		</g>
+		<g transform="translate(180,72)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">De</text>
+			<text class="portal_name" x="25" y="5">Derpenshire</text>
+		</g>
+		<g transform="translate(180,108)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ep</text>
+			<text class="portal_name" x="25" y="5">Epicus</text>
+		</g>
+		<g transform="translate(180,144)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ge</text>
+			<text class="portal_name" x="25" y="5">Gerald</text>
+		</g>
+		<g transform="translate(180,180)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Go</text>
+			<text class="portal_name" x="25" y="5">Gorgeview</text>
+		</g>
+		<g transform="translate(180,216)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ha</text>
+			<text class="portal_name" x="25" y="5">Haven</text>
+		</g>
+		<g transform="translate(180,252)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ho</text>
+			<text class="portal_name" x="25" y="5">Hoyt</text>
+		</g>
+		<g transform="translate(180,288)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">IK</text>
+			<text class="portal_name" x="25" y="5">In Kind</text>
+		</g>
+		<g transform="translate(180,324)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Im</text>
+			<text class="portal_name" x="25" y="5">Immelopolis</text>
+		</g>
+		<g transform="translate(180,360)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Io</text>
+			<text class="portal_name" x="25" y="5">Io</text>
+		</g>
+		<g transform="translate(180,396)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">JH</text>
+			<text class="portal_name" x="25" y="5">Jack's Hold</text>
+		</g>
+		<g transform="translate(180,432)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ki</text>
+			<text class="portal_name" x="25" y="5">Kizantium</text>
+		</g>
+		<g transform="translate(180,468)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ko</text>
+			<text class="portal_name" x="25" y="5">Kodiak</text>
+		</g>
+		<g transform="translate(180,504)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">La</text>
+			<text class="portal_name" x="25" y="5">Lazuli</text>
+		</g>
+    	<g transform="translate(360,0)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Le</text>
+			<text class="portal_name" x="25" y="5">Leningrad</text>
+		</g>
+		<g transform="translate(360,36)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Li</text>
+			<text class="portal_name" x="25" y="5">Liberty</text>
+		</g>
+		<g transform="translate(360,72)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">MA</text>
+			<text class="portal_name" x="25" y="5">Mount Augusta</text>
+		</g>
+		<g transform="translate(360,108)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">NK</text>
+			<text class="portal_name" x="25" y="5">New Krumsville</text>
+		</g>
+		<g transform="translate(360,144)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">OP</text>
+			<text class="portal_name" x="25" y="5">Obsidian Plains</text>
+		</g>
+		<g transform="translate(360,180)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Po</text>
+			<text class="portal_name" x="25" y="5">Populi</text>
+		</g>
+		<g transform="translate(360,216)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Pr</text>
+			<text class="portal_name" x="25" y="5">Prisma</text>
+		</g>
+		<g transform="translate(360,252)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ra</text>
+			<text class="portal_name" x="25" y="5">Rapture</text>
+		</g>
+		<g transform="translate(360,288)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ri</text>
+			<text class="portal_name" x="25" y="5">Rift</text>
+		</g>
+		<g transform="translate(360,324)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ro</text>
+			<text class="portal_name" x="25" y="5">Rothbard</text>
+		</g>
+		<g transform="translate(360,360)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Sa</text>
+			<text class="portal_name" x="25" y="5">Saga</text>
+		</g>
+		<g transform="translate(360,396)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">SC</text>
+			<text class="portal_name" x="25" y="5">Sable City</text>
+		</g>
+		<g transform="translate(360,432)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Sky</text>
+			<text class="portal_name" x="25" y="5">Sky City</text>
+		</g>
+		<g transform="translate(360,468)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">Sov</text>
+			<text class="portal_name" x="25" y="5">Sovngarde</text>
+		</g>
+		<g transform="translate(360,504)">
+			<circle class="portal" r="16" />
+			<text class="portal_small" y="5">TGS</text>
+			<text class="portal_name" x="25" y="5">The Great Sunflower</text>
+		</g>
+		<g transform="translate(540,0)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Ti</text>
+			<text class="portal_name" x="25" y="5">Tinto</text>
+		</g>
+		<g transform="translate(540,36)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">To</text>
+			<text class="portal_name" x="25" y="5">TokieStan</text>
+		</g>
+		<g transform="translate(540,72)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Tr</text>
+			<text class="portal_name" x="25" y="5">Traith</text>
+		</g>
+		<g transform="translate(540,108)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Va</text>
+			<text class="portal_name" x="25" y="5">Vanaheimr</text>
+		</g>
+		<g transform="translate(540,144)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Vi</text>
+			<text class="portal_name" x="25" y="5">Vilvos</text>
+		</g>
+		<g transform="translate(540,180)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">Wi</text>
+			<text class="portal_name" x="25" y="5">Winterfell</text>
+		</g>
+		<g transform="translate(540,216)">
+			<circle class="portal" r="16" />
+			<text class="portal" y="5">YF</text>
+			<text class="portal_name" x="25" y="5">Yellow Flower</text>
+		</g>
+	</g>
+	
+	
+	
+	
+	<!-- Compass and Scale -->
+	<g transform="translate(100, 100)">
+		<text class="compass" y="-72">North</text>
+		<g transform="translate(0, 20)">
+			<polygon class="compass_north" transform="translate(0, -10) rotate(180,0,-40) scale(2.0)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+			<polygon class="compass" transform="translate(10, 25) rotate(270,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+			<polygon class="compass" transform="translate(0,  35) rotate(  0,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+			<polygon class="compass" transform="translate(-10,25) rotate( 90,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+		</g>
+		<g transform="translate(72,35)">
+			<rect class="scale_light" x="0" width="10" height="10" />
+			<rect class="scale_dark" x="10" width="10" height="10" />
+			<rect class="scale_light" x="20" width="10" height="10" />
+			<rect class="scale_dark" x="30" width="10" height="10" />
+			<rect class="scale_light" x="40" width="10" height="10" />
+			<rect class="scale_dark" x="50" width="10" height="10" />
+			<rect class="scale_light" x="60" width="10" height="10" />
+			<rect class="scale_dark" x="70" width="10" height="10" />
+			<rect class="scale_light" x="80" width="10" height="10" />
+			<rect class="scale_dark" x="90" width="10" height="10" />
+			<rect class="scale_dark" y="-10" width="10" height="10" />
+			<rect class="scale_light" y="-20" width="10" height="10" />
+			<rect class="scale_dark" y="-30" width="10" height="10" />
+			<rect class="scale_light" y="-40" width="10" height="10" />
+			<rect class="scale_dark" y="-50" width="10" height="10" />
+			<rect class="scale_light" y="-60" width="10" height="10" />
+			<rect class="scale_dark" y="-70" width="10" height="10" />
+			<rect class="scale_light" y="-80" width="10" height="10" />
+			<rect class="scale_dark" y="-90" width="10" height="10" />
+			<text class="scale" x="0" y="24">0 Meters</text>
+			<text class="scale_right" x="100" y="24">100</text>
+		</g>
+	</g>
 	
 	<!--
 		Change this translation to subtract the top left portal of the map.
@@ -136,212 +506,212 @@
 		<!-- Portals -->
 		<g>
 			<g transform="translate(-614,-618)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">MA</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">MA</text>
 			</g>
 			<g transform="translate(-811,492)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Co</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">Col</text>
 			</g>
 			<g transform="translate(1,0)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">00</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">00</text>
 			</g>
 			<g transform="translate(-168,1)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Li</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Li</text>
 			</g>
 			<g transform="translate(438,-470)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ri</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ri</text>
 			</g>
 			<g transform="translate(380,-612)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">SC</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">SC</text>
 			</g>
 			<g transform="translate(413,-263)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Cr</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Cr</text>
 			</g>
 			<g transform="translate(-715,-721)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">YF</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">YF</text>
 			</g>
 			<g transform="translate(312,-385)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ag</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ag</text>
 			</g>
 			<g transform="translate(-59,-366)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">NK</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">NK</text>
 			</g>
 			<g transform="translate(-78,-520)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">IK</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">IK</text>
 			</g>
 			<g transform="translate(15,-526)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ti</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ti</text>
 			</g>
 			<g transform="translate(470,-540)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Wi</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Wi</text>
 			</g>
 			<g transform="translate(-1121,-547)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ar</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ar</text>
 			</g>
 			<g transform="translate(527,-683)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">Atl</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">Atl</text>
 			</g>
 			<g transform="translate(80,-200)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">TGS</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">TGS</text>
 			</g>
 			<g transform="translate(-242,240)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">Va</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Va</text>
 			</g>
 			<g transform="translate(-577,748)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">Ki</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ki</text>
 			</g>
 			<g transform="translate(-778,-899)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">CC</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">CC</text>
 			</g>
 			<g transform="translate(409,-515)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">La</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">La</text>
 			</g>
 			<g transform="translate(-923,290)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">Atm</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">Atm</text>
 			</g>
 			<g transform="translate(-800,593)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Al</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Al</text>
 			</g>
 			<g transform="translate(-673,738)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">BB</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">BB</text>
 			</g>
 			<g transform="translate(-978,-251)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Cf</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Cf</text>
 			</g>
 			<g transform="translate(-3,-701)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Go</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Go</text>
 			</g>
 			<g transform="translate(56,-373)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ho</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ho</text>
 			</g>
 			<g transform="translate(-1082,-490)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">To</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">To</text>
 			</g>
 			<g transform="translate(-739,-772)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ave</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ave</text>
 			</g>
 			<g transform="translate(-819,-448)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">De</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">De</text>
 			</g>
 			<g transform="translate(-684,488)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ra</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ra</text>
 			</g>
 			<g transform="translate(-453,806)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Bj</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Bj</text>
 			</g>
 			<g transform="translate(540,400)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ge</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ge</text>
 			</g>
 			<g transform="translate(-471,-154)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Sa</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Sa</text>
 			</g>
 			<g transform="translate(-1071,-713)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Im</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Im</text>
 			</g>
 			<g transform="translate(-1013,-556)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">Sky</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">Sky</text>
 			</g>
 			<g transform="translate(-438,309)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">JH</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">JH</text>
 			</g>
 			<g transform="translate(-407,237)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">OP</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">OP</text>
 			</g>
 			<g transform="translate(-840,-167)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Io</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Io</text>
 			</g>
 			<g transform="translate(-537,-417)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">AS</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">AS</text>
 			</g>
 			<g transform="translate(-714,398)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Le</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Le</text>
 			</g>
 			<g transform="translate(560,546)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">Con</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">Con</text>
 			</g>
 			<g transform="translate(489,231)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">Com</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">Com</text>
 			</g>
 			<g transform="translate(-701,-831)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Pr</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Pr</text>
 			</g>
 			<g transform="translate(72,-267)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Tr</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Tr</text>
 			</g>
 			<g transform="translate(-385,-143)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ep</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ep</text>
 			</g>
 			<g transform="translate(-364,0)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ava</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">Ava</text>
 			</g>
 			<g transform="translate(-669,93)">
-				<circle class="portal" r="14" />
-				<text class="portal_small" y="4">Sov</text>
+				<circle class="portal" r="16" />
+				<text class="portal_small" y="5">Sov</text>
 			</g>
 			<g transform="translate(2,-137)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ro</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ro</text>
 			</g>
 			<g transform="translate(398,148)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ko</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ko</text>
 			</g>
 			<g transform="translate(-808,-592)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Ha</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Ha</text>
 			</g>
 			<g transform="translate(-249,-2)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Po</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Po</text>
 			</g>
 			<g transform="translate(-1171,-165)">
-				<circle class="portal" r="14" />
-				<text class="portal" y="4">Vi</text>
+				<circle class="portal" r="16" />
+				<text class="portal" y="5">Vi</text>
 			</g>
 		</g>
 	</g>
