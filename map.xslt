@@ -291,7 +291,8 @@
 				<line class="road" x1="0" y1="0" x2="0" y2="18" /><!-- Kizantium Road -->
 				<line class="road" x1="0" y1="18" x2="-575" y2="593" /><!-- Kizantium Road -->
 				<line class="road" x1="-575" y1="593" x2="-575" y2="748" /><!-- Kizantium Road -->
-				<line class="road" x1="-570" y1="756" x2="-518" y2="756" /><!-- Bjornstahl Road -->
+				<line class="road" x1="-639" y1="756" x2="-639" y2="741" /><!-- Piedmont Road -->
+				<line class="road" x1="-639" y1="756" x2="-518" y2="756" /><!-- Piedmont/Bjornstahl Road -->
 				<line class="road" x1="-518" y1="756" x2="-468" y2="806" /><!-- Bjornstahl Road -->
 				<line class="road" x1="-468" y1="806" x2="-457" y2="806" /><!-- Bjornstahl Road -->
 				<line class="road" x1="-575" y1="707" x2="-591" y2="707" /><!-- Kizantium/Columbia Road -->
@@ -304,6 +305,9 @@
 				<line class="road" x1="-592" y1="237" x2="-244" y2="237" /><!-- Obsidian Plains Road -->
 				<line class="road" x1="-237" y1="237" x2="-237" y2="255" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
+				<line class="road" x1="-614" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
+				<line class="road" x1="-979" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
+				
 			</g>
 			
 			<!-- Portals -->
