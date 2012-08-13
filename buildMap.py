@@ -14,6 +14,8 @@ def fetchData():
 		if lineData[4] == 'true':
 			mapData.append( [lineData[0], lineData[1], lineData[3]] )
 
+	# Sort our data on town name before returning it
+	mapData.sort(key=lambda town: town[0])
 	return mapData
 	#print 'Hello World! ' + sys.argv[1]
 
@@ -28,15 +30,13 @@ def buildXml( data ):
 			element.set( 'x', value[1] )
 			element.set( 'z', value[2] )
 			element.set( 'name', value[0] )
-			#element.text = value[0]
 	
 	return ElementTree.tostring( parent )
   
 # Our procedural code
 mapData = fetchData()
-outputString = buildXml( mapData )
+outputString = '<?xml-stylesheet href="map.xslt" type="text/xsl" ?>' + buildXml( mapData )
 xml = xml.dom.minidom.parseString( outputString )
-
 
 fo = open( 'tmp.xml', 'wb' )
 fo.write( xml.toprettyxml() )
