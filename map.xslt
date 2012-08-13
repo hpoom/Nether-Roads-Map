@@ -6,7 +6,7 @@
 	https://github.com/hpoom/Nether-Roads-Map
 	
 	Town/Portal List
--->
+	-->
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1900">
 		<style type="text/css">
 		<![CDATA[
@@ -138,7 +138,13 @@
 						<xsl:value-of select="concat('translate(',180 * $x,',',36 * $y,')')" />
 					</xsl:attribute>
 					<circle class="portal" r="16" />
-					<text class="portal" y="5"><xsl:value-of select="@abbr" /></text>
+					<text y="5">
+						<xsl:attribute name="class">
+							<xsl:if test="string-length(@abbr) &gt; 2">portal_small</xsl:if>
+							<xsl:if test="string-length(@abbr) &lt; 3">portal</xsl:if>
+						</xsl:attribute>
+						<xsl:value-of select="@abbr" />
+					</text>
 					<text class="portal_name" x="25" y="5"><xsl:value-of select="@name" /></text>
 				</g>
 			</xsl:for-each>
@@ -318,7 +324,13 @@
 							<xsl:value-of select="concat('translate(',@x,',',@z,')')" />
 						</xsl:attribute>
 						<circle class="portal" r="16" />
-						<text class="portal" y="5"><xsl:value-of select="@abbr" /></text>
+						<text y="5">
+							<xsl:attribute name="class">
+								<xsl:if test="string-length(@abbr) &gt; 2">portal_small</xsl:if>
+								<xsl:if test="string-length(@abbr) &lt; 3">portal</xsl:if>
+							</xsl:attribute>
+							<xsl:value-of select="@abbr" />
+						</text>
 					</g>
 				</xsl:for-each>
 			</g>
