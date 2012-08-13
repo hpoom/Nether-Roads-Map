@@ -127,7 +127,7 @@
 					<stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:.0" />
 				</linearGradient>
 			</defs>
-			<rect x="-20" y="-20" width="740" height="545" fill="url(#key_gradient" />
+			<rect x="-20" y="-20" width="740" height="545" fill="url(#key_gradient)" />
 			
 			<xsl:for-each select="map/portals/portal">
 				<xsl:variable name="i"><xsl:number /></xsl:variable>
@@ -306,7 +306,7 @@
 				<line class="road" x1="-237" y1="237" x2="-237" y2="255" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-614" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
-				<line class="road" x1="-979" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
+				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
 				
 			</g>
 			
