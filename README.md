@@ -11,6 +11,7 @@ Historical Data
 ---------------
 
 This is the [old map](http://i.imgur.com/AtJ5c.jpg)
+
 Hosted version of the [latest map](http://www.hpoom.co.uk/CivCraft/map.xml)
 
 Features
