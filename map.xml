@@ -38,19 +38,19 @@
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" />
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
+		<portal x="383" z="-611" abbr="Ou" name="Ouroborealis" />
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" />
 		<portal x="-249" z="-2" abbr="Po" name="Populi" />
 		<portal x="-701" z="-831" abbr="Pr" name="Prisma" />
 		<portal x="-684" z="488" abbr="Ra" name="Rapture" />
 		<portal x="438" z="-470" abbr="Ri" name="Rift" />
 		<portal x="2" z="-137" abbr="Ro" name="Rothbard" />
-		<portal x="380" z="-612" abbr="SC" name="Sable City" />
 		<portal x="-471" z="-154" abbr="Sa" name="Saga" />
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" />
 		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" />
 		<portal x="80" z="-200" abbr="TGS" name="The Great Sunflower" />
 		<portal x="-618" z="251" abbr="Tig" name="Tigerstadan" />
-		<portal x="15" z="-526" abbr="Tin" name="Tinto" />
+		<portal x="14" z="-525" abbr="Tin" name="Tinto" />
 		<portal x="-1082" z="-490" abbr="To" name="TokieStan" />
 		<portal x="72" z="-267" abbr="Tr" name="Traith" />
 		<portal x="-242" z="240" abbr="Va" name="Vanaheimr" />
