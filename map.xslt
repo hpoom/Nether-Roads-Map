@@ -7,7 +7,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1900">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1900" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -152,8 +152,33 @@
 		</g>
 		
 		
+		<!-- Roadcrew Sign -->
+		<g transform="translate(650, 100) scale(.6)">
+			<defs>
+				<filter id="dropshadow" height="130%">
+					<feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+					<feOffset dx="2" dy="2" result="offsetblur"/> 
+					<feMerge> 
+						<feMergeNode/>
+						<feMergeNode in="SourceGraphic"/> 
+					</feMerge>
+				</filter>
+			</defs>
+			
+			<g transform="translate(210,210)" filter="url(#dropshadow)">
+				<path fill="#E87600" d="M-200 0 L0 200 L200 0 L0 -200 Z" />
+				<path transform="scale(0.97)" stroke="black" stroke-width="4" fill="none" d="M-190 -10 Q -200 0 -190 10 L -10 190 Q 0 200 10 190 L 190 10 Q 200 0 190 -10 L 10 -190 Q 0 -200 -10 -190 Z" />
+				<g transform="translate(0,-45)">
+					<text style="fill:black;font-weight:bold; font-size:48px;font-family:sans-serif;text-anchor:middle;">
+						<tspan x="0" y="25">CIVCRAFT</tspan>
+						<tspan x="0" y="85">ROADCREW</tspan>
+					</text>
+				</g>
+			</g>
+		</g>
+		
 		<!-- Compass and Scale -->
-		<g transform="translate(150, 150)">
+		<g transform="translate(970, 200)">
 			<text class="compass" y="-72">North</text>
 			<g transform="translate(0, 20)">
 				<polygon class="compass_north" transform="translate(0, -10) rotate(180,0,-40) scale(2.0)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
@@ -185,6 +210,23 @@
 				<text class="scale_right" x="100" y="24">100</text>
 			</g>
 		</g>
+		
+		<g transform="translate(970, 300)">
+			<text style="fill:black;font-weight:bold; font-size:24px;font-family:sans-serif;text-anchor:middle;">
+				<tspan x="0" y="0">Nether Road Map</tspan>
+				<tspan x="0" y="30">With Public Portals</tspan>
+			</text>
+		</g>
+		
+		<g transform="translate(920, 380)">
+			<a xlink:href="http://www.reddit.com/r/CivcraftRoads" target="_blank">
+				<text style="text-decoration:underline;fill:navy;font-weight:bold; font-size:14px;font-family:serif;text-anchor:middle;">
+					W W W . R E D D I T . C O M / R / C I V C R A F T R O A D S
+				</text>
+			</a>
+		</g>
+		
+		
 		
 		<!--
 			Change this translation to subtract the top left portal of the map.
