@@ -37,7 +37,6 @@
 				font-weight: bold;
 			}
 			
-			
 			text.compass {
 				fill: black;
 				font-size: 28px;
@@ -295,7 +294,12 @@
 				<line class="road" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1169" y1="-151" x2="-1178" y2="-151" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1169" y1="-151" x2="-1169" y2="-158" /><!-- North Road/Vilvos -->
+				<line class="road_unofficial" x1="367" y1="-592" x2="367" y2="-545" /><!-- North Road/Sable City -->
+				<line class="road_unofficial" x1="366" y1="-592" x2="366" y2="-605" /><!-- North Road/Sable City -->
+				<line class="road_unofficial" x1="378" y1="-605" x2="366" y2="-605" /><!-- North Road/Sable City -->
 				<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
+				<line class="road_unofficial" x1="411" y1="-517" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
+				<line class="road_unofficial" x1="531" y1="-680" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
 				<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
 				<line class="road" x1="-1" y1="-522" x2="-1" y2="-545" /><!-- North Road/Gorgeview -->
 				<line class="road" x1="15" y1="-522" x2="-8" y2="-522" /><!-- Tinto/Gorgeview -->
@@ -341,6 +345,9 @@
 				<line class="road" x1="395" y1="-263" x2="413" y2="-263" /><!-- Cress Road -->
 				<line class="road" x1="395" y1="-263" x2="418" y2="-291" /><!-- Cress Junction -->
 				<line class="road" x1="418" y1="-291" x2="418" y2="-430" /><!-- Old Rift Road -->
+				<line class="road_unofficial" x1="438" y1="-498" x2="438" y2="-457" /><!-- Old Rift/Winterfell -->
+				<line class="road_unofficial" x1="438" y1="-498" x2="470" y2="-530" /><!-- Old Rift/Winterfell -->
+				<line class="road_unofficial" x1="470" y1="-540" x2="470" y2="-530" /><!-- Old Rift/Winterfell -->
 				<line class="road" x1="418" y1="-430" x2="439" y2="-457" /><!-- Old Rift Road -->
 				<line class="road" x1="439" y1="-457" x2="408" y2="-457" /><!-- Lazuli Road -->
 				<line class="road" x1="408" y1="-457" x2="410" y2="-545" /><!-- Lazuli Road -->
