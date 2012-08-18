@@ -17,6 +17,13 @@
 				fill: lightcyan;
 			}
 			
+			circle.portal_abandoned {
+				stroke: black;
+				stroke-width: 1.5;
+				stroke-dasharray: 6, 2;
+				fill: silver;
+			}
+			
 			text.portal {
 				fill: black;
 				font-size: 17px;
@@ -24,7 +31,22 @@
 				text-anchor: middle;
 			}
 			
+			text.portal_abandoned {
+				fill: black;
+				font-size: 17px;
+				font-weight: bold;
+				text-anchor: middle;
+				text-decoration: line-through;
+			}
+			
 			text.portal_small {
+				fill: black;
+				font-size: 15px;
+				font-weight: bold;
+				text-anchor: middle;
+			}
+			
+			text.portal_abandoned_small {
 				fill: black;
 				font-size: 15px;
 				font-weight: bold;
@@ -113,6 +135,17 @@
 		]]>
 		</style>
 		
+		<!-- Drop shadow used for a couple of things below -->
+		<defs>
+			<filter id="dropshadow" height="130%">
+				<feGaussianBlur in="SourceAlpha" stdDeviation="2"/> 
+				<feOffset dx="2" dy="2" result="offsetblur"/> 
+				<feMerge> 
+					<feMergeNode/>
+					<feMergeNode in="SourceGraphic"/> 
+				</feMerge>
+			</filter>
+		</defs>
 		
 		<!-- Background -->
 		<defs>
@@ -142,7 +175,18 @@
 					<xsl:attribute name="transform">
 						<xsl:value-of select="concat('translate(',180 * $x,',',36 * $y,')')" />
 					</xsl:attribute>
-					<circle class="portal" r="16" />
+					<circle r="16">
+						<xsl:attribute name="class">
+							<xsl:if test="contains(@status, 'abandoned')">portal_abandoned</xsl:if>
+							<xsl:if test="not(contains(@status, 'abandoned'))">portal</xsl:if>
+						</xsl:attribute>
+					</circle>
+					<xsl:if test="contains(@status, 'locked')">
+						<g transform="translate(8,-16) scale(.4)" filter="url(#dropshadow)">
+							<path stroke="none" stroke-width="1" fill="darkred" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+							<path stroke="darkred" stroke-width="4" fill="none" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
+						</g>
+					</xsl:if>
 					<text y="5">
 						<xsl:attribute name="class">
 							<xsl:if test="string-length(@abbr) &gt; 2">portal_small</xsl:if>
@@ -159,17 +203,6 @@
 		
 		<!-- Roadcrew Sign -->
 		<g transform="translate(650, 100) scale(.6)">
-			<defs>
-				<filter id="dropshadow" height="130%">
-					<feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
-					<feOffset dx="2" dy="2" result="offsetblur"/> 
-					<feMerge> 
-						<feMergeNode/>
-						<feMergeNode in="SourceGraphic"/> 
-					</feMerge>
-				</filter>
-			</defs>
-			
 			<g transform="translate(210,210)" filter="url(#dropshadow)">
 				<path fill="#E87600" d="M-200 0 L0 200 L200 0 L0 -200 Z" />
 				<path transform="scale(0.97)" stroke="black" stroke-width="4" fill="none" d="M-190 -10 Q -200 0 -190 10 L -10 190 Q 0 200 10 190 L 190 10 Q 200 0 190 -10 L 10 -190 Q 0 -200 -10 -190 Z" />
@@ -294,9 +327,6 @@
 				<line class="road" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1169" y1="-151" x2="-1178" y2="-151" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1169" y1="-151" x2="-1169" y2="-158" /><!-- North Road/Vilvos -->
-				<line class="road_unofficial" x1="367" y1="-592" x2="367" y2="-545" /><!-- North Road/Sable City -->
-				<line class="road_unofficial" x1="366" y1="-592" x2="366" y2="-605" /><!-- North Road/Sable City -->
-				<line class="road_unofficial" x1="378" y1="-605" x2="366" y2="-605" /><!-- North Road/Sable City -->
 				<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
 				<line class="road_unofficial" x1="411" y1="-517" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
 				<line class="road_unofficial" x1="531" y1="-680" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
@@ -326,7 +356,16 @@
 				<line class="road" x1="-614"  y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
 				<line class="road" x1="-614"  y1="-540" x2="-159" y2="-84" /><!-- Mt Augusta Road / Liberty -->
 				<line class="road" x1="-538"  y1="-464" x2="-538" y2="-417" /><!-- Alpha Sierra -->
-				<line class="road" x1="-159" y1="-58" x2="328" y2="-545" /><!-- Liberty/Lazuli Road -->
+				<line class="road_unofficial" x1="148" y1="-365" x2="179" y2="-365" /><!-- Agora -->
+				<line class="road_unofficial" x1="182" y1="-368" x2="179" y2="-365" /><!-- Agora -->
+				<line class="road_unofficial" x1="182" y1="-368" x2="251" y2="-368" /><!-- Agora -->
+				<line class="road_unofficial" x1="255" y1="-372" x2="251" y2="-368" /><!-- Agora -->
+				<line class="road_unofficial" x1="255" y1="-372" x2="379" y2="-372" /><!-- Agora -->
+				<line class="road_unofficial" x1="379" y1="-421" x2="379" y2="-372" /><!-- Agora -->
+				<line class="road_unofficial" x1="379" y1="-421" x2="390" y2="-432" /><!-- Agora -->
+				<line class="road_unofficial" x1="418" y1="-432" x2="390" y2="-432" /><!-- Agora -->
+				<line class="road" x1="-159" y1="-58" x2="466" y2="-683" /><!-- Liberty/Atlantis Road -->
+				<line class="road" x1="523" y1="-683" x2="466" y2="-683" /><!-- Liberty/Atlantis Road -->
 				<line class="road" x1="-159" y1="-84" x2="-159" y2="-1" /><!-- Hub road near Liberty -->
 				<line class="road" x1="-357" y1="-36" x2="-467" y2="-145" /><!-- Saga/Avalon -->
 				<line class="road" x1="-357" y1="-143" x2="-357" y2="-1" /><!-- Saga/Avalon -->
@@ -387,7 +426,18 @@
 						<xsl:attribute name="transform">
 							<xsl:value-of select="concat('translate(',@x,',',@z,')')" />
 						</xsl:attribute>
-						<circle class="portal" r="16" />
+						<circle r="16">
+							<xsl:attribute name="class">
+								<xsl:if test="contains(@status, 'abandoned')">portal_abandoned</xsl:if>
+								<xsl:if test="not(contains(@status, 'abandoned'))">portal</xsl:if>
+							</xsl:attribute>
+						</circle>
+						<xsl:if test="contains(@status, 'locked')">
+							<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
+								<path stroke="none" stroke-width="1" fill="darkred" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+								<path stroke="darkred" stroke-width="4" fill="none" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
+							</g>
+						</xsl:if>
 						<text y="5">
 							<xsl:attribute name="class">
 								<xsl:if test="string-length(@abbr) &gt; 2">portal_small</xsl:if>
@@ -398,8 +448,7 @@
 					</g>
 				</xsl:for-each>
 			</g>
-		</g>
-
+		</g>		
 	</svg>
 </xsl:template>
 </xsl:stylesheet> 
