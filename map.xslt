@@ -181,6 +181,12 @@
 							<xsl:if test="not(contains(@status, 'abandoned'))">portal</xsl:if>
 						</xsl:attribute>
 					</circle>
+					<xsl:if test="contains(@status, 'griefed')">
+						<g transform="translate(-16,-16) scale(.4)" filter="url(#dropshadow)">
+							<circle r="16" stroke="#f30" stroke-width="4" fill="none" />
+							<text y="10" fill="#f30" style="font-size:32px;font-weight:bold;text-anchor:middle;">!</text>
+						</g>
+					</xsl:if>
 					<xsl:if test="contains(@status, 'locked')">
 						<g transform="translate(8,-16) scale(.4)" filter="url(#dropshadow)">
 							<path stroke="none" stroke-width="1" fill="darkred" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
@@ -404,8 +410,7 @@
 				<line class="road" x1="-639" y1="756" x2="-518" y2="756" /><!-- Piedmont/Bjornstahl Road -->
 				<line class="road" x1="-518" y1="756" x2="-468" y2="806" /><!-- Bjornstahl Road -->
 				<line class="road" x1="-468" y1="806" x2="-457" y2="806" /><!-- Bjornstahl Road -->
-				<line class="road" x1="-575" y1="707" x2="-591" y2="707" /><!-- Kizantium/Columbia Road -->
-				<line class="road" x1="-591" y1="707" x2="-787" y2="512" /><!-- Kizantium/Columbia Road -->
+				<line class="road" x1="-575" y1="724" x2="-787" y2="512" /><!-- Kizantium/Columbia Road -->
 				<line class="road" x1="-787" y1="512" x2="-810" y2="512" /><!-- Kizantium/Columbia Road -->
 				<line class="road" x1="-810" y1="512" x2="-810" y2="492" /><!-- Kizantium/Columbia Road -->
 				<line class="road" x1="-800" y1="511" x2="-800" y2="593" /><!-- Alexandria Road -->
@@ -432,6 +437,12 @@
 								<xsl:if test="not(contains(@status, 'abandoned'))">portal</xsl:if>
 							</xsl:attribute>
 						</circle>
+						<xsl:if test="contains(@status, 'griefed')">
+							<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
+								<circle r="16" stroke="#f30" stroke-width="4" fill="none" />
+								<text y="10" fill="#f30" style="font-size:32px;font-weight:bold;text-anchor:middle;">!</text>
+							</g>
+						</xsl:if>
 						<xsl:if test="contains(@status, 'locked')">
 							<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
 								<path stroke="none" stroke-width="1" fill="darkred" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
