@@ -7,7 +7,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1900" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2100" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -157,7 +157,7 @@
 		<rect fill="url(#background)" x="0" y="0" width="100%" height="100%"/>
 		
 		<!-- Key -->
-		<g transform="translate(920, 1420) scale(.9)">
+		<g transform="translate(880, 1600) scale(.9)">
 			<defs>
 				<linearGradient id="key_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
 					<stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
@@ -377,7 +377,7 @@
 				<line class="road" x1="-357" y1="-143" x2="-357" y2="-1" /><!-- Saga/Avalon -->
 				<line class="road" x1="-357" y1="-143" x2="-385" y2="-143" /><!-- Epicus/Avalon -->
 				<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
-				<line class="road" x1="0" y1="-136" x2="0" y2="-1" /><!-- Rothbard/0,0 -->
+				<line class="road_unofficial" x1="0" y1="-218" x2="0" y2="-1" /><!-- Rothbard/0,0 -->
 				<line class="road" x1="-920" y1="289" x2="-645" y2="289" /><!-- Atmora Road -->
 				<line class="road" x1="-357" y1="1" x2="-725" y2="369" /><!-- Avalon/Columbia Road -->
 				<line class="road" x1="-737" y1="369" x2="-725" y2="369" /><!-- Avalon/Columbia Road Leg 1 -->
@@ -400,8 +400,11 @@
 				<line class="road" x1="78" y1="-187" x2="191" y2="-187" /><!-- TGS Road -->
 				<line class="road" x1="16" y1="4" x2="0" y2="4" /><!-- Constantinople Road -->
 				<line class="road" x1="16" y1="4" x2="558" y2="546" /><!-- Constantinople Road -->
+				<line class="road" x1="499" y1="332" x2="499" y2="398" /><!-- Agraria/Gerald Road -->
 				<line class="road" x1="540" y1="398" x2="410" y2="398" /><!-- Gerald Road -->
 				<line class="road" x1="243" y1="231" x2="490" y2="231" /><!-- Communa Road -->
+				<line class="road" x1="480" y1="231" x2="480" y2="294" /><!-- Communa/Agraria -->
+				<line class="road" x1="498" y1="312" x2="480" y2="294" /><!-- Communa/Agraria -->
 				<line class="road" x1="162" y1="149" x2="399" y2="149" /><!-- Kodiak Road -->
 				<line class="road" x1="0" y1="0" x2="0" y2="18" /><!-- Kizantium Road -->
 				<line class="road" x1="0" y1="18" x2="-575" y2="593" /><!-- Kizantium Road -->
@@ -421,7 +424,7 @@
 				<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-614" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
 				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
-				
+				<line class="road" x1="0" y1="-1" x2="0" y2="500" /><!--  -->
 			</g>
 			
 			<!-- Portals -->

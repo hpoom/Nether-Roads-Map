@@ -3,7 +3,8 @@
 <map>
 	<portals>
 		<portal x="1" z="0" abbr="00" name="0,0" />
-		<portal x="311" z="-384" abbr="Ag" name="Agora" />
+		<portal x="311" z="-384" abbr="Ago" name="Agora" />
+		<portal x="505" z="321" abbr="Agr" name="Agraria" />
 		<portal x="-800" z="593" abbr="Al" name="Alexandria" />
 		<portal x="-1121" z="-547" abbr="Ar" name="Aristopolis" />	
 		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" />	
@@ -15,7 +16,7 @@
 		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" />	
 		<portal x="-778" z="-899" abbr="CC" name="Central City" />	
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
-		<portal x="489" z="231" abbr="Com" name="Communa" />	
+		<portal x="491" z="230" abbr="Com" name="Communa" />	
 		<portal x="560" z="546" abbr="Con" name="Constanstinople" />	
 		<portal x="413" z="-263" abbr="Cr" name="Cressemopolis" />	
 		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="abandoned" />
@@ -54,7 +55,8 @@
 		<portal x="-1082" z="-490" abbr="To" name="TokieStan" />
 		<portal x="72" z="-267" abbr="Tra" name="Traith" />
 		<portal x="356" z="-542" abbr="Tro" name="Tropico Commune" />
-		<portal x="-242" z="240" abbr="Va" name="Vanaheimr" />
+		<portal x="0" z="500" abbr="Val" name="Valenwood" />
+		<portal x="-242" z="240" abbr="Van" name="Vanaheimr" />
 		<portal x="-1171" z="-165" abbr="Vi" name="Vilvos" />
 		<portal x="469" z="-541" abbr="Wi" name="Winterfell" />
 		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="abandoned" />
