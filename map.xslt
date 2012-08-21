@@ -424,7 +424,7 @@
 				<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-614" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
 				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
-				<line class="road" x1="0" y1="-1" x2="0" y2="500" /><!--  -->
+				<line class="road" x1="0" y1="-1" x2="0" y2="502" /><!-- Valenwood -->
 			</g>
 			
 			<!-- Portals -->
