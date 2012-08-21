@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
 	<!--
@@ -383,8 +383,8 @@
 				<line class="road" x1="-737" y1="369" x2="-725" y2="369" /><!-- Avalon/Columbia Road Leg 1 -->
 				<line class="road" x1="-737" y1="369" x2="-811" y2="443" /><!-- Avalon/Columbia Road Leg 2 -->
 				<line class="road" x1="-811" y1="493" x2="-811" y2="443" /><!-- Avalon/Columbia Road Leg 3 -->
-				<line class="road" x1="-436" y1="79" x2="-436" y2="308" /><!-- JH/OP North/South road -->
-				<line class="road" x1="-664" y1="306" x2="-436" y2="308" /><!-- JH East/West road -->
+				<line class="road_unofficial" x1="-436" y1="79" x2="-436" y2="308" /><!-- JH/OP North/South road -->
+				<line class="road_unofficial" x1="-664" y1="306" x2="-436" y2="308" /><!-- JH East/West road -->
 				<line class="road" x1="0" y1="-1" x2="191" y2="-187" /><!-- 0,0/Road Kink -->
 				<line class="road" x1="191" y1="-187" x2="395" y2="-263" /><!-- Road Kink/Cress -->
 				<line class="road" x1="395" y1="-263" x2="413" y2="-263" /><!-- Cress Road -->
