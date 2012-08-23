@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <?xml-stylesheet href="map.xslt" type="text/xsl" ?>
 <map>
 	<portals>
@@ -52,7 +52,7 @@
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="locked"/>
 		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
 		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" />
-		<portal x="-618" z="251" abbr="Tig" name="Tigerstadan" />
+		<portal x="-618" z="251" abbr="Tig" name="Tigerstaden" />
 		<portal x="14" z="-525" abbr="Tin" name="Tinto" status="abandoned"/>
 		<portal x="-1082" z="-490" abbr="To" name="TokieStan" status="abandoned" />
 		<portal x="72" z="-267" abbr="Tra" name="Traith" />
