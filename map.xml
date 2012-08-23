@@ -3,63 +3,64 @@
 <map>
 	<portals>
 		<portal x="1" z="0" abbr="00" name="0,0" />
-		<portal x="311" z="-384" abbr="Ago" name="Agora" />
+		<portal x="311" z="-384" abbr="Ago" name="Agora" status="abandoned" />
 		<portal x="505" z="321" abbr="Agr" name="Agraria" />
-		<portal x="-800" z="593" abbr="Al" name="Alexandria" />
-		<portal x="-1121" z="-547" abbr="Ar" name="Aristopolis" />	
-		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" />	
+		<portal x="-800" z="593" abbr="Al" name="Alexandria" status="abandoned" />
+		<portal x="-1121" z="-547" abbr="Ar" name="Aristopolis" status="locked"/>	
+		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked"/>	
 		<portal x="527" z="-683" abbr="Atl" name="Atlantis" />	
-		<portal x="-923" z="290" abbr="Atm" name="Atmora" />	
-		<portal x="-364" z="0" abbr="Ava" name="Avalon" />	
+		<portal x="-923" z="290" abbr="Atm" name="Atmora" status="abandoned, locked"/>	
+		<portal x="-364" z="0" abbr="Ava" name="Avalon" status="locked"/>	
 		<portal x="-739" z="-772" abbr="Ave" name="Avernum" />	
-		<portal x="-673" z="738" abbr="BB" name="Barnabie Beaches" />
-		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" />	
+		<portal x="-673" z="738" abbr="BB" name="Barnabie Beaches" status="abandoned, locked"/>
+		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="abandoned" />	
+		<portal x="-368" z="-752" abbr="Br" name="Brandersbery" status="locked" />	
 		<portal x="-778" z="-899" abbr="CC" name="Central City" />	
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
-		<portal x="491" z="230" abbr="Com" name="Communa" />	
-		<portal x="560" z="546" abbr="Con" name="Constanstinople" />	
-		<portal x="413" z="-263" abbr="Cr" name="Cressemopolis" />	
+		<portal x="491" z="230" abbr="Com" name="Communa" status="locked" />	
+		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="abandoned, locked"/>	
+		<portal x="413" z="-263" abbr="Cr" name="Cressemopolis" status="abandoned, griefed"/>	
 		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="abandoned" />
-		<portal x="-819" z="-448" abbr="De" name="Derpenshire" />
+		<portal x="-819" z="-448" abbr="De" name="Derpenshire" status="abandoned, griefed"/>
 		<portal x="-385" z="-143" abbr="Ep" name="Epicus" />
-		<portal x="540" z="400" abbr="Ge" name="Gerald" />
-		<portal x="-3" z="-701" abbr="Go" name="Gorgeview" />
+		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked"/>
+		<portal x="-3" z="-701" abbr="Go" name="Gorgeview" status="locked"/>
 		<portal x="-808" z="-592" abbr="Ha" name="Haven" />
 		<portal x="56" z="-373" abbr="Ho" name="Hoyt" />
 		<portal x="-912" z="-321" abbr="Ic" name="Icengrad" />
 		<portal x="-78" z="-520" abbr="IK" name="In Kind" status="abandoned" />
-		<portal x="-1071" z="-713" abbr="Im" name="Immelopolis" />
+		<portal x="-1071" z="-713" abbr="Im" name="Immelopolis" status="locked" />
 		<portal x="-840" z="-167" abbr="Io" name="Io" status="abandoned, griefed" />
 		<portal x="-438" z="309" abbr="JH" name="Jack's Hold" />
-		<portal x="-577" z="748" abbr="Ki" name="Kizantium" />
+		<portal x="-577" z="748" abbr="Ki" name="Kizantium" status="locked"/>
 		<portal x="398" z="148" abbr="Ko" name="Kodiak" />
-		<portal x="409" z="-515" abbr="La" name="Lazuli" />
+		<portal x="409" z="-515" abbr="La" name="Lazuli" status="abandoned" />
 		<portal x="-714" z="398" abbr="Le" name="Leningrad" />
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
-		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" />
-		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" />
+		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked"/>
+		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="abandoned, locked" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" />
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" />
-		<portal x="-249" z="-2" abbr="Po" name="Populi" />
+		<portal x="-249" z="-2" abbr="Po" name="Populi" status="abandoned"/>
 		<portal x="-701" z="-831" abbr="Pr" name="Prisma" status="locked" />
 		<portal x="83" z="-200" abbr="Qa" name="Qarth" offset="25,-10" />
 		<portal x="-684" z="488" abbr="Ra" name="Rapture" />
-		<portal x="438" z="-470" abbr="Ri" name="Rift" />
+		<portal x="438" z="-470" abbr="Ri" name="Rift" status="abandoned, locked"/>
 		<portal x="2" z="-137" abbr="Ro" name="Rothbard" />
-		<portal x="-471" z="-154" abbr="Sa" name="Saga" />
-		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" />
-		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" />
+		<portal x="-471" z="-154" abbr="Sa" name="Saga" status="abandoned"/>
+		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="locked"/>
+		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
 		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" />
 		<portal x="-618" z="251" abbr="Tig" name="Tigerstadan" />
-		<portal x="14" z="-525" abbr="Tin" name="Tinto" />
+		<portal x="14" z="-525" abbr="Tin" name="Tinto" status="abandoned"/>
 		<portal x="-1082" z="-490" abbr="To" name="TokieStan" status="abandoned" />
 		<portal x="72" z="-267" abbr="Tra" name="Traith" />
 		<portal x="356" z="-542" abbr="Tro" name="Tropico Commune" />
 		<portal x="-10" z="500" abbr="Val" name="Valenwood" />
-		<portal x="-242" z="240" abbr="Van" name="Vanaheimr" />
+		<portal x="-242" z="240" abbr="Van" name="Vanaheimr" status="locked"/>
 		<portal x="-1171" z="-165" abbr="Vi" name="Vilvos" />
-		<portal x="469" z="-541" abbr="Wi" name="Winterfell" />
+		<portal x="469" z="-541" abbr="Wi" name="Winterfell" status="locked"/>
 		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="abandoned" />
 	</portals>
 </map>
