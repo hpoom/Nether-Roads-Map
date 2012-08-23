@@ -42,13 +42,13 @@
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" />
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" />
-		<portal x="-249" z="-2" abbr="Po" name="Populi" status="abandoned"/>
+		<portal x="-249" z="-2" abbr="Po" name="Populi"/>
 		<portal x="-701" z="-831" abbr="Pr" name="Prisma" status="locked" />
 		<portal x="83" z="-200" abbr="Qa" name="Qarth" offset="25,-10" />
 		<portal x="-684" z="488" abbr="Ra" name="Rapture" />
 		<portal x="438" z="-470" abbr="Ri" name="Rift" status="abandoned, locked"/>
 		<portal x="2" z="-137" abbr="Ro" name="Rothbard" />
-		<portal x="-471" z="-154" abbr="Sa" name="Saga" status="abandoned"/>
+		<portal x="-471" z="-154" abbr="Sa" name="Saga" />
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="locked"/>
 		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
 		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" />
