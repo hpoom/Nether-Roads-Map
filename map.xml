@@ -27,7 +27,7 @@
 		<portal x="-808" z="-592" abbr="Ha" name="Haven" />
 		<portal x="56" z="-373" abbr="Ho" name="Hoyt" />
 		<portal x="-912" z="-321" abbr="Ic" name="Icengrad" />
-		<portal x="-78" z="-520" abbr="IK" name="In Kind" />
+		<portal x="-78" z="-520" abbr="IK" name="In Kind" status="abandoned" />
 		<portal x="-1071" z="-713" abbr="Im" name="Immelopolis" />
 		<portal x="-840" z="-167" abbr="Io" name="Io" status="abandoned, griefed" />
 		<portal x="-438" z="309" abbr="JH" name="Jack's Hold" />
@@ -43,16 +43,17 @@
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" />
 		<portal x="-249" z="-2" abbr="Po" name="Populi" />
 		<portal x="-701" z="-831" abbr="Pr" name="Prisma" status="locked" />
+		<portal x="83" z="-200" abbr="Qa" name="Qarth" offset="25,-10" />
 		<portal x="-684" z="488" abbr="Ra" name="Rapture" />
 		<portal x="438" z="-470" abbr="Ri" name="Rift" />
 		<portal x="2" z="-137" abbr="Ro" name="Rothbard" />
 		<portal x="-471" z="-154" abbr="Sa" name="Saga" />
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" />
 		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" />
-		<portal x="80" z="-200" abbr="TGS" name="The Great Sunflower" />
+		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" />
 		<portal x="-618" z="251" abbr="Tig" name="Tigerstadan" />
 		<portal x="14" z="-525" abbr="Tin" name="Tinto" />
-		<portal x="-1082" z="-490" abbr="To" name="TokieStan" />
+		<portal x="-1082" z="-490" abbr="To" name="TokieStan" status="abandoned" />
 		<portal x="72" z="-267" abbr="Tra" name="Traith" />
 		<portal x="356" z="-542" abbr="Tro" name="Tropico Commune" />
 		<portal x="-10" z="500" abbr="Val" name="Valenwood" />

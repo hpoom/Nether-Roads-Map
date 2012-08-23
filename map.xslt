@@ -20,7 +20,7 @@
 			circle.portal_abandoned {
 				stroke: black;
 				stroke-width: 1.5;
-				stroke-dasharray: 6, 2;
+				stroke-dasharray: 6,2;
 				fill: silver;
 			}
 			
@@ -112,7 +112,7 @@
 			line.road_unofficial {
 				stroke: #770;
 				stroke-width: 2.5;
-				stroke-dasharray: 6, 2;
+				stroke-dasharray: 8, 1, 4, 1;
 			}
 			
 			rect.background {
@@ -327,7 +327,6 @@
 		
 			<!-- Roads -->
 			<g>
-				<line class="road" x1="-1180" y1="-545" x2="409" y2="-545" /><!-- North Road -->
 				<line class="road" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1178" y1="-272" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
@@ -336,6 +335,7 @@
 				<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
 				<line class="road_unofficial" x1="411" y1="-517" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
 				<line class="road_unofficial" x1="531" y1="-680" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
+				<rect x="453" y="-521" width="8" height="7" fill="white" /><!-- Lazuli/Winterfell Underpass -->
 				<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
 				<line class="road" x1="-1" y1="-522" x2="-1" y2="-545" /><!-- North Road/Gorgeview -->
 				<line class="road" x1="15" y1="-522" x2="-8" y2="-522" /><!-- Tinto/Gorgeview -->
@@ -343,10 +343,12 @@
 				<line class="road_unofficial" x1="-62" y1="-370" x2="-76" y2="-370" /><!-- In Kind/New Krumsville -->
 				<line class="road_unofficial" x1="-75" y1="-522" x2="-8" y2="-522" /><!-- In Kind/Gorgeview -->
 				<line class="road_unofficial" x1="-78" y1="-522" x2="-78" y2="-594" /><!-- In Kind/Gorgeview -->
+				<rect x="-80" y="-549" width="7" height="8" fill="white" /><!-- In Kind Underpass -->
 				<line class="road_unofficial" x1="-44" y1="-628" x2="-78" y2="-594" /><!-- In Kind/Gorgeview -->
 				<line class="road_unofficial" x1="-44" y1="-628" x2="-44" y2="-700" /><!-- In Kind/Gorgeview -->
 				<line class="road_unofficial" x1="0" y1="-700" x2="-44" y2="-700" /><!-- In Kind/Gorgeview -->
 				<line class="road" x1="-1061" y1="-709" x2="-1061" y2="-492" /><!-- Tokiestan/Immelopolis -->
+				<line class="road" x1="-1180" y1="-545" x2="409" y2="-545" /><!-- North Road -->
 				<line class="road" x1="-821"  y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
 				<line class="road" x1="-1082" y1="-492" x2="-1061" y2="-492" /><!-- North Road/Tokiestan -->
 				<line class="road" x1="-981" y1="-263" x2="-981" y2="-545" /><!-- North Road/Cutlasso's Fort -->
@@ -355,9 +357,10 @@
 				<line class="road" x1="-863" y1="-145" x2="-467" y2="-145" /><!-- Io/Saga Road -->
 				<line class="road" x1="-777"  y1="-895" x2="-777" y2="-545" /><!-- North Road/Central City -->
 				<line class="road" x1="-777"  y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
-				<line class="road" x1="-777"  y1="-750" x2="-614" y2="-587" /><!-- Central City / Mt Augusta -->
-				<line class="road" x1="-715"  y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
 				<line class="road" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
+				<line class="road" x1="-715"  y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
+				<rect x="-717" y="-692" width="7" height="7" fill="white" /><!-- Yellow Flower Underpass -->
+				<line class="road" x1="-777"  y1="-750" x2="-614" y2="-587" /><!-- Central City / Mt Augusta -->
 				<line class="road" x1="-741"  y1="-714" x2="-741" y2="-766" /><!-- Avernum -->
 				<line class="road" x1="-614"  y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
 				<line class="road" x1="-614"  y1="-540" x2="-159" y2="-84" /><!-- Mt Augusta Road / Liberty -->
@@ -396,8 +399,9 @@
 				<line class="road" x1="418" y1="-430" x2="439" y2="-457" /><!-- Old Rift Road -->
 				<line class="road" x1="439" y1="-457" x2="408" y2="-457" /><!-- Lazuli Road -->
 				<line class="road" x1="408" y1="-457" x2="410" y2="-545" /><!-- Lazuli Road -->
-				<line class="road" x1="23" y1="-240" x2="78" y2="-187" /><!-- TGS Road -->
-				<line class="road" x1="78" y1="-187" x2="191" y2="-187" /><!-- TGS Road -->
+				<line class="road" x1="22" y1="-240" x2="75" y2="-187" /><!-- TGS/Qarth Road -->
+				<line class="road" x1="75" y1="-187" x2="191" y2="-187" /><!-- TGS/Qarth Road -->
+				<line class="road" x1="79" y1="-187" x2="79" y2="-200" /><!-- TGS/Qarth Road -->
 				<line class="road" x1="16" y1="4" x2="0" y2="4" /><!-- Constantinople Road -->
 				<line class="road" x1="16" y1="4" x2="558" y2="546" /><!-- Constantinople Road -->
 				<line class="road" x1="499" y1="332" x2="499" y2="398" /><!-- Agraria/Gerald Road -->
@@ -434,31 +438,51 @@
 						<xsl:attribute name="transform">
 							<xsl:value-of select="concat('translate(',@x,',',@z,')')" />
 						</xsl:attribute>
-						<circle r="16">
-							<xsl:attribute name="class">
-								<xsl:if test="contains(@status, 'abandoned')">portal_abandoned</xsl:if>
-								<xsl:if test="not(contains(@status, 'abandoned'))">portal</xsl:if>
-							</xsl:attribute>
-						</circle>
-						<xsl:if test="contains(@status, 'griefed')">
-							<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
-								<circle r="16" stroke="#f30" stroke-width="4" fill="none" />
-								<text y="10" fill="#f30" style="font-size:32px;font-weight:bold;text-anchor:middle;">!</text>
-							</g>
+						<xsl:if test="@offset">
+							<line stroke="red" stroke-width="2" stroke-dasharray="2,1">
+								<xsl:attribute name="x1">0</xsl:attribute>
+								<xsl:attribute name="y1">0</xsl:attribute>
+								<xsl:attribute name="x2">
+									<xsl:value-of select="substring-before(concat(@offset,','),',')" />
+								</xsl:attribute>
+								<xsl:attribute name="y2">
+									<xsl:value-of select="substring-after(@offset,',')" />
+								</xsl:attribute>
+							</line>
+							<circle fill="black" r="6" />
 						</xsl:if>
-						<xsl:if test="contains(@status, 'locked')">
-							<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
-								<path stroke="none" stroke-width="1" fill="darkred" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
-								<path stroke="darkred" stroke-width="4" fill="none" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
-							</g>
-						</xsl:if>
-						<text y="5">
-							<xsl:attribute name="class">
-								<xsl:if test="string-length(@abbr) &gt; 2">portal_small</xsl:if>
-								<xsl:if test="string-length(@abbr) &lt; 3">portal</xsl:if>
-							</xsl:attribute>
-							<xsl:value-of select="@abbr" />
-						</text>
+						<g>
+							<xsl:if test="@offset">
+								<xsl:attribute name="transform">
+									<xsl:value-of select="concat('translate(',@offset,')')" />
+								</xsl:attribute>
+							</xsl:if>
+							<circle r="16">
+								<xsl:attribute name="class">
+									<xsl:if test="contains(@status, 'abandoned')">portal_abandoned</xsl:if>
+									<xsl:if test="not(contains(@status, 'abandoned'))">portal</xsl:if>
+								</xsl:attribute>
+							</circle>
+							<xsl:if test="contains(@status, 'griefed')">
+								<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
+									<circle r="16" stroke="#f30" stroke-width="4" fill="none" />
+									<text y="10" fill="#f30" style="font-size:32px;font-weight:bold;text-anchor:middle;">!</text>
+								</g>
+							</xsl:if>
+							<xsl:if test="contains(@status, 'locked')">
+								<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
+									<path stroke="none" stroke-width="1" fill="darkred" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+									<path stroke="darkred" stroke-width="4" fill="none" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
+								</g>
+							</xsl:if>
+							<text y="5">
+								<xsl:attribute name="class">
+									<xsl:if test="string-length(@abbr) &gt; 2">portal_small</xsl:if>
+									<xsl:if test="string-length(@abbr) &lt; 3">portal</xsl:if>
+								</xsl:attribute>
+								<xsl:value-of select="@abbr" />
+							</text>
+						</g>
 					</g>
 				</xsl:for-each>
 			</g>
