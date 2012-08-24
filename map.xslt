@@ -381,6 +381,7 @@
 				<line class="road" x1="-357" y1="-143" x2="-385" y2="-143" /><!-- Epicus/Avalon -->
 				<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
 				<line class="road_unofficial" x1="0" y1="-218" x2="0" y2="-1" /><!-- Rothbard/0,0 -->
+				<line class="road" x1="-90" y1="-125" x2="0" y2="-125" /><!-- Rothbard/Liberty -->
 				<line class="road" x1="-920" y1="289" x2="-645" y2="289" /><!-- Atmora Road -->
 				<line class="road" x1="-357" y1="1" x2="-725" y2="369" /><!-- Avalon/Columbia Road -->
 				<line class="road" x1="-737" y1="369" x2="-725" y2="369" /><!-- Avalon/Columbia Road Leg 1 -->
