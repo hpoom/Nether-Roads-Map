@@ -7,7 +7,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2100" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2150" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -165,12 +165,12 @@
 					<stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:.0" />
 				</linearGradient>
 			</defs>
-			<rect x="-20" y="-20" width="740" height="545" fill="url(#key_gradient)" />
+			<rect x="-20" y="-20" width="780" height="585" fill="url(#key_gradient)" />
 			
 			<xsl:for-each select="map/portals/portal">
 				<xsl:variable name="i"><xsl:number /></xsl:variable>
-				<xsl:variable name="x" select="floor(($i - 1) div 15.0)" />
-				<xsl:variable name="y" select="($i - 1) - ($x * 15.0)" />
+				<xsl:variable name="x" select="floor(($i - 1) div 16.0)" />
+				<xsl:variable name="y" select="($i - 1) - ($x * 16.0)" />
 				<g>
 					<xsl:attribute name="transform">
 						<xsl:value-of select="concat('translate(',180 * $x,',',36 * $y,')')" />
@@ -430,6 +430,7 @@
 				<line class="road" x1="-614" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
 				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
 				<line class="road" x1="0" y1="-1" x2="0" y2="502" /><!-- Valenwood -->
+				<line class="road" x1="260" y1="232" x2="260" y2="150" /><!-- Fyfe -->
 			</g>
 			
 			<!-- Portals -->
