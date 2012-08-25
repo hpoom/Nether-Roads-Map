@@ -11,6 +11,23 @@
 		<style type="text/css">
 		<![CDATA[
 
+			text.title {
+				fill: black;
+				font-weight: bold;
+				font-size: 24px;
+				font-family: sans-serif;
+				text-anchor: middle;
+			}
+			
+			text.link {
+				text-decoration: underline;
+				fill: navy;
+				font-weight: bold;
+				font-size: 14px;
+				font-family: serif;
+				text-anchor: middle;
+			}
+
 			circle.portal {
 				stroke: black;
 				stroke-width: 1.5;
@@ -115,6 +132,10 @@
 				stroke-dasharray: 8, 1, 4, 1;
 			}
 			
+			rect.underpass {
+				fill: white;
+			}
+			
 			rect.background {
 				fill: white;
 				stroke: lightgreen;
@@ -131,6 +152,74 @@
 				fill: green;
 				font-size: 11px;
 				text-anchor: end;
+			}
+			
+			.key_gradient_start {
+				stop-color:rgb(255,255,0);
+				stop-opacity:1;
+			}
+			
+			.key_gradient_middle {
+				stop-color:rgb(255,255,0);
+				stop-opacity:0.4;
+			}
+			
+			.key_gradient_end {
+				stop-color:rgb(255,255,0);
+				stop-opacity:0;
+			}
+			
+			text.griefed {
+				font-size:32px;
+				font-weight:bold;
+				text-anchor:middle;
+				fill: #f30;
+			}
+
+			circle.griefed {
+				stroke: #f30;
+				stroke-width: 4;
+				fill: none;
+			}
+			
+			text.roadcrew_sign {
+				fill:black;
+				font-weight:bold;
+				font-size:48px;
+				font-family:sans-serif;
+				text-anchor:middle;
+			}
+			
+			path.roadcrew_sign_background {
+				fill: #E87600;
+			}
+			
+			path.roadcrew_sign_border {
+				stroke: black;
+				stroke-width: 4;
+				fill: none;			
+			}
+			
+			line.offset {
+				stroke: red;
+				stroke-width: 2;
+				stroke-dasharray: 2,1;
+			}
+			
+			circle.offset {
+				fill: black;
+			}
+			
+			path.lock {
+				stroke: none;
+				stroke-width: 1;
+				fill: darkred;
+			}
+			
+			path.lock_shackle {
+				stroke: darkred;
+				stroke-width: 4;
+				fill: none;
 			}
 		]]>
 		</style>
@@ -160,12 +249,16 @@
 		<g transform="translate(880, 1600) scale(.9)">
 			<defs>
 				<linearGradient id="key_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-					<stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-					<stop offset="90%" style="stop-color:rgb(255,255,0);stop-opacity:.4" />
-					<stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:.0" />
+					<stop offset="0%" class="key_gradient_start" />
+					<stop offset="90%" class="key_gradient_middle" />
+					<stop offset="100%" class="key_gradient_end" />
 				</linearGradient>
 			</defs>
-			<rect x="-20" y="-20" width="780" height="585" fill="url(#key_gradient)" />
+			<rect x="-20" y="-20" height="585" fill="url(#key_gradient)">
+				<xsl:attribute name="width">
+					<xsl:value-of select="180 * ceiling(count(/map/portals/portal) div 16.0) + 20" />
+				</xsl:attribute>
+			</rect>
 			
 			<xsl:for-each select="map/portals/portal">
 				<xsl:variable name="i"><xsl:number /></xsl:variable>
@@ -177,20 +270,20 @@
 					</xsl:attribute>
 					<circle r="16">
 						<xsl:attribute name="class">
-							<xsl:if test="contains(@status, 'abandoned')">portal_abandoned</xsl:if>
-							<xsl:if test="not(contains(@status, 'abandoned'))">portal</xsl:if>
+							<xsl:if test="contains(@status, 'uninhabited')">portal_abandoned</xsl:if>
+							<xsl:if test="not(contains(@status, 'uninhabited'))">portal</xsl:if>
 						</xsl:attribute>
 					</circle>
 					<xsl:if test="contains(@status, 'griefed')">
 						<g transform="translate(-16,-16) scale(.4)" filter="url(#dropshadow)">
-							<circle r="16" stroke="#f30" stroke-width="4" fill="none" />
-							<text y="10" fill="#f30" style="font-size:32px;font-weight:bold;text-anchor:middle;">!</text>
+							<circle r="16" class="griefed" />
+							<text y="10" class="griefed">!</text>
 						</g>
 					</xsl:if>
 					<xsl:if test="contains(@status, 'locked')">
 						<g transform="translate(8,-16) scale(.4)" filter="url(#dropshadow)">
-							<path stroke="none" stroke-width="1" fill="darkred" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
-							<path stroke="darkred" stroke-width="4" fill="none" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
+							<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+							<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />f
 						</g>
 					</xsl:if>
 					<text y="5">
@@ -206,71 +299,72 @@
 		
 		</g>
 		
-		
-		<!-- Roadcrew Sign -->
-		<g transform="translate(650, 100) scale(.6)">
-			<g transform="translate(210,210)" filter="url(#dropshadow)">
-				<path fill="#E87600" d="M-200 0 L0 200 L200 0 L0 -200 Z" />
-				<path transform="scale(0.97)" stroke="black" stroke-width="4" fill="none" d="M-190 -10 Q -200 0 -190 10 L -10 190 Q 0 200 10 190 L 190 10 Q 200 0 190 -10 L 10 -190 Q 0 -200 -10 -190 Z" />
-				<g transform="translate(0,-45)">
-					<text style="fill:black;font-weight:bold; font-size:48px;font-family:sans-serif;text-anchor:middle;">
-						<tspan x="0" y="25">CIVCRAFT</tspan>
-						<tspan x="0" y="85">ROADCREW</tspan>
-					</text>
+			
+		<g transform="translate(50, 1750)">
+			<!-- Roadcrew Sign -->
+			<g transform="scale(.6)">
+				<g transform="translate(210,210)" filter="url(#dropshadow)">
+					<path class="roadcrew_sign_background" d="M-200 0 L0 200 L200 0 L0 -200 Z" />
+					<path transform="scale(0.97)" class="roadcrew_sign_border" d="M-190 -10 Q -200 0 -190 10 L -10 190 Q 0 200 10 190 L 190 10 Q 200 0 190 -10 L 10 -190 Q 0 -200 -10 -190 Z" />
+					<g transform="translate(0,-45)">
+						<text class="roadcrew_sign">
+							<tspan x="0" y="25">CIVCRAFT</tspan>
+							<tspan x="0" y="85">ROADCREW</tspan>
+						</text>
+					</g>
 				</g>
 			</g>
-		</g>
-		
-		<!-- Compass and Scale -->
-		<g transform="translate(970, 200)">
-			<text class="compass" y="-72">North</text>
-			<g transform="translate(0, 20)">
-				<polygon class="compass_north" transform="translate(0, -10) rotate(180,0,-40) scale(2.0)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
-				<polygon class="compass" transform="translate(10, 25) rotate(270,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
-				<polygon class="compass" transform="translate(0,  35) rotate(  0,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
-				<polygon class="compass" transform="translate(-10,25) rotate( 90,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+			
+			<!-- Compass and Scale -->
+			<g transform="translate(320, 100)">
+				<text class="compass" y="-72">North</text>
+				<g transform="translate(0, 20)">
+					<polygon class="compass_north" transform="translate(0, -10) rotate(180,0,-40) scale(2.0)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+					<polygon class="compass" transform="translate(10, 25) rotate(270,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+					<polygon class="compass" transform="translate(0,  35) rotate(  0,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+					<polygon class="compass" transform="translate(-10,25) rotate( 90,0,-40)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
+				</g>
+				<g transform="translate(72,35)">
+					<rect class="scale_light" x="0" width="10" height="10" />
+					<rect class="scale_dark" x="10" width="10" height="10" />
+					<rect class="scale_light" x="20" width="10" height="10" />
+					<rect class="scale_dark" x="30" width="10" height="10" />
+					<rect class="scale_light" x="40" width="10" height="10" />
+					<rect class="scale_dark" x="50" width="10" height="10" />
+					<rect class="scale_light" x="60" width="10" height="10" />
+					<rect class="scale_dark" x="70" width="10" height="10" />
+					<rect class="scale_light" x="80" width="10" height="10" />
+					<rect class="scale_dark" x="90" width="10" height="10" />
+					<rect class="scale_dark" y="-10" width="10" height="10" />
+					<rect class="scale_light" y="-20" width="10" height="10" />
+					<rect class="scale_dark" y="-30" width="10" height="10" />
+					<rect class="scale_light" y="-40" width="10" height="10" />
+					<rect class="scale_dark" y="-50" width="10" height="10" />
+					<rect class="scale_light" y="-60" width="10" height="10" />
+					<rect class="scale_dark" y="-70" width="10" height="10" />
+					<rect class="scale_light" y="-80" width="10" height="10" />
+					<rect class="scale_dark" y="-90" width="10" height="10" />
+					<text class="scale" x="0" y="24">0 Meters</text>
+					<text class="scale_right" x="100" y="24">100</text>
+				</g>
 			</g>
-			<g transform="translate(72,35)">
-				<rect class="scale_light" x="0" width="10" height="10" />
-				<rect class="scale_dark" x="10" width="10" height="10" />
-				<rect class="scale_light" x="20" width="10" height="10" />
-				<rect class="scale_dark" x="30" width="10" height="10" />
-				<rect class="scale_light" x="40" width="10" height="10" />
-				<rect class="scale_dark" x="50" width="10" height="10" />
-				<rect class="scale_light" x="60" width="10" height="10" />
-				<rect class="scale_dark" x="70" width="10" height="10" />
-				<rect class="scale_light" x="80" width="10" height="10" />
-				<rect class="scale_dark" x="90" width="10" height="10" />
-				<rect class="scale_dark" y="-10" width="10" height="10" />
-				<rect class="scale_light" y="-20" width="10" height="10" />
-				<rect class="scale_dark" y="-30" width="10" height="10" />
-				<rect class="scale_light" y="-40" width="10" height="10" />
-				<rect class="scale_dark" y="-50" width="10" height="10" />
-				<rect class="scale_light" y="-60" width="10" height="10" />
-				<rect class="scale_dark" y="-70" width="10" height="10" />
-				<rect class="scale_light" y="-80" width="10" height="10" />
-				<rect class="scale_dark" y="-90" width="10" height="10" />
-				<text class="scale" x="0" y="24">0 Meters</text>
-				<text class="scale_right" x="100" y="24">100</text>
-			</g>
-		</g>
-		
-		<g transform="translate(970, 300)">
-			<text style="fill:black;font-weight:bold; font-size:24px;font-family:sans-serif;text-anchor:middle;">
-				<tspan x="0" y="0">Nether Road Map</tspan>
-				<tspan x="0" y="30">With Public Portals</tspan>
-			</text>
-		</g>
-		
-		<g transform="translate(920, 380)">
-			<a xlink:href="http://www.reddit.com/r/CivcraftRoads" target="_blank">
-				<text style="text-decoration:underline;fill:navy;font-weight:bold; font-size:14px;font-family:serif;text-anchor:middle;">
-					W W W . R E D D I T . C O M / R / C I V C R A F T R O A D S
+			
+			<g transform="translate(320, 200)">
+				<text class="title">
+					<tspan x="0" y="0">Nether Road Map</tspan>
+					<tspan x="0" y="30">With Public Portals</tspan>
 				</text>
-			</a>
+			</g>
+			
+			<g transform="translate(270, 280)">
+				<a xlink:href="http://www.reddit.com/r/CivcraftRoads" target="_blank">
+					<text class="link">
+						W W W . R E D D I T . C O M / R / C I V C R A F T R O A D S
+					</text>
+				</a>
+			</g>
 		</g>
-		
-		
+			
 		
 		<!--
 			Change this translation to subtract the top left portal of the map.
@@ -335,7 +429,7 @@
 				<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
 				<line class="road_unofficial" x1="411" y1="-517" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
 				<line class="road_unofficial" x1="531" y1="-680" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
-				<rect x="453" y="-521" width="8" height="7" fill="white" /><!-- Lazuli/Winterfell Underpass -->
+				<rect x="453" y="-521" width="8" height="7" class="underpass" /><!-- Lazuli/Winterfell Underpass -->
 				<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
 				<line class="road" x1="-1" y1="-522" x2="-1" y2="-545" /><!-- North Road/Gorgeview -->
 				<line class="road" x1="15" y1="-522" x2="-8" y2="-522" /><!-- Tinto/Gorgeview -->
@@ -343,7 +437,7 @@
 				<line class="road_unofficial" x1="-62" y1="-370" x2="-76" y2="-370" /><!-- In Kind/New Krumsville -->
 				<line class="road_unofficial" x1="-75" y1="-522" x2="-8" y2="-522" /><!-- In Kind/Gorgeview -->
 				<line class="road_unofficial" x1="-78" y1="-522" x2="-78" y2="-594" /><!-- In Kind/Gorgeview -->
-				<rect x="-80" y="-549" width="7" height="8" fill="white" /><!-- In Kind Underpass -->
+				<rect x="-80" y="-549" width="7" height="8" class="underpass" /><!-- In Kind Underpass -->
 				<line class="road_unofficial" x1="-44" y1="-628" x2="-78" y2="-594" /><!-- In Kind/Gorgeview -->
 				<line class="road_unofficial" x1="-44" y1="-628" x2="-44" y2="-700" /><!-- In Kind/Gorgeview -->
 				<line class="road_unofficial" x1="0" y1="-700" x2="-44" y2="-700" /><!-- In Kind/Gorgeview -->
@@ -359,7 +453,7 @@
 				<line class="road" x1="-777"  y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
 				<line class="road" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
 				<line class="road" x1="-715"  y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
-				<rect x="-717" y="-692" width="7" height="7" fill="white" /><!-- Yellow Flower Underpass -->
+				<rect x="-717" y="-692" width="7" height="7" class="underpass" /><!-- Yellow Flower Underpass -->
 				<line class="road" x1="-777"  y1="-750" x2="-614" y2="-587" /><!-- Central City / Mt Augusta -->
 				<line class="road" x1="-741"  y1="-714" x2="-741" y2="-766" /><!-- Avernum -->
 				<line class="road" x1="-614"  y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
@@ -381,14 +475,14 @@
 				<line class="road" x1="-357" y1="-143" x2="-385" y2="-143" /><!-- Epicus/Avalon -->
 				<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
 				<line class="road_unofficial" x1="0" y1="-218" x2="0" y2="-1" /><!-- Rothbard/0,0 -->
-				<line class="road" x1="-90" y1="-125" x2="0" y2="-125" /><!-- Rothbard/Liberty -->
+				<line class="road" x1="-92" y1="-125" x2="0" y2="-125" /><!-- Rothbard/Liberty -->
 				<line class="road" x1="-920" y1="289" x2="-645" y2="289" /><!-- Atmora Road -->
+				<line class="road_unofficial" x1="-436" y1="79" x2="-436" y2="308" /><!-- JH/OP North/South road -->
+				<line class="road_unofficial" x1="-664" y1="308" x2="-436" y2="308" /><!-- JH East/West road -->
 				<line class="road" x1="-357" y1="1" x2="-725" y2="369" /><!-- Avalon/Columbia Road -->
 				<line class="road" x1="-737" y1="369" x2="-725" y2="369" /><!-- Avalon/Columbia Road Leg 1 -->
 				<line class="road" x1="-737" y1="369" x2="-811" y2="443" /><!-- Avalon/Columbia Road Leg 2 -->
 				<line class="road" x1="-811" y1="493" x2="-811" y2="443" /><!-- Avalon/Columbia Road Leg 3 -->
-				<line class="road_unofficial" x1="-436" y1="79" x2="-436" y2="308" /><!-- JH/OP North/South road -->
-				<line class="road_unofficial" x1="-664" y1="306" x2="-436" y2="308" /><!-- JH East/West road -->
 				<line class="road" x1="0" y1="-1" x2="191" y2="-187" /><!-- 0,0/Road Kink -->
 				<line class="road" x1="191" y1="-187" x2="395" y2="-263" /><!-- Road Kink/Cress -->
 				<line class="road" x1="395" y1="-263" x2="413" y2="-263" /><!-- Cress Road -->
@@ -419,15 +513,15 @@
 				<line class="road" x1="-518" y1="756" x2="-468" y2="806" /><!-- Bjornstahl Road -->
 				<line class="road" x1="-468" y1="806" x2="-457" y2="806" /><!-- Bjornstahl Road -->
 				<line class="road" x1="-575" y1="724" x2="-787" y2="512" /><!-- Kizantium/Columbia Road -->
-				<line class="road" x1="-787" y1="512" x2="-810" y2="512" /><!-- Kizantium/Columbia Road -->
+				<line class="road" x1="-786" y1="512" x2="-811" y2="512" /><!-- Kizantium/Columbia Road -->
 				<line class="road" x1="-810" y1="512" x2="-810" y2="492" /><!-- Kizantium/Columbia Road -->
 				<line class="road" x1="-800" y1="511" x2="-800" y2="593" /><!-- Alexandria Road -->
 				<line class="road" x1="-810" y1="480" x2="-685" y2="480" /><!-- Rapture Road -->
 				<line class="road" x1="-714" y1="358" x2="-714" y2="399" /><!-- Leningrad Road -->
-				<line class="road" x1="-592" y1="237" x2="-244" y2="237" /><!-- Obsidian Plains Road -->
+				<line class="road" x1="-593" y1="237" x2="-244" y2="237" /><!-- Obsidian Plains Road -->
 				<line class="road" x1="-237" y1="237" x2="-237" y2="255" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
-				<line class="road" x1="-614" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
+				<line class="road" x1="-615" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
 				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
 				<line class="road" x1="0" y1="-1" x2="0" y2="502" /><!-- Valenwood -->
 				<line class="road" x1="260" y1="232" x2="260" y2="150" /><!-- Fyfe -->
@@ -441,7 +535,7 @@
 							<xsl:value-of select="concat('translate(',@x,',',@z,')')" />
 						</xsl:attribute>
 						<xsl:if test="@offset">
-							<line stroke="red" stroke-width="2" stroke-dasharray="2,1">
+							<line class="offset">
 								<xsl:attribute name="x1">0</xsl:attribute>
 								<xsl:attribute name="y1">0</xsl:attribute>
 								<xsl:attribute name="x2">
@@ -451,7 +545,7 @@
 									<xsl:value-of select="substring-after(@offset,',')" />
 								</xsl:attribute>
 							</line>
-							<circle fill="black" r="6" />
+							<circle class="offset" r="6" />
 						</xsl:if>
 						<g>
 							<xsl:if test="@offset">
@@ -461,20 +555,20 @@
 							</xsl:if>
 							<circle r="16">
 								<xsl:attribute name="class">
-									<xsl:if test="contains(@status, 'abandoned')">portal_abandoned</xsl:if>
-									<xsl:if test="not(contains(@status, 'abandoned'))">portal</xsl:if>
+									<xsl:if test="contains(@status, 'uninhabited')">portal_abandoned</xsl:if>
+									<xsl:if test="not(contains(@status, 'uninhabited'))">portal</xsl:if>
 								</xsl:attribute>
 							</circle>
 							<xsl:if test="contains(@status, 'griefed')">
 								<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
-									<circle r="16" stroke="#f30" stroke-width="4" fill="none" />
-									<text y="10" fill="#f30" style="font-size:32px;font-weight:bold;text-anchor:middle;">!</text>
+									<circle r="16" class="griefed" />
+									<text y="10" class="griefed">!</text>
 								</g>
 							</xsl:if>
 							<xsl:if test="contains(@status, 'locked')">
 								<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
-									<path stroke="none" stroke-width="1" fill="darkred" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
-									<path stroke="darkred" stroke-width="4" fill="none" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
+									<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+									<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
 								</g>
 							</xsl:if>
 							<text y="5">
