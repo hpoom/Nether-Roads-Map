@@ -531,11 +531,11 @@
 				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
 				<line class="road" x1="0" y1="-1" x2="0" y2="502" /><!-- Valenwood -->
 				<line class="road" x1="260" y1="232" x2="260" y2="150" /><!-- Fyfe -->			
-				<line class="road" x1="-782" y1="-830" x2="-782" y2="-1096" /><!-- Fraustengard -->
-				<line class="road" x1="-782" y1="-1096" x2="-879" y2="-1194" /><!-- Fraustengard -->
-				<line class="road" x1="-879" y1="-1194" x2="-985" y2="-1194" /><!-- Fraustengard -->
-				<line class="road" x1="-985" y1="-1194" x2="-985" y2="-1208" /><!-- Fraustengard -->
-				<line class="road" x1="-782" y1="-938" x2="-926" y2="-938" /><!-- Wolvania -->
+				<line class="road_unofficial" x1="-782" y1="-830" x2="-782" y2="-1096" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-782" y1="-1096" x2="-879" y2="-1194" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-879" y1="-1194" x2="-985" y2="-1194" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-985" y1="-1194" x2="-985" y2="-1208" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-782" y1="-938" x2="-926" y2="-938" /><!-- Wolvania -->
 			</g>
 			
 			<!-- Portals -->
