@@ -7,7 +7,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2150" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -246,7 +246,7 @@
 		<rect fill="url(#background)" x="0" y="0" width="100%" height="100%"/>
 		
 		<!-- Key -->
-		<g transform="translate(880, 1600) scale(.9)">
+		<g transform="translate(880, 1900) scale(.9)">
 			<defs>
 				<linearGradient id="key_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
 					<stop offset="0%" class="key_gradient_start" />
@@ -300,7 +300,7 @@
 		</g>
 		
 			
-		<g transform="translate(50, 1750)">
+		<g transform="translate(50, 2050)">
 			<!-- Roadcrew Sign -->
 			<g transform="scale(.6)">
 				<g transform="translate(210,210)" filter="url(#dropshadow)">
@@ -376,10 +376,10 @@
 
 			Remember to check the width and height of the SVG at the top.
 		-->
-		<g transform="translate(1200,1000)">
+		<g transform="translate(1200,1300)">
 		
 			<!-- Range indicators -->
-			<g transform="translate(0,-980)">
+			<g transform="translate(0,-1280)">
 				<text class="range" x="-1100">-1100</text>
 				<text class="range" x="-1000">-1000</text>
 				<text class="range" x="-900">-900</text>
@@ -399,6 +399,9 @@
 				<text class="range" x="500">+500</text>
 			</g>
 			<g transform="translate(590,4)">
+				<text class="range_v" y="-1200">-1200</text>
+				<text class="range_v" y="-1100">-1100</text>
+				<text class="range_v" y="-1000">-1000</text>
 				<text class="range_v" y="-900">-900</text>
 				<text class="range_v" y="-800">-800</text>
 				<text class="range_v" y="-700">-700</text>
@@ -417,6 +420,9 @@
 				<text class="range_v" y="600">+600</text>
 				<text class="range_v" y="700">+700</text>
 				<text class="range_v" y="800">+800</text>
+				<text class="range_v" y="900">+900</text>
+				<text class="range_v" y="1000">+1000</text>
+				<text class="range_v" y="1100">+1100</text>
 			</g>
 		
 			<!-- Roads -->
@@ -450,7 +456,7 @@
 				<line class="road" x1="-889" y1="-171" x2="-841" y2="-171" /><!-- Cutlasso's Fort/Io -->
 				<line class="road" x1="-863" y1="-145" x2="-467" y2="-145" /><!-- Io/Saga Road -->
 				<line class="road" x1="-777"  y1="-895" x2="-777" y2="-545" /><!-- North Road/Central City -->
-				<line class="road" x1="-777"  y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
+				<line class="road" x1="-782"  y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
 				<line class="road" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
 				<line class="road" x1="-715"  y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
 				<rect x="-717" y="-692" width="7" height="7" class="underpass" /><!-- Yellow Flower Underpass -->
@@ -524,7 +530,12 @@
 				<line class="road" x1="-615" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
 				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
 				<line class="road" x1="0" y1="-1" x2="0" y2="502" /><!-- Valenwood -->
-				<line class="road" x1="260" y1="232" x2="260" y2="150" /><!-- Fyfe -->
+				<line class="road" x1="260" y1="232" x2="260" y2="150" /><!-- Fyfe -->			
+				<line class="road" x1="-782" y1="-830" x2="-782" y2="-1096" /><!-- Fraustengard -->
+				<line class="road" x1="-782" y1="-1096" x2="-879" y2="-1194" /><!-- Fraustengard -->
+				<line class="road" x1="-879" y1="-1194" x2="-985" y2="-1194" /><!-- Fraustengard -->
+				<line class="road" x1="-985" y1="-1194" x2="-985" y2="-1208" /><!-- Fraustengard -->
+				<line class="road" x1="-782" y1="-938" x2="-926" y2="-938" /><!-- Wolvania -->
 			</g>
 			
 			<!-- Portals -->

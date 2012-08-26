@@ -23,6 +23,7 @@
 		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="uninhabited" />
 		<portal x="-819" z="-448" abbr="De" name="Derpenshire" status="uninhabited, griefed"/>
 		<portal x="-385" z="-143" abbr="Ep" name="Epicus" />
+		<portal x="-986" z="-1209" abbr="Fr" name="Fraustengard" />
 		<portal x="257" z="177" abbr="Fy" name="Fyfe" />
 		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked"/>
 		<portal x="-3" z="-701" abbr="Go" name="Gorgeview" status="locked"/>
@@ -62,7 +63,7 @@
 		<portal x="-242" z="240" abbr="Van" name="Vanaheimr" status="locked"/>
 		<portal x="-1171" z="-165" abbr="Vi" name="Vilvos" />
 		<portal x="469" z="-541" abbr="Wi" name="Winterfell" status="locked"/>
-		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="uninhabited" />
-		
+		<portal x="-928" z="-915" abbr="Wo" name="Wolvania"/>
+		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="uninhabited" />		
 	</portals>
 </map>
