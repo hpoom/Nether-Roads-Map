@@ -26,10 +26,10 @@
 		<portal x="-986" z="-1209" abbr="Fr" name="Fraustengard" />
 		<portal x="257" z="177" abbr="Fy" name="Fyfe" />
 		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked"/>
-		<portal x="-3" z="-701" abbr="Go" name="Gorgeview" status="locked"/>
+		<portal x="6" z="-695" abbr="Go" name="Gorgeview" status="locked"/>
 		<portal x="-808" z="-592" abbr="Ha" name="Haven" />
 		<portal x="56" z="-373" abbr="Ho" name="Hoyt" />
-		<portal x="-912" z="-321" abbr="Ic" name="Icengrad" />
+		<portal x="-912" z="-321" abbr="Ic" name="Icengrad" status="locked, griefed" />
 		<portal x="-78" z="-520" abbr="IK" name="In Kind" status="uninhabited" />
 		<portal x="-1071" z="-713" abbr="Im" name="Immelopolis" status="locked" />
 		<portal x="-840" z="-167" abbr="Io" name="Io" status="uninhabited, griefed" />

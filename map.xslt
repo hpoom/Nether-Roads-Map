@@ -437,16 +437,12 @@
 				<line class="road_unofficial" x1="531" y1="-680" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
 				<rect x="453" y="-521" width="8" height="7" class="underpass" /><!-- Lazuli/Winterfell Underpass -->
 				<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
-				<line class="road" x1="-1" y1="-522" x2="-1" y2="-545" /><!-- North Road/Gorgeview -->
+				<line class="road" x1="-1" y1="-522" x2="-1" y2="-658" /><!-- North Road/Gorgeview -->
+				<line class="road_unofficial" x1="4" y1="-690" x2="-1" y2="-658" /><!-- North Road/Gorgeview -->
 				<line class="road" x1="15" y1="-522" x2="-8" y2="-522" /><!-- Tinto/Gorgeview -->
 				<line class="road_unofficial" x1="-76" y1="-522" x2="-76" y2="-370" /><!-- In Kind/New Krumsville -->
 				<line class="road_unofficial" x1="-62" y1="-370" x2="-76" y2="-370" /><!-- In Kind/New Krumsville -->
-				<line class="road_unofficial" x1="-75" y1="-522" x2="-8" y2="-522" /><!-- In Kind/Gorgeview -->
-				<line class="road_unofficial" x1="-78" y1="-522" x2="-78" y2="-594" /><!-- In Kind/Gorgeview -->
-				<rect x="-80" y="-549" width="7" height="8" class="underpass" /><!-- In Kind Underpass -->
-				<line class="road_unofficial" x1="-44" y1="-628" x2="-78" y2="-594" /><!-- In Kind/Gorgeview -->
-				<line class="road_unofficial" x1="-44" y1="-628" x2="-44" y2="-700" /><!-- In Kind/Gorgeview -->
-				<line class="road_unofficial" x1="0" y1="-700" x2="-44" y2="-700" /><!-- In Kind/Gorgeview -->
+				<line class="road_unofficial" x1="-75" y1="-522" x2="-8" y2="-522" /><!-- In Kind/Tinto -->
 				<line class="road" x1="-1061" y1="-709" x2="-1061" y2="-492" /><!-- Tokiestan/Immelopolis -->
 				<line class="road" x1="-1180" y1="-545" x2="409" y2="-545" /><!-- North Road -->
 				<line class="road" x1="-821"  y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
