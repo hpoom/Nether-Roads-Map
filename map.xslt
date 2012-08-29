@@ -452,11 +452,12 @@
 				<line class="road" x1="-889" y1="-171" x2="-841" y2="-171" /><!-- Cutlasso's Fort/Io -->
 				<line class="road" x1="-863" y1="-145" x2="-467" y2="-145" /><!-- Io/Saga Road -->
 				<line class="road" x1="-777"  y1="-895" x2="-777" y2="-545" /><!-- North Road/Central City -->
+				<line class="road_unofficial" x1="-808"  y1="-596" x2="-777" y2="-596" /><!-- Haven -->
 				<line class="road" x1="-782"  y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
-				<line class="road" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
+				<line class="road_unofficial" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
 				<line class="road" x1="-715"  y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
 				<rect x="-717" y="-692" width="7" height="7" class="underpass" /><!-- Yellow Flower Underpass -->
-				<line class="road" x1="-777"  y1="-750" x2="-614" y2="-587" /><!-- Central City / Mt Augusta -->
+				<line class="road" x1="-927"  y1="-900" x2="-614" y2="-587" /><!-- Wolvania / Mt Augusta -->
 				<line class="road" x1="-741"  y1="-714" x2="-741" y2="-766" /><!-- Avernum -->
 				<line class="road" x1="-614"  y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
 				<line class="road" x1="-614"  y1="-540" x2="-159" y2="-84" /><!-- Mt Augusta Road / Liberty -->
