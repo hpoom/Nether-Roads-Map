@@ -3,11 +3,12 @@
 <xsl:template match="/">
 	<!--
 	CivCraft Nether Roads Map
-	https://github.com/hpoom/Nether-Roads-Map
+	Managed at https://github.com/hpoom/Nether-Roads-Map
+	Hosted at http://www.hpoom.co.uk/CivCraft/map.php
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink" onload="init(evt)">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -571,6 +572,7 @@
 				<line class="road_unofficial" x1="-879" y1="-1194" x2="-985" y2="-1194" /><!-- Fraustengard -->
 				<line class="road_unofficial" x1="-985" y1="-1194" x2="-985" y2="-1208" /><!-- Fraustengard -->
 				<line class="road_unofficial" x1="-782" y1="-938" x2="-926" y2="-938" /><!-- Wolvania -->
+				<line class="road" x1="-613" y1="-374" x2="-738" y2="-374" /><!-- Panda Towers Road -->
 			</g>
 			
 			<!-- Portals -->
