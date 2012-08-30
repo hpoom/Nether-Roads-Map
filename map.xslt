@@ -545,7 +545,8 @@
 				<line class="road" x1="499" y1="332" x2="499" y2="398" /><!-- Agraria/Gerald Road -->
 				<line class="road" x1="540" y1="398" x2="410" y2="398" /><!-- Gerald Road -->
 				<line class="road" x1="243" y1="231" x2="490" y2="231" /><!-- Communa Road -->
-				<line class="road" x1="480" y1="231" x2="480" y2="294" /><!-- Communa/Agraria -->
+				<line class="road" x1="400" y1="144" x2="550" y2="144" /><!-- Havana Road -->
+				<line class="road" x1="480" y1="144" x2="480" y2="294" /><!-- Havana/Agraria -->
 				<line class="road" x1="498" y1="312" x2="480" y2="294" /><!-- Communa/Agraria -->
 				<line class="road" x1="162" y1="149" x2="399" y2="149" /><!-- Kodiak Road -->
 				<line class="road" x1="0" y1="0" x2="0" y2="18" /><!-- Kizantium Road -->
