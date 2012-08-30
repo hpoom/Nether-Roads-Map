@@ -7,7 +7,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink" onload="init(evt)">
 		<style type="text/css">
 		<![CDATA[
 
@@ -221,8 +221,44 @@
 				stroke-width: 4;
 				fill: none;
 			}
+			
+			rect.portal_coords {
+				fill: black;
+			}
+			
+			text.portal_coords {
+				font-size: 17px;
+				fill: white;
+				text-anchor: middle;
+			}
+			
+			text.portal_coords_name {
+				font-size: 17px;
+				font-weight: bold;
+				fill: black;
+				text-anchor: middle;
+			}
 		]]>
 		</style>
+		
+		<script type="text/ecmascript">
+		<![CDATA[
+		
+			function show_portal_coords(evt, x, y, name)
+			{
+				portal_coords_name.textContent = name;
+				portal_coords_text.textContent = x + "," + y;
+				portal_coords.setAttribute("transform", "translate(" + x + "," + (y + 34) + ")");
+				portal_coords.setAttributeNS(null, "visibility", "visible");
+			}
+	 
+			function hide_portal_coords()
+			{
+				portal_coords.setAttributeNS(null, "visibility", "hidden");
+			}
+			
+		]]>
+		</script>
 		
 		<!-- Drop shadow used for a couple of things below -->
 		<defs>
@@ -299,8 +335,10 @@
 		
 		</g>
 		
-			
-		<g transform="translate(50, 2050)">
+		
+		
+		<!-- Title Block -->
+		<g transform="translate(500, 60)">
 			<!-- Roadcrew Sign -->
 			<g transform="scale(.6)">
 				<g transform="translate(210,210)" filter="url(#dropshadow)">
@@ -555,7 +593,10 @@
 							</line>
 							<circle class="offset" r="6" />
 						</xsl:if>
-						<g>
+						<g onmouseout="hide_portal_coords()">
+							<xsl:attribute name="onmousemove">
+								<xsl:value-of select="concat('show_portal_coords(evt,',@x,',',@z,',&quot;',@name,'&quot;)')" />
+							</xsl:attribute>
 							<xsl:if test="@offset">
 								<xsl:attribute name="transform">
 									<xsl:value-of select="concat('translate(',@offset,')')" />
@@ -590,7 +631,20 @@
 					</g>
 				</xsl:for-each>
 			</g>
-		</g>		
+			
+			<g id="portal_coords" visibility="hidden" x="0" y="0">
+				<text class="portal_coords_name" y="-60" id="portal_coords_name" filter="url(#dropshadow)">Unknown</text>
+				<rect class="portal_coords" x="-50" y="-17" width="100" height="24" />
+				<text class="portal_coords" id="portal_coords_text">0,0</text>
+			</g>
+		</g>
+		<script type="text/ecmascript">
+		<![CDATA[
+			portal_coords = document.getElementById('portal_coords');
+			portal_coords_text = document.getElementById('portal_coords_text');
+			portal_coords_name = document.getElementById('portal_coords_name');
+		]]>
+		</script>	
 	</svg>
 </xsl:template>
 </xsl:stylesheet> 
