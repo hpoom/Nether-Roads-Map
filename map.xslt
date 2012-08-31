@@ -248,7 +248,8 @@
 			function show_portal_coords(evt, x, y, name)
 			{
 				portal_coords_name.textContent = name;
-				portal_coords_text.textContent = x + "," + y;
+				portal_coords_nether.textContent = "N: " + x + "," + y;
+				portal_coords_overworld.textContent = "O: " + (x * 8) + "," + (y * 8);
 				portal_coords.setAttribute("transform", "translate(" + x + "," + (y + 34) + ")");
 				portal_coords.setAttributeNS(null, "visibility", "visible");
 			}
@@ -545,7 +546,8 @@
 				<line class="road" x1="499" y1="332" x2="499" y2="398" /><!-- Agraria/Gerald Road -->
 				<line class="road" x1="540" y1="398" x2="410" y2="398" /><!-- Gerald Road -->
 				<line class="road" x1="243" y1="231" x2="490" y2="231" /><!-- Communa Road -->
-				<line class="road" x1="480" y1="231" x2="480" y2="294" /><!-- Communa/Agraria -->
+				<line class="road" x1="400" y1="144" x2="550" y2="144" /><!-- Havana Road -->
+				<line class="road" x1="480" y1="144" x2="480" y2="294" /><!-- Havana/Agraria -->
 				<line class="road" x1="498" y1="312" x2="480" y2="294" /><!-- Communa/Agraria -->
 				<line class="road" x1="162" y1="149" x2="399" y2="149" /><!-- Kodiak Road -->
 				<line class="road" x1="0" y1="0" x2="0" y2="18" /><!-- Kizantium Road -->
@@ -637,14 +639,16 @@
 			
 			<g id="portal_coords" visibility="hidden" x="0" y="0">
 				<text class="portal_coords_name" y="-60" id="portal_coords_name" filter="url(#dropshadow)">Unknown</text>
-				<rect class="portal_coords" x="-50" y="-17" width="100" height="24" />
-				<text class="portal_coords" id="portal_coords_text">0,0</text>
+				<rect class="portal_coords" x="-60" y="-17" width="120" height="36" />
+				<text class="portal_coords" id="portal_coords_nether">N: 0,0</text>
+				<text class="portal_coords" y="14" id="portal_coords_overworld">O: 0,0</text>
 			</g>
 		</g>
 		<script type="text/ecmascript">
 		<![CDATA[
 			portal_coords = document.getElementById('portal_coords');
-			portal_coords_text = document.getElementById('portal_coords_text');
+			portal_coords_nether = document.getElementById('portal_coords_nether');
+			portal_coords_overworld = document.getElementById('portal_coords_overworld');
 			portal_coords_name = document.getElementById('portal_coords_name');
 		]]>
 		</script>	

@@ -8,6 +8,7 @@
 		<portal x="-800" z="593" abbr="Al" name="Alexandria" status="uninhabited" />
 		<portal x="-1121" z="-547" abbr="Ar" name="Aristopolis" status="locked"/>	
 		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked"/>	
+		<portal x="-226" z="62" abbr="Ar" name="Argonath" />
 		<portal x="527" z="-683" abbr="Atl" name="Atlantis" />	
 		<portal x="-923" z="290" abbr="Atm" name="Atmora" status="uninhabited, locked"/>	
 		<portal x="-364" z="0" abbr="Ava" name="Avalon" status="locked"/>	
@@ -27,7 +28,8 @@
 		<portal x="257" z="177" abbr="Fy" name="Fyfe" />
 		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked"/>
 		<portal x="6" z="-695" abbr="Go" name="Gorgeview" status="locked"/>
-		<portal x="-808" z="-592" abbr="Ha" name="Haven" />
+		<portal x="549" z="137" abbr="Hvn" name="Havana" />
+		<portal x="-808" z="-592" abbr="Ha" name="Haven" />t
 		<portal x="56" z="-373" abbr="Ho" name="Hoyt" />
 		<portal x="-912" z="-321" abbr="Ic" name="Icengrad" status="locked, griefed" />
 		<portal x="-78" z="-520" abbr="IK" name="In Kind" status="uninhabited" />
