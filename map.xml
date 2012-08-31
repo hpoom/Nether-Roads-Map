@@ -11,11 +11,11 @@
 		<portal x="527" z="-683" abbr="Atl" name="Atlantis" />	
 		<portal x="-923" z="290" abbr="Atm" name="Atmora" status="uninhabited, locked"/>	
 		<portal x="-364" z="0" abbr="Ava" name="Avalon" status="locked"/>	
-		<portal x="-739" z="-772" abbr="Ave" name="Avernum" />	
+		<portal x="-739" z="-772" abbr="Ave" name="Avernum" status="uninhabited" />	
 		<portal x="-673" z="738" abbr="BB" name="Barnabie Beaches" status="uninhabited, locked"/>
 		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />	
-		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked" />	
-		<portal x="-778" z="-899" abbr="CC" name="Central City" />	
+		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />	
+		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited" />	
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
 		<portal x="491" z="230" abbr="Com" name="Communa" status="locked" />	
 		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>	

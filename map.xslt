@@ -484,23 +484,24 @@
 				<line class="road_unofficial" x1="-75" y1="-522" x2="-8" y2="-522" /><!-- In Kind/Tinto -->
 				<line class="road" x1="-1061" y1="-709" x2="-1061" y2="-492" /><!-- Tokiestan/Immelopolis -->
 				<line class="road" x1="-1180" y1="-545" x2="409" y2="-545" /><!-- North Road -->
-				<line class="road" x1="-821"  y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
+				<line class="road" x1="-821" y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
 				<line class="road" x1="-1082" y1="-492" x2="-1061" y2="-492" /><!-- North Road/Tokiestan -->
 				<line class="road" x1="-981" y1="-263" x2="-981" y2="-545" /><!-- North Road/Cutlasso's Fort -->
 				<line class="road" x1="-981" y1="-263" x2="-863" y2="-145" /><!-- Cutlasso's Fort/Io -->
 				<line class="road" x1="-889" y1="-171" x2="-841" y2="-171" /><!-- Cutlasso's Fort/Io -->
 				<line class="road" x1="-863" y1="-145" x2="-467" y2="-145" /><!-- Io/Saga Road -->
-				<line class="road" x1="-777"  y1="-895" x2="-777" y2="-545" /><!-- North Road/Central City -->
+				<line class="road" x1="-777" y1="-895" x2="-777" y2="-545" /><!-- North Road/Central City -->
 				<line class="road_unofficial" x1="-808"  y1="-596" x2="-777" y2="-596" /><!-- Haven -->
-				<line class="road" x1="-782"  y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
+				<line class="road" x1="-782" y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
 				<line class="road_unofficial" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
-				<line class="road" x1="-715"  y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
+				<line class="road" x1="-715" y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
 				<rect x="-717" y="-692" width="7" height="7" class="underpass" /><!-- Yellow Flower Underpass -->
-				<line class="road" x1="-927"  y1="-900" x2="-614" y2="-587" /><!-- Wolvania / Mt Augusta -->
-				<line class="road" x1="-741"  y1="-714" x2="-741" y2="-766" /><!-- Avernum -->
-				<line class="road" x1="-614"  y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
-				<line class="road" x1="-614"  y1="-540" x2="-159" y2="-84" /><!-- Mt Augusta Road / Liberty -->
-				<line class="road" x1="-538"  y1="-464" x2="-538" y2="-417" /><!-- Alpha Sierra -->
+				<line class="road" x1="-980" y1="-953" x2="-614" y2="-587" /><!-- Wolvania / Mt Augusta -->
+				<line class="road" x1="-980" y1="-953" x2="-980" y2="-1208" /><!-- Fraustengard -->
+				<line class="road" x1="-741" y1="-714" x2="-741" y2="-766" /><!-- Avernum -->
+				<line class="road" x1="-614" y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
+				<line class="road" x1="-614" y1="-540" x2="-159" y2="-84" /><!-- Mt Augusta Road / Liberty -->
+				<line class="road" x1="-538" y1="-464" x2="-538" y2="-417" /><!-- Alpha Sierra -->
 				<line class="road_unofficial" x1="148" y1="-365" x2="179" y2="-365" /><!-- Agora -->
 				<line class="road_unofficial" x1="182" y1="-368" x2="179" y2="-365" /><!-- Agora -->
 				<line class="road_unofficial" x1="182" y1="-368" x2="251" y2="-368" /><!-- Agora -->
