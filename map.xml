@@ -67,6 +67,7 @@
 		<portal x="-1171" z="-165" abbr="Vi" name="Vilvos" />
 		<portal x="469" z="-541" abbr="Wi" name="Winterfell" status="locked"/>
 		<portal x="-928" z="-915" abbr="Wo" name="Wolvania"/>
-		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="uninhabited" />		
+		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="uninhabited" />
+		<portal x="-802" z="-817" abbr="Xa" name="Xanadu"/>
 	</portals>
 </map>
