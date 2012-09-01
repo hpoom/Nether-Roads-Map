@@ -576,6 +576,7 @@
 				<line class="road_unofficial" x1="-985" y1="-1194" x2="-985" y2="-1208" /><!-- Fraustengard -->
 				<line class="road_unofficial" x1="-782" y1="-938" x2="-926" y2="-938" /><!-- Wolvania -->
 				<line class="road" x1="-613" y1="-374" x2="-738" y2="-374" /><!-- Panda Towers Road -->
+				<line class="road" x1="-801" y1="-816" x2="-778" y2="-816" /><!-- Xanadu Road -->
 			</g>
 			
 			<!-- Portals -->
