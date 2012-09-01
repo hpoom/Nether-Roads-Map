@@ -63,7 +63,7 @@
 		<portal x="72" z="-267" abbr="Tra" name="Traith" />
 		<portal x="356" z="-542" abbr="Tro" name="Tropico Commune" />
 		<portal x="-10" z="500" abbr="Val" name="Valenwood" />
-		<portal x="-242" z="240" abbr="Van" name="Vanaheimr" status="locked"/>
+		<portal x="-242" z="240" abbr="Van" name="Vanaheimr" status="uninhabited, locked"/>
 		<portal x="-1171" z="-165" abbr="Vi" name="Vilvos" />
 		<portal x="469" z="-541" abbr="Wi" name="Winterfell" status="locked"/>
 		<portal x="-928" z="-915" abbr="Wo" name="Wolvania"/>
