@@ -46,7 +46,7 @@
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" />
 		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" />
-		<portal x="-636" z="740" abbr="Pi" name="Piedmont" />
+		<portal x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
 		<portal x="-249" z="-2" abbr="Po" name="Populi"/>
 		<portal x="-701" z="-831" abbr="Pr" name="Prisma" status="locked" />
 		<portal x="83" z="-200" abbr="Qa" name="Qarth" offset="25,-10" />
