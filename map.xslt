@@ -601,6 +601,13 @@
 				<line class="road_historic" x1="-388" y1="-164" x2="-356" y2="-132" /><!-- Hub/Augusta to Epicus leg 6 -->
 				<line class="road_historic" x1="-356" y1="-132" x2="-356" y2="-121" /><!-- Hub/Augusta to Epicus leg 7 -->
 				<line class="road_historic" x1="-596" y1="-540" x2="-270" y2="-214" /><!-- Augusta Intersection to North Hub leg 1 -->
+				<line class="road_historic" x1="-410" y1="428" x2="-423" y2="416" /><!-- Kizantium Road to Nether Fort leg 1 -->
+				<line class="road_historic" x1="-423" y1="416" x2="-583" y2="416" /><!-- Kizantium Road to Nether Fort leg 2 -->
+				<line class="road_historic" x1="-583" y1="416" x2="-583" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
+				<line class="road_historic" x1="-583" y1="395" x2="-685" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
+				<line class="road_historic" x1="-634" y1="395" x2="-634" y2="480" /><!-- Nether Fort to Rapture leg 1 -->
+				<line class="road_historic" x1="-634" y1="480" x2="-685" y2="480" /><!-- Nether Fort to Rapture leg 2 -->
+				<line class="road_historic" x1="-615" y1="477" x2="-615" y2="259" /><!-- Nether Fort to Tigerstaden Intersection -->
 			</g>
 			
 			<!-- Portals -->
