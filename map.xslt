@@ -134,7 +134,7 @@
 			}
 			
 			line.road_historic {
-				stroke: #F00;
+				stroke: #ADA96E;
 				stroke-width: 1;
 				stroke-dasharray: 4, 1, 4, 1;
 			}
@@ -587,7 +587,18 @@
 				<line class="road_unofficial" x1="56" y1="-332" x2="56" y2="-374" /><!-- Lower Hoyt Road -->
 				<line class="road_historic" x1="-279" y1="-205" x2="-189" y2="-295" /><!-- Hub/Augusta to North hub leg 1 -->
 				<line class="road_historic" x1="-189" y1="-295" x2="-41" y2="-295" /><!-- Hub/Augusta to North hub leg 2 -->
+				<line class="road_historic" x1="-41" y1="-295" x2="-38" y2="-297" /><!-- North hub to Lib/Laz leg 1 -->
+				<line class="road_historic" x1="-38" y1="-297" x2="-33" y2="-297" /><!-- North hub to Lib/Laz leg 2 -->
+				<line class="road_historic" x1="-33" y1="-297" x2="97" y2="-353" /><!-- North hub to Lib/Laz leg 3 -->
+				<line class="road_historic" x1="97" y1="-353" x2="120" y2="-365" /><!-- North hub to Lib/Laz leg 4 -->
+				<line class="road_historic" x1="120" y1="-365" x2="157" y2="-365" /><!-- North hub to Lib/Laz leg 5 -->
 				<line class="road_historic" x1="-212" y1="-272" x2="-212" y2="-544" /><!-- Hub/Augusta to Augusta/Lazuli -->
+				<line class="road_historic" x1="-284" y1="-209" x2="-306" y2="-203" /><!-- Hub/Augusta to Epicus leg 1 -->
+				<line class="road_historic" x1="-306" y1="-203" x2="-342" y2="-185" /><!-- Hub/Augusta to Epicus leg 2 -->
+				<line class="road_historic" x1="-342" y1="-185" x2="-353" y2="-182" /><!-- Hub/Augusta to Epicus leg 3 -->
+				<line class="road_historic" x1="-353" y1="-182" x2="-388" y2="-182" /><!-- Hub/Augusta to Epicus leg 4 , -->
+				<line class="road_historic" x1="-388" y1="-182" x2="-388" y2="-164" /><!-- Hub/Augusta to Epicus leg 5 -->
+				<line class="road_historic" x1="-388" y1="-164" x2="-356" y2="-132" /><!-- Hub/Augusta to Epicus leg 6 -->
 			</g>
 			
 			<!-- Portals -->
