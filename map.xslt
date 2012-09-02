@@ -600,6 +600,7 @@
 				<line class="road_historic" x1="-388" y1="-182" x2="-388" y2="-164" /><!-- Hub/Augusta to Epicus leg 5 -->
 				<line class="road_historic" x1="-388" y1="-164" x2="-356" y2="-132" /><!-- Hub/Augusta to Epicus leg 6 -->
 				<line class="road_historic" x1="-356" y1="-132" x2="-356" y2="-121" /><!-- Hub/Augusta to Epicus leg 7 -->
+				<line class="road_historic" x1="-596" y1="-540" x2="-270" y2="-214" /><!-- Augusta Intersection to North Hub leg 1 -->
 			</g>
 			
 			<!-- Portals -->
