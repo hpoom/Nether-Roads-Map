@@ -124,13 +124,19 @@
 			
 			line.road {
 				stroke: #066;
-				stroke-width: 2.5;
+				stroke-width: 3;
 			}
 			
 			line.road_unofficial {
 				stroke: #770;
-				stroke-width: 2.5;
+				stroke-width: 3;
 				stroke-dasharray: 8, 1, 4, 1;
+			}
+			
+			line.road_historic {
+				stroke: #F00;
+				stroke-width: 1;
+				stroke-dasharray: 4, 1, 4, 1;
 			}
 			
 			rect.underpass {
@@ -579,6 +585,9 @@
 				<line class="road" x1="-801" y1="-816" x2="-778" y2="-816" /><!-- Xanadu Road -->
 				<line class="road" x1="56" y1="-272" x2="56" y2="-332" /><!-- Liberty/Lazuli to Hoyt (official) -->
 				<line class="road_unofficial" x1="56" y1="-332" x2="56" y2="-374" /><!-- Lower Hoyt Road -->
+				<line class="road_historic" x1="-279" y1="-205" x2="-189" y2="-295" /><!-- Hub/Augusta to North hub leg 1 -->
+				<line class="road_historic" x1="-189" y1="-295" x2="-41" y2="-295" /><!-- Hub/Augusta to North hub leg 2 -->
+				<line class="road_historic" x1="-212" y1="-272" x2="-212" y2="-544" /><!-- Hub/Augusta to Augusta/Lazuli -->
 			</g>
 			
 			<!-- Portals -->
