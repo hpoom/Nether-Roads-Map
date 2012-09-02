@@ -135,7 +135,7 @@
 			
 			line.road_historic {
 				stroke: #ADA96E;
-				stroke-width: 1;
+				stroke-width: 1.25;
 				stroke-dasharray: 4, 1, 4, 1;
 			}
 			
@@ -521,8 +521,8 @@
 				<line class="road" x1="523" y1="-683" x2="466" y2="-683" /><!-- Liberty/Atlantis Road -->
 				<line class="road" x1="-159" y1="-84" x2="-159" y2="-1" /><!-- Hub road near Liberty -->
 				<line class="road" x1="-357" y1="-36" x2="-467" y2="-145" /><!-- Saga/Avalon -->
-				<line class="road" x1="-357" y1="-143" x2="-357" y2="-1" /><!-- Saga/Avalon -->
-				<line class="road" x1="-357" y1="-143" x2="-385" y2="-143" /><!-- Epicus/Avalon -->
+				<line class="road" x1="-357" y1="-121" x2="-357" y2="-1" /><!-- Saga/Avalon -->
+				<line class="road" x1="-357" y1="-121" x2="-385" y2="-121" /><!-- Epicus/Avalon -->
 				<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
 				<line class="road_unofficial" x1="0" y1="-218" x2="0" y2="-1" /><!-- Rothbard/0,0 -->
 				<line class="road" x1="-92" y1="-125" x2="0" y2="-125" /><!-- Rothbard/Liberty -->
@@ -599,6 +599,7 @@
 				<line class="road_historic" x1="-353" y1="-182" x2="-388" y2="-182" /><!-- Hub/Augusta to Epicus leg 4 , -->
 				<line class="road_historic" x1="-388" y1="-182" x2="-388" y2="-164" /><!-- Hub/Augusta to Epicus leg 5 -->
 				<line class="road_historic" x1="-388" y1="-164" x2="-356" y2="-132" /><!-- Hub/Augusta to Epicus leg 6 -->
+				<line class="road_historic" x1="-356" y1="-132" x2="-356" y2="-121" /><!-- Hub/Augusta to Epicus leg 7 -->
 			</g>
 			
 			<!-- Portals -->
