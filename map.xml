@@ -42,6 +42,7 @@
 		<portal x="-714" z="398" abbr="Le" name="Leningrad" />
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked"/>
+		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" />
