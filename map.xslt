@@ -473,6 +473,8 @@
 		
 			<!-- Roads -->
 			<g>
+				<line class="road_unofficial" x1="-418" y1="390" x2="-367" y2="424" /><!-- Melonwood Road leg 1 -->
+				<line class="road_unofficial" x1="-367" y1="424" x2="-369" y2="500" /><!-- Melonwood Road leg 2 -->
 				<line class="road" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1178" y1="-272" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
@@ -611,6 +613,9 @@
 				<line class="road_historic" x1="-208" y1="-277" x2="-73" y2="-142" /><!-- Liberty/Atlantis Road to North Hub -->
 				<line class="road_historic" x1="-432" y1="308" x2="-298" y2="308" /><!-- Jack's Hold to Kinzantium Road leg 1 -->
 				<line class="road_historic" x1="-298" y1="308" x2="-298" y2="316" /><!-- Jack's Hold to Kinzantium Road leg 2 -->
+				<line class="road_unofficial" x1="-432" y1="310" x2="-432" y2="352" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 1 -->
+				<line class="road_unofficial" x1="-432" y1="352" x2="-418" y2="390" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 2 -->
+				<line class="road_unofficial" x1="-418" y1="390" x2="-411" y2="429" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 3 -->
 			</g>
 			
 			<!-- Portals -->
