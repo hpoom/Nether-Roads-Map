@@ -608,6 +608,9 @@
 				<line class="road_historic" x1="-634" y1="395" x2="-634" y2="480" /><!-- Nether Fort to Rapture leg 1 -->
 				<line class="road_historic" x1="-634" y1="480" x2="-685" y2="480" /><!-- Nether Fort to Rapture leg 2 -->
 				<line class="road_historic" x1="-615" y1="477" x2="-615" y2="259" /><!-- Nether Fort to Tigerstaden Intersection -->
+				<line class="road_historic" x1="-208" y1="-277" x2="-73" y2="-142" /><!-- Liberty/Atlantis Road to North Hub -->
+				<line class="road_historic" x1="-432" y1="308" x2="-298" y2="308" /><!-- Jack's Hold to Kinzantium Road leg 1 -->
+				<line class="road_historic" x1="-298" y1="308" x2="-298" y2="316" /><!-- Jack's Hold to Kinzantium Road leg 2 -->
 			</g>
 			
 			<!-- Portals -->
