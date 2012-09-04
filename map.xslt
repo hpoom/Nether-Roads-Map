@@ -268,6 +268,19 @@
 		]]>
 		</script>
 		
+		<script type="text/javascript">
+		
+			function toggleVisibility() 
+			{
+				document.getElementById("toggleMe").style.display = "";
+				if(document.getElementById("toggleMe").style.visibility == "hidden" ) {
+				document.getElementById("toggleMe").style.visibility = "visible";
+				}else{
+					document.getElementById("toggleMe").style.visibility = "hidden";
+				}
+			}
+		</script>
+		
 		<!-- Drop shadow used for a couple of things below -->
 		<defs>
 			<filter id="dropshadow" height="130%">
@@ -358,6 +371,18 @@
 							<tspan x="0" y="85">ROADCREW</tspan>
 						</text>
 					</g>
+				</g>
+			</g>
+			
+			<!-- RoadToggle Button -->
+			<g>
+			<circle class="portal" r="30" x="-200" y="-1000" onclick="toggleVisibility();" />
+				<g onclick="toggleVisibility();">
+				<text class="scale">
+					<tspan x="-18" y="-7">Toggle</tspan>
+					<tspan x="-18" y="5">Historic</tspan>
+					<tspan x="-18" y="17">Roads</tspan>
+				</text>
 				</g>
 			</g>
 			
@@ -472,6 +497,37 @@
 			</g>
 		
 			<!-- Roads -->
+				<!-- Historic Roads -->
+				<g id="toggleMe" style="visibility: hidden;">
+					<line class="road_historic" x1="-279" y1="-205" x2="-189" y2="-295" /><!-- Hub/Augusta to North hub leg 1 -->
+					<line class="road_historic" x1="-189" y1="-295" x2="-41" y2="-295" /><!-- Hub/Augusta to North hub leg 2 -->
+					<line class="road_historic" x1="-41" y1="-295" x2="-38" y2="-297" /><!-- North hub to Lib/Laz leg 1 -->
+					<line class="road_historic" x1="-38" y1="-297" x2="-33" y2="-297" /><!-- North hub to Lib/Laz leg 2 -->
+					<line class="road_historic" x1="-33" y1="-297" x2="97" y2="-353" /><!-- North hub to Lib/Laz leg 3 -->
+					<line class="road_historic" x1="97" y1="-353" x2="120" y2="-365" /><!-- North hub to Lib/Laz leg 4 -->
+					<line class="road_historic" x1="120" y1="-365" x2="157" y2="-365" /><!-- North hub to Lib/Laz leg 5 -->
+					<line class="road_historic" x1="-212" y1="-272" x2="-212" y2="-544" /><!-- Hub/Augusta to Augusta/Lazuli -->
+					<line class="road_historic" x1="-284" y1="-209" x2="-306" y2="-203" /><!-- Hub/Augusta to Epicus leg 1 -->
+					<line class="road_historic" x1="-306" y1="-203" x2="-342" y2="-185" /><!-- Hub/Augusta to Epicus leg 2 -->
+					<line class="road_historic" x1="-342" y1="-185" x2="-353" y2="-182" /><!-- Hub/Augusta to Epicus leg 3 -->
+					<line class="road_historic" x1="-353" y1="-182" x2="-388" y2="-182" /><!-- Hub/Augusta to Epicus leg 4 , -->
+					<line class="road_historic" x1="-388" y1="-182" x2="-388" y2="-164" /><!-- Hub/Augusta to Epicus leg 5 -->
+					<line class="road_historic" x1="-388" y1="-164" x2="-356" y2="-132" /><!-- Hub/Augusta to Epicus leg 6 -->
+					<line class="road_historic" x1="-356" y1="-132" x2="-356" y2="-121" /><!-- Hub/Augusta to Epicus leg 7 -->
+					<line class="road_historic" x1="-596" y1="-540" x2="-270" y2="-214" /><!-- Augusta Intersection to North Hub leg 1 -->
+					<line class="road_historic" x1="-410" y1="428" x2="-423" y2="416" /><!-- Kizantium Road to Nether Fort leg 1 -->
+					<line class="road_historic" x1="-423" y1="416" x2="-583" y2="416" /><!-- Kizantium Road to Nether Fort leg 2 -->
+					<line class="road_historic" x1="-583" y1="416" x2="-583" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
+					<line class="road_historic" x1="-583" y1="395" x2="-685" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
+					<line class="road_historic" x1="-634" y1="395" x2="-634" y2="480" /><!-- Nether Fort to Rapture leg 1 -->
+					<line class="road_historic" x1="-634" y1="480" x2="-685" y2="480" /><!-- Nether Fort to Rapture leg 2 -->
+					<line class="road_historic" x1="-615" y1="477" x2="-615" y2="259" /><!-- Nether Fort to Tigerstaden Intersection -->
+					<line class="road_historic" x1="-208" y1="-277" x2="-73" y2="-142" /><!-- Liberty/Atlantis Road to North Hub -->
+					<line class="road_historic" x1="-432" y1="308" x2="-298" y2="308" /><!-- Jack's Hold to Kinzantium Road leg 1 -->
+					<line class="road_historic" x1="-298" y1="308" x2="-298" y2="316" /><!-- Jack's Hold to Kinzantium Road leg 2 -->
+					<line class="road_historic" x1="1" y1="-34" x2="-8" y2="-34" /><!-- Liberty/Atlantis to Rothbard Road leg 1 -->
+					<line class="road_historic" x1="-8" y1="-34" x2="-54" y2="-125" /><!-- Liberty/Atlantis to Rothbard Road leg 2 -->
+				</g>
 			<g>
 				<line class="road_unofficial" x1="-418" y1="390" x2="-367" y2="424" /><!-- Melonwood Road leg 1 -->
 				<line class="road_unofficial" x1="-367" y1="424" x2="-369" y2="500" /><!-- Melonwood Road leg 2 -->
@@ -587,34 +643,6 @@
 				<line class="road" x1="-801" y1="-816" x2="-778" y2="-816" /><!-- Xanadu Road -->
 				<line class="road" x1="56" y1="-272" x2="56" y2="-332" /><!-- Liberty/Lazuli to Hoyt (official) -->
 				<line class="road_unofficial" x1="56" y1="-332" x2="56" y2="-374" /><!-- Lower Hoyt Road -->
-				<line class="road_historic" x1="-279" y1="-205" x2="-189" y2="-295" /><!-- Hub/Augusta to North hub leg 1 -->
-				<line class="road_historic" x1="-189" y1="-295" x2="-41" y2="-295" /><!-- Hub/Augusta to North hub leg 2 -->
-				<line class="road_historic" x1="-41" y1="-295" x2="-38" y2="-297" /><!-- North hub to Lib/Laz leg 1 -->
-				<line class="road_historic" x1="-38" y1="-297" x2="-33" y2="-297" /><!-- North hub to Lib/Laz leg 2 -->
-				<line class="road_historic" x1="-33" y1="-297" x2="97" y2="-353" /><!-- North hub to Lib/Laz leg 3 -->
-				<line class="road_historic" x1="97" y1="-353" x2="120" y2="-365" /><!-- North hub to Lib/Laz leg 4 -->
-				<line class="road_historic" x1="120" y1="-365" x2="157" y2="-365" /><!-- North hub to Lib/Laz leg 5 -->
-				<line class="road_historic" x1="-212" y1="-272" x2="-212" y2="-544" /><!-- Hub/Augusta to Augusta/Lazuli -->
-				<line class="road_historic" x1="-284" y1="-209" x2="-306" y2="-203" /><!-- Hub/Augusta to Epicus leg 1 -->
-				<line class="road_historic" x1="-306" y1="-203" x2="-342" y2="-185" /><!-- Hub/Augusta to Epicus leg 2 -->
-				<line class="road_historic" x1="-342" y1="-185" x2="-353" y2="-182" /><!-- Hub/Augusta to Epicus leg 3 -->
-				<line class="road_historic" x1="-353" y1="-182" x2="-388" y2="-182" /><!-- Hub/Augusta to Epicus leg 4 , -->
-				<line class="road_historic" x1="-388" y1="-182" x2="-388" y2="-164" /><!-- Hub/Augusta to Epicus leg 5 -->
-				<line class="road_historic" x1="-388" y1="-164" x2="-356" y2="-132" /><!-- Hub/Augusta to Epicus leg 6 -->
-				<line class="road_historic" x1="-356" y1="-132" x2="-356" y2="-121" /><!-- Hub/Augusta to Epicus leg 7 -->
-				<line class="road_historic" x1="-596" y1="-540" x2="-270" y2="-214" /><!-- Augusta Intersection to North Hub leg 1 -->
-				<line class="road_historic" x1="-410" y1="428" x2="-423" y2="416" /><!-- Kizantium Road to Nether Fort leg 1 -->
-				<line class="road_historic" x1="-423" y1="416" x2="-583" y2="416" /><!-- Kizantium Road to Nether Fort leg 2 -->
-				<line class="road_historic" x1="-583" y1="416" x2="-583" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
-				<line class="road_historic" x1="-583" y1="395" x2="-685" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
-				<line class="road_historic" x1="-634" y1="395" x2="-634" y2="480" /><!-- Nether Fort to Rapture leg 1 -->
-				<line class="road_historic" x1="-634" y1="480" x2="-685" y2="480" /><!-- Nether Fort to Rapture leg 2 -->
-				<line class="road_historic" x1="-615" y1="477" x2="-615" y2="259" /><!-- Nether Fort to Tigerstaden Intersection -->
-				<line class="road_historic" x1="-208" y1="-277" x2="-73" y2="-142" /><!-- Liberty/Atlantis Road to North Hub -->
-				<line class="road_historic" x1="-432" y1="308" x2="-298" y2="308" /><!-- Jack's Hold to Kinzantium Road leg 1 -->
-				<line class="road_historic" x1="-298" y1="308" x2="-298" y2="316" /><!-- Jack's Hold to Kinzantium Road leg 2 -->
-				<line class="road_historic" x1="1" y1="-34" x2="-8" y2="-34" /><!-- Liberty/Atlantis to Rothbard Road leg 1 -->
-				<line class="road_historic" x1="-8" y1="-34" x2="-54" y2="-125" /><!-- Liberty/Atlantis to Rothbard Road leg 2 -->
 				<line class="road_unofficial" x1="-432" y1="310" x2="-432" y2="352" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 1 -->
 				<line class="road_unofficial" x1="-432" y1="352" x2="-418" y2="390" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 2 -->
 				<line class="road_unofficial" x1="-418" y1="390" x2="-411" y2="429" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 3 -->
