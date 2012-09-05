@@ -245,6 +245,10 @@
 				fill: black;
 				text-anchor: middle;
 			}
+			
+			rect.toggleButton {
+				fill: silver;
+			}
 		]]>
 		</style>
 		
@@ -277,6 +281,20 @@
 				document.getElementById("toggleMe").style.visibility = "visible";
 				}else{
 					document.getElementById("toggleMe").style.visibility = "hidden";
+				}
+				
+				document.getElementById("invert1").style.display = "";
+				if(document.getElementById("invert1").style.stroke == "white" ) {
+				document.getElementById("invert1").style.stroke = "black";
+				}else{
+					document.getElementById("invert1").style.stroke = "white";
+				}
+				
+				document.getElementById("invert2").style.display = "";
+				if(document.getElementById("invert2").style.stroke == "black" ) {
+				document.getElementById("invert2").style.stroke = "white";
+				}else{
+					document.getElementById("invert2").style.stroke = "black";
 				}
 			}
 		</script>
@@ -375,9 +393,19 @@
 			</g>
 			
 			<!-- RoadToggle Button -->
-			<g>
-			<circle class="portal" r="30" x="-200" y="-1000" onclick="toggleVisibility();" />
-				<g onclick="toggleVisibility();">
+			<g onclick="toggleVisibility();">
+			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+			
+				<g id="invert1" style="stroke: white">
+					<line x1="-50" y1="-25" x2="50" y2="-25" stroke-width="2" />
+					<line x1="-50" y1="-25" x2="-50" y2="25" stroke-width="2" />
+				</g>
+				<g id="invert2" style="stroke: black">
+					<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" />
+					<line x1="50" y1="25" x2="-50" y2="25" stroke-wdith="2" />
+				</g>
+			
+				<g>
 				<text class="scale">
 					<tspan x="-18" y="-7">Toggle</tspan>
 					<tspan x="-18" y="5">Historic</tspan>
