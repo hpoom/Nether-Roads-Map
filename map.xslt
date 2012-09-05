@@ -8,7 +8,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2300" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -468,8 +468,13 @@
 				<text class="range" x="300">+300</text>
 				<text class="range" x="400">+400</text>
 				<text class="range" x="500">+500</text>
+				<text class="range" x="600">+600</text>
+				<text class="range" x="700">+700</text>
+				<text class="range" x="800">+800</text>
+				<text class="range" x="900">+900</text>
+				<text class="range" x="1000">+1000</text>
 			</g>
-			<g transform="translate(590,4)">
+			<g transform="translate(1080,4)">
 				<text class="range_v" y="-1200">-1200</text>
 				<text class="range_v" y="-1100">-1100</text>
 				<text class="range_v" y="-1000">-1000</text>
@@ -646,6 +651,12 @@
 				<line class="road_unofficial" x1="-432" y1="310" x2="-432" y2="352" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 1 -->
 				<line class="road_unofficial" x1="-432" y1="352" x2="-418" y2="390" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 2 -->
 				<line class="road_unofficial" x1="-418" y1="390" x2="-411" y2="429" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 3 -->
+				<line class="road" x1="556" y1="543" x2="556" y2="664" /><!-- Danzig Road leg 1 -->
+				<line class="road" x1="556" y1="664" x2="865" y2="974" /><!-- Danzig Road leg 2 -->
+				<line class="road" x1="865" y1="974" x2="913" y2="974" /><!-- Danzig Road leg 3 -->
+				<line class="road" x1="913" y1="974" x2="957" y2="1018" /><!-- Danzig Road leg 4 -->
+				<line class="road" x1="957" y1="1018" x2="957" y2="1023" /><!-- Danzig Road leg 5 -->
+				<line class="road_unofficial" x1="957" y1="1023" x2="935" y2="1023" /><!-- Danzig Road leg 6 -->
 			</g>
 			
 			<!-- Portals -->
