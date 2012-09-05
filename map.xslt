@@ -393,16 +393,16 @@
 			</g>
 			
 			<!-- RoadToggle Button -->
-			<g onclick="toggleVisibility();">
+			<g transform="translate(280, 330)" onclick="toggleVisibility();">
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert1" style="stroke: white">
-					<line x1="-50" y1="-25" x2="50" y2="-25" stroke-width="2" />
-					<line x1="-50" y1="-25" x2="-50" y2="25" stroke-width="2" />
+					<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" />
+					<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" />
 				</g>
 				<g id="invert2" style="stroke: black">
-					<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" />
-					<line x1="50" y1="25" x2="-50" y2="25" stroke-wdith="2" />
+					<line x1="50" y1="-26" x2="50" y2="25" stroke-wdith="2" />
+					<line x1="50" y1="25" x2="-49" y2="25" stroke-wdith="2" />
 				</g>
 			
 				<g>
