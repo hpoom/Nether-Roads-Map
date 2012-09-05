@@ -8,7 +8,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2300" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -124,13 +124,19 @@
 			
 			line.road {
 				stroke: #066;
-				stroke-width: 2.5;
+				stroke-width: 3;
 			}
 			
 			line.road_unofficial {
 				stroke: #770;
-				stroke-width: 2.5;
+				stroke-width: 3;
 				stroke-dasharray: 8, 1, 4, 1;
+			}
+			
+			line.road_historic {
+				stroke: #ADA96E;
+				stroke-width: 1.25;
+				stroke-dasharray: 4, 1, 4, 1;
 			}
 			
 			rect.underpass {
@@ -239,6 +245,10 @@
 				fill: black;
 				text-anchor: middle;
 			}
+			
+			rect.toggleButton {
+				fill: silver;
+			}
 		]]>
 		</style>
 		
@@ -259,6 +269,34 @@
 				portal_coords.setAttributeNS(null, "visibility", "hidden");
 			}
 			
+		]]>
+		</script>
+		
+		<script type="text/ecmascript">
+		<![CDATA[
+			function toggleVisibility() 
+			{
+				document.getElementById("toggleMe").style.display = "";
+				if(document.getElementById("toggleMe").style.visibility == "hidden" ) {
+				document.getElementById("toggleMe").style.visibility = "visible";
+				}else{
+					document.getElementById("toggleMe").style.visibility = "hidden";
+				}
+				
+				document.getElementById("invert1").style.display = "";
+				if(document.getElementById("invert1").style.stroke == "white" ) {
+				document.getElementById("invert1").style.stroke = "black";
+				}else{
+					document.getElementById("invert1").style.stroke = "white";
+				}
+				
+				document.getElementById("invert2").style.display = "";
+				if(document.getElementById("invert2").style.stroke == "black" ) {
+				document.getElementById("invert2").style.stroke = "white";
+				}else{
+					document.getElementById("invert2").style.stroke = "black";
+				}
+			}
 		]]>
 		</script>
 		
@@ -355,6 +393,28 @@
 				</g>
 			</g>
 			
+			<!-- RoadToggle Button -->
+			<g transform="translate(280, 330)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
+			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+			
+				<g id="invert1" style="stroke: white">
+					<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" /> <!-- Top Line -->
+					<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" /> <!-- Left Line -->
+				</g>
+				<g id="invert2" style="stroke: black">
+					<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" /> <!-- Right Line -->
+					<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" /> <!-- Bottom Line -->
+				</g>
+			
+				<g>
+				<text class="scale">
+					<tspan x="-18" y="-7">Toggle</tspan>
+					<tspan x="-18" y="5">Historic</tspan>
+					<tspan x="-18" y="17">Roads</tspan>
+				</text>
+				</g>
+			</g>
+			
 			<!-- Compass and Scale -->
 			<g transform="translate(320, 100)">
 				<text class="compass" y="-72">North</text>
@@ -437,8 +497,13 @@
 				<text class="range" x="300">+300</text>
 				<text class="range" x="400">+400</text>
 				<text class="range" x="500">+500</text>
+				<text class="range" x="600">+600</text>
+				<text class="range" x="700">+700</text>
+				<text class="range" x="800">+800</text>
+				<text class="range" x="900">+900</text>
+				<text class="range" x="1000">+1000</text>
 			</g>
-			<g transform="translate(590,4)">
+			<g transform="translate(1080,4)">
 				<text class="range_v" y="-1200">-1200</text>
 				<text class="range_v" y="-1100">-1100</text>
 				<text class="range_v" y="-1000">-1000</text>
@@ -466,7 +531,40 @@
 			</g>
 		
 			<!-- Roads -->
+				<!-- Historic Roads -->
+				<g id="toggleMe" style="visibility: hidden;">
+					<line class="road_historic" x1="-279" y1="-205" x2="-189" y2="-295" /><!-- Hub/Augusta to North hub leg 1 -->
+					<line class="road_historic" x1="-189" y1="-295" x2="-41" y2="-295" /><!-- Hub/Augusta to North hub leg 2 -->
+					<line class="road_historic" x1="-41" y1="-295" x2="-38" y2="-297" /><!-- North hub to Lib/Laz leg 1 -->
+					<line class="road_historic" x1="-38" y1="-297" x2="-33" y2="-297" /><!-- North hub to Lib/Laz leg 2 -->
+					<line class="road_historic" x1="-33" y1="-297" x2="97" y2="-353" /><!-- North hub to Lib/Laz leg 3 -->
+					<line class="road_historic" x1="97" y1="-353" x2="120" y2="-365" /><!-- North hub to Lib/Laz leg 4 -->
+					<line class="road_historic" x1="120" y1="-365" x2="157" y2="-365" /><!-- North hub to Lib/Laz leg 5 -->
+					<line class="road_historic" x1="-212" y1="-272" x2="-212" y2="-544" /><!-- Hub/Augusta to Augusta/Lazuli -->
+					<line class="road_historic" x1="-284" y1="-209" x2="-306" y2="-203" /><!-- Hub/Augusta to Epicus leg 1 -->
+					<line class="road_historic" x1="-306" y1="-203" x2="-342" y2="-185" /><!-- Hub/Augusta to Epicus leg 2 -->
+					<line class="road_historic" x1="-342" y1="-185" x2="-353" y2="-182" /><!-- Hub/Augusta to Epicus leg 3 -->
+					<line class="road_historic" x1="-353" y1="-182" x2="-388" y2="-182" /><!-- Hub/Augusta to Epicus leg 4 , -->
+					<line class="road_historic" x1="-388" y1="-182" x2="-388" y2="-164" /><!-- Hub/Augusta to Epicus leg 5 -->
+					<line class="road_historic" x1="-388" y1="-164" x2="-356" y2="-132" /><!-- Hub/Augusta to Epicus leg 6 -->
+					<line class="road_historic" x1="-356" y1="-132" x2="-356" y2="-121" /><!-- Hub/Augusta to Epicus leg 7 -->
+					<line class="road_historic" x1="-596" y1="-540" x2="-270" y2="-214" /><!-- Augusta Intersection to North Hub leg 1 -->
+					<line class="road_historic" x1="-410" y1="428" x2="-423" y2="416" /><!-- Kizantium Road to Nether Fort leg 1 -->
+					<line class="road_historic" x1="-423" y1="416" x2="-583" y2="416" /><!-- Kizantium Road to Nether Fort leg 2 -->
+					<line class="road_historic" x1="-583" y1="416" x2="-583" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
+					<line class="road_historic" x1="-583" y1="395" x2="-685" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
+					<line class="road_historic" x1="-634" y1="395" x2="-634" y2="480" /><!-- Nether Fort to Rapture leg 1 -->
+					<line class="road_historic" x1="-634" y1="480" x2="-685" y2="480" /><!-- Nether Fort to Rapture leg 2 -->
+					<line class="road_historic" x1="-615" y1="477" x2="-615" y2="259" /><!-- Nether Fort to Tigerstaden Intersection -->
+					<line class="road_historic" x1="-208" y1="-277" x2="-73" y2="-142" /><!-- Liberty/Atlantis Road to North Hub -->
+					<line class="road_historic" x1="-432" y1="308" x2="-298" y2="308" /><!-- Jack's Hold to Kinzantium Road leg 1 -->
+					<line class="road_historic" x1="-298" y1="308" x2="-298" y2="316" /><!-- Jack's Hold to Kinzantium Road leg 2 -->
+					<line class="road_historic" x1="1" y1="-34" x2="-8" y2="-34" /><!-- Liberty/Atlantis to Rothbard Road leg 1 -->
+					<line class="road_historic" x1="-8" y1="-34" x2="-54" y2="-125" /><!-- Liberty/Atlantis to Rothbard Road leg 2 -->
+				</g>
 			<g>
+				<line class="road_unofficial" x1="-418" y1="390" x2="-367" y2="424" /><!-- Melonwood Road leg 1 -->
+				<line class="road_unofficial" x1="-367" y1="424" x2="-369" y2="500" /><!-- Melonwood Road leg 2 -->
 				<line class="road" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1178" y1="-272" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
@@ -515,8 +613,8 @@
 				<line class="road" x1="523" y1="-683" x2="466" y2="-683" /><!-- Liberty/Atlantis Road -->
 				<line class="road" x1="-159" y1="-84" x2="-159" y2="-1" /><!-- Hub road near Liberty -->
 				<line class="road" x1="-357" y1="-36" x2="-467" y2="-145" /><!-- Saga/Avalon -->
-				<line class="road" x1="-357" y1="-143" x2="-357" y2="-1" /><!-- Saga/Avalon -->
-				<line class="road" x1="-357" y1="-143" x2="-385" y2="-143" /><!-- Epicus/Avalon -->
+				<line class="road" x1="-357" y1="-121" x2="-357" y2="-1" /><!-- Saga/Avalon -->
+				<line class="road" x1="-357" y1="-121" x2="-385" y2="-121" /><!-- Epicus/Avalon -->
 				<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
 				<line class="road_unofficial" x1="0" y1="-218" x2="0" y2="-1" /><!-- Rothbard/0,0 -->
 				<line class="road" x1="-92" y1="-125" x2="0" y2="-125" /><!-- Rothbard/Liberty -->
@@ -579,6 +677,15 @@
 				<line class="road" x1="-801" y1="-816" x2="-778" y2="-816" /><!-- Xanadu Road -->
 				<line class="road" x1="56" y1="-272" x2="56" y2="-332" /><!-- Liberty/Lazuli to Hoyt (official) -->
 				<line class="road_unofficial" x1="56" y1="-332" x2="56" y2="-374" /><!-- Lower Hoyt Road -->
+				<line class="road_unofficial" x1="-432" y1="310" x2="-432" y2="352" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 1 -->
+				<line class="road_unofficial" x1="-432" y1="352" x2="-418" y2="390" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 2 -->
+				<line class="road_unofficial" x1="-418" y1="390" x2="-411" y2="429" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 3 -->
+				<line class="road" x1="556" y1="543" x2="556" y2="664" /><!-- Danzig Road leg 1 -->
+				<line class="road" x1="556" y1="664" x2="865" y2="974" /><!-- Danzig Road leg 2 -->
+				<line class="road" x1="865" y1="974" x2="913" y2="974" /><!-- Danzig Road leg 3 -->
+				<line class="road" x1="913" y1="974" x2="957" y2="1018" /><!-- Danzig Road leg 4 -->
+				<line class="road" x1="957" y1="1018" x2="957" y2="1023" /><!-- Danzig Road leg 5 -->
+				<line class="road_unofficial" x1="957" y1="1023" x2="935" y2="1023" /><!-- Danzig Road leg 6 -->
 			</g>
 			
 			<!-- Portals -->
