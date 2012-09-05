@@ -273,7 +273,7 @@
 		</script>
 		
 		<script type="text/javascript">
-		
+		<![CDATA[
 			function toggleVisibility() 
 			{
 				document.getElementById("toggleMe").style.display = "";
@@ -297,6 +297,7 @@
 					document.getElementById("invert2").style.stroke = "black";
 				}
 			}
+		]]>
 		</script>
 		
 		<!-- Drop shadow used for a couple of things below -->
