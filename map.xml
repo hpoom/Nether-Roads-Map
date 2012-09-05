@@ -22,8 +22,9 @@
 		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>	
 		<portal x="413" z="-263" abbr="Cr" name="Cressemopolis" status="uninhabited, griefed"/>	
 		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="uninhabited" />
+		<portal x="934" z="1021" abbr="Da" name="Danzig" status="locked" />
 		<portal x="-819" z="-448" abbr="De" name="Derpenshire" status="uninhabited, griefed"/>
-		<portal x="-385" z="-143" abbr="Ep" name="Epicus" />
+		<portal x="-385" z="-121" abbr="Ep" name="Epicus" />
 		<portal x="-986" z="-1209" abbr="Fr" name="Fraustengard" />
 		<portal x="257" z="177" abbr="Fy" name="Fyfe" />
 		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked"/>
@@ -42,12 +43,13 @@
 		<portal x="-714" z="398" abbr="Le" name="Leningrad" />
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked"/>
+		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" />
 		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" />
-		<portal x="-636" z="740" abbr="Pi" name="Piedmont" />
-		<portal x="-249" z="-2" abbr="Po" name="Populi"/>
+		<portal x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
+		<portal x="-249" z="-2" abbr="Po" name="Populi" status="griefed" />
 		<portal x="-701" z="-831" abbr="Pr" name="Prisma" status="locked" />
 		<portal x="83" z="-200" abbr="Qa" name="Qarth" offset="25,-10" />
 		<portal x="-684" z="488" abbr="Ra" name="Rapture" />
