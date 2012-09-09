@@ -6,9 +6,9 @@
 		<portal x="311" z="-384" abbr="Ago" name="Agora" status="uninhabited" />
 		<portal x="505" z="321" abbr="Agr" name="Agraria" />
 		<portal x="-800" z="593" abbr="Al" name="Alexandria" status="uninhabited" />
-		<portal x="-1121" z="-547" abbr="Ar" name="Aristopolis" status="locked"/>	
+		<portal x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked"/>	
+		<portal x="-226" z="62" abbr="Arg" name="Argonath" status="locked"/>
 		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked"/>	
-		<portal x="-226" z="62" abbr="Ar" name="Argonath" status="locked"/>
 		<portal x="527" z="-683" abbr="Atl" name="Atlantis" />	
 		<portal x="-923" z="290" abbr="Atm" name="Atmora" status="uninhabited, locked"/>	
 		<portal x="-364" z="0" abbr="Ava" name="Avalon" status="locked"/>	
