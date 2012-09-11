@@ -322,7 +322,7 @@
 		<rect fill="url(#background)" x="0" y="0" width="100%" height="100%"/>
 		
 		<!-- Key -->
-		<g transform="translate(880, 1900) scale(.9)">
+		<g transform="translate(1100, 60) scale(.9)">
 			<defs>
 				<linearGradient id="key_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
 					<stop offset="0%" class="key_gradient_start" />
