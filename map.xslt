@@ -36,10 +36,22 @@
 			}
 			
 			circle.portal_abandoned {
-				stroke: black;
+				stroke: #8b8989;
 				stroke-width: 1.5;
 				stroke-dasharray: 6,2;
-				fill: silver;
+				fill: white;
+			}
+			
+			circle.railwayr {
+				stroke: #FF0000;
+				stroke-width: 5;
+				fill: #FF0000;
+			}
+			
+			circle.railwayy {
+				stroke: #FFFF00;
+				stroke-width: 5;
+				fill: #FFFF00;
 			}
 			
 			text.portal {
@@ -50,7 +62,7 @@
 			}
 			
 			text.portal_abandoned {
-				fill: black;
+				fill: #cdc9c9;
 				font-size: 17px;
 				font-weight: bold;
 				text-anchor: middle;
@@ -65,14 +77,14 @@
 			}
 			
 			text.portal_abandoned_small {
-				fill: black;
+				fill: #cdc9c9;
 				font-size: 15px;
 				font-weight: bold;
 				text-anchor: middle;
 			}
 
 			text.portal_name {
-				fill: black;
+				fill: blue;
 				font-size: 17px;
 				font-weight: bold;
 			}
@@ -137,6 +149,16 @@
 				stroke: #ADA96E;
 				stroke-width: 1.25;
 				stroke-dasharray: 4, 1, 4, 1;
+			}
+			
+			line.rail_liney {
+				stroke: #FFFF00;
+				stroke-width: 6;
+			}
+			
+			line.rail_liner {
+				stroke: #FF0000;
+				stroke-width: 6;
 			}
 			
 			rect.underpass {
@@ -276,25 +298,56 @@
 		<![CDATA[
 			function toggleVisibility() 
 			{
-				document.getElementById("toggleMe").style.display = "";
-				if(document.getElementById("toggleMe").style.visibility == "hidden" ) {
-				document.getElementById("toggleMe").style.visibility = "visible";
+				var toggleMe = document.getElementById("toggleMe");
+				toggleMe.style.display = "";
+				if(toggleMe.style.visibility == "hidden" ) {
+				toggleMe.style.visibility = "visible";
 				}else{
-					document.getElementById("toggleMe").style.visibility = "hidden";
+					toggleMe.style.visibility = "hidden";
 				}
 				
-				document.getElementById("invert1").style.display = "";
-				if(document.getElementById("invert1").style.stroke == "white" ) {
-				document.getElementById("invert1").style.stroke = "black";
+				var invert1 = document.getElementById("invert1");
+				invert1.style.display = "";
+				if(invert1.style.stroke == "white" ) {
+				invert1.style.stroke = "black";
 				}else{
-					document.getElementById("invert1").style.stroke = "white";
+					invert1.style.stroke = "white";
 				}
 				
-				document.getElementById("invert2").style.display = "";
-				if(document.getElementById("invert2").style.stroke == "black" ) {
-				document.getElementById("invert2").style.stroke = "white";
+				var invert2 = document.getElementById("invert2");
+				invert2.style.display = "";
+				if(invert2.style.stroke == "black" ) {
+				invert2.style.stroke = "white";
 				}else{
-					document.getElementById("invert2").style.stroke = "black";
+					invert2.style.stroke = "black";
+				}
+			}
+		]]>
+		</script>
+		
+		<script type="text/ecmascript">
+		<![CDATA[
+			function toggleVisibilityRail() 
+			{
+				document.getElementById("toggleMe2").style.display = "";
+				if(document.getElementById("toggleMe2").style.visibility == "hidden" ) {
+				document.getElementById("toggleMe2").style.visibility = "visible";
+				}else{
+					document.getElementById("toggleMe2").style.visibility = "hidden";
+				}
+				
+				document.getElementById("invert3").style.display = "";
+				if(document.getElementById("invert3").style.stroke == "white" ) {
+				document.getElementById("invert3").style.stroke = "black";
+				}else{
+					document.getElementById("invert3").style.stroke = "white";
+				}
+				
+				document.getElementById("invert4").style.display = "";
+				if(document.getElementById("invert4").style.stroke == "black" ) {
+				document.getElementById("invert4").style.stroke = "white";
+				}else{
+					document.getElementById("invert4").style.stroke = "black";
 				}
 			}
 		]]>
@@ -380,8 +433,8 @@
 		<!-- Title Block -->
 		<g transform="translate(500, 60)">
 			<!-- Roadcrew Sign -->
-			<g transform="scale(.6)">
-				<g transform="translate(210,210)" filter="url(#dropshadow)">
+			<g transform="scale(.3)">
+				<g transform="translate(810,210)" filter="url(#dropshadow)">
 					<path class="roadcrew_sign_background" d="M-200 0 L0 200 L200 0 L0 -200 Z" />
 					<path transform="scale(0.97)" class="roadcrew_sign_border" d="M-190 -10 Q -200 0 -190 10 L -10 190 Q 0 200 10 190 L 190 10 Q 200 0 190 -10 L 10 -190 Q 0 -200 -10 -190 Z" />
 					<g transform="translate(0,-45)">
@@ -394,7 +447,7 @@
 			</g>
 			
 			<!-- RoadToggle Button -->
-			<g transform="translate(280, 330)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
+			<g transform="translate(180, 270)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert1" style="stroke: white">
@@ -415,8 +468,29 @@
 				</g>
 			</g>
 			
+			<g transform="translate(300, 270)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
+			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+			
+				<g id="invert3" style="stroke: white">
+					<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" /> <!-- Top Line -->
+					<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" /> <!-- Left Line -->
+				</g>
+				<g id="invert4" style="stroke: black">
+					<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" /> <!-- Right Line -->
+					<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" /> <!-- Bottom Line -->
+				</g>
+			
+				<g>
+				<text class="scale">
+					<tspan x="-18" y="-7">Toggle</tspan>
+					<tspan x="-18" y="5">Railway</tspan>
+					<tspan x="-18" y="17">Line</tspan>
+				</text>
+				</g>
+			</g>
+			
 			<!-- Compass and Scale -->
-			<g transform="translate(320, 100)">
+			<!--- <g transform="translate(320, 100)">
 				<text class="compass" y="-72">North</text>
 				<g transform="translate(0, 20)">
 					<polygon class="compass_north" transform="translate(0, -10) rotate(180,0,-40) scale(2.0)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
@@ -449,14 +523,15 @@
 				</g>
 			</g>
 			
-			<g transform="translate(320, 200)">
+			-->
+			
+			<g transform="translate(250, 150)">
 				<text class="title">
-					<tspan x="0" y="0">Nether Road Map</tspan>
-					<tspan x="0" y="30">With Public Portals</tspan>
+					<tspan x="0" y="0">Nether Road Map 2.0</tspan>
 				</text>
 			</g>
 			
-			<g transform="translate(270, 280)">
+			<g transform="translate(260, 200)">
 				<a xlink:href="http://www.reddit.com/r/CivcraftRoads" target="_blank">
 					<text class="link">
 						W W W . R E D D I T . C O M / R / C I V C R A F T R O A D S
@@ -560,6 +635,10 @@
 				<line class="road_historic" x1="-298" y1="308" x2="-298" y2="316" /><!-- Jack's Hold to Kinzantium Road leg 2 -->
 				<line class="road_historic" x1="1" y1="-34" x2="-8" y2="-34" /><!-- Liberty/Atlantis to Rothbard Road leg 1 -->
 				<line class="road_historic" x1="-8" y1="-34" x2="-54" y2="-125" /><!-- Liberty/Atlantis to Rothbard Road leg 2 -->
+				<line class="road_historic" x1="-827" y1="492" x2="-827" y2="289" /><!-- Atmora to Columbia Rd -->
+				<line class="road_historic" x1="-735" y1="289" x2="-735" y2="369" /><!-- Atmora to Leningrad Rd -->
+				<line class="road_historic" x1="-735" y1="289" x2="-735" y2="266" /><!-- Atmora to Sovengarde Leg 1 -->
+				<line class="road_historic" x1="-735" y1="266" x2="-684" y2="215" /><!-- Atmora to Sovengarde Leg 2 -->
 			</g>
 			<g>
 				<line class="road_unofficial" x1="-418" y1="390" x2="-367" y2="424" /><!-- Melonwood Road leg 1 -->
@@ -684,8 +763,57 @@
 				<line class="road" x1="913" y1="974" x2="957" y2="1018" /><!-- Danzig Road leg 4 -->
 				<line class="road" x1="957" y1="1018" x2="957" y2="1023" /><!-- Danzig Road leg 5 -->
 				<line class="road_unofficial" x1="957" y1="1023" x2="935" y2="1023" /><!-- Danzig Road leg 6 -->
+				<line class="road_unofficial" x1="453" y1="440" x2="453" y2="609" /><!-- Mercer Road -->
+				<line class="road_unofficial" x1="541" y1="528" x2="766" y2="528" /><!-- Camp Maulgish Road -->
+				<line class="road_unofficial" x1="131" y1="4" x2="16" y2="4" /><!-- Reid Dale Road -->
+				<line class="road_unofficial" x1="-227" y1="245" x2="-180" y2="245" /><!-- Ironwood Road -->
+				<line class="road" x1="-380" y1="398" x2="410" y2="398" /><!-- Gerald to Leningrad Rd -->
+				<line class="road_unofficial" x1="-110" y1="-106" x2="-44" y2="-106" /><!-- Hub to Rothbard Part Rd -->
+				<line class="road_unofficial" x1="-129" y1="-21" x2="-15" y2="-135" /><!-- Liberty to Rothbard Leg 1 -->
+				<line class="road_unofficial" x1="-129" y1="-21" x2="-140" y2="0" /><!-- Liberty to Rothbard Leg 2 -->
+				<line class="road_unofficial" x1="-366" y1="-750" x2="-606" y2="-750" /><!-- Brandersbury Rd Leg 1 -->
+				<line class="road_unofficial" x1="-606" y1="-750" x2="-606" y2="-672" /><!-- Brandersbury Rd Leg 2 -->
+				<line class="road_unofficial" x1="-606" y1="-672" x2="-612" y2="-672" /><!-- Brandersbury Rd Leg 3 -->
+				<line class="road_unofficial" x1="-612" y1="-672" x2="-612" y2="-609" /><!-- Brandersbury Rd Leg 4 -->
+				<line class="road_unofficial" x1="0" y1="-1" x2="0" y2="-216" /><!-- Rothbard N/S Rd -->
+				<line class="road" x1="41" y1="-58" x2="41" y2="-75" /><!-- Freyrgard Road leg 1 -->
+				<line class="road" x1="41" y1="-75" x2="0" y2="-75" /><!-- Freyrgard Road leg 1 -->
+				<line class="road" x1="0" y1="-55" x2="-29" y2="-55" /><!-- Tombstone Road -->
+				<line class="road" x1="573" y1="275" x2="506" y2="275" /><!-- Danziloa Road Leg 1 -->
+				<line class="road" x1="506" y1="275" x2="506" y2="320" /><!-- Danziloa Road Leg 2 -->
+				<line class="road" x1="49" y1="37" x2="102" y2="37" /><!-- Amnesty 1 -->
+				<line class="road" x1="104" y1="4" x2="104" y2="92" /><!-- Amnesty 2 -->
+				
 			</g>
 			
+			<g id="toggleMe2" style="visibility: hidden;">
+			<!-- Railway -->
+			
+				<!-- Lines -->
+				<line class="rail_liney" x1="-168" y1="1" x2="-407" y2="237" /><!-- Liberty to Obsidian Plains -->
+				<line class="rail_liney" x1="-168" y1="1" x2="2" y2="-137" /><!-- Liberty to Rothbard -->
+				<line class="rail_liney" x1="-407" y1="237" x2="-714" y2="398" /><!-- Obsidian Plains to Leningrad -->
+				
+				<line class="rail_liner" x1="-168" y1="1" x2="540" y2="400" /><!-- Liberty to Gerald -->
+				<line class="rail_liner" x1="-168" y1="1" x2="-614" y2="-618" /><!-- Liberty to Mt Augusta -->
+				<line class="rail_liner" x1="-614" y1="-618" x2="-1121" y2="-547" /><!-- Mt Augusta to Aristopolis -->
+			
+				<!-- Stations -->
+				<g>
+				<circle class="railwayy" r="25" cx="-168" cy="1" /><!-- Liberty -->
+				<circle class="railwayr" r="20" cx="-168" cy="1" /><!-- Liberty -->
+				<circle class="railwayy" r="20" cx="-407" cy="237" /><!-- Obsidian Plains -->
+				<circle class="railwayr" r="20" cx="540" cy="400" /><!-- Gerald -->
+				<circle class="railwayr" r="20" cx="-614" cy="-618" /><!-- Mt Augusta -->
+				<circle class="railwayr" r="20" cx="-1121" cy="-547" /><!-- Aristopolis -->
+				<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
+				<circle class="railwayy" r="20" cx="2" cy="-137" /><!-- Rothbard -->
+				
+				</g>
+				
+			</g>
+				
+				
 			<!-- Portals -->
 			<g>
 				<xsl:for-each select="map/portals/portal">
@@ -735,8 +863,10 @@
 							</xsl:if>
 							<text y="5">
 								<xsl:attribute name="class">
-									<xsl:if test="string-length(@abbr) &gt; 2">portal_small</xsl:if>
-									<xsl:if test="string-length(@abbr) &lt; 3">portal</xsl:if>
+									<xsl:if test="string-length(@abbr) &gt; 2 and contains(@status, 'uninhabited')">portal_abandoned_small</xsl:if>
+									<xsl:if test="string-length(@abbr) &lt; 3 and contains(@status, 'uninhabited')">portal_abandoned</xsl:if>	
+									<xsl:if test="string-length(@abbr) &lt; 3 and not(contains(@status, 'uninhabited'))">portal</xsl:if>
+									<xsl:if test="string-length(@abbr) &gt; 2 and not(contains(@status, 'uninhabited'))">portal_small</xsl:if>
 								</xsl:attribute>
 								<xsl:value-of select="@abbr" />
 							</text>
