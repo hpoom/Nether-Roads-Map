@@ -56,7 +56,7 @@
 		<portal x="452" z="610" abbr="Mc" name="Mercer" status="uninhabited" />
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
-		<portal x="-70" z="2" abbr="OJD" name="OJDstead" />
+		<portal x="-70" z="2" abbr="OJD" name="OJDstead" staus="locked, griefed" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
 		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" />
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
