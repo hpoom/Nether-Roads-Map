@@ -49,14 +49,14 @@
 		<portal x="-577" z="748" abbr="Ki" name="Kizantium" status="locked"/>
 		<portal x="398" z="148" abbr="Ko" name="Kodiak" />
 		<portal x="409" z="-515" abbr="La" name="Lazuli" status="uninhabited" />
-		<portal x="-714" z="398" abbr="Le" name="Leningrad" />
+		<portal x="-714" z="398" abbr="Le" name="Leningrad" status="locked" />
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
 		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
 		<portal x="452" z="610" abbr="Mc" name="Mercer" status="uninhabited" />
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
-		<portal x="-70" z="2" abbr="OJD" name="OJDstead" staus="locked, griefed" />
+		<portal x="-70" z="2" abbr="OJD" name="OJDstead" status="locked, griefed, uninhabited" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
 		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" />
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
@@ -73,7 +73,7 @@
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="uninhabited, locked" />
 		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
 		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" status="uninhabited" />
-		<portal x="-618" z="251" abbr="Tig" name="Tigerstaden" status="uninhabited" />
+		<portal x="-618" z="251" abbr="Tig" name="Tigerstaden" />
 		<portal x="14" z="-525" abbr="Tin" name="Tinto" status="uninhabited"/>
 		<portal x="-1082" z="-490" abbr="To" name="TokieStan" status="uninhabited, griefed" />
 		<portal x="-227" z="34" abbr="Tmb" name="Tombstone" />
