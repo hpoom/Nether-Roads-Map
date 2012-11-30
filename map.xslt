@@ -625,8 +625,8 @@
 				<line class="road_historic" x1="-356" y1="-132" x2="-356" y2="-121" /><!-- Hub/Augusta to Epicus leg 7 -->
 				<line class="road_historic" x1="-410" y1="428" x2="-423" y2="416" /><!-- Kizantium Road to Nether Fort leg 1 -->
 				<line class="road_historic" x1="-423" y1="416" x2="-583" y2="416" /><!-- Kizantium Road to Nether Fort leg 2 -->
-				<line class="road_historic" x1="-583" y1="416" x2="-583" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
-				<line class="road_historic" x1="-583" y1="395" x2="-685" y2="395" /><!-- Kizantium Road to Nether Fort leg 2 -->
+				<line class="road_historic" x1="-583" y1="416" x2="-583" y2="395" /><!-- Kizantium Road to Nether Fort leg 3 -->
+				<line class="road_historic" x1="-583" y1="395" x2="-714" y2="395" /><!-- Kizantium Road to Nether Fort leg 4 -->
 				<line class="road_historic" x1="-634" y1="395" x2="-634" y2="480" /><!-- Nether Fort to Rapture leg 1 -->
 				<line class="road_historic" x1="-634" y1="480" x2="-685" y2="480" /><!-- Nether Fort to Rapture leg 2 -->
 				<line class="road_historic" x1="-615" y1="477" x2="-615" y2="259" /><!-- Nether Fort to Tigerstaden Intersection -->
@@ -763,14 +763,14 @@
 				<line class="road" x1="913" y1="974" x2="957" y2="1018" /><!-- Danzig Road leg 4 -->
 				<line class="road" x1="957" y1="1018" x2="957" y2="1023" /><!-- Danzig Road leg 5 -->
 				<line class="road_unofficial" x1="957" y1="1023" x2="935" y2="1023" /><!-- Danzig Road leg 6 -->
-				<line class="road_unofficial" x1="453" y1="440" x2="453" y2="609" /><!-- Mercer Road -->
+				<line class="road" x1="453" y1="440" x2="453" y2="609" /><!-- Mercer Road -->
 				<line class="road_unofficial" x1="541" y1="528" x2="766" y2="528" /><!-- Camp Maulgish Road -->
 				<line class="road_unofficial" x1="131" y1="4" x2="16" y2="4" /><!-- Reid Dale Road -->
 				<line class="road_unofficial" x1="-227" y1="245" x2="-180" y2="245" /><!-- Ironwood Road -->
 				<line class="road" x1="-380" y1="398" x2="410" y2="398" /><!-- Gerald to Leningrad Rd -->
 				<line class="road_unofficial" x1="-110" y1="-106" x2="-44" y2="-106" /><!-- Hub to Rothbard Part Rd -->
-				<line class="road_unofficial" x1="-129" y1="-21" x2="-15" y2="-135" /><!-- Liberty to Rothbard Leg 1 -->
-				<line class="road_unofficial" x1="-129" y1="-21" x2="-140" y2="0" /><!-- Liberty to Rothbard Leg 2 -->
+				<line class="road" x1="-129" y1="-21" x2="-15" y2="-135" /><!-- Liberty to Rothbard Leg 1 -->
+				<line class="road" x1="-129" y1="-21" x2="-140" y2="0" /><!-- Liberty to Rothbard Leg 2 -->
 				<line class="road_unofficial" x1="-366" y1="-750" x2="-606" y2="-750" /><!-- Brandersbury Rd Leg 1 -->
 				<line class="road_unofficial" x1="-606" y1="-750" x2="-606" y2="-672" /><!-- Brandersbury Rd Leg 2 -->
 				<line class="road_unofficial" x1="-606" y1="-672" x2="-612" y2="-672" /><!-- Brandersbury Rd Leg 3 -->
