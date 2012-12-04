@@ -8,7 +8,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2300" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2600" height="2650" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -577,8 +577,11 @@
 				<text class="range" x="800">+800</text>
 				<text class="range" x="900">+900</text>
 				<text class="range" x="1000">+1000</text>
+				<text class="range" x="1100">+1100</text>
+				<text class="range" x="1200">+1200</text>
+				<text class="range" x="1300">+1300</text>
 			</g>
-			<g transform="translate(1080,4)">
+			<g transform="translate(1380,4)">
 				<text class="range_v" y="-1200">-1200</text>
 				<text class="range_v" y="-1100">-1100</text>
 				<text class="range_v" y="-1000">-1000</text>
@@ -603,6 +606,8 @@
 				<text class="range_v" y="900">+900</text>
 				<text class="range_v" y="1000">+1000</text>
 				<text class="range_v" y="1100">+1100</text>
+				<text class="range_v" y="1200">+1200</text>
+				<text class="range_v" y="1300">+1300</text>
 			</g>
 		
 			<!-- Roads -->
@@ -783,7 +788,7 @@
 				<line class="road" x1="506" y1="275" x2="506" y2="320" /><!-- Danziloa Road Leg 2 -->
 				<line class="road" x1="49" y1="37" x2="102" y2="37" /><!-- Amnesty 1 -->
 				<line class="road" x1="104" y1="4" x2="104" y2="92" /><!-- Amnesty 2 -->
-				
+				<line class="road_unofficial" x1="844" y1="1088" x2="844" y2="952" /><!-- Chiapas Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
@@ -793,6 +798,7 @@
 				<line class="rail_liney" x1="-168" y1="1" x2="-407" y2="237" /><!-- Liberty to Obsidian Plains -->
 				<line class="rail_liney" x1="-168" y1="1" x2="2" y2="-137" /><!-- Liberty to Rothbard -->
 				<line class="rail_liney" x1="-407" y1="237" x2="-714" y2="398" /><!-- Obsidian Plains to Leningrad -->
+				<line class="rail_liney" x1="-714" y1="398" x2="-811" y2="492" /><!-- Leningrad to Columbia -->
 				
 				<line class="rail_liner" x1="-168" y1="1" x2="540" y2="400" /><!-- Liberty to Gerald -->
 				<line class="rail_liner" x1="-168" y1="1" x2="-614" y2="-618" /><!-- Liberty to Mt Augusta -->
@@ -808,6 +814,7 @@
 				<circle class="railwayr" r="20" cx="-1121" cy="-547" /><!-- Aristopolis -->
 				<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
 				<circle class="railwayy" r="20" cx="2" cy="-137" /><!-- Rothbard -->
+				<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
 				
 				</g>
 				
