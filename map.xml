@@ -17,6 +17,7 @@
 		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />
 		<portal x="764" z="529" abbr="CM" name="Camp Maulgish" />
 		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
+		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
 		<portal x="-12" z="850" abbr="Ci" name="Civitivecchia" status="uninhabited, griefed" />
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
 		<portal x="491" z="230" abbr="Com" name="Communa" status="locked, griefed" />	
