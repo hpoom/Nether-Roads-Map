@@ -8,7 +8,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2300" height="2450" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2600" height="2650" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -577,8 +577,11 @@
 				<text class="range" x="800">+800</text>
 				<text class="range" x="900">+900</text>
 				<text class="range" x="1000">+1000</text>
+				<text class="range" x="1100">+1100</text>
+				<text class="range" x="1200">+1200</text>
+				<text class="range" x="1300">+1300</text>
 			</g>
-			<g transform="translate(1080,4)">
+			<g transform="translate(1380,4)">
 				<text class="range_v" y="-1200">-1200</text>
 				<text class="range_v" y="-1100">-1100</text>
 				<text class="range_v" y="-1000">-1000</text>
@@ -603,6 +606,8 @@
 				<text class="range_v" y="900">+900</text>
 				<text class="range_v" y="1000">+1000</text>
 				<text class="range_v" y="1100">+1100</text>
+				<text class="range_v" y="1200">+1200</text>
+				<text class="range_v" y="1300">+1300</text>
 			</g>
 		
 			<!-- Roads -->
