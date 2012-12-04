@@ -53,7 +53,7 @@
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
 		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
-		<portal x="452" z="610" abbr="Mc" name="Mercer" status="uninhabited" />
+		<portal x="452" z="610" abbr="Mc" name="Mercer" />
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
