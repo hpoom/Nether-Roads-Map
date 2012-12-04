@@ -788,7 +788,7 @@
 				<line class="road" x1="506" y1="275" x2="506" y2="320" /><!-- Danziloa Road Leg 2 -->
 				<line class="road" x1="49" y1="37" x2="102" y2="37" /><!-- Amnesty 1 -->
 				<line class="road" x1="104" y1="4" x2="104" y2="92" /><!-- Amnesty 2 -->
-				
+				<line class="road_unofficial" x1="844" y1="1088" x2="844" y2="952" /><!-- Chiapas Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
