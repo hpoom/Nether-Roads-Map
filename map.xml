@@ -37,7 +37,8 @@
 		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked" />
 		<portal x="6" z="-695" abbr="Go" name="Gorgeview" status="locked"/>
 		<portal x="549" z="137" abbr="Hvn" name="Havanut" status="griefed, uninhabited" />
-		<portal x="-808" z="-592" abbr="Ha" name="Haven" />t
+		<portal x="-808" z="-592" abbr="Ha" name="Haven" />
+		<portal x="-506" z="693" abbr="HB" name="Hudson Bay" />
 		<portal x="56" z="-373" abbr="Ho" name="Hoyt" status="uninhabited" />
 		<portal x="-912" z="-321" abbr="Ic" name="Icengrad" status="locked, griefed, uninhabited" />
 		<portal x="-78" z="-520" abbr="IK" name="In Kind" status="uninhabited" />
