@@ -789,7 +789,8 @@
 				<line class="road" x1="49" y1="37" x2="102" y2="37" /><!-- Amnesty 1 -->
 				<line class="road" x1="104" y1="4" x2="104" y2="92" /><!-- Amnesty 2 -->
 				<line class="road_unofficial" x1="844" y1="1088" x2="844" y2="952" /><!-- Chiapas Road -->
-				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Roads -->
+				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
+				<line class="road_unofficial" x1="87" y1="0" x2="87" y2="30" /><!-- Vindictam Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
