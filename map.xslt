@@ -799,6 +799,7 @@
 				<line class="rail_liney" x1="-168" y1="1" x2="2" y2="-137" /><!-- Liberty to Rothbard -->
 				<line class="rail_liney" x1="-407" y1="237" x2="-714" y2="398" /><!-- Obsidian Plains to Leningrad -->
 				<line class="rail_liney" x1="-714" y1="398" x2="-811" y2="492" /><!-- Leningrad to Columbia -->
+				<line class="rail_liney" x1="2" y1="-137" x2="527" y2="-683" /><!-- Rothbard to Atlantis -->
 				
 				<line class="rail_liner" x1="-168" y1="1" x2="540" y2="400" /><!-- Liberty to Gerald -->
 				<line class="rail_liner" x1="-168" y1="1" x2="-614" y2="-618" /><!-- Liberty to Mt Augusta -->
@@ -815,6 +816,7 @@
 				<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
 				<circle class="railwayy" r="20" cx="2" cy="-137" /><!-- Rothbard -->
 				<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
+				<circle class="railwayy" r="20" cx="527" cy="-683" /><!-- Atlantis -->
 				
 				</g>
 				
