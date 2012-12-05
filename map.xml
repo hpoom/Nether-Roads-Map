@@ -7,7 +7,7 @@
 		<portal x="505" z="321" abbr="Agr" name="Agraria" status="locked" />
 		<portal x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked, griefed"/>	
 		<portal x="-226" z="62" abbr="Arg" name="Argonath" status="locked"/>
-		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked"/>
+		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked, uninhabited"/>
 		<portal x="103" z="37" abbr="Amn" name="Amnesty" />
 		<portal x="527" z="-683" abbr="Atl" name="Atlantis" staus="griefed" />	
 		<portal x="-923" z="290" abbr="Atm" name="Atmora" status="uninhabited, locked"/>	
