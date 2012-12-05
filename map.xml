@@ -69,7 +69,7 @@
 		<portal x="-684" z="488" abbr="Ra" name="Rapture" />
 		<portal x="132" z="2" abbr="RD" name="Reid Dale" />
 		<portal x="438" z="-470" abbr="Ri" name="Rift" status="uninhabited, locked"/>
-		<portal x="-996" z="-1090" abbr="Rom" name="Romford" />
+		<portal x="-996" z="-1090" abbr="Rom" name="Romford" status="uninhabited" />
 		<portal x="2" z="-137" abbr="Ro" name="Rothbard" />
 		<portal x="-471" z="-154" abbr="Sa" name="Saga" status="uninhabited" />
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="uninhabited, locked" />
