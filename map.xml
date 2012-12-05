@@ -60,7 +60,7 @@
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="-70" z="2" abbr="OJD" name="OJDstead" status="locked, griefed, uninhabited" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
-		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" />
+		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" status="uninhabited" />
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
 		<portal x="-453" z="806" abbr="Pk" name="Proletarskaya" />	
 		<portal x="-249" z="-2" abbr="Po" name="Populi" />
