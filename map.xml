@@ -5,7 +5,7 @@
 		<portal x="1" z="0" abbr="00" name="0,0" />
 		<portal x="311" z="-384" abbr="Ago" name="Agora" status="uninhabited" />
 		<portal x="505" z="321" abbr="Agr" name="Agraria" status="locked" />
-		<portal x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked"/>	
+		<portal x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked, griefed"/>	
 		<portal x="-226" z="62" abbr="Arg" name="Argonath" status="locked"/>
 		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked"/>
 		<portal x="103" z="37" abbr="Amn" name="Amnesty" />
@@ -17,6 +17,7 @@
 		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />
 		<portal x="764" z="529" abbr="CM" name="Camp Maulgish" />
 		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
+		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
 		<portal x="-12" z="850" abbr="Ci" name="Civitivecchia" status="uninhabited, griefed" />
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
 		<portal x="491" z="230" abbr="Com" name="Communa" status="locked, griefed" />	
@@ -53,8 +54,9 @@
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
 		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
-		<portal x="452" z="610" abbr="Mc" name="Mercer" status="uninhabited" />
+		<portal x="452" z="610" abbr="Mc" name="Mercer" />
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
+		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="-70" z="2" abbr="OJD" name="OJDstead" status="locked, griefed, uninhabited" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
