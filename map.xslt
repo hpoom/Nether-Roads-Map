@@ -789,6 +789,8 @@
 				<line class="road" x1="49" y1="37" x2="102" y2="37" /><!-- Amnesty 1 -->
 				<line class="road" x1="104" y1="4" x2="104" y2="92" /><!-- Amnesty 2 -->
 				<line class="road_unofficial" x1="844" y1="1088" x2="844" y2="952" /><!-- Chiapas Road -->
+				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
+				<line class="road_unofficial" x1="-87" y1="0" x2="-87" y2="30" /><!-- Vindictam Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
@@ -799,6 +801,7 @@
 				<line class="rail_liney" x1="-168" y1="1" x2="2" y2="-137" /><!-- Liberty to Rothbard -->
 				<line class="rail_liney" x1="-407" y1="237" x2="-714" y2="398" /><!-- Obsidian Plains to Leningrad -->
 				<line class="rail_liney" x1="-714" y1="398" x2="-811" y2="492" /><!-- Leningrad to Columbia -->
+				<line class="rail_liney" x1="2" y1="-137" x2="527" y2="-683" /><!-- Rothbard to Atlantis -->
 				
 				<line class="rail_liner" x1="-168" y1="1" x2="540" y2="400" /><!-- Liberty to Gerald -->
 				<line class="rail_liner" x1="-168" y1="1" x2="-614" y2="-618" /><!-- Liberty to Mt Augusta -->
@@ -815,6 +818,7 @@
 				<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
 				<circle class="railwayy" r="20" cx="2" cy="-137" /><!-- Rothbard -->
 				<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
+				<circle class="railwayy" r="20" cx="527" cy="-683" /><!-- Atlantis -->
 				
 				</g>
 				
