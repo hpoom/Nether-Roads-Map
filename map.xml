@@ -85,7 +85,7 @@
 		<portal x="-10" z="500" abbr="Val" name="Valenwood" status="locked" />
 		<portal x="-242" z="240" abbr="Van" name="Vanaheimr" status="uninhabited, locked"/>
 		<portal x="-1171" z="-165" abbr="Vi" name="Vilvos" status="uninhabited, griefed" />
-		<portal x="-85" z="32" abbr="Vd" name="Vindictam" />
+		<portal x="-85" z="32" abbr="Vd" name="Vindictam" status="uninhabited, griefed" />
 		<portal x="469" z="-541" abbr="Wi" name="Winterfell" status="locked" />
 		<portal x="-928" z="-915" abbr="Wo" name="Wolvania"/>
 		<portal x="-802" z="-817" abbr="Xa" name="Xanadu" status="uninhabited" />
