@@ -33,7 +33,7 @@
 		<portal x="461" z="560" abbr="FPJ" name="Fort PJ" />
 		<portal x="-986" z="-1209" abbr="Fra" name="Fraustengard" status="uninhabited" />
 		<portal x="40" z="-57" abbr="Fre" name="Freyrgard" />
-		<portal x="257" z="177" abbr="Fy" name="Fyfe" />
+		<portal x="257" z="177" abbr="Fy" name="Fyfe" status="uninhabited" />
 		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked" />
 		<portal x="6" z="-695" abbr="Go" name="Gorgeview" status="locked"/>
 		<portal x="549" z="137" abbr="Hvn" name="Havanut" status="griefed, uninhabited" />
@@ -49,7 +49,7 @@
 		<portal x="-844" z="-552" abbr="JM" name="Javier's Mound" />
 		<portal x="-800" z="593" abbr="KK" name="Kings Keep" />
 		<portal x="-577" z="748" abbr="Ki" name="Kizantium" status="locked"/>
-		<portal x="398" z="148" abbr="Ko" name="Kodiak" />
+		<portal x="398" z="148" abbr="Ko" name="Kodiak" status="uninhabited" />
 		<portal x="409" z="-515" abbr="La" name="Lazuli" status="uninhabited" />
 		<portal x="-714" z="398" abbr="Le" name="Leningrad" status="locked" />
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
