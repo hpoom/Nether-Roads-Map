@@ -646,6 +646,7 @@
 				<line class="road_historic" x1="-735" y1="266" x2="-684" y2="215" /><!-- Atmora to Sovengarde Leg 2 -->
 			</g>
 			<g>
+				<line class="road_unofficial" x1="-90" y1="-125" x2="-200" y2="-125" /><!-- Rothbard Shortcut -->
 				<line class="road_unofficial" x1="-418" y1="390" x2="-367" y2="424" /><!-- Melonwood Road leg 1 -->
 				<line class="road_unofficial" x1="-367" y1="424" x2="-369" y2="500" /><!-- Melonwood Road leg 2 -->
 				<line class="road" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
