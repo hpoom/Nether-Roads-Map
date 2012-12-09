@@ -767,7 +767,7 @@
 				<line class="road" x1="556" y1="664" x2="865" y2="974" /><!-- Danzig Road leg 2 -->
 				<line class="road" x1="865" y1="974" x2="913" y2="974" /><!-- Danzig Road leg 3 -->
 				<line class="road" x1="913" y1="974" x2="957" y2="1018" /><!-- Danzig Road leg 4 -->
-				<line class="road" x1="957" y1="1018" x2="957" y2="1023" /><!-- Danzig Road leg 5 -->
+				<line class="road" x1="957" y1="1018" x2="957" y2="1031" /><!-- Danzig Road leg 5 -->
 				<line class="road_unofficial" x1="957" y1="1023" x2="935" y2="1023" /><!-- Danzig Road leg 6 -->
 				<line class="road" x1="453" y1="440" x2="453" y2="609" /><!-- Mercer Road -->
 				<line class="road_unofficial" x1="541" y1="528" x2="766" y2="528" /><!-- Camp Maulgish Road -->
@@ -793,7 +793,8 @@
 				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
 				<line class="road_unofficial" x1="-87" y1="0" x2="-87" y2="30" /><!-- Vindictam Road -->
 				<line class="road" x1="-212" y1="0" x2="-212" y2="-544" /><!-- Central UpDown Road -->
-				
+				<line class="road" x1="1249" y1="1249" x2="1178" y2="1249" /><!-- Nine Road Leg 1 -->
+				<line class="road" x1="1178" y1="1249" x2="956" y2="1031" /><!-- Nine Road Leg 2 -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
