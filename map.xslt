@@ -810,6 +810,7 @@
 				<line class="rail_liner" x1="-168" y1="1" x2="540" y2="400" /><!-- Liberty to Gerald -->
 				<line class="rail_liner" x1="-168" y1="1" x2="-614" y2="-618" /><!-- Liberty to Mt Augusta -->
 				<line class="rail_liner" x1="-614" y1="-618" x2="-1121" y2="-547" /><!-- Mt Augusta to Aristopolis -->
+				<line class="rail_liner" x1="540" y1="400" x2="934" y2="1021" /><!-- Gerald to Danzig -->
 			
 				<!-- Stations -->
 				<g>
@@ -819,6 +820,8 @@
 				<circle class="railwayr" r="20" cx="540" cy="400" /><!-- Gerald -->
 				<circle class="railwayr" r="20" cx="-614" cy="-618" /><!-- Mt Augusta -->
 				<circle class="railwayr" r="20" cx="-1121" cy="-547" /><!-- Aristopolis -->
+				<circle class="railwayr" r="20" cx="934" cy="1021" /><!-- Danzig -->
+				
 				<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
 				<circle class="railwayy" r="20" cx="2" cy="-137" /><!-- Rothbard -->
 				<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
