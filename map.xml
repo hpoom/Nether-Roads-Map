@@ -20,7 +20,8 @@
 		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
 		<portal x="-12" z="850" abbr="Ci" name="Civitivecchia" status="uninhabited, griefed" />
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
-		<portal x="491" z="230" abbr="Com" name="Communa" status="locked, griefed" />	
+		<portal x="491" z="230" abbr="Com" name="Communa" status="locked, griefed" />
+		<portal x="-402" z="-550" abbr="Cx" name="Conflux" />
 		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>	
 		<portal x="413" z="-263" abbr="Cr" name="Cressemopolis" status="uninhabited, griefed"/>	
 		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="uninhabited" />
