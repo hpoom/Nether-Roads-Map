@@ -5,6 +5,7 @@
 		<portal x="1" z="0" abbr="00" name="0,0" />
 		<portal x="311" z="-384" abbr="Ago" name="Agora" status="uninhabited" />
 		<portal x="505" z="321" abbr="Agr" name="Agraria" status="locked" />
+		<portal x="-1027" z="-921" abbr="AH" name="Al Hasayah" />
 		<portal x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked"/>	
 		<portal x="-226" z="62" abbr="Arg" name="Argonath" status="locked"/>
 		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked, uninhabited"/>
@@ -57,6 +58,8 @@
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
 		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
 		<portal x="452" z="610" abbr="Mc" name="Mercer" />
+		<portal x="1325" z="1317" abbr="Mu" name="Mushville" />
+		<portal x="-1" z="247" abbr="My" name="Myra" />
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
@@ -89,7 +92,7 @@
 		<portal x="-1171" z="-165" abbr="Vi" name="Vilvos" status="uninhabited, griefed" />
 		<portal x="-85" z="32" abbr="Vd" name="Vindictam" status="uninhabited, griefed" />
 		<portal x="469" z="-541" abbr="Wi" name="Winterfell" status="locked" />
-		<portal x="-928" z="-915" abbr="Wo" name="Wolvania"/>
+		<portal x="-928" z="-911" abbr="Wo" name="Wolvania"/>
 		<portal x="-802" z="-817" abbr="Xa" name="Xanadu" status="uninhabited" />
 		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="uninhabited" />
 	</portals>
