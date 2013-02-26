@@ -795,7 +795,9 @@
 				<line class="road" x1="-212" y1="0" x2="-212" y2="-544" /><!-- Central UpDown Road -->
 				<line class="road" x1="1249" y1="1249" x2="1178" y2="1249" /><!-- Nine Road Leg 1 -->
 				<line class="road" x1="1178" y1="1249" x2="956" y2="1031" /><!-- Nine Road Leg 2 -->
-				<line class="road_unofficial" x1="2" y1="247" x2="256" y2="247" /><!-- Myra Road -->
+				<line class="road_unofficial" x1="-162" y1="2" x2="-162" y2="90" /><!-- Myra Road Leg 1 -->
+				<line class="road_unofficial" x1="-162" y1="90" x2="-9" y2="243" /><!-- Myra Road Leg 2 -->
+				<line class="road_unofficial" x1="2" y1="247" x2="256" y2="247" /><!-- Myra Road Leg 3 -->
 				<line class="road" x1="1262" y1="1250" x2="1277" y2="1265" /><!-- Mushville Road Leg 1 -->
 				<line class="road" x1="1277" y1="1265" x2="1277" y2="1284" /><!-- Mushville Road Leg 2 -->
 				<line class="road" x1="1277" y1="1284" x2="1310" y2="1317" /><!-- Mushville Road Leg 3 -->
