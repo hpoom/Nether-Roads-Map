@@ -61,6 +61,7 @@
 		<portal x="452" z="610" abbr="Mc" name="Mercer" />
 		<portal x="1325" z="1317" abbr="Mu" name="Mushville" />
 		<portal x="-1" z="247" abbr="My" name="Myra" status="locked"/>
+		<portal x="-624" z="-123" abbr="Mrd" name="Myriad" status="locked"/>
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
