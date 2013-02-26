@@ -4,7 +4,7 @@
 	<portals>
 		<portal x="1" z="0" abbr="00" name="0,0" />
 		<portal x="311" z="-384" abbr="Ago" name="Agora" status="uninhabited" />
-		<portal x="505" z="321" abbr="Agr" name="Agraria" status="locked, griefed, uninhabited" />
+		<portal x="505" z="321" abbr="Agr" name="Agraria" status="locked, uninhabited" />
 		<portal x="-1027" z="-921" abbr="AH" name="Al Hasayah" />
 		<portal x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked"/>	
 		<portal x="-226" z="62" abbr="Arg" name="Argonath" status="locked"/>
@@ -17,6 +17,7 @@
 		<portal x="636" z="703" abbr="Ba" name="Baycity" status="locked"/>
 		<portal x="-673" z="738" abbr="BB" name="Barnabie Beaches" status="uninhabited, locked"/>
 		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />
+		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />	
 		<portal x="764" z="529" abbr="CM" name="Camp Maulgish" />
 		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
 		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
@@ -37,9 +38,8 @@
 		<portal x="-986" z="-1209" abbr="Fra" name="Fraustengard" status="uninhabited" />
 		<portal x="40" z="-57" abbr="Fre" name="Freyrgard" />
 		<portal x="257" z="177" abbr="Fy" name="Fyfe" status="uninhabited, griefed" />
-		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked" />
+		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked, uninhabited, griefed" />
 		<portal x="6" z="-695" abbr="Go" name="Gorgeview" status="locked"/>
-		<portal x="549" z="137" abbr="Hvn" name="Havanut" status="griefed, uninhabited" />
 		<portal x="-808" z="-592" abbr="Ha" name="Haven" />
 		<portal x="-506" z="693" abbr="HB" name="Hudson Bay" />
 		<portal x="56" z="-373" abbr="Ho" name="Hoyt" status="uninhabited" />
@@ -69,7 +69,6 @@
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
 		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" status="uninhabited" />
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
-		<portal x="-453" z="806" abbr="Pk" name="Proletarskaya" status="uninhabited" />	
 		<portal x="-249" z="-2" abbr="Po" name="Populi" />
 		<portal x="-701" z="-831" abbr="Pr" name="Prisma" status="locked" />
 		<portal x="83" z="-200" abbr="Qa" name="Qarth" offset="25,-10" status="uninhabited" />
@@ -96,7 +95,7 @@
 		<portal x="-85" z="32" abbr="Vd" name="Vindictam" status="uninhabited, griefed" />
 		<portal x="469" z="-541" abbr="Wi" name="Winterfell" status="locked" />
 		<portal x="-928" z="-911" abbr="Wol" name="Wolvania"/>
-		<portal x="-543" z="269" abbr="Won" name="Wonderland"/>
+		<portal x="-543" z="269" abbr="Won" name="Wonderland" status="locked"/>
 		<portal x="-802" z="-817" abbr="Xa" name="Xanadu" status="uninhabited" />
 		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="uninhabited" />
 	</portals>
