@@ -799,7 +799,8 @@
 				<line class="road" x1="1262" y1="1250" x2="1277" y2="1265" /><!-- Mushville Road Leg 1 -->
 				<line class="road" x1="1277" y1="1265" x2="1277" y2="1284" /><!-- Mushville Road Leg 2 -->
 				<line class="road" x1="1277" y1="1284" x2="1310" y2="1317" /><!-- Mushville Road Leg 3 -->
-				<line class="road" x1="1310" y1="1317" x2="1325" y2="1317" /><!-- Mushville Road Leg 4 --> 
+				<line class="road" x1="1310" y1="1317" x2="1325" y2="1317" /><!-- Mushville Road Leg 4 -->
+				<line class="road_unofficial" x1="-611" y1="257" x2="-541" y2="257" /><!-- Wonderland Road --> 
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
@@ -808,7 +809,8 @@
 				<!-- Lines -->
 				<line class="rail_liney" x1="-168" y1="1" x2="-407" y2="237" /><!-- Liberty to Obsidian Plains -->
 				<line class="rail_liney" x1="-168" y1="1" x2="2" y2="-137" /><!-- Liberty to Rothbard -->
-				<line class="rail_liney" x1="-407" y1="237" x2="-714" y2="398" /><!-- Obsidian Plains to Leningrad -->
+				<line class="rail_liney" x1="-407" y1="237" x2="-543" y2="269" /><!-- Obsidian Plains to Wonderland -->
+				<line class="rail_liney" x1="-543" y1="269" x2="-714" y2="398" /><!-- Wonderland to Leningrad -->
 				<line class="rail_liney" x1="-714" y1="398" x2="-811" y2="492" /><!-- Leningrad to Columbia -->
 				<line class="rail_liney" x1="2" y1="-137" x2="527" y2="-683" /><!-- Rothbard to Atlantis -->
 				
@@ -823,6 +825,7 @@
 				<g>
 					<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
 					<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
+					<circle class="railwayy" r="20" cx="-543" cy="269" /><!-- Wonderland -->
 					<circle class="railwayy" r="20" cx="-407" cy="237" /><!-- Obsidian Plains -->
 					<circle class="railwayy" r="25" cx="-168" cy="1" /><!-- Liberty -->
 					<circle class="railwayy" r="20" cx="2" cy="-137" /><!-- Rothbard -->
