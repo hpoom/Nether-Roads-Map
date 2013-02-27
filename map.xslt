@@ -447,7 +447,7 @@
 			</g>
 			
 			<!-- RoadToggle Button -->
-			<g transform="translate(180, 270)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
+			<g transform="translate(180, 250)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert1" style="stroke: white">
@@ -468,7 +468,7 @@
 				</g>
 			</g>
 			
-			<g transform="translate(300, 270)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
+			<g transform="translate(300, 250)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert3" style="stroke: white">

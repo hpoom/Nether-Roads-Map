@@ -17,7 +17,8 @@
 		<portal x="636" z="703" abbr="Ba" name="Baycity" status="locked"/>
 		<portal x="-673" z="738" abbr="BB" name="Barnabie Beaches" status="uninhabited, locked"/>
 		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />
-		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />	
+		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />
+		<portal x="-462" z="-925" abbr="CD" name="Camp Dilison" />
 		<portal x="764" z="529" abbr="CM" name="Camp Maulgish" />
 		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
 		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
