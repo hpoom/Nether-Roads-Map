@@ -16,7 +16,7 @@
 		<portal x="-739" z="-772" abbr="Ave" name="Avernum" status="uninhabited" />
 		<portal x="636" z="703" abbr="Ba" name="Baycity" status="locked"/>
 		<portal x="-673" z="738" abbr="BB" name="Barnabie Beaches" status="uninhabited, locked"/>
-		<portal x="316" z="56" abbr="Be" name="Belgrade"/>
+		<portal x="316" z="56" abbr="Be" name="Belgrade" status="locked"/>
 		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />
 		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />
 		<portal x="-462" z="-925" abbr="CD" name="Camp Dilison" />
