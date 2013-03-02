@@ -58,6 +58,7 @@
 		<portal x="409" z="-515" abbr="La" name="Lazuli" status="uninhabited" />
 		<portal x="-714" z="398" abbr="Le" name="Leningrad" status="locked" />
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
+		<portal x="348" z="185" abbr="Lu" name="Lubeck" status="locked"/>
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
 		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
 		<portal x="452" z="610" abbr="Mc" name="Mercer" />

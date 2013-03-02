@@ -806,7 +806,8 @@
 				<line class="road_unofficial" x1="316" y1="56" x2="316" y2="148" /><!-- Belgrade Road --> 
 				<line class="road_unofficial" x1="-454" y1="-919" x2="-466" y2="-919" /><!-- Camp Dilison Road Leg 1 --> 
 				<line class="road_unofficial" x1="-466" y1="-919" x2="-617" y2="-768" /><!-- Camp Dilison Road Leg 2 --> 
-				<line class="road_unofficial" x1="-617" y1="-768" x2="-617" y2="-590" /><!-- Camp Dilison Road Leg 3 --> 
+				<line class="road_unofficial" x1="-617" y1="-768" x2="-617" y2="-590" /><!-- Camp Dilison Road Leg 3 -->
+				<line class="road_unofficial" x1="348" y1="149" x2="348" y2="231" /><!-- Lubeck Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
