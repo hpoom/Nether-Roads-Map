@@ -41,7 +41,7 @@
 		<portal x="40" z="-57" abbr="Fre" name="Freyrgard" />
 		<portal x="257" z="177" abbr="Fy" name="Fyfe" status="uninhabited, griefed" />
 		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked, uninhabited, griefed" />
-		<portal x="6" z="-695" abbr="Go" name="Gorgeview" status="locked"/>
+		<portal x="6" z="-695" abbr="Go" name="Gorgeview"/>
 		<portal x="-808" z="-592" abbr="Ha" name="Haven" />
 		<portal x="-506" z="693" abbr="HB" name="Hudson Bay" />
 		<portal x="56" z="-373" abbr="Ho" name="Hoyt" status="uninhabited" />
