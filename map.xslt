@@ -8,7 +8,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2600" height="2700" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2900" height="2700" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -52,6 +52,12 @@
 				stroke: #FFFF00;
 				stroke-width: 5;
 				fill: #FFFF00;
+			}
+			
+			circle.railwayb {
+				stroke: #000000;
+				stroke-width: 5;
+				fill: #000000;
 			}
 			
 			text.portal {
@@ -158,6 +164,11 @@
 			
 			line.rail_liner {
 				stroke: #FF0000;
+				stroke-width: 6;
+			}
+			
+			line.rail_lineb {
+				stroke: #000000;
 				stroke-width: 6;
 			}
 			
@@ -375,7 +386,7 @@
 		<rect fill="url(#background)" x="0" y="0" width="100%" height="100%"/>
 		
 		<!-- Key -->
-		<g transform="translate(1100, 60) scale(.9)">
+		<g transform="translate(1400, 60) scale(.9)">
 			<defs>
 				<linearGradient id="key_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
 					<stop offset="0%" class="key_gradient_start" />
@@ -431,7 +442,7 @@
 		
 		
 		<!-- Title Block -->
-		<g transform="translate(500, 60)">
+		<g transform="translate(800, 60)">
 			<!-- Roadcrew Sign -->
 			<g transform="scale(.3)">
 				<g transform="translate(810,210)" filter="url(#dropshadow)">
@@ -551,10 +562,13 @@
 
 			Remember to check the width and height of the SVG at the top.
 		-->
-		<g transform="translate(1200,1300)">
+		<g transform="translate(1500,1300)">
 		
 			<!-- Range indicators -->
 			<g transform="translate(0,-1280)">
+				<text class="range" x="-1400">-1400</text>
+				<text class="range" x="-1300">-1300</text>
+				<text class="range" x="-1200">-1200</text>
 				<text class="range" x="-1100">-1100</text>
 				<text class="range" x="-1000">-1000</text>
 				<text class="range" x="-900">-900</text>
@@ -644,6 +658,7 @@
 				<line class="road_historic" x1="-735" y1="289" x2="-735" y2="369" /><!-- Atmora to Leningrad Rd -->
 				<line class="road_historic" x1="-735" y1="289" x2="-735" y2="266" /><!-- Atmora to Sovengarde Leg 1 -->
 				<line class="road_historic" x1="-735" y1="266" x2="-684" y2="215" /><!-- Atmora to Sovengarde Leg 2 -->
+				<line class="road_historic" x1="-593" y1="237" x2="-438" y2="237" /><!-- Obsidian Plains Road -->
 			</g>
 			<g>
 				<line class="road_unofficial" x1="-90" y1="-125" x2="-200" y2="-125" /><!-- Rothbard Shortcut -->
@@ -744,7 +759,8 @@
 				<line class="road" x1="-800" y1="511" x2="-800" y2="593" /><!-- Alexandria Road -->
 				<line class="road" x1="-810" y1="480" x2="-685" y2="480" /><!-- Rapture Road -->
 				<line class="road" x1="-714" y1="358" x2="-714" y2="399" /><!-- Leningrad Road -->
-				<line class="road" x1="-593" y1="237" x2="-244" y2="237" /><!-- Obsidian Plains Road -->
+				<line class="road" x1="-438" y1="237" x2="-244" y2="237" /><!-- Obsidian Plains Road -->
+				<line class="road" x1="-438" y1="257" x2="-604" y2="257" /><!-- Obsidian Plains Road -->
 				<line class="road" x1="-237" y1="237" x2="-237" y2="255" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-615" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
@@ -772,7 +788,7 @@
 				<line class="road" x1="453" y1="440" x2="453" y2="609" /><!-- Mercer Road -->
 				<line class="road_unofficial" x1="541" y1="528" x2="766" y2="528" /><!-- Camp Maulgish Road -->
 				<line class="road_unofficial" x1="131" y1="4" x2="16" y2="4" /><!-- Reid Dale Road -->
-				<line class="road_unofficial" x1="-227" y1="245" x2="-180" y2="245" /><!-- Ironwood Road -->
+				<line class="road_unofficial" x1="-244" y1="247" x2="0" y2="247" /><!-- Ironwood Road -->					
 				<line class="road" x1="-380" y1="398" x2="410" y2="398" /><!-- Gerald to Leningrad Rd -->
 				<line class="road_unofficial" x1="-110" y1="-106" x2="-44" y2="-106" /><!-- Hub to Rothbard Part Rd -->
 				<line class="road" x1="-129" y1="-21" x2="-15" y2="-135" /><!-- Liberty to Rothbard Leg 1 -->
@@ -808,6 +824,10 @@
 				<line class="road_unofficial" x1="-466" y1="-919" x2="-617" y2="-768" /><!-- Camp Dilison Road Leg 2 --> 
 				<line class="road_unofficial" x1="-617" y1="-768" x2="-617" y2="-590" /><!-- Camp Dilison Road Leg 3 -->
 				<line class="road_unofficial" x1="348" y1="149" x2="348" y2="231" /><!-- Lubeck Road -->
+				<line class="road_unofficial" x1="-811" y1="499" x2="-862" y2="499" /><!-- Montagna Road Leg 1 -->
+				<line class="road_unofficial" x1="-862" y1="499" x2="-936" y2="574" /><!-- Montagna Road Leg 2 -->
+				<line class="road_unofficial" x1="-936" y1="574" x2="-966" y2="574" /><!-- Montagna Road Leg 3 -->
+				<line class="road_unofficial" x1="-966" y1="574" x2="-1345" y2="952" /><!-- Montagna Road Leg 4 -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
@@ -828,23 +848,28 @@
 				<line class="rail_liner" x1="540" y1="400" x2="934" y2="1021" /><!-- Gerald to Danzig -->
 				<line class="rail_liner" x1="934" y1="1021" x2="1250" y2="1248" /><!-- Danzig to Nine -->
 			
+				<line class="rail_lineb" x1="-168" y1="1" x2="-1840" y2="10" /><!-- Liberty to NotHCF -->
+			
 				<!-- Stations -->
 				<g>
 					<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
 					<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
 					<circle class="railwayy" r="20" cx="-543" cy="269" /><!-- Wonderland -->
 					<circle class="railwayy" r="20" cx="-407" cy="237" /><!-- Obsidian Plains -->
-					<circle class="railwayy" r="25" cx="-168" cy="1" /><!-- Liberty -->
+					<circle class="railwayy" r="30" cx="-168" cy="1" /><!-- Liberty -->
 					<circle class="railwayy" r="20" cx="2" cy="-137" /><!-- Rothbard -->
 					<circle class="railwayy" r="20" cx="527" cy="-683" /><!-- Atlantis -->
 					
 					<circle class="railwayr" r="20" cx="-1121" cy="-547" /><!-- Aristopolis -->
 					<circle class="railwayr" r="20" cx="-614" cy="-618" /><!-- Mt Augusta -->
-					<circle class="railwayr" r="20" cx="-168" cy="1" /><!-- Liberty -->
+					<circle class="railwayr" r="25" cx="-168" cy="1" /><!-- Liberty -->
 					<circle class="railwayr" r="20" cx="-1" cy="247" /><!-- Myra -->
 					<circle class="railwayr" r="20" cx="540" cy="400" /><!-- Gerald -->
 					<circle class="railwayr" r="20" cx="934" cy="1021" /><!-- Danzig -->
 					<circle class="railwayr" r="20" cx="1250" cy="1248" /><!-- Nine -->
+					
+					<circle class="railwayb" r="20" cx="-168" cy="1" /><!-- Liberty -->
+					<circle class="railwayb" r="20" cx="-1840" cy="10" /><!-- NotHCF -->
 				</g>
 			</g>
 				

@@ -62,11 +62,13 @@
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
 		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
 		<portal x="452" z="610" abbr="Mc" name="Mercer" />
+		<portal x="-1344" z="950" abbr="Mo" name="Montagna" status="locked"/>
 		<portal x="1325" z="1317" abbr="Mu" name="Mushville" />
 		<portal x="-1" z="247" abbr="My" name="Myra" status="locked"/>
 		<portal x="-624" z="-123" abbr="Mrd" name="Myriad" status="locked"/>
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
+		<portal x="-1840" z="10" abbr="Not" name="NotHCF" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="-70" z="2" abbr="OJD" name="OJDstead" status="locked, griefed, uninhabited" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
