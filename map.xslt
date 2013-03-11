@@ -809,8 +809,9 @@
 				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
 				<line class="road_unofficial" x1="-87" y1="0" x2="-87" y2="30" /><!-- Vindictam Road -->
 				<line class="road" x1="-212" y1="0" x2="-212" y2="-544" /><!-- Central UpDown Road -->
-				<line class="road" x1="1249" y1="1249" x2="1178" y2="1249" /><!-- Nine Road Leg 1 -->
-				<line class="road" x1="1178" y1="1249" x2="956" y2="1031" /><!-- Nine Road Leg 2 -->
+				<line class="road" x1="1249" y1="1249" x2="637" y2="1249" /><!-- Datan-Kegeth Road Leg 1 -->
+				<line class="road" x1="637" y1="1249" x2="637" y2="1295" /><!-- Datan-Kegeth Road Leg 2 -->
+				<line class="road" x1="1178" y1="1249" x2="956" y2="1031" /><!-- Nine Road -->				
 				<line class="road_unofficial" x1="-162" y1="2" x2="-162" y2="90" /><!-- Myra Road Leg 1 -->
 				<line class="road_unofficial" x1="-162" y1="90" x2="-9" y2="243" /><!-- Myra Road Leg 2 -->
 				<line class="road_unofficial" x1="2" y1="247" x2="256" y2="247" /><!-- Myra Road Leg 3 -->
@@ -828,6 +829,14 @@
 				<line class="road_unofficial" x1="-862" y1="499" x2="-936" y2="574" /><!-- Montagna Road Leg 2 -->
 				<line class="road_unofficial" x1="-936" y1="574" x2="-966" y2="574" /><!-- Montagna Road Leg 3 -->
 				<line class="road_unofficial" x1="-966" y1="574" x2="-1345" y2="952" /><!-- Montagna Road Leg 4 -->
+				<line class="road_unofficial" x1="-1145" y1="-546" x2="-1153" y2="-546" /><!-- New Aerilon Leg 1 -->
+				<line class="road_unofficial" x1="-1153" y1="-546" x2="-1157" y2="-542" /><!-- New Aerilon Leg 2 -->
+				<line class="road_unofficial" x1="-1157" y1="-542" x2="-1260" y2="-542" /><!-- New Aerilon Leg 3 -->
+				<line class="road_unofficial" x1="-1260" y1="-542" x2="-1293" y2="-575" /><!-- New Aerilon Leg 4 -->
+				<line class="road_unofficial" x1="-1293" y1="-575" x2="-1378" y2="-575" /><!-- New Aerilon Leg 5 -->
+				<line class="road_unofficial" x1="-1378" y1="-575" x2="-1378" y2="-601" /><!-- New Aerilon Leg 6 -->
+				<line class="road_unofficial" x1="742" y1="850" x2="1050" y2="850" /><!-- Ephemerisle Leg 1 -->
+				<line class="road_unofficial" x1="1050" y1="850" x2="1050" y2="839" /><!-- Ephemerisle Leg 2 -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">

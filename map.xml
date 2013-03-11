@@ -21,20 +21,23 @@
 		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />
 		<portal x="-462" z="-925" abbr="CD" name="Camp Dilison" />
 		<portal x="764" z="529" abbr="CM" name="Camp Maulgish" />
+		<portal x="-714" z="398" abbr="Ca" name="Caracas" status="locked" />
 		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
 		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
 		<portal x="-12" z="850" abbr="Ci" name="Civitivecchia" status="uninhabited, griefed" />
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
 		<portal x="491" z="230" abbr="Com" name="Communa" status="locked" />
-		<portal x="-402" z="-550" abbr="Cx" name="Conflux" />
+		<portal x="-402" z="-550" abbr="Cx" name="Conflux" status="uninhabited"/>
 		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>	
 		<portal x="413" z="-263" abbr="Cr" name="Cressemopolis" status="uninhabited, griefed"/>	
 		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="uninhabited" />
 		<portal x="934" z="1021" abbr="Da" name="Danzig" status="locked" />
 		<portal x="574" z="274" abbr="Dzl" name="Danzilona" status="locked, griefed"/>
+		<portal x="637" z="1295" abbr="DK" name="Datan-Kegeth"/>
 		<portal x="-819" z="-448" abbr="De" name="Derpenshire" status="uninhabited, griefed"/>
 		<portal x="-844" z="488" abbr="DW" name="DWRC" />
-		<portal x="-385" z="-121" abbr="Ep" name="Epicus" status="uninhabited" />
+		<portal x="-385" z="-121" abbr="Epi" name="Epicus" status="uninhabited" />
+		<portal x="1050" z="839" abbr="Eph" name="Ephemerisle" status="locked"/>
 		<portal x="-30" z="-55" abbr="Fe" name="Fellowship" status="locked"/>
 		<portal x="461" z="560" abbr="FPJ" name="Fort PJ" />
 		<portal x="-986" z="-1209" abbr="Fra" name="Fraustengard" status="uninhabited" />
@@ -56,7 +59,6 @@
 		<portal x="-577" z="748" abbr="Ki" name="Kizantium" status="locked"/>
 		<portal x="398" z="148" abbr="Ko" name="Kodiak" status="uninhabited" />
 		<portal x="409" z="-515" abbr="La" name="Lazuli" status="uninhabited" />
-		<portal x="-714" z="398" abbr="Le" name="Leningrad" status="locked" />
 		<portal x="-168" z="1" abbr="Li" name="Liberty" />
 		<portal x="348" z="185" abbr="Lu" name="Lubeck" status="locked"/>
 		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
@@ -66,6 +68,7 @@
 		<portal x="1325" z="1317" abbr="Mu" name="Mushville" />
 		<portal x="-1" z="247" abbr="My" name="Myra" status="locked"/>
 		<portal x="-624" z="-123" abbr="Mrd" name="Myriad" status="locked"/>
+		<portal x="-1378" z="-601" abbr="NA" name="New Aerilon" status="locked"/>
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
 		<portal x="-1840" z="10" abbr="Not" name="NotHCF" />
