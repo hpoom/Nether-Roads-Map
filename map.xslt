@@ -808,7 +808,7 @@
 				<line class="road_unofficial" x1="844" y1="1088" x2="844" y2="952" /><!-- Chiapas Road -->
 				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
 				<line class="road_unofficial" x1="-87" y1="0" x2="-87" y2="30" /><!-- Vindictam Road -->
-				<line class="road" x1="-212" y1="0" x2="-212" y2="-544" /><!-- Central UpDown Road -->
+				<line class="road" x1="-212" y1="0" x2="-212" y2="-1227" /><!-- Central UpDown Road -->
 				<line class="road" x1="1249" y1="1249" x2="637" y2="1249" /><!-- Datan-Kegeth Road Leg 1 -->
 				<line class="road" x1="637" y1="1249" x2="637" y2="1295" /><!-- Datan-Kegeth Road Leg 2 -->
 				<line class="road" x1="1178" y1="1249" x2="956" y2="1031" /><!-- Nine Road -->				
