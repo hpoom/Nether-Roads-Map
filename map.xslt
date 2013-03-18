@@ -368,6 +368,38 @@
 		]]>
 		</script>
 		
+		  	<script type="text/ecmascript">
+		<![CDATA[
+			function toggleVisibilityUninhabited() 
+			{
+				var toggleMe = document.getElementById("toggleMe4");
+				toggleMe.style.display = "";
+				if(toggleMe.style.visibility == "hidden" ) {
+				toggleMe.style.visibility = "visible";
+				}else{
+					toggleMe.style.visibility = "hidden";
+				}
+				
+				var invert1 = document.getElementById("invert7");
+				invert1.style.display = "";
+				if(invert1.style.stroke == "white" ) {
+				invert1.style.stroke = "black";
+				}else{
+					invert1.style.stroke = "white";
+				}
+				
+				var invert2 = document.getElementById("invert8");
+				invert2.style.display = "";
+				if(invert2.style.stroke == "black" ) {
+				invert2.style.stroke = "white";
+				}else{
+					invert2.style.stroke = "black";
+				}
+			}
+		]]>
+		</script>
+
+		
 		<script type="text/ecmascript">
 		<![CDATA[
 			function toggleVisibilityRail() 
@@ -474,7 +506,7 @@
 		
 		
 		<!-- Title Block -->
-		<g transform="translate(50, 60)">
+		<g transform="translate(10, 60)">
 			<!-- Roadcrew Sign -->
 			<g transform="scale(.3)">
 				<g transform="translate(810,210)" filter="url(#dropshadow)">
@@ -490,7 +522,7 @@
 			</g>
 			
 			<!-- Historic Road Toggle Button -->
-			<g transform="translate(130, 250)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
+			<g transform="translate(80, 250)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert1" style="stroke: white">
@@ -504,16 +536,16 @@
 			
 				<g>
 				<text class="scale">
-					<tspan x="-18" y="-7">Toggle</tspan>
-					<tspan x="-18" y="5">Historic</tspan>
-					<tspan x="-18" y="17">Roads</tspan>
+					<tspan x="-30" y="-7">Show</tspan>
+					<tspan x="-30" y="5">Historic</tspan>
+					<tspan x="-30" y="17">Roads</tspan>
 				</text>
 				</g>
 			</g>
 			
 			<!--Rail Toggle Button-->
 			
-			<g transform="translate(250, 250)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
+			<g transform="translate(320, 250)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert3" style="stroke: white">
@@ -527,15 +559,15 @@
 			
 				<g>
 				<text class="scale">
-					<tspan x="-18" y="-7">Toggle</tspan>
-					<tspan x="-18" y="5">Railway</tspan>
-					<tspan x="-18" y="17">Line</tspan>
+					<tspan x="-30" y="-7">Hide</tspan>
+					<tspan x="-30" y="5">Railway</tspan>
+					<tspan x="-30" y="17">Lines</tspan>
 				</text>
 				</g>
 			</g>
 			
 			<!-- Unofficial Road Toggle Button -->
-			<g transform="translate(370, 250)" onclick="toggleVisibilityUnofficial();" filter="url(#dropshadow)" >
+			<g transform="translate(200, 250)" onclick="toggleVisibilityUnofficial();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert5" style="stroke: white">
@@ -549,12 +581,36 @@
 			
 				<g>
 				<text class="scale">
-					<tspan x="-18" y="-7">Toggle</tspan>
-					<tspan x="-18" y="5">Unofficial</tspan>
-					<tspan x="-18" y="17">Roads</tspan>
+					<tspan x="-30" y="-7">Show</tspan>
+					<tspan x="-30" y="5">Unofficial</tspan>
+					<tspan x="-30" y="17">Roads</tspan>
 				</text>
 				</g>
 			</g>
+			
+			
+			<!-- Uninhabited Toggle Button -->
+			<g transform="translate(440, 250)" onclick="toggleVisibilityUninhabited();" filter="url(#dropshadow)" >
+			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+			
+				<g id="invert7" style="stroke: white">
+					<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" /> <!-- Top Line -->
+					<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" /> <!-- Left Line -->
+				</g>
+				<g id="invert8" style="stroke: black">
+					<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" /> <!-- Right Line -->
+					<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" /> <!-- Bottom Line -->
+				</g>
+			
+				<g>
+				<text class="scale">
+					<tspan x="-40" y="-7">Hide</tspan>
+					<tspan x="-40" y="5">Uninhabited</tspan>
+					<tspan x="-40" y="17">Portals</tspan>
+				</text>
+				</g>
+			</g>
+			
 			
 			<!-- Compass and Scale -->
 			<!--- <g transform="translate(320, 100)">
@@ -909,7 +965,7 @@
 				<line class="road_unofficial" x1="-299" y1="-1227" x2="-213" y2="-1227" /><!-- Lugus Fens Road Leg 4 -->
 			</g>
 			
-			<g id="toggleMe2" style="visibility: hidden;">
+			<g id="toggleMe2" style="visibility: visible;">
 			<!-- Railway -->
 			
 				<!-- Lines -->
@@ -952,9 +1008,9 @@
 				</g>
 			</g>
 				
-			<!-- Portals -->
+			<!-- Portals Inhabited -->
 			<g>
-				<xsl:for-each select="map/portals/portal">
+				<xsl:for-each select="map/portals/portal[not(contains(@status, 'uninhabited'))]">
 					<g>
 						<xsl:attribute name="transform">
 							<xsl:value-of select="concat('translate(',@x,',',@z,')')" />
@@ -1012,6 +1068,68 @@
 					</g>
 				</xsl:for-each>
 			</g>
+			
+						<!-- Portals Uninhabited -->
+			<g id="toggleMe4" style="visibility: visible;">
+				<xsl:for-each select="map/portals/portal[contains(@status, 'uninhabited')]">
+					<g>
+						<xsl:attribute name="transform">
+							<xsl:value-of select="concat('translate(',@x,',',@z,')')" />
+						</xsl:attribute>
+						<xsl:if test="@offset">
+							<line class="offset">
+								<xsl:attribute name="x1">0</xsl:attribute>
+								<xsl:attribute name="y1">0</xsl:attribute>
+								<xsl:attribute name="x2">
+									<xsl:value-of select="substring-before(concat(@offset,','),',')" />
+								</xsl:attribute>
+								<xsl:attribute name="y2">
+									<xsl:value-of select="substring-after(@offset,',')" />
+								</xsl:attribute>
+							</line>
+							<circle class="offset" r="6" />
+						</xsl:if>
+						<g onmouseout="hide_portal_coords()">
+							<xsl:attribute name="onmousemove">
+								<xsl:value-of select="concat('show_portal_coords(evt,',@x,',',@z,',&quot;',@name,'&quot;)')" />
+							</xsl:attribute>
+							<xsl:if test="@offset">
+								<xsl:attribute name="transform">
+									<xsl:value-of select="concat('translate(',@offset,')')" />
+								</xsl:attribute>
+							</xsl:if>
+							<circle r="16">
+								<xsl:attribute name="class">
+									<xsl:if test="contains(@status, 'uninhabited')">portal_abandoned</xsl:if>
+									<xsl:if test="not(contains(@status, 'uninhabited'))">portal</xsl:if>
+								</xsl:attribute>
+							</circle>
+							<xsl:if test="contains(@status, 'griefed')">
+								<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
+									<circle r="16" class="griefed" />
+									<text y="10" class="griefed">!</text>
+								</g>
+							</xsl:if>
+							<xsl:if test="contains(@status, 'locked')">
+								<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
+									<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+									<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
+								</g>
+							</xsl:if>
+							<text y="5">
+								<xsl:attribute name="class">
+									<xsl:if test="string-length(@abbr) &gt; 2 and contains(@status, 'uninhabited')">portal_abandoned_small</xsl:if>
+									<xsl:if test="string-length(@abbr) &lt; 3 and contains(@status, 'uninhabited')">portal_abandoned</xsl:if>	
+									<xsl:if test="string-length(@abbr) &lt; 3 and not(contains(@status, 'uninhabited'))">portal</xsl:if>
+									<xsl:if test="string-length(@abbr) &gt; 2 and not(contains(@status, 'uninhabited'))">portal_small</xsl:if>
+								</xsl:attribute>
+								<xsl:value-of select="@abbr" />
+							</text>
+						</g>
+					</g>
+				</xsl:for-each>
+			</g>
+
 			
 			<g id="portal_coords" visibility="hidden" x="0" y="0">
 				<text class="portal_coords_name" y="-60" id="portal_coords_name" filter="url(#dropshadow)">Unknown</text>
