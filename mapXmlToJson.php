@@ -1,6 +1,6 @@
 <?php
 
-//header( 'Content-Type:text/xml' );
+header( 'Content-type: application/json' );
 
 $xml = simplexml_load_file( "map.xml" );
 
