@@ -55,6 +55,7 @@
 		<portal x="-1071" z="-713" abbr="Im" name="Immelopolis" status="locked, uninhabited" />
 		<portal x="-840" z="-167" abbr="Io" name="Io" status="uninhabited, griefed" />
 		<portal x="-179" z="244" abbr="Ir" name="Ironwood" />
+		<portal x="516" z="1324" abbr="IB" name="Isla Barata"/>
 		<portal x="-438" z="309" abbr="JH" name="Jack's Hold" status="uninhabited, griefed"/>
 		<portal x="-844" z="-552" abbr="JM" name="Javier's Mound" />
 		<portal x="-800" z="593" abbr="KK" name="Kings Keep" />

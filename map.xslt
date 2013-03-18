@@ -819,7 +819,6 @@
 				<line class="road" x1="1277" y1="1265" x2="1277" y2="1284" /><!-- Mushville Road Leg 2 -->
 				<line class="road" x1="1277" y1="1284" x2="1310" y2="1317" /><!-- Mushville Road Leg 3 -->
 				<line class="road" x1="1310" y1="1317" x2="1325" y2="1317" /><!-- Mushville Road Leg 4 -->
-				<line class="road_unofficial" x1="-611" y1="257" x2="-541" y2="257" /><!-- Wonderland Road -->
 				<line class="road_unofficial" x1="316" y1="56" x2="316" y2="148" /><!-- Belgrade Road --> 
 				<line class="road_unofficial" x1="-454" y1="-919" x2="-466" y2="-919" /><!-- Camp Dilison Road Leg 1 --> 
 				<line class="road_unofficial" x1="-466" y1="-919" x2="-617" y2="-768" /><!-- Camp Dilison Road Leg 2 --> 
