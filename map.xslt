@@ -442,7 +442,7 @@
 		
 		
 		<!-- Title Block -->
-		<g transform="translate(800, 60)">
+		<g transform="translate(50, 60)">
 			<!-- Roadcrew Sign -->
 			<g transform="scale(.3)">
 				<g transform="translate(810,210)" filter="url(#dropshadow)">
@@ -791,8 +791,8 @@
 				<line class="road_unofficial" x1="-244" y1="247" x2="0" y2="247" /><!-- Ironwood Road -->					
 				<line class="road" x1="-380" y1="398" x2="410" y2="398" /><!-- Gerald to Leningrad Rd -->
 				<line class="road_unofficial" x1="-110" y1="-106" x2="-44" y2="-106" /><!-- Hub to Rothbard Part Rd -->
-				<line class="road" x1="-129" y1="-21" x2="-15" y2="-135" /><!-- Liberty to Rothbard Leg 1 -->
-				<line class="road" x1="-129" y1="-21" x2="-140" y2="0" /><!-- Liberty to Rothbard Leg 2 -->
+				<line class="road_unofficial" x1="-129" y1="-21" x2="-15" y2="-135" /><!-- Liberty to Rothbard Leg 1 -->
+				<line class="road_unofficial" x1="-129" y1="-21" x2="-140" y2="0" /><!-- Liberty to Rothbard Leg 2 -->
 				<line class="road_unofficial" x1="-366" y1="-750" x2="-606" y2="-750" /><!-- Brandersbury Rd Leg 1 -->
 				<line class="road_unofficial" x1="-606" y1="-750" x2="-606" y2="-672" /><!-- Brandersbury Rd Leg 2 -->
 				<line class="road_unofficial" x1="-606" y1="-672" x2="-612" y2="-672" /><!-- Brandersbury Rd Leg 3 -->
@@ -809,8 +809,8 @@
 				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
 				<line class="road_unofficial" x1="-87" y1="0" x2="-87" y2="30" /><!-- Vindictam Road -->
 				<line class="road" x1="-212" y1="0" x2="-212" y2="-1227" /><!-- Central UpDown Road -->
-				<line class="road" x1="1249" y1="1249" x2="637" y2="1249" /><!-- Datan-Kegeth Road Leg 1 -->
-				<line class="road" x1="637" y1="1249" x2="637" y2="1295" /><!-- Datan-Kegeth Road Leg 2 -->
+				<line class="road" x1="1249" y1="1249" x2="673" y2="1249" /><!-- Datan-Kegeth Road Leg 1 -->
+				<line class="road" x1="673" y1="782" x2="673" y2="1295" /><!-- Datan-Kegeth Road Leg 2 -->
 				<line class="road" x1="1178" y1="1249" x2="956" y2="1031" /><!-- Nine Road -->				
 				<line class="road_unofficial" x1="-162" y1="2" x2="-162" y2="90" /><!-- Myra Road Leg 1 -->
 				<line class="road_unofficial" x1="-162" y1="90" x2="-9" y2="243" /><!-- Myra Road Leg 2 -->
@@ -837,6 +837,15 @@
 				<line class="road_unofficial" x1="-1378" y1="-575" x2="-1378" y2="-601" /><!-- New Aerilon Leg 6 -->
 				<line class="road_unofficial" x1="742" y1="850" x2="1050" y2="850" /><!-- Ephemerisle Leg 1 -->
 				<line class="road_unofficial" x1="1050" y1="850" x2="1050" y2="839" /><!-- Ephemerisle Leg 2 -->
+				<line class="road_unofficial" x1="593" y1="699" x2="699" y2="699" /><!-- Bay City/TuxHold Road -->	
+				<line class="road_unofficial" x1="-716" y1="-831" x2="-716" y2="-839" /><!-- Prisma/Camp Dilison Road Leg 1 -->
+				<line class="road_unofficial" x1="-716" y1="-839" x2="-661" y2="-839" /><!-- Prisma/Camp Dilison Road Leg 2 -->
+				<line class="road_unofficial" x1="-661" y1="-839" x2="-474" y2="-1028" /><!-- Prisma/Camp Dilison Road Leg 3 -->
+				<line class="road_unofficial" x1="-474" y1="-1028" x2="-463" y2="-1028" /><!-- Prisma/Camp Dilison Road Leg 4 -->
+				<line class="road_unofficial" x1="-463" y1="-1028" x2="-459" y2="-1038" /><!-- Lugus Fens Road Leg 1 -->
+				<line class="road_unofficial" x1="-459" y1="-1038" x2="-299" y2="-1196" /><!-- Lugus Fens Road Leg 2 -->
+				<line class="road_unofficial" x1="-299" y1="-1196" x2="-299" y2="-1227" /><!-- Lugus Fens Road Leg 3 -->
+				<line class="road_unofficial" x1="-299" y1="-1227" x2="-213" y2="-1227" /><!-- Lugus Fens Road Leg 4 -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: hidden;">
