@@ -3,7 +3,6 @@
 <map>
 	<portals>
 		<portal x="1" z="0" abbr="00" name="0,0" />
-		<portal x="311" z="-384" abbr="Ago" name="Agora" status="uninhabited" />
 		<portal x="505" z="321" abbr="Agr" name="Agraria" status="locked, uninhabited" />
 		<portal x="-1027" z="-921" abbr="AH" name="Al Hasayah" />
 		<portal x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked"/>	
@@ -28,8 +27,7 @@
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
 		<portal x="491" z="230" abbr="Com" name="Communa" status="locked" />
 		<portal x="-402" z="-550" abbr="Cx" name="Conflux" status="uninhabited"/>
-		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>	
-		<portal x="413" z="-263" abbr="Cr" name="Cressemopolis" status="uninhabited, griefed"/>	
+		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>		
 		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="uninhabited" />
 		<portal x="934" z="1021" abbr="Da" name="Danzig" status="locked" />
 		<portal x="574" z="274" abbr="Dzl" name="Danzilona" status="locked, griefed"/>
@@ -73,11 +71,13 @@
 		<portal x="-1" z="247" abbr="My" name="Myra" status="locked"/>
 		<portal x="-624" z="-123" abbr="Mrd" name="Myriad" status="locked"/>
 		<portal x="-1378" z="-601" abbr="NA" name="New Aerilon" status="locked"/>
+		<portal x="413" z="-263" abbr="NAg" name="New Agora" status="locked"/>
 		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
 		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
 		<portal x="-1840" z="10" abbr="Not" name="NotHCF" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
 		<portal x="-70" z="2" abbr="OJD" name="OJDstead" status="locked, griefed, uninhabited" />
+		<portal x="311" z="-384" abbr="OAg" name="Old Agora" status="uninhabited, griefed" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
 		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" status="uninhabited" />
 		<portal x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
