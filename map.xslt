@@ -263,13 +263,17 @@
 			}
 			
 			rect.portal_coords {
-				fill: black;
+				fill: White;
+				stroke-width:2;
+				stroke: black;
+				fill-opacity:1;
+        			stroke-opacity:.1;
 			}
 			
 			text.portal_coords {
 				font-size: 17px;
-				fill: white;
-				text-anchor: middle;
+				fill: Black;
+				text-anchor:middle;
 			}
 			
 			text.portal_coords_name {
@@ -1132,10 +1136,10 @@
 
 			
 			<g id="portal_coords" visibility="hidden" x="0" y="0">
-				<text class="portal_coords_name" y="-60" id="portal_coords_name" filter="url(#dropshadow)">Unknown</text>
-				<rect class="portal_coords" x="-60" y="-17" width="120" height="36" />
-				<text class="portal_coords" id="portal_coords_nether">N: 0,0</text>
-				<text class="portal_coords" y="14" id="portal_coords_overworld">O: 0,0</text>
+				<rect class="portal_coords" x="-100" y="-17" width="200" height="55" filter="url(#dropshadow)"/>
+				<text class="portal_coords_name" id="portal_coords_name" >Unknown</text>
+				<text class="portal_coords" y="18" id="portal_coords_nether">N: 0,0</text>
+				<text class="portal_coords" y="34" id="portal_coords_overworld">O: 0,0</text>
 			</g>
 		</g>
 		<script type="text/ecmascript">
