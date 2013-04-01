@@ -968,6 +968,7 @@
 				<line class="road_unofficial" x1="-299" y1="-1196" x2="-299" y2="-1227" /><!-- Lugus Fens Road Leg 3 -->
 				<line class="road_unofficial" x1="-299" y1="-1227" x2="-213" y2="-1227" /><!-- Lugus Fens Road Leg 4 -->
 				<line class="road_unofficial" x1="673" y1="1177" x2="709" y2="1177" /><!-- Carbon Road -->
+				<line class="road_unofficial" x1="-1180" y1="-325" x2="-1035" y2="-325" /><!-- Bereza Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: visible;">
