@@ -263,13 +263,17 @@
 			}
 			
 			rect.portal_coords {
-				fill: black;
+				fill: White;
+				stroke-width:2;
+				stroke: black;
+				fill-opacity:1;
+        			stroke-opacity:.1;
 			}
 			
 			text.portal_coords {
 				font-size: 17px;
-				fill: white;
-				text-anchor: middle;
+				fill: Black;
+				text-anchor:middle;
 			}
 			
 			text.portal_coords_name {
@@ -335,6 +339,70 @@
 			}
 		]]>
 		</script>
+
+
+  	<script type="text/ecmascript">
+		<![CDATA[
+			function toggleVisibilityUnofficial() 
+			{
+				var toggleMe = document.getElementById("toggleMe3");
+				toggleMe.style.display = "";
+				if(toggleMe.style.visibility == "hidden" ) {
+				toggleMe.style.visibility = "visible";
+				}else{
+					toggleMe.style.visibility = "hidden";
+				}
+				
+				var invert1 = document.getElementById("invert5");
+				invert1.style.display = "";
+				if(invert1.style.stroke == "white" ) {
+				invert1.style.stroke = "black";
+				}else{
+					invert1.style.stroke = "white";
+				}
+				
+				var invert2 = document.getElementById("invert6");
+				invert2.style.display = "";
+				if(invert2.style.stroke == "black" ) {
+				invert2.style.stroke = "white";
+				}else{
+					invert2.style.stroke = "black";
+				}
+			}
+		]]>
+		</script>
+		
+		  	<script type="text/ecmascript">
+		<![CDATA[
+			function toggleVisibilityUninhabited() 
+			{
+				var toggleMe = document.getElementById("toggleMe4");
+				toggleMe.style.display = "";
+				if(toggleMe.style.visibility == "hidden" ) {
+				toggleMe.style.visibility = "visible";
+				}else{
+					toggleMe.style.visibility = "hidden";
+				}
+				
+				var invert1 = document.getElementById("invert7");
+				invert1.style.display = "";
+				if(invert1.style.stroke == "white" ) {
+				invert1.style.stroke = "black";
+				}else{
+					invert1.style.stroke = "white";
+				}
+				
+				var invert2 = document.getElementById("invert8");
+				invert2.style.display = "";
+				if(invert2.style.stroke == "black" ) {
+				invert2.style.stroke = "white";
+				}else{
+					invert2.style.stroke = "black";
+				}
+			}
+		]]>
+		</script>
+
 		
 		<script type="text/ecmascript">
 		<![CDATA[
@@ -442,7 +510,7 @@
 		
 		
 		<!-- Title Block -->
-		<g transform="translate(50, 60)">
+		<g transform="translate(10, 60)">
 			<!-- Roadcrew Sign -->
 			<g transform="scale(.3)">
 				<g transform="translate(810,210)" filter="url(#dropshadow)">
@@ -457,8 +525,8 @@
 				</g>
 			</g>
 			
-			<!-- RoadToggle Button -->
-			<g transform="translate(180, 250)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
+			<!-- Historic Road Toggle Button -->
+			<g transform="translate(80, 250)" onclick="toggleVisibility();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert1" style="stroke: white">
@@ -472,14 +540,16 @@
 			
 				<g>
 				<text class="scale">
-					<tspan x="-18" y="-7">Toggle</tspan>
-					<tspan x="-18" y="5">Historic</tspan>
-					<tspan x="-18" y="17">Roads</tspan>
+					<tspan x="-30" y="-7">Show</tspan>
+					<tspan x="-30" y="5">Historic</tspan>
+					<tspan x="-30" y="17">Roads</tspan>
 				</text>
 				</g>
 			</g>
 			
-			<g transform="translate(300, 250)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
+			<!--Rail Toggle Button-->
+			
+			<g transform="translate(320, 250)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert3" style="stroke: white">
@@ -493,12 +563,58 @@
 			
 				<g>
 				<text class="scale">
-					<tspan x="-18" y="-7">Toggle</tspan>
-					<tspan x="-18" y="5">Railway</tspan>
-					<tspan x="-18" y="17">Line</tspan>
+					<tspan x="-30" y="-7">Hide</tspan>
+					<tspan x="-30" y="5">Railway</tspan>
+					<tspan x="-30" y="17">Lines</tspan>
 				</text>
 				</g>
 			</g>
+			
+			<!-- Unofficial Road Toggle Button -->
+			<g transform="translate(200, 250)" onclick="toggleVisibilityUnofficial();" filter="url(#dropshadow)" >
+			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+			
+				<g id="invert5" style="stroke: white">
+					<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" /> <!-- Top Line -->
+					<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" /> <!-- Left Line -->
+				</g>
+				<g id="invert6" style="stroke: black">
+					<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" /> <!-- Right Line -->
+					<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" /> <!-- Bottom Line -->
+				</g>
+			
+				<g>
+				<text class="scale">
+					<tspan x="-30" y="-7">Show</tspan>
+					<tspan x="-30" y="5">Unofficial</tspan>
+					<tspan x="-30" y="17">Roads</tspan>
+				</text>
+				</g>
+			</g>
+			
+			
+			<!-- Uninhabited Toggle Button -->
+			<g transform="translate(440, 250)" onclick="toggleVisibilityUninhabited();" filter="url(#dropshadow)" >
+			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+			
+				<g id="invert7" style="stroke: white">
+					<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" /> <!-- Top Line -->
+					<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" /> <!-- Left Line -->
+				</g>
+				<g id="invert8" style="stroke: black">
+					<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" /> <!-- Right Line -->
+					<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" /> <!-- Bottom Line -->
+				</g>
+			
+				<g>
+				<text class="scale">
+					<tspan x="-40" y="-7">Hide</tspan>
+					<tspan x="-40" y="5">Uninhabited</tspan>
+					<tspan x="-40" y="17">Portals</tspan>
+				</text>
+				</g>
+			</g>
+			
 			
 			<!-- Compass and Scale -->
 			<!--- <g transform="translate(320, 100)">
@@ -660,26 +776,18 @@
 				<line class="road_historic" x1="-735" y1="266" x2="-684" y2="215" /><!-- Atmora to Sovengarde Leg 2 -->
 				<line class="road_historic" x1="-593" y1="237" x2="-438" y2="237" /><!-- Obsidian Plains Road -->
 			</g>
+			<!--Official Roads-->
 			<g>
-				<line class="road_unofficial" x1="-90" y1="-125" x2="-200" y2="-125" /><!-- Rothbard Shortcut -->
-				<line class="road_unofficial" x1="-418" y1="390" x2="-367" y2="424" /><!-- Melonwood Road leg 1 -->
-				<line class="road_unofficial" x1="-367" y1="424" x2="-369" y2="500" /><!-- Melonwood Road leg 2 -->
 				<line class="road" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1178" y1="-272" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1169" y1="-151" x2="-1178" y2="-151" /><!-- North Road/Vilvos -->
 				<line class="road" x1="-1169" y1="-151" x2="-1169" y2="-158" /><!-- North Road/Vilvos -->
 				<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
-				<line class="road_unofficial" x1="411" y1="-517" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
-				<line class="road_unofficial" x1="531" y1="-680" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
 				<rect x="453" y="-521" width="8" height="7" class="underpass" /><!-- Lazuli/Winterfell Underpass -->
 				<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
 				<line class="road" x1="-1" y1="-522" x2="-1" y2="-658" /><!-- North Road/Gorgeview -->
-				<line class="road_unofficial" x1="4" y1="-690" x2="-1" y2="-658" /><!-- North Road/Gorgeview -->
 				<line class="road" x1="15" y1="-522" x2="-8" y2="-522" /><!-- Tinto/Gorgeview -->
-				<line class="road_unofficial" x1="-76" y1="-522" x2="-76" y2="-370" /><!-- In Kind/New Krumsville -->
-				<line class="road_unofficial" x1="-62" y1="-370" x2="-76" y2="-370" /><!-- In Kind/New Krumsville -->
-				<line class="road_unofficial" x1="-75" y1="-522" x2="-8" y2="-522" /><!-- In Kind/Tinto -->
 				<line class="road" x1="-1061" y1="-709" x2="-1061" y2="-492" /><!-- Tokiestan/Immelopolis -->
 				<line class="road" x1="-1180" y1="-545" x2="409" y2="-545" /><!-- North Road -->
 				<line class="road" x1="-821" y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
@@ -689,9 +797,7 @@
 				<line class="road" x1="-889" y1="-171" x2="-841" y2="-171" /><!-- Cutlasso's Fort/Io -->
 				<line class="road" x1="-863" y1="-145" x2="-467" y2="-145" /><!-- Io/Saga Road -->
 				<line class="road" x1="-777" y1="-895" x2="-777" y2="-545" /><!-- North Road/Central City -->
-				<line class="road_unofficial" x1="-808"  y1="-596" x2="-777" y2="-596" /><!-- Haven -->
 				<line class="road" x1="-782" y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
-				<line class="road_unofficial" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
 				<line class="road" x1="-715" y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
 				<rect x="-717" y="-692" width="7" height="7" class="underpass" /><!-- Yellow Flower Underpass -->
 				<line class="road" x1="-980" y1="-953" x2="-614" y2="-587" /><!-- Wolvania / Mt Augusta -->
@@ -700,14 +806,6 @@
 				<line class="road" x1="-614" y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
 				<line class="road" x1="-614" y1="-540" x2="-159" y2="-84" /><!-- Mt Augusta Road / Liberty -->
 				<line class="road" x1="-538" y1="-464" x2="-538" y2="-417" /><!-- Alpha Sierra -->
-				<line class="road_unofficial" x1="148" y1="-365" x2="179" y2="-365" /><!-- Agora -->
-				<line class="road_unofficial" x1="182" y1="-368" x2="179" y2="-365" /><!-- Agora -->
-				<line class="road_unofficial" x1="182" y1="-368" x2="251" y2="-368" /><!-- Agora -->
-				<line class="road_unofficial" x1="255" y1="-372" x2="251" y2="-368" /><!-- Agora -->
-				<line class="road_unofficial" x1="255" y1="-372" x2="379" y2="-372" /><!-- Agora -->
-				<line class="road_unofficial" x1="379" y1="-421" x2="379" y2="-372" /><!-- Agora -->
-				<line class="road_unofficial" x1="379" y1="-421" x2="390" y2="-432" /><!-- Agora -->
-				<line class="road_unofficial" x1="418" y1="-432" x2="390" y2="-432" /><!-- Agora -->
 				<line class="road" x1="-159" y1="-58" x2="466" y2="-683" /><!-- Liberty/Atlantis Road -->
 				<line class="road" x1="523" y1="-683" x2="466" y2="-683" /><!-- Liberty/Atlantis Road -->
 				<line class="road" x1="-159" y1="-84" x2="-159" y2="-1" /><!-- Hub road near Liberty -->
@@ -717,8 +815,6 @@
 				<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
 				<line class="road" x1="-92" y1="-125" x2="0" y2="-125" /><!-- Rothbard/Liberty -->
 				<line class="road" x1="-920" y1="289" x2="-645" y2="289" /><!-- Atmora Road -->
-				<line class="road_unofficial" x1="-436" y1="79" x2="-436" y2="308" /><!-- JH/OP North/South road -->
-				<line class="road_unofficial" x1="-664" y1="308" x2="-436" y2="308" /><!-- JH East/West road -->
 				<line class="road" x1="-357" y1="1" x2="-725" y2="369" /><!-- Avalon/Columbia Road -->
 				<line class="road" x1="-737" y1="369" x2="-725" y2="369" /><!-- Avalon/Columbia Road Leg 1 -->
 				<line class="road" x1="-737" y1="369" x2="-811" y2="443" /><!-- Avalon/Columbia Road Leg 2 -->
@@ -728,9 +824,6 @@
 				<line class="road" x1="395" y1="-263" x2="413" y2="-263" /><!-- Cress Road -->
 				<line class="road" x1="395" y1="-263" x2="418" y2="-291" /><!-- Cress Junction -->
 				<line class="road" x1="418" y1="-291" x2="418" y2="-430" /><!-- Old Rift Road -->
-				<line class="road_unofficial" x1="438" y1="-498" x2="438" y2="-457" /><!-- Old Rift/Winterfell -->
-				<line class="road_unofficial" x1="438" y1="-498" x2="470" y2="-530" /><!-- Old Rift/Winterfell -->
-				<line class="road_unofficial" x1="470" y1="-540" x2="470" y2="-530" /><!-- Old Rift/Winterfell -->
 				<line class="road" x1="418" y1="-430" x2="439" y2="-457" /><!-- Old Rift Road -->
 				<line class="road" x1="439" y1="-457" x2="408" y2="-457" /><!-- Lazuli Road -->
 				<line class="road" x1="408" y1="-457" x2="410" y2="-545" /><!-- Lazuli Road -->
@@ -767,29 +860,73 @@
 				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
 				<line class="road" x1="0" y1="-1" x2="0" y2="850" /><!-- Valenwood/Civitivecchia -->
 				<line class="road" x1="260" y1="232" x2="260" y2="150" /><!-- Fyfe -->			
-				<line class="road_unofficial" x1="-782" y1="-830" x2="-782" y2="-1096" /><!-- Fraustengard -->
-				<line class="road_unofficial" x1="-782" y1="-1096" x2="-879" y2="-1194" /><!-- Fraustengard -->
-				<line class="road_unofficial" x1="-879" y1="-1194" x2="-985" y2="-1194" /><!-- Fraustengard -->
-				<line class="road_unofficial" x1="-985" y1="-1194" x2="-985" y2="-1208" /><!-- Fraustengard -->
-				<line class="road_unofficial" x1="-782" y1="-938" x2="-926" y2="-938" /><!-- Wolvania -->
 				<line class="road" x1="-613" y1="-374" x2="-738" y2="-374" /><!-- Panda Towers Road -->
 				<line class="road" x1="-801" y1="-816" x2="-778" y2="-816" /><!-- Xanadu Road -->
 				<line class="road" x1="56" y1="-272" x2="56" y2="-332" /><!-- Liberty/Lazuli to Hoyt (official) -->
-				<line class="road_unofficial" x1="56" y1="-332" x2="56" y2="-374" /><!-- Lower Hoyt Road -->
-				<line class="road_unofficial" x1="-432" y1="310" x2="-432" y2="352" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 1 -->
-				<line class="road_unofficial" x1="-432" y1="352" x2="-418" y2="390" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 2 -->
-				<line class="road_unofficial" x1="-418" y1="390" x2="-411" y2="429" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 3 -->
 				<line class="road" x1="556" y1="543" x2="556" y2="664" /><!-- Danzig Road leg 1 -->
 				<line class="road" x1="556" y1="664" x2="865" y2="974" /><!-- Danzig Road leg 2 -->
 				<line class="road" x1="865" y1="974" x2="913" y2="974" /><!-- Danzig Road leg 3 -->
 				<line class="road" x1="913" y1="974" x2="957" y2="1018" /><!-- Danzig Road leg 4 -->
 				<line class="road" x1="957" y1="1018" x2="957" y2="1031" /><!-- Danzig Road leg 5 -->
-				<line class="road_unofficial" x1="957" y1="1023" x2="935" y2="1023" /><!-- Danzig Road leg 6 -->
 				<line class="road" x1="453" y1="440" x2="453" y2="609" /><!-- Mercer Road -->
+				<line class="road" x1="-380" y1="398" x2="410" y2="398" /><!-- Gerald to Leningrad Rd -->
+				<line class="road" x1="41" y1="-58" x2="41" y2="-75" /><!-- Freyrgard Road leg 1 -->
+				<line class="road" x1="41" y1="-75" x2="0" y2="-75" /><!-- Freyrgard Road leg 1 -->
+				<line class="road" x1="0" y1="-55" x2="-29" y2="-55" /><!-- Tombstone Road -->
+				<line class="road" x1="573" y1="275" x2="506" y2="275" /><!-- Danziloa Road Leg 1 -->
+				<line class="road" x1="506" y1="275" x2="506" y2="320" /><!-- Danziloa Road Leg 2 -->
+				<line class="road" x1="49" y1="37" x2="102" y2="37" /><!-- Amnesty 1 -->
+				<line class="road" x1="104" y1="4" x2="104" y2="92" /><!-- Amnesty 2 -->
+				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
+				<line class="road" x1="-212" y1="0" x2="-212" y2="-1227" /><!-- Central UpDown Road -->
+				<line class="road" x1="1249" y1="1249" x2="673" y2="1249" /><!-- Datan-Kegeth Road Leg 1 -->
+				<line class="road" x1="673" y1="782" x2="673" y2="1295" /><!-- Datan-Kegeth Road Leg 2 -->
+				<line class="road" x1="1178" y1="1249" x2="956" y2="1031" /><!-- Nine Road -->				
+				<line class="road" x1="1262" y1="1250" x2="1277" y2="1265" /><!-- Mushville Road Leg 1 -->
+				<line class="road" x1="1277" y1="1265" x2="1277" y2="1284" /><!-- Mushville Road Leg 2 -->
+				<line class="road" x1="1277" y1="1284" x2="1310" y2="1317" /><!-- Mushville Road Leg 3 -->
+				<line class="road" x1="1310" y1="1317" x2="1325" y2="1317" /><!-- Mushville Road Leg 4 -->
+			</g>
+			
+			<!--Unofficial Roads-->
+			<g id="toggleMe3" style="visibility: hidden;">
+				<line class="road_unofficial" x1="-90" y1="-125" x2="-200" y2="-125" /><!-- Rothbard Shortcut -->
+				<line class="road_unofficial" x1="-418" y1="390" x2="-367" y2="424" /><!-- Melonwood Road leg 1 -->
+				<line class="road_unofficial" x1="-367" y1="424" x2="-369" y2="500" /><!-- Melonwood Road leg 2 -->
+				<line class="road_unofficial" x1="411" y1="-517" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
+				<line class="road_unofficial" x1="531" y1="-680" x2="531" y2="-517" /><!-- Lazuli/Atlantis -->
+				<line class="road_unofficial" x1="4" y1="-690" x2="-1" y2="-658" /><!-- North Road/Gorgeview -->
+				<line class="road_unofficial" x1="-76" y1="-522" x2="-76" y2="-370" /><!-- In Kind/New Krumsville -->
+				<line class="road_unofficial" x1="-62" y1="-370" x2="-76" y2="-370" /><!-- In Kind/New Krumsville -->
+				<line class="road_unofficial" x1="-75" y1="-522" x2="-8" y2="-522" /><!-- In Kind/Tinto -->
+				<line class="road_unofficial" x1="-808"  y1="-596" x2="-777" y2="-596" /><!-- Haven -->
+				<line class="road_unofficial" x1="-777"  y1="-679" x2="-706" y2="-679" /><!-- Yellow Flower / Mt Augusta -->
+				<line class="road_unofficial" x1="148" y1="-365" x2="179" y2="-365" /><!-- Agora -->
+				<line class="road_unofficial" x1="182" y1="-368" x2="179" y2="-365" /><!-- Agora -->
+				<line class="road_unofficial" x1="182" y1="-368" x2="251" y2="-368" /><!-- Agora -->
+				<line class="road_unofficial" x1="255" y1="-372" x2="251" y2="-368" /><!-- Agora -->
+				<line class="road_unofficial" x1="255" y1="-372" x2="379" y2="-372" /><!-- Agora -->
+				<line class="road_unofficial" x1="379" y1="-421" x2="379" y2="-372" /><!-- Agora -->
+				<line class="road_unofficial" x1="379" y1="-421" x2="390" y2="-432" /><!-- Agora -->
+				<line class="road_unofficial" x1="418" y1="-432" x2="390" y2="-432" /><!-- Agora -->
+				<line class="road_unofficial" x1="-436" y1="79" x2="-436" y2="308" /><!-- JH/OP North/South road -->
+				<line class="road_unofficial" x1="-664" y1="308" x2="-436" y2="308" /><!-- JH East/West road -->
+				<line class="road_unofficial" x1="438" y1="-498" x2="438" y2="-457" /><!-- Old Rift/Winterfell -->
+				<line class="road_unofficial" x1="438" y1="-498" x2="470" y2="-530" /><!-- Old Rift/Winterfell -->
+				<line class="road_unofficial" x1="470" y1="-540" x2="470" y2="-530" /><!-- Old Rift/Winterfell -->
+				<line class="road_unofficial" x1="-782" y1="-830" x2="-782" y2="-1096" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-782" y1="-1096" x2="-879" y2="-1194" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-879" y1="-1194" x2="-985" y2="-1194" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-985" y1="-1194" x2="-985" y2="-1208" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-782" y1="-938" x2="-926" y2="-938" /><!-- Wolvania -->
+				<line class="road_unofficial" x1="56" y1="-332" x2="56" y2="-374" /><!-- Lower Hoyt Road -->
+				<line class="road_unofficial" x1="-432" y1="310" x2="-432" y2="352" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 1 -->
+				<line class="road_unofficial" x1="-432" y1="352" x2="-418" y2="390" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 2 -->
+				<line class="road_unofficial" x1="-418" y1="390" x2="-411" y2="429" /><!-- Jack's Hold to Melonwood/Kinzantium road leg 3 -->
+				<line class="road_unofficial" x1="957" y1="1023" x2="935" y2="1023" /><!-- Danzig Road leg 6 -->
 				<line class="road_unofficial" x1="541" y1="528" x2="766" y2="528" /><!-- Camp Maulgish Road -->
 				<line class="road_unofficial" x1="131" y1="4" x2="16" y2="4" /><!-- Reid Dale Road -->
 				<line class="road_unofficial" x1="-244" y1="247" x2="0" y2="247" /><!-- Ironwood Road -->					
-				<line class="road" x1="-380" y1="398" x2="410" y2="398" /><!-- Gerald to Leningrad Rd -->
 				<line class="road_unofficial" x1="-110" y1="-106" x2="-44" y2="-106" /><!-- Hub to Rothbard Part Rd -->
 				<line class="road_unofficial" x1="-129" y1="-21" x2="-15" y2="-135" /><!-- Liberty to Rothbard Leg 1 -->
 				<line class="road_unofficial" x1="-129" y1="-21" x2="-140" y2="0" /><!-- Liberty to Rothbard Leg 2 -->
@@ -798,27 +935,12 @@
 				<line class="road_unofficial" x1="-606" y1="-672" x2="-612" y2="-672" /><!-- Brandersbury Rd Leg 3 -->
 				<line class="road_unofficial" x1="-612" y1="-672" x2="-612" y2="-609" /><!-- Brandersbury Rd Leg 4 -->
 				<line class="road_unofficial" x1="0" y1="-1" x2="0" y2="-216" /><!-- Rothbard N/S Rd -->
-				<line class="road" x1="41" y1="-58" x2="41" y2="-75" /><!-- Freyrgard Road leg 1 -->
-				<line class="road" x1="41" y1="-75" x2="0" y2="-75" /><!-- Freyrgard Road leg 1 -->
-				<line class="road" x1="0" y1="-55" x2="-29" y2="-55" /><!-- Tombstone Road -->
-				<line class="road" x1="573" y1="275" x2="506" y2="275" /><!-- Danziloa Road Leg 1 -->
-				<line class="road" x1="506" y1="275" x2="506" y2="320" /><!-- Danziloa Road Leg 2 -->
-				<line class="road" x1="49" y1="37" x2="102" y2="37" /><!-- Amnesty 1 -->
-				<line class="road" x1="104" y1="4" x2="104" y2="92" /><!-- Amnesty 2 -->
 				<line class="road_unofficial" x1="844" y1="1088" x2="844" y2="952" /><!-- Chiapas Road -->
-				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
 				<line class="road_unofficial" x1="-87" y1="0" x2="-87" y2="30" /><!-- Vindictam Road -->
-				<line class="road" x1="-212" y1="0" x2="-212" y2="-1227" /><!-- Central UpDown Road -->
-				<line class="road" x1="1249" y1="1249" x2="673" y2="1249" /><!-- Datan-Kegeth Road Leg 1 -->
-				<line class="road" x1="673" y1="782" x2="673" y2="1295" /><!-- Datan-Kegeth Road Leg 2 -->
-				<line class="road" x1="1178" y1="1249" x2="956" y2="1031" /><!-- Nine Road -->				
 				<line class="road_unofficial" x1="-162" y1="2" x2="-162" y2="90" /><!-- Myra Road Leg 1 -->
 				<line class="road_unofficial" x1="-162" y1="90" x2="-9" y2="243" /><!-- Myra Road Leg 2 -->
 				<line class="road_unofficial" x1="2" y1="247" x2="256" y2="247" /><!-- Myra Road Leg 3 -->
-				<line class="road" x1="1262" y1="1250" x2="1277" y2="1265" /><!-- Mushville Road Leg 1 -->
-				<line class="road" x1="1277" y1="1265" x2="1277" y2="1284" /><!-- Mushville Road Leg 2 -->
-				<line class="road" x1="1277" y1="1284" x2="1310" y2="1317" /><!-- Mushville Road Leg 3 -->
-				<line class="road" x1="1310" y1="1317" x2="1325" y2="1317" /><!-- Mushville Road Leg 4 -->
+				<line class="road_unofficial" x1="-611" y1="257" x2="-541" y2="257" /><!-- Wonderland Road -->
 				<line class="road_unofficial" x1="316" y1="56" x2="316" y2="148" /><!-- Belgrade Road --> 
 				<line class="road_unofficial" x1="-454" y1="-919" x2="-466" y2="-919" /><!-- Camp Dilison Road Leg 1 --> 
 				<line class="road_unofficial" x1="-466" y1="-919" x2="-617" y2="-768" /><!-- Camp Dilison Road Leg 2 --> 
@@ -848,7 +970,7 @@
 				<line class="road_unofficial" x1="673" y1="1177" x2="709" y2="1177" /><!-- Carbon Road -->
 			</g>
 			
-			<g id="toggleMe2" style="visibility: hidden;">
+			<g id="toggleMe2" style="visibility: visible;">
 			<!-- Railway -->
 			
 				<!-- Lines -->
@@ -891,9 +1013,9 @@
 				</g>
 			</g>
 				
-			<!-- Portals -->
+			<!-- Portals Inhabited -->
 			<g>
-				<xsl:for-each select="map/portals/portal">
+				<xsl:for-each select="map/portals/portal[not(contains(@status, 'uninhabited'))]">
 					<g>
 						<xsl:attribute name="transform">
 							<xsl:value-of select="concat('translate(',@x,',',@z,')')" />
@@ -952,11 +1074,73 @@
 				</xsl:for-each>
 			</g>
 			
+						<!-- Portals Uninhabited -->
+			<g id="toggleMe4" style="visibility: visible;">
+				<xsl:for-each select="map/portals/portal[contains(@status, 'uninhabited')]">
+					<g>
+						<xsl:attribute name="transform">
+							<xsl:value-of select="concat('translate(',@x,',',@z,')')" />
+						</xsl:attribute>
+						<xsl:if test="@offset">
+							<line class="offset">
+								<xsl:attribute name="x1">0</xsl:attribute>
+								<xsl:attribute name="y1">0</xsl:attribute>
+								<xsl:attribute name="x2">
+									<xsl:value-of select="substring-before(concat(@offset,','),',')" />
+								</xsl:attribute>
+								<xsl:attribute name="y2">
+									<xsl:value-of select="substring-after(@offset,',')" />
+								</xsl:attribute>
+							</line>
+							<circle class="offset" r="6" />
+						</xsl:if>
+						<g onmouseout="hide_portal_coords()">
+							<xsl:attribute name="onmousemove">
+								<xsl:value-of select="concat('show_portal_coords(evt,',@x,',',@z,',&quot;',@name,'&quot;)')" />
+							</xsl:attribute>
+							<xsl:if test="@offset">
+								<xsl:attribute name="transform">
+									<xsl:value-of select="concat('translate(',@offset,')')" />
+								</xsl:attribute>
+							</xsl:if>
+							<circle r="16">
+								<xsl:attribute name="class">
+									<xsl:if test="contains(@status, 'uninhabited')">portal_abandoned</xsl:if>
+									<xsl:if test="not(contains(@status, 'uninhabited'))">portal</xsl:if>
+								</xsl:attribute>
+							</circle>
+							<xsl:if test="contains(@status, 'griefed')">
+								<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
+									<circle r="16" class="griefed" />
+									<text y="10" class="griefed">!</text>
+								</g>
+							</xsl:if>
+							<xsl:if test="contains(@status, 'locked')">
+								<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
+									<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+									<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
+								</g>
+							</xsl:if>
+							<text y="5">
+								<xsl:attribute name="class">
+									<xsl:if test="string-length(@abbr) &gt; 2 and contains(@status, 'uninhabited')">portal_abandoned_small</xsl:if>
+									<xsl:if test="string-length(@abbr) &lt; 3 and contains(@status, 'uninhabited')">portal_abandoned</xsl:if>	
+									<xsl:if test="string-length(@abbr) &lt; 3 and not(contains(@status, 'uninhabited'))">portal</xsl:if>
+									<xsl:if test="string-length(@abbr) &gt; 2 and not(contains(@status, 'uninhabited'))">portal_small</xsl:if>
+								</xsl:attribute>
+								<xsl:value-of select="@abbr" />
+							</text>
+						</g>
+					</g>
+				</xsl:for-each>
+			</g>
+
+			
 			<g id="portal_coords" visibility="hidden" x="0" y="0">
-				<text class="portal_coords_name" y="-60" id="portal_coords_name" filter="url(#dropshadow)">Unknown</text>
-				<rect class="portal_coords" x="-60" y="-17" width="120" height="36" />
-				<text class="portal_coords" id="portal_coords_nether">N: 0,0</text>
-				<text class="portal_coords" y="14" id="portal_coords_overworld">O: 0,0</text>
+				<rect class="portal_coords" x="-100" y="-17" width="200" height="55" filter="url(#dropshadow)"/>
+				<text class="portal_coords_name" id="portal_coords_name" >Unknown</text>
+				<text class="portal_coords" y="18" id="portal_coords_nether">N: 0,0</text>
+				<text class="portal_coords" y="34" id="portal_coords_overworld">O: 0,0</text>
 			</g>
 		</g>
 		<script type="text/ecmascript">
@@ -970,4 +1154,3 @@
 	</svg>
 </xsl:template>
 </xsl:stylesheet> 
-
