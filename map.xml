@@ -16,7 +16,8 @@
 		<portal x="636" z="703" abbr="Ba" name="Baycity" status="locked"/>
 		<portal x="-673" z="738" abbr="BB" name="Barnabie Beaches" status="uninhabited, locked"/>
 		<portal x="316" z="56" abbr="Bel" name="Belgrade" status="locked"/>
-		<portal x="-1035" z="-325" abbr="Ber" name="Bereza" status="locked"/>
+		<portal x="-1035" z="-325" abbr="Bez" name="Bereza" status="locked"/>
+		<portal x="-12" z="850" abbr="Ben" name="Berlin" status="griefed" />
 		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />
 		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />
 		<portal x="-462" z="-925" abbr="CD" name="Camp Dilison" />
@@ -25,7 +26,6 @@
 		<portal x="709" z="1177" abbr="Cbn" name="Carbon" />
 		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
 		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
-		<portal x="-12" z="850" abbr="Ci" name="Civitivecchia" status="uninhabited, griefed" />
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
 		<portal x="491" z="230" abbr="Com" name="Communa" status="locked" />
 		<portal x="-402" z="-550" abbr="Cx" name="Conflux" status="uninhabited"/>

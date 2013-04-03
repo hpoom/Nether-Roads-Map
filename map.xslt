@@ -54,6 +54,12 @@
 				fill: #FFFF00;
 			}
 			
+			circle.railwayg {
+				stroke: #00FF00;
+				stroke-width: 5;
+				fill: #00FF00;
+			}
+			
 			circle.railwayb {
 				stroke: #000000;
 				stroke-width: 5;
@@ -159,6 +165,11 @@
 			
 			line.rail_liney {
 				stroke: #FFFF00;
+				stroke-width: 6;
+			}
+			
+			line.rail_lineg {
+				stroke: #00FF00;
 				stroke-width: 6;
 			}
 			
@@ -975,6 +986,8 @@
 			<!-- Railway -->
 			
 				<!-- Lines -->
+				<line class="rail_lineg" x1="-1" y1="247" x2="-618" y2="251" /><!-- Myra to Tigerstaden -->
+				
 				<line class="rail_liney" x1="-168" y1="1" x2="-407" y2="237" /><!-- Liberty to Obsidian Plains -->
 				<line class="rail_liney" x1="-168" y1="1" x2="2" y2="-137" /><!-- Liberty to Rothbard -->
 				<line class="rail_liney" x1="-407" y1="237" x2="-543" y2="269" /><!-- Obsidian Plains to Wonderland -->
@@ -993,6 +1006,9 @@
 			
 				<!-- Stations -->
 				<g>
+					<circle class="railwayg" r="25" cx="-1" cy="247" /><!-- Myra -->
+					<circle class="railwayg" r="20" cx="-618" cy="251" /><!-- Tigerstaden -->
+					
 					<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
 					<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
 					<circle class="railwayy" r="20" cx="-543" cy="269" /><!-- Wonderland -->
