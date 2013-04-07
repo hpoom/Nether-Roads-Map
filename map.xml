@@ -25,6 +25,7 @@
 		<portal x="-714" z="398" abbr="Ca" name="Caracas" />
 		<portal x="709" z="1177" abbr="Cbn" name="Carbon" />
 		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
+		<portal x="-70" z="2" abbr="Che" name="Chesterstead" status="griefed" />
 		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
 		<portal x="491" z="230" abbr="Com" name="Communa" status="locked griefed" />
@@ -52,7 +53,7 @@
 		<portal x="56" z="-373" abbr="Ho" name="Hoyt" status="uninhabited" />
 		<portal x="-912" z="-321" abbr="Ic" name="Icengrad" status="locked, griefed, uninhabited" />
 		<portal x="-78" z="-520" abbr="IK" name="In Kind" status="uninhabited" />
-		<portal x="-1071" z="-713" abbr="Im" name="Immelopolis" status="locked, uninhabited" />
+		<portal x="-1071" z="-713" abbr="Im" name="Immelopolis" />
 		<portal x="-840" z="-167" abbr="Io" name="Io" status="uninhabited, griefed" />
 		<portal x="-179" z="244" abbr="Ir" name="Ironwood" />
 		<portal x="516" z="1324" abbr="IB" name="Isla Barata"/>
@@ -78,7 +79,6 @@
 		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
 		<portal x="-1840" z="10" abbr="Not" name="NotHCF" />
 		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
-		<portal x="-70" z="2" abbr="OJD" name="OJDstead" status="locked, griefed, uninhabited" />
 		<portal x="311" z="-384" abbr="OAg" name="Old Agora" status="uninhabited, griefed" />
 		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
 		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" status="uninhabited" />
@@ -94,6 +94,7 @@
 		<portal x="-471" z="-154" abbr="Sa" name="Saga" status="uninhabited" />
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="uninhabited, locked" />
 		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
+		<portal x="-1296" z="-1296" abbr="SPR" name="SPQR" status="locked"/>
 		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" status="uninhabited" />
 		<portal x="-618" z="251" abbr="Tig" name="Tigerstaden" />
 		<portal x="14" z="-525" abbr="Tin" name="Tinto"/>
