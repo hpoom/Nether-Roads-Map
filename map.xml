@@ -94,7 +94,7 @@
 		<portal x="-471" z="-154" abbr="Sa" name="Saga" status="uninhabited" />
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="uninhabited, locked" />
 		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
-		<portal x="-1296" z="-1296" abbr="SPR" name="SPQR" status="locked"/>
+		<portal x="-1296" z="-1266" abbr="SPR" name="SPQR" status="locked"/>
 		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" status="uninhabited" />
 		<portal x="-618" z="251" abbr="Tig" name="Tigerstaden" />
 		<portal x="14" z="-525" abbr="Tin" name="Tinto"/>
