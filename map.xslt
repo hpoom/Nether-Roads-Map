@@ -981,6 +981,11 @@
 				<line class="road_unofficial" x1="-299" y1="-1227" x2="-213" y2="-1227" /><!-- Lugus Fens Road Leg 4 -->
 				<line class="road_unofficial" x1="673" y1="1177" x2="709" y2="1177" /><!-- Carbon Road -->
 				<line class="road_unofficial" x1="-1180" y1="-325" x2="-1035" y2="-325" /><!-- Bereza Road -->
+				<line class="road_unofficial" x1="-1121" y1="-547" x2="-1132" y2="-1207" /><!-- SPQR Road Leg 1 -->
+				<line class="road_unofficial" x1="-1132" y1="-1207" x2="-1144" y2="-1208" /><!-- SPQR Road Leg 2 -->
+				<line class="road_unofficial" x1="-1144" y1="-1208" x2="-1145" y2="-1223" /><!-- SPQR Road Leg 3 -->
+				<line class="road_unofficial" x1="-1145" y1="-1223" x2="-1188" y2="-1266" /><!-- SPQR Road Leg 4 -->
+				<line class="road_unofficial" x1="-1188" y1="-1266" x2="-1296" y2="-1266" /><!-- SPQR Road Leg 5 -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: visible;">
