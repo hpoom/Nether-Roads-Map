@@ -8,7 +8,7 @@
 	
 	Town/Portal List
 	-->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2900" height="2700" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2900" height="3100" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<style type="text/css">
 		<![CDATA[
 
@@ -749,6 +749,10 @@
 				<text class="range_v" y="1100">+1100</text>
 				<text class="range_v" y="1200">+1200</text>
 				<text class="range_v" y="1300">+1300</text>
+				<text class="range_v" y="1400">+1400</text>
+				<text class="range_v" y="1500">+1500</text>
+				<text class="range_v" y="1600">+1600</text>
+				<text class="range_v" y="1700">+1700</text>
 			</g>
 		
 			<!-- Roads -->
@@ -985,7 +989,10 @@
 				<line class="road_unofficial" x1="-1130" y1="-1205" x2="-1144" y2="-1207" /><!-- SQPR Road Leg 2 -->
 				<line class="road_unofficial" x1="-1144" y1="-1207" x2="-1144" y2="-1221" /><!-- SQPR Road Leg 3 -->
 				<line class="road_unofficial" x1="-1144" y1="-1221" x2="-1187" y2="-1265" /><!-- SQPR Road Leg 4 -->
-				<line class="road_unofficial" x1="-1187" y1="-1265" x2="-1296" y2="-1296" /><!-- SQPR Road Leg 5 -->
+				<line class="road_unofficial" x1="-1187" y1="-1265" x2="-1296" y2="-1296" /><!-- SQPR Road Leg 5 -->		
+				<line class="road_unofficial" x1="455" y1="1249" x2="516" y2="1324" /><!-- Isla Barata Road Leg 1 -->
+				<line class="road_unofficial" x1="673" y1="1249" x2="356" y2="1249" /><!-- Terminus Road Leg 1 -->
+				<line class="road_unofficial" x1="356" y1="1249" x2="356" y2="1737" /><!-- Terminus Road Leg 2 -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: visible;">
