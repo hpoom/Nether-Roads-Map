@@ -1001,12 +1001,11 @@
 				<!-- Lines -->
 				<line class="rail_lineg" x1="-1" y1="247" x2="-618" y2="251" /><!-- Myra to Tigerstaden -->
 				
-				<line class="rail_liney" x1="-168" y1="1" x2="-407" y2="237" /><!-- Liberty to Obsidian Plains -->
-				<line class="rail_liney" x1="-168" y1="1" x2="2" y2="-137" /><!-- Liberty to Rothbard -->
-				<line class="rail_liney" x1="-407" y1="237" x2="-543" y2="269" /><!-- Obsidian Plains to Wonderland -->
-				<line class="rail_liney" x1="-543" y1="269" x2="-714" y2="398" /><!-- Wonderland to Leningrad -->
-				<line class="rail_liney" x1="-714" y1="398" x2="-811" y2="492" /><!-- Leningrad to Columbia -->
-				<line class="rail_liney" x1="2" y1="-137" x2="527" y2="-683" /><!-- Rothbard to Atlantis -->
+				<line class="rail_liney" x1="-811" y1="492" x2="-714" y2="398" /><!-- Columbia to Caracas -->
+				<line class="rail_liney" x1="-714" y1="398" x2="-618" y2="251" /><!-- Caracas to Tigerstaden -->
+				<line class="rail_liney" x1="-618" y1="251" x2="-1" y2="247" /><!-- Tigerstaden to Myra -->
+				<line class="rail_liney" x1="-1" y1="247" x2="413" y2="-263" /><!-- Myra to New Agora -->
+				<line class="rail_liney" x1="413" y1="-263" x2="527" y2="-683" /><!-- New Agora to Atlantis -->
 				
 				<line class="rail_liner" x1="-168" y1="1" x2="-" y2="247" /><!-- Liberty to Myra -->
 				<line class="rail_liner" x1="-1" y1="247" x2="540" y2="400" /><!-- Myra to Gerald -->
@@ -1019,24 +1018,23 @@
 			
 				<!-- Stations -->
 				<g>
-					<circle class="railwayg" r="25" cx="-1" cy="247" /><!-- Myra -->
-					<circle class="railwayg" r="20" cx="-618" cy="251" /><!-- Tigerstaden -->
-					
 					<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
-					<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Leningrad -->
-					<circle class="railwayy" r="20" cx="-543" cy="269" /><!-- Wonderland -->
-					<circle class="railwayy" r="20" cx="-407" cy="237" /><!-- Obsidian Plains -->
-					<circle class="railwayy" r="30" cx="-168" cy="1" /><!-- Liberty -->
-					<circle class="railwayy" r="20" cx="2" cy="-137" /><!-- Rothbard -->
+					<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Caracas -->
+					<circle class="railwayy" r="25" cx="-618" cy="251" /><!-- Tigerstaden -->
+					<circle class="railwayy" r="30" cx="-1" cy="247" /><!-- Myra -->
+					<circle class="railwayy" r="20" cx="413" cy="-263" /><!-- New Agora -->
 					<circle class="railwayy" r="20" cx="527" cy="-683" /><!-- Atlantis -->
 					
 					<circle class="railwayr" r="20" cx="-1121" cy="-547" /><!-- Aristopolis -->
 					<circle class="railwayr" r="20" cx="-614" cy="-618" /><!-- Mt Augusta -->
 					<circle class="railwayr" r="25" cx="-168" cy="1" /><!-- Liberty -->
-					<circle class="railwayr" r="20" cx="-1" cy="247" /><!-- Myra -->
+					<circle class="railwayr" r="25" cx="-1" cy="247" /><!-- Myra -->
 					<circle class="railwayr" r="20" cx="540" cy="400" /><!-- Gerald -->
 					<circle class="railwayr" r="20" cx="934" cy="1021" /><!-- Danzig -->
 					<circle class="railwayr" r="20" cx="1250" cy="1248" /><!-- Nine -->
+					
+					<circle class="railwayg" r="20" cx="-1" cy="247" /><!-- Myra -->
+					<circle class="railwayg" r="20" cx="-618" cy="251" /><!-- Tigerstaden -->
 					
 					<circle class="railwayb" r="20" cx="-168" cy="1" /><!-- Liberty -->
 					<circle class="railwayb" r="20" cx="-1840" cy="10" /><!-- NotHCF -->
