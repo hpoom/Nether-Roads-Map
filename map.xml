@@ -30,7 +30,8 @@
 		<portal x="-811" z="492" abbr="Col" name="Columbia" />
 		<portal x="491" z="230" abbr="Com" name="Communa" status="locked griefed" />
 		<portal x="-402" z="-550" abbr="Cx" name="Conflux" status="uninhabited"/>
-		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>		
+		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>	
+		<portal x="383" z="55" abbr="Coo" name="Cookland" />
 		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="uninhabited" />
 		<portal x="934" z="1021" abbr="Da" name="Danzig" status="locked" />
 		<portal x="574" z="274" abbr="Dzl" name="Danzilona" status="locked, griefed"/>
@@ -94,7 +95,7 @@
 		<portal x="-471" z="-154" abbr="Sa" name="Saga" status="uninhabited" />
 		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="uninhabited, locked" />
 		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
-		<portal x="-1296" z="-1296" abbr="SPR" name="SPQR" status="locked"/>
+		<portal x="-1294" z="-1266" abbr="SPR" name="SPQR" status="locked"/>
 		<portal x="357" z="1737" abbr="Te" name="Terminus" status="locked"/>
 		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" status="uninhabited" />
 		<portal x="-618" z="251" abbr="Tig" name="Tigerstaden" />
