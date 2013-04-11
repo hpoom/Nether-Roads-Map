@@ -901,6 +901,7 @@
 				<line class="road" x1="1277" y1="1265" x2="1277" y2="1284" /><!-- Mushville Road Leg 2 -->
 				<line class="road" x1="1277" y1="1284" x2="1310" y2="1317" /><!-- Mushville Road Leg 3 -->
 				<line class="road" x1="1310" y1="1317" x2="1325" y2="1317" /><!-- Mushville Road Leg 4 -->
+				<line class="road" x1="47" y1="-263" x2="413" y2="-263" /><!-- New Agora-Traith -->
 			</g>
 			
 			<!--Unofficial Roads-->
