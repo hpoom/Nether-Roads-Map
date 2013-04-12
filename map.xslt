@@ -883,7 +883,7 @@
 				<line class="road" x1="-438" y1="257" x2="-604" y2="257" /><!-- Obsidian Plains Road -->
 				<line class="road" x1="-237" y1="237" x2="-237" y2="255" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
-				<line class="road" x1="-615" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
+				<line class="road" x1="-448" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
 				<line class="road" x1="0" y1="-1" x2="0" y2="850" /><!-- Valenwood/Civitivecchia -->
 				<line class="road" x1="56" y1="-272" x2="56" y2="-332" /><!-- Liberty/Lazuli to Hoyt (official) -->
 				<line class="road" x1="556" y1="543" x2="556" y2="664" /><!-- Danzig Road leg 1 -->
@@ -1038,6 +1038,7 @@
 				<line class="road_unofficial" x1="22" y1="-240" x2="75" y2="-187" /><!-- TGS/Qarth Road -->
 				<line class="road_unofficial" x1="75" y1="-187" x2="191" y2="-187" /><!-- TGS/Qarth Road -->
 				<line class="road_unofficial" x1="79" y1="-187" x2="79" y2="-200" /><!-- TGS/Qarth Road -->
+				<line class="road_unofficial" x1="79" y1="-187" x2="79" y2="-200" /><!-- TGS/Qarth Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: visible;">
@@ -1055,7 +1056,8 @@
 				<line class="rail_liner" x1="-168" y1="1" x2="-" y2="247" /><!-- Liberty to Myra -->
 				<line class="rail_liner" x1="-1" y1="247" x2="540" y2="400" /><!-- Myra to Gerald -->
 				<line class="rail_liner" x1="-168" y1="1" x2="-614" y2="-618" /><!-- Liberty to Mt Augusta -->
-				<line class="rail_liner" x1="-614" y1="-618" x2="-1121" y2="-547" /><!-- Mt Augusta to Aristopolis -->
+				<line class="rail_liner" x1="-614" y1="-618" x2="-808" y2="-592" /><!-- Mt Augusta to Haven -->
+				<line class="rail_liner" x1="-808" y1="-592" x2="-1121" y2="-547" /><!-- Haven to Aristopolis -->
 				<line class="rail_liner" x1="540" y1="400" x2="934" y2="1021" /><!-- Gerald to Danzig -->
 				<line class="rail_liner" x1="934" y1="1021" x2="1250" y2="1248" /><!-- Danzig to Nine -->
 			
@@ -1071,6 +1073,7 @@
 					<circle class="railwayy" r="20" cx="527" cy="-683" /><!-- Atlantis -->
 					
 					<circle class="railwayr" r="20" cx="-1121" cy="-547" /><!-- Aristopolis -->
+					<circle class="railwayr" r="20" cx="-808" cy="-592" /><!-- Haven -->
 					<circle class="railwayr" r="20" cx="-614" cy="-618" /><!-- Mt Augusta -->
 					<circle class="railwayr" r="25" cx="-168" cy="1" /><!-- Liberty -->
 					<circle class="railwayr" r="25" cx="-1" cy="247" /><!-- Myra -->
