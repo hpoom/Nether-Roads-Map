@@ -793,43 +793,28 @@
 			</g>
 			<!--Official Roads-->
 			<g>
-				<line class="road" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
-				<line class="road" x1="-1178" y1="-272" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
-				<line class="road" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
-				<line class="road" x1="-1169" y1="-151" x2="-1178" y2="-151" /><!-- North Road/Vilvos -->
-				<line class="road" x1="-1169" y1="-151" x2="-1169" y2="-158" /><!-- North Road/Vilvos -->
 				<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
 				<rect x="453" y="-521" width="8" height="7" class="underpass" /><!-- Lazuli/Winterfell Underpass -->
 				<line class="road" x1="57" y1="-376" x2="57" y2="-545" /><!-- North Road/Hoyt -->
 				<line class="road" x1="-1" y1="-522" x2="-1" y2="-658" /><!-- North Road/Gorgeview -->
 				<line class="road" x1="15" y1="-522" x2="-8" y2="-522" /><!-- Tinto/Gorgeview -->
-				<line class="road" x1="-1061" y1="-709" x2="-1061" y2="-492" /><!-- Tokiestan/Immelopolis -->
+				<line class="road" x1="-1061" y1="-709" x2="-1061" y2="-546" /><!-- Immelopolis -->
 				<line class="road" x1="-1180" y1="-545" x2="409" y2="-545" /><!-- North Road -->
-				<line class="road" x1="-821" y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
-				<line class="road" x1="-1082" y1="-492" x2="-1061" y2="-492" /><!-- North Road/Tokiestan -->
 				<line class="road" x1="-981" y1="-263" x2="-981" y2="-545" /><!-- North Road/Cutlasso's Fort -->
 				<line class="road" x1="-981" y1="-263" x2="-863" y2="-145" /><!-- Cutlasso's Fort/Io -->
-				<line class="road" x1="-889" y1="-171" x2="-841" y2="-171" /><!-- Cutlasso's Fort/Io -->
 				<line class="road" x1="-863" y1="-145" x2="-467" y2="-145" /><!-- Io/Saga Road -->
-				<line class="road" x1="-777" y1="-895" x2="-777" y2="-545" /><!-- North Road/Central City -->
-				<line class="road" x1="-782" y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
-				<line class="road" x1="-715" y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
-				<rect x="-717" y="-692" width="7" height="7" class="underpass" /><!-- Yellow Flower Underpass -->
+				<line class="road" x1="-777" y1="-833" x2="-777" y2="-545" /><!-- North Road/Central City/Prisma -->
+				<line class="road" x1="-778" y1="-831" x2="-701" y2="-831" /><!-- Prisma -->
 				<line class="road" x1="-980" y1="-953" x2="-614" y2="-587" /><!-- Wolvania / Mt Augusta -->
-				<line class="road" x1="-980" y1="-953" x2="-980" y2="-1208" /><!-- Fraustengard -->
-				<line class="road" x1="-741" y1="-714" x2="-741" y2="-766" /><!-- Avernum -->
 				<line class="road" x1="-614" y1="-621" x2="-616" y2="258" /><!-- Mt Augusta Road  -->
 				<line class="road" x1="-614" y1="-540" x2="-159" y2="-84" /><!-- Mt Augusta Road / Liberty -->
-				<line class="road" x1="-538" y1="-464" x2="-538" y2="-417" /><!-- Alpha Sierra -->
 				<line class="road" x1="-159" y1="-58" x2="466" y2="-683" /><!-- Liberty/Atlantis Road -->
 				<line class="road" x1="523" y1="-683" x2="466" y2="-683" /><!-- Liberty/Atlantis Road -->
 				<line class="road" x1="-159" y1="-84" x2="-159" y2="-1" /><!-- Hub road near Liberty -->
 				<line class="road" x1="-357" y1="-36" x2="-467" y2="-145" /><!-- Saga/Avalon -->
-				<line class="road" x1="-357" y1="-121" x2="-357" y2="-1" /><!-- Saga/Avalon -->
-				<line class="road" x1="-357" y1="-121" x2="-385" y2="-121" /><!-- Epicus/Avalon -->
+				<line class="road" x1="-357" y1="-37" x2="-357" y2="-1" /><!-- Saga/Avalon -->
 				<line class="road" x1="-357" y1="-1" x2="0" y2="-1" /><!-- Avalon/0,0 -->
 				<line class="road" x1="-92" y1="-125" x2="0" y2="-125" /><!-- Rothbard/Liberty -->
-				<line class="road" x1="-920" y1="289" x2="-645" y2="289" /><!-- Atmora Road -->
 				<line class="road" x1="-357" y1="1" x2="-725" y2="369" /><!-- Avalon/Columbia Road -->
 				<line class="road" x1="-737" y1="369" x2="-725" y2="369" /><!-- Avalon/Columbia Road Leg 1 -->
 				<line class="road" x1="-737" y1="369" x2="-811" y2="443" /><!-- Avalon/Columbia Road Leg 2 -->
@@ -842,25 +827,17 @@
 				<line class="road" x1="418" y1="-430" x2="439" y2="-457" /><!-- Old Rift Road -->
 				<line class="road" x1="439" y1="-457" x2="408" y2="-457" /><!-- Lazuli Road -->
 				<line class="road" x1="408" y1="-457" x2="410" y2="-545" /><!-- Lazuli Road -->
-				<line class="road" x1="22" y1="-240" x2="75" y2="-187" /><!-- TGS/Qarth Road -->
-				<line class="road" x1="75" y1="-187" x2="191" y2="-187" /><!-- TGS/Qarth Road -->
-				<line class="road" x1="79" y1="-187" x2="79" y2="-200" /><!-- TGS/Qarth Road -->
 				<line class="road" x1="16" y1="4" x2="0" y2="4" /><!-- Constantinople Road -->
 				<line class="road" x1="16" y1="4" x2="558" y2="546" /><!-- Constantinople Road -->
-				<line class="road" x1="499" y1="332" x2="499" y2="398" /><!-- Agraria/Gerald Road -->
+				<line class="road" x1="499" y1="312" x2="499" y2="398" /><!-- Agraria/Gerald Road -->
 				<line class="road" x1="540" y1="398" x2="410" y2="398" /><!-- Gerald Road -->
 				<line class="road" x1="243" y1="231" x2="490" y2="231" /><!-- Communa Road -->
-				<line class="road" x1="400" y1="144" x2="550" y2="144" /><!-- Havana Road -->
-				<line class="road" x1="480" y1="144" x2="480" y2="294" /><!-- Havana/Agraria -->
-				<line class="road" x1="498" y1="312" x2="480" y2="294" /><!-- Communa/Agraria -->
+				<line class="road" x1="480" y1="231" x2="480" y2="294" /><!-- Communa/Agraria -->
+				<line class="road" x1="498" y1="313" x2="480" y2="294" /><!-- Communa/Agraria -->
 				<line class="road" x1="162" y1="149" x2="399" y2="149" /><!-- Kodiak Road -->
 				<line class="road" x1="0" y1="0" x2="0" y2="18" /><!-- Kizantium Road -->
 				<line class="road" x1="0" y1="18" x2="-575" y2="593" /><!-- Kizantium Road -->
 				<line class="road" x1="-575" y1="593" x2="-575" y2="748" /><!-- Kizantium Road -->
-				<line class="road" x1="-639" y1="756" x2="-639" y2="741" /><!-- Piedmont Road -->
-				<line class="road" x1="-639" y1="756" x2="-518" y2="756" /><!-- Piedmont/Bjornstahl Road -->
-				<line class="road" x1="-518" y1="756" x2="-468" y2="806" /><!-- Bjornstahl Road -->
-				<line class="road" x1="-468" y1="806" x2="-457" y2="806" /><!-- Bjornstahl Road -->
 				<line class="road" x1="-575" y1="724" x2="-787" y2="512" /><!-- Kizantium/Columbia Road -->
 				<line class="road" x1="-786" y1="512" x2="-811" y2="512" /><!-- Kizantium/Columbia Road -->
 				<line class="road" x1="-810" y1="512" x2="-810" y2="492" /><!-- Kizantium/Columbia Road -->
@@ -872,11 +849,7 @@
 				<line class="road" x1="-237" y1="237" x2="-237" y2="255" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-244" y1="237" x2="-244" y2="0" /><!-- Vanahiemer Road -->
 				<line class="road" x1="-615" y1="92" x2="-665" y2="92" /><!-- Sovngarde Road -->
-				<line class="road" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
 				<line class="road" x1="0" y1="-1" x2="0" y2="850" /><!-- Valenwood/Civitivecchia -->
-				<line class="road" x1="260" y1="232" x2="260" y2="150" /><!-- Fyfe -->			
-				<line class="road" x1="-613" y1="-374" x2="-738" y2="-374" /><!-- Panda Towers Road -->
-				<line class="road" x1="-801" y1="-816" x2="-778" y2="-816" /><!-- Xanadu Road -->
 				<line class="road" x1="56" y1="-272" x2="56" y2="-332" /><!-- Liberty/Lazuli to Hoyt (official) -->
 				<line class="road" x1="556" y1="543" x2="556" y2="664" /><!-- Danzig Road leg 1 -->
 				<line class="road" x1="556" y1="664" x2="865" y2="974" /><!-- Danzig Road leg 2 -->
@@ -889,7 +862,8 @@
 				<line class="road" x1="41" y1="-75" x2="0" y2="-75" /><!-- Freyrgard Road leg 1 -->
 				<line class="road" x1="0" y1="-55" x2="-29" y2="-55" /><!-- Tombstone Road -->
 				<line class="road" x1="573" y1="275" x2="506" y2="275" /><!-- Danziloa Road Leg 1 -->
-				<line class="road" x1="506" y1="275" x2="506" y2="320" /><!-- Danziloa Road Leg 2 -->
+				<line class="road" x1="506" y1="275" x2="506" y2="315" /><!-- Danziloa Road Leg 2 -->
+				<line class="road" x1="497" y1="314" x2="505" y2="314" /><!-- Danziloa Road Leg 3 -->
 				<line class="road" x1="49" y1="37" x2="102" y2="37" /><!-- Amnesty 1 -->
 				<line class="road" x1="104" y1="4" x2="104" y2="92" /><!-- Amnesty 2 -->
 				<line class="road" x1="-575" y1="695" x2="-507" y2="695" /><!-- Hudson Road -->
@@ -902,6 +876,7 @@
 				<line class="road" x1="1277" y1="1284" x2="1310" y2="1317" /><!-- Mushville Road Leg 3 -->
 				<line class="road" x1="1310" y1="1317" x2="1325" y2="1317" /><!-- Mushville Road Leg 4 -->
 				<line class="road" x1="47" y1="-263" x2="413" y2="-263" /><!-- New Agora-Traith -->
+				<line class="road" x1="396" y1="384" x2="396" y2="-263" /><!-- New Agora- -->
 			</g>
 			
 			<!--Unofficial Roads-->
@@ -997,6 +972,37 @@
 				<line class="road_unofficial" x1="356" y1="1249" x2="356" y2="1737" /><!-- Terminus Road Leg 2 -->
 				<line class="road_unofficial" x1="316" y1="66" x2="383" y2="66" /><!-- Cookland Road Leg 1 -->
 				<line class="road_unofficial" x1="383" y1="66" x2="383" y2="55" /><!-- Cookland Road Leg 2 -->
+				<line class="road_unofficial" x1="-1061" y1="-546" x2="-1061" y2="-492" /><!-- Tokiestan-->
+				<line class="road_unofficial" x1="-1082" y1="-492" x2="-1061" y2="-492" /><!-- Tokiestan -->
+				<line class="road_unofficial" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
+				<line class="road_unofficial" x1="-1178" y1="-272" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
+				<line class="road_unofficial" x1="-1178" y1="-151" x2="-1178" y2="-272" /><!-- North Road/Vilvos -->
+				<line class="road_unofficial" x1="-1169" y1="-151" x2="-1178" y2="-151" /><!-- North Road/Vilvos -->
+				<line class="road_unofficial" x1="-1169" y1="-151" x2="-1169" y2="-158" /><!-- North Road/Vilvos -->
+				<line class="road_unofficial" x1="-821" y1="-448" x2="-821" y2="-545" /><!-- North Road/Derpenshire -->
+				<line class="road_unofficial" x1="-980" y1="-321" x2="-916" y2="-321" /><!-- Icengrad Road -->
+				<line class="road_unofficial" x1="-889" y1="-171" x2="-841" y2="-171" /><!--Io -->
+				<line class="road_unofficial" x1="-613" y1="-374" x2="-738" y2="-374" /><!-- Panda Towers Road -->
+				<line class="road_unofficial" x1="-538" y1="-464" x2="-538" y2="-417" /><!-- Alpha Sierra -->
+				<line class="road_unofficial" x1="-980" y1="-953" x2="-980" y2="-1208" /><!-- Fraustengard -->
+				<line class="road_unofficial" x1="-801" y1="-816" x2="-778" y2="-816" /><!-- Xanadu Road -->
+				<line class="road_unofficial" x1="-741" y1="-714" x2="-741" y2="-766" /><!-- Avernum -->
+			  <line class="road_unofficial" x1="-777" y1="-895" x2="-777" y2="-833" /><!--Central City -->
+      	<line class="road_unofficial" x1="-715" y1="-721" x2="-715" y2="-679" /><!-- Yellow Flower -->
+				<rect x="-717" y="-692" width="7" height="7" class="underpass" /><!-- Yellow Flower Underpass -->
+				<line class="road_unofficial" x1="-357" y1="-121" x2="-357" y2="-38" /><!-- Epicus/Avalon -->
+				<line class="road_unofficial" x1="-357" y1="-121" x2="-385" y2="-121" /><!-- Epicus/Avalon -->
+				<line class="road_unofficial" x1="-920" y1="289" x2="-645" y2="289" /><!-- Atmora Road -->
+				<line class="road_unofficial" x1="-639" y1="756" x2="-639" y2="741" /><!-- Piedmont Road -->
+				<line class="road_unofficial" x1="-639" y1="756" x2="-518" y2="756" /><!-- Piedmont/Bjornstahl Road -->
+				<line class="road_unofficial" x1="-518" y1="756" x2="-468" y2="806" /><!-- Bjornstahl Road -->
+				<line class="road_unofficial" x1="260" y1="232" x2="260" y2="150" /><!-- Fyfe -->			
+				<line class="road_unofficial" x1="400" y1="144" x2="550" y2="144" /><!-- Havana Road -->
+				<line class="road_unofficial" x1="480" y1="144" x2="480" y2="231" /><!-- Havana/Agraria -->
+				<line class="road_unofficial" x1="-468" y1="806" x2="-457" y2="806" /><!-- Bjornstahl Road -->
+				<line class="road_unofficial" x1="22" y1="-240" x2="75" y2="-187" /><!-- TGS/Qarth Road -->
+				<line class="road_unofficial" x1="75" y1="-187" x2="191" y2="-187" /><!-- TGS/Qarth Road -->
+				<line class="road_unofficial" x1="79" y1="-187" x2="79" y2="-200" /><!-- TGS/Qarth Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: visible;">
