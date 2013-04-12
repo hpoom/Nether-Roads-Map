@@ -320,6 +320,26 @@
 		]]>
 		</script>
 		
+				<script type="text/ecmascript">
+		<![CDATA[
+		
+			function show_portal_coords_key(evt, x, y, name,c,r)
+			{
+				portal_coords_name_key.textContent = name;
+				portal_coords_nether_key.textContent = "N: " + x + "," + y;
+				portal_coords_overworld_key.textContent = "O: " + (x * 8) + "," + (y * 8);
+				portal_coords_key.setAttribute("transform", "translate(" + c + "," + (r + 34) + ")");
+				portal_coords_key.setAttributeNS(null, "visibility", "visible");
+			}
+	 
+			function hide_portal_coords_key()
+			{
+				portal_coords_key.setAttributeNS(null, "visibility", "hidden");
+			}
+			
+		]]>
+		</script>
+		
 		<script type="text/ecmascript">
 		<![CDATA[
 			function toggleVisibility() 
@@ -475,17 +495,20 @@
 			</defs>
 			<rect x="-20" y="-20" height="585" fill="url(#key_gradient)">
 				<xsl:attribute name="width">
-					<xsl:value-of select="180 * ceiling(count(/map/portals/portal) div 16.0) + 20" />
+					<xsl:value-of select="200 * ceiling(count(/map/portals/portal[not(contains(@status, 'uninhabited'))]) div 16.0) + 20" />
 				</xsl:attribute>
 			</rect>
 			
-			<xsl:for-each select="map/portals/portal">
-				<xsl:variable name="i"><xsl:number /></xsl:variable>
+			<xsl:for-each select="map/portals/portal[not(contains(@status, 'uninhabited'))]">
+				<xsl:variable name="i"><xsl:number count="map/portals/portal[not(contains(@status, 'uninhabited'))]" /></xsl:variable>
 				<xsl:variable name="x" select="floor(($i - 1) div 16.0)" />
 				<xsl:variable name="y" select="($i - 1) - ($x * 16.0)" />
-				<g>
+				<g onmouseout="hide_portal_coords_key()">
+					<xsl:attribute name="onmousemove">
+						<xsl:value-of select="concat('show_portal_coords_key(evt,',@x,',',@z,',&quot;',@name,'&quot;,',200 * $x,',',36 * $y,')')" />
+					</xsl:attribute>
 					<xsl:attribute name="transform">
-						<xsl:value-of select="concat('translate(',180 * $x,',',36 * $y,')')" />
+						<xsl:value-of select="concat('translate(',200 * $x,',',36 * $y,')')" />
 					</xsl:attribute>
 					<circle r="16">
 						<xsl:attribute name="class">
@@ -515,9 +538,21 @@
 					<text class="portal_name" x="25" y="5"><xsl:value-of select="@name" /></text>
 				</g>
 			</xsl:for-each>
-		
+		  <g id="portal_coords_key" visibility="hidden" x="0" y="0">
+				<rect class="portal_coords" x="-100" y="-17" width="200" height="55" filter="url(#dropshadow)"/>
+				<text class="portal_coords_name" id="portal_coords_name_key" >Unknown</text>
+				<text class="portal_coords" y="18" id="portal_coords_nether_key">N: 0,0</text>
+				<text class="portal_coords" y="34" id="portal_coords_overworld_key">O: 0,0</text>
+			</g>
 		</g>
-		
+		<script type="text/ecmascript">
+		<![CDATA[
+			portal_coords_key = document.getElementById('portal_coords_key');
+			portal_coords_nether_key = document.getElementById('portal_coords_nether_key');
+			portal_coords_overworld_key = document.getElementById('portal_coords_overworld_key');
+			portal_coords_name_key = document.getElementById('portal_coords_name_key');
+		]]>
+		</script>script>
 		
 		
 		<!-- Title Block -->
@@ -560,7 +595,7 @@
 			
 			<!--Rail Toggle Button-->
 			
-			<g transform="translate(320, 250)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
+			<g transform="translate(440, 250)" onclick="toggleVisibilityRail();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert3" style="stroke: white">
@@ -605,7 +640,7 @@
 			
 			
 			<!-- Uninhabited Toggle Button -->
-			<g transform="translate(440, 250)" onclick="toggleVisibilityUninhabited();" filter="url(#dropshadow)" >
+			<g transform="translate(320, 250)" onclick="toggleVisibilityUninhabited();" filter="url(#dropshadow)" >
 			<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
 			
 				<g id="invert7" style="stroke: white">
@@ -619,7 +654,7 @@
 			
 				<g>
 				<text class="scale">
-					<tspan x="-40" y="-7">Hide</tspan>
+					<tspan x="-40" y="-7">Show</tspan>
 					<tspan x="-40" y="5">Uninhabited</tspan>
 					<tspan x="-40" y="17">Portals</tspan>
 				</text>
@@ -1113,7 +1148,7 @@
 			</g>
 			
 						<!-- Portals Uninhabited -->
-			<g id="toggleMe4" style="visibility: visible;">
+			<g id="toggleMe4" style="visibility: hidden;">
 				<xsl:for-each select="map/portals/portal[contains(@status, 'uninhabited')]">
 					<g>
 						<xsl:attribute name="transform">
