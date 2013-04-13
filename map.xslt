@@ -869,7 +869,6 @@
 				<line class="road" x1="243" y1="231" x2="490" y2="231" /><!-- Communa Road -->
 				<line class="road" x1="480" y1="231" x2="480" y2="294" /><!-- Communa/Agraria -->
 				<line class="road" x1="498" y1="313" x2="480" y2="294" /><!-- Communa/Agraria -->
-				<line class="road" x1="162" y1="149" x2="399" y2="149" /><!-- Kodiak Road -->
 				<line class="road" x1="0" y1="0" x2="0" y2="18" /><!-- Kizantium Road -->
 				<line class="road" x1="0" y1="18" x2="-575" y2="593" /><!-- Kizantium Road -->
 				<line class="road" x1="-575" y1="593" x2="-575" y2="748" /><!-- Kizantium Road -->
@@ -910,8 +909,17 @@
 				<line class="road" x1="1277" y1="1265" x2="1277" y2="1284" /><!-- Mushville Road Leg 2 -->
 				<line class="road" x1="1277" y1="1284" x2="1310" y2="1317" /><!-- Mushville Road Leg 3 -->
 				<line class="road" x1="1310" y1="1317" x2="1325" y2="1317" /><!-- Mushville Road Leg 4 -->
-				<line class="road" x1="47" y1="-263" x2="413" y2="-263" /><!-- New Agora-Traith -->
-				<line class="road" x1="396" y1="384" x2="396" y2="-263" /><!-- New Agora- -->
+				<line class="road" x1="-338" y1="-263" x2="413" y2="-263" /><!-- New Agora-Agusta -->
+				<line class="road" x1="396" y1="384" x2="396" y2="-263" /><!-- New Agora-+,+ -->
+				<line class="road" x1="65" y1="56" x2="316" y2="56" /><!-- Belgrade Road Leg 2 --> 
+				<line class="road" x1="316" y1="66" x2="383" y2="66" /><!-- Cookland Road Leg 1 -->
+				<line class="road" x1="383" y1="66" x2="383" y2="55" /><!-- Cookland Road Leg 2 -->
+				<line class="road" x1="-213" y1="-1227" x2="-299" y2="-1227" /><!--Lugus - extra-->
+				<line class="road" x1="-226" y1="-1227" x2="-618" y2="-835" /><!--Prisma - extra - 1-->	
+				<line class="road" x1="-709" y1="-835" x2="-618" y2="-835" /><!--Prisma - extra - 2-->
+				<line class="road" x1="-299" y1="-1227" x2="-299" y2="-1154" /><!-- Lugus -->
+				<line class="road" x1="-462" y1="-935" x2="-490" y2="-963" /><!-- Camp Dilison -->
+				<line class="road" x1="-618" y1="-835" x2="-618" y2="-598" /><!-- Extra - Augusta -->
 			</g>
 			
 			<!--Unofficial Roads-->
@@ -969,7 +977,6 @@
 				<line class="road_unofficial" x1="2" y1="247" x2="256" y2="247" /><!-- Myra Road Leg 3 -->
 				<line class="road_unofficial" x1="-611" y1="257" x2="-541" y2="257" /><!-- Wonderland Road -->
 				<line class="road_unofficial" x1="316" y1="56" x2="316" y2="148" /><!-- Belgrade Road Leg 1 -->
-				<line class="road_unofficial" x1="65" y1="56" x2="316" y2="56" /><!-- Belgrade Road Leg 2 --> 
 				<line class="road_unofficial" x1="-454" y1="-919" x2="-466" y2="-919" /><!-- Camp Dilison Road Leg 1 --> 
 				<line class="road_unofficial" x1="-466" y1="-919" x2="-617" y2="-768" /><!-- Camp Dilison Road Leg 2 --> 
 				<line class="road_unofficial" x1="-617" y1="-768" x2="-617" y2="-590" /><!-- Camp Dilison Road Leg 3 -->
@@ -1005,8 +1012,6 @@
 				<line class="road_unofficial" x1="455" y1="1249" x2="516" y2="1324" /><!-- Isla Barata Road Leg 1 -->
 				<line class="road_unofficial" x1="673" y1="1249" x2="356" y2="1249" /><!-- Terminus Road Leg 1 -->
 				<line class="road_unofficial" x1="356" y1="1249" x2="356" y2="1737" /><!-- Terminus Road Leg 2 -->
-				<line class="road_unofficial" x1="316" y1="66" x2="383" y2="66" /><!-- Cookland Road Leg 1 -->
-				<line class="road_unofficial" x1="383" y1="66" x2="383" y2="55" /><!-- Cookland Road Leg 2 -->
 				<line class="road_unofficial" x1="-1061" y1="-546" x2="-1061" y2="-492" /><!-- Tokiestan-->
 				<line class="road_unofficial" x1="-1082" y1="-492" x2="-1061" y2="-492" /><!-- Tokiestan -->
 				<line class="road_unofficial" x1="-1180" y1="-545" x2="-1180" y2="-273" /><!-- North Road/Vilvos -->
@@ -1039,6 +1044,7 @@
 				<line class="road_unofficial" x1="75" y1="-187" x2="191" y2="-187" /><!-- TGS/Qarth Road -->
 				<line class="road_unofficial" x1="79" y1="-187" x2="79" y2="-200" /><!-- TGS/Qarth Road -->
 				<line class="road_unofficial" x1="79" y1="-187" x2="79" y2="-200" /><!-- TGS/Qarth Road -->
+				<line class="road_unofficial" x1="162" y1="149" x2="399" y2="149" /><!-- Kodiak Road -->
 			</g>
 			
 			<g id="toggleMe2" style="visibility: visible;">
