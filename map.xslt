@@ -1056,7 +1056,8 @@
 				<line class="rail_liney" x1="-811" y1="492" x2="-714" y2="398" /><!-- Columbia to Caracas -->
 				<line class="rail_liney" x1="-714" y1="398" x2="-618" y2="251" /><!-- Caracas to Tigerstaden -->
 				<line class="rail_liney" x1="-618" y1="251" x2="-1" y2="247" /><!-- Tigerstaden to Myra -->
-				<line class="rail_liney" x1="-1" y1="247" x2="413" y2="-263" /><!-- Myra to New Agora -->
+				<line class="rail_liney" x1="-1" y1="247" x2="316" y2="56" /><!-- Myra to Belgrade -->
+				<line class="rail_liney" x1="316" y1="56" x2="413" y2="-263" /><!-- Belgrade to New Agora -->
 				<line class="rail_liney" x1="413" y1="-263" x2="527" y2="-683" /><!-- New Agora to Atlantis -->
 				
 				<line class="rail_liner" x1="-168" y1="1" x2="-" y2="247" /><!-- Liberty to Myra -->
@@ -1075,6 +1076,7 @@
 					<circle class="railwayy" r="20" cx="-714" cy="398" /><!-- Caracas -->
 					<circle class="railwayy" r="25" cx="-618" cy="251" /><!-- Tigerstaden -->
 					<circle class="railwayy" r="30" cx="-1" cy="247" /><!-- Myra -->
+					<circle class="railwayy" r="20" cx="316" cy="56" /><!-- Belgrade -->
 					<circle class="railwayy" r="20" cx="413" cy="-263" /><!-- New Agora -->
 					<circle class="railwayy" r="20" cx="527" cy="-683" /><!-- Atlantis -->
 					
