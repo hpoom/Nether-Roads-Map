@@ -66,6 +66,12 @@
 				fill: #000000;
 			}
 			
+			circle.railwayp {
+				stroke: #FF6EC7;
+				stroke-width: 5;
+				fill: #FF6EC7;
+			}
+			
 			text.portal {
 				fill: black;
 				font-size: 17px;
@@ -180,6 +186,11 @@
 			
 			line.rail_lineb {
 				stroke: #000000;
+				stroke-width: 6;
+			}
+			
+			line.rail_linep {
+				stroke: #FF6EC7;
 				stroke-width: 6;
 			}
 			
@@ -1066,6 +1077,10 @@
 				<line class="rail_liner" x1="-614" y1="-618" x2="-701" y2="-831" /><!-- Mt Augusta to Prisma -->
 				<line class="rail_liner" x1="540" y1="400" x2="934" y2="1021" /><!-- Gerald to Danzig -->
 				<line class="rail_liner" x1="934" y1="1021" x2="1250" y2="1248" /><!-- Danzig to Nine -->
+				
+				<line class="rail_linep" x1="-216" y1="-1239" x2="-614" y2="-618" /><!-- ExtraLand to Mt Augusta -->
+				<line class="rail_linep" x1="-614" y1="-618" x2="-808" y2="-592" /><!-- Mt Augusta to Haven -->
+				<line class="rail_linep" x1="-808" y1="-592" x2="-1121" y2="-547" /><!-- Haven to Aristopolis -->
 			
 				<line class="rail_lineb" x1="-168" y1="1" x2="-1840" y2="10" /><!-- Liberty to NotHCF -->
 			
@@ -1080,7 +1095,7 @@
 					<circle class="railwayy" r="20" cx="527" cy="-683" /><!-- Atlantis -->
 					
 					<circle class="railwayr" r="20" cx="-701" cy="-831" /><!-- Haven -->
-					<circle class="railwayr" r="20" cx="-614" cy="-618" /><!-- Mt Augusta -->
+					<circle class="railwayr" r="25" cx="-614" cy="-618" /><!-- Mt Augusta -->
 					<circle class="railwayr" r="25" cx="-168" cy="1" /><!-- Liberty -->
 					<circle class="railwayr" r="25" cx="-1" cy="247" /><!-- Myra -->
 					<circle class="railwayr" r="20" cx="540" cy="400" /><!-- Gerald -->
@@ -1089,6 +1104,11 @@
 					
 					<circle class="railwayg" r="20" cx="-1" cy="247" /><!-- Myra -->
 					<circle class="railwayg" r="20" cx="-618" cy="251" /><!-- Tigerstaden -->
+					
+					<circle class="railwayp" r="20" cx="-216" cy="-1239" /><!-- ExtraLand -->
+					<circle class="railwayp" r="20" cx="-614" cy="-618" /><!-- Mt Augusta -->
+					<circle class="railwayp" r="20" cx="-808" cy="-592" /><!-- Haven -->
+					<circle class="railwayp" r="20" cx="-1121" cy="-547" /><!-- Aristopolis -->
 					
 					<circle class="railwayb" r="20" cx="-168" cy="1" /><!-- Liberty -->
 					<circle class="railwayb" r="20" cx="-1840" cy="10" /><!-- NotHCF -->
