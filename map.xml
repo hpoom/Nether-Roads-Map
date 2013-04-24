@@ -60,6 +60,7 @@
 		<portal x="516" z="1324" abbr="IB" name="Isla Barata"/>
 		<portal x="-438" z="309" abbr="JH" name="Jack's Hold" status="uninhabited, griefed"/>
 		<portal x="-844" z="-552" abbr="JM" name="Javier's Mound" />
+		<portal x="375" z="1630" abbr="Ke" name="Keiname" status="locked"/>
 		<portal x="-800" z="593" abbr="KK" name="Kings Keep" />
 		<portal x="-577" z="748" abbr="Ki" name="Kizantium" status="locked"/>
 		<portal x="398" z="148" abbr="Ko" name="Kodiak" status="uninhabited" />
