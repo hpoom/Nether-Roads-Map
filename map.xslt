@@ -1,3 +1,4 @@
+
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -44,41 +45,11 @@
 				fill: lightcyan;
 			}
 			
-			circle.Town_abandoned {
+			circle.Town_Uninhabited {
 				stroke: #8b8989;
 				stroke-width: 1.5;
 				stroke-dasharray: 6,2;
 				fill: white;
-			}
-			
-			circle.railwayr {
-				stroke: #FF0000;
-				stroke-width: 5;
-				fill: #FF0000;
-			}
-			
-			circle.railwayy {
-				stroke: #FFFF00;
-				stroke-width: 5;
-				fill: #FFFF00;
-			}
-			
-			circle.railwayg {
-				stroke: #00FF00;
-				stroke-width: 5;
-				fill: #00FF00;
-			}
-			
-			circle.railwayb {
-				stroke: #000000;
-				stroke-width: 5;
-				fill: #000000;
-			}
-			
-			circle.railwayp {
-				stroke: #FF6EC7;
-				stroke-width: 5;
-				fill: #FF6EC7;
 			}
 			
 			text.Town {
@@ -178,37 +149,12 @@
 				stroke-dasharray: 4, 1, 4, 1;
 			}
 			
-			line.rail_liney {
-				stroke: #FFFF00;
+				line.railway {
 				stroke-width: 6;
-			}
-			
-			line.rail_lineg {
-				stroke: #00FF00;
-				stroke-width: 6;
-			}
-			
-			line.rail_liner {
-				stroke: #FF0000;
-				stroke-width: 6;
-			}
-			
-			line.rail_lineb {
-				stroke: #000000;
-				stroke-width: 6;
-			}
-			
-			line.rail_linep {
-				stroke: #FF6EC7;
-				stroke-width: 6;
-			}
-			
-			rect.underpass {
-				fill: white;
 			}
 			
 			rect.background {
-				fill: white;
+				fill: none;
 				stroke: lightgreen;
 				stroke-width: 1.5;
 			}
@@ -372,12 +318,12 @@
 		<![CDATA[
 			function toggleVisibility() 
 			{
-				var roadhistoric = document.getElementById("roadhistoric");
-				roadhistoric.style.display = "";
-				if(roadhistoric.style.visibility == "hidden" ) {
-				roadhistoric.style.visibility = "visible";
+				var road_historic = document.getElementById("road_historic");
+				road_historic.style.display = "";
+				if(road_historic.style.visibility == "hidden" ) {
+				road_historic.style.visibility = "visible";
 				}else{
-					roadhistoric.style.visibility = "hidden";
+					road_historic.style.visibility = "hidden";
 				}
 				
 				var invert1 = document.getElementById("invert1");
@@ -404,12 +350,12 @@
 		<![CDATA[
 			function toggleVisibilityUnofficial() 
 			{
-				var roadhistoric = document.getElementById("roadunofficial");
-				roadhistoric.style.display = "";
-				if(roadhistoric.style.visibility == "hidden" ) {
-				roadhistoric.style.visibility = "visible";
+				var road_historic = document.getElementById("road_unoffical");
+				road_historic.style.display = "";
+				if(road_historic.style.visibility == "hidden" ) {
+				road_historic.style.visibility = "visible";
 				}else{
-					roadhistoric.style.visibility = "hidden";
+					road_historic.style.visibility = "hidden";
 				}
 				
 				var invert1 = document.getElementById("invert5");
@@ -435,12 +381,12 @@
 		<![CDATA[
 			function toggleVisibilityUninhabited() 
 			{
-				var roadhistoric = document.getElementById("portaluninhabited");
-				roadhistoric.style.display = "";
-				if(roadhistoric.style.visibility == "hidden" ) {
-				roadhistoric.style.visibility = "visible";
+				var road_historic = document.getElementById("town_uninhabited");
+				road_historic.style.display = "";
+				if(road_historic.style.visibility == "hidden" ) {
+				road_historic.style.visibility = "visible";
 				}else{
-					roadhistoric.style.visibility = "hidden";
+					road_historic.style.visibility = "hidden";
 				}
 				
 				var invert1 = document.getElementById("invert7");
@@ -491,6 +437,16 @@
 		]]>
 		</script>
 		
+		<script type="text/ecmascript">
+		<![CDATA[
+			function changeScale(scale change) 
+			{
+				
+				
+			}
+		]]>
+		</script>
+		
 		<!-- Drop shadow used for a couple of things below -->
 		<defs>
 			<filter id="dropshadow" height="130%">
@@ -506,6 +462,23 @@
 		
 		
 		<!-- Background -->
+		
+		<circle transform="translate(1000,1000)" class="map">
+		  <xsl:attribute name="r">
+		    <xsl:value-of select="$mapsize * $scale" />
+      </xsl:attribute>
+      <xsl:attribute name="transform">
+        <xsl:value-of select="concat('translate(',$mapsize * $scale,',',$mapsize * $scale,')')" />
+      </xsl:attribute>
+    </circle>
+    
+    <!-- nature -->
+    
+    <!-- Ocians -->
+    
+    
+		
+		<!--Grid-->
 		<defs>
 			<pattern id="background" patternUnits="userSpaceOnUse">
 			  <xsl:attribute name="width">
@@ -526,19 +499,13 @@
 				
 			</pattern>
 		</defs>
+		
 		<g>
 		    <rect fill="url(#background)" x="0" y="0" width="100%" height="100%"/>
-		    <circle transform="translate(1000,1000)" class="map">
-		      <xsl:attribute name="r">
-		        <xsl:value-of select="$mapsize * $scale" />
-		      </xsl:attribute>
-		      <xsl:attribute name="transform">
-		        <xsl:value-of select="concat('translate(',$mapsize * $scale,',',$mapsize * $scale,')')" />
-		      </xsl:attribute>
-		    </circle>
 		</g>
+				
 		<!-- Key -->
-		<g transform="translate(1300, 60) scale(.7)">
+		<g id="key" transform="translate(1300, 60) scale(.5)" visibility="visible">
 			<defs>
 				<linearGradient id="key_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
 					<stop offset="0%" class="key_gradient_start" />
@@ -548,12 +515,12 @@
 			</defs>
 			<rect x="-20" y="-20" height="585" fill="url(#key_gradient)">
 				<xsl:attribute name="width">
-					<xsl:value-of select="200 * ceiling(count(/map/Towns/Town[not(contains(@status, 'uninhabited'))]) div 16.0) + 20" />
+					<xsl:value-of select="200 * ceiling(count(map/Towns/Inhabited/Town) div 16.0) + 20" />
 				</xsl:attribute>
 			</rect>
 			
-			<xsl:for-each select="map/Towns/Town[not(contains(@status, 'uninhabited'))]">
-				<xsl:variable name="i"><xsl:number count="map/Towns/Town[not(contains(@status, 'uninhabited'))]" /></xsl:variable>
+			<xsl:for-each select="map/Towns/Inhabited/Town">
+				<xsl:variable name="i"><xsl:number count="map/Towns/Inhabited/Town" /></xsl:variable>
 				<xsl:variable name="x" select="floor(($i - 1) div 16.0)" />
 				<xsl:variable name="y" select="($i - 1) - ($x * 16.0)" />
 				<g onmouseout="hide_Town_coords_key()">
@@ -716,7 +683,7 @@
 			
 			
 			<!-- Compass and Scale -->
-			<!--- <g transform="translate(320, 100)">
+			<!--<g transform="translate(320, 100)">
 				<text class="compass" y="-72">North</text>
 				<g transform="translate(0, 20)">
 					<polygon class="compass_north" transform="translate(0, -10) rotate(180,0,-40) scale(2.0)" points="0,0 -20,-20 -17,-23 -3,-9 -3,-40 3,-40 3,-9 17,-23 20,-20" />
@@ -748,8 +715,8 @@
 					<text class="scale_right" x="100" y="24">100</text>
 				</g>
 			</g>
-			
 			-->
+			
 			
 			<g transform="translate(250, 150)">
 				<text class="title">
@@ -1682,166 +1649,184 @@
 			</g>
 		
 			<!-- Roads -->
-			<!-- Historic Roads -->
-			<g id="roadhistoric" style="visibility: hidden;">
-				<line class="road_historic" x1="-593" y1="237" x2="-438" y2="237" /><!-- Obsidian Plains Road -->
-			</g>
 			<!--Official Roads-->
 			
-			<!--<g id="roads" style="visibility: visible;">
-				<xsl:for-each select="map/Towns/Town[contains(@status, 'uninhabited')]">
-					<g>
-						<xsl:attribute name="transform">
-							<xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,')')" />
-						</xsl:attribute>
-					<g onmouseout="hide_Town_coords()">
-							<xsl:attribute name="onmousemove">
-								<xsl:value-of select="concat('show_Town_coords(evt,',@x,',',@z,',',$scale,',','&quot;',@name,'&quot;)')" />
-							</xsl:attribute>
-							<xsl:if test="@offset">
-								<xsl:attribute name="transform">
-									<xsl:value-of select="concat('translate(',@offset,')')" />
-								</xsl:attribute>
-							</xsl:if>
-							<circle r="16">
-								<xsl:attribute name="class">
-									<xsl:if test="contains(@status, 'uninhabited')">Town_abandoned</xsl:if>
-									<xsl:if test="not(contains(@status, 'uninhabited'))">Town</xsl:if>
-								</xsl:attribute>
-							</circle>
-							<xsl:if test="contains(@status, 'griefed')">
-								<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
-									<circle r="16" class="griefed" />
-									<text y="10" class="griefed">!</text>
-								</g>
-							</xsl:if>
-							<xsl:if test="contains(@status, 'locked')">
-								<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
-									<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
-									<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
-								</g>
-							</xsl:if>
-							<text y="5">
-								<xsl:attribute name="class">
-									<xsl:if test="string-length(@abbr) &gt; 2">Town_abandoned_small</xsl:if>
-									<xsl:if test="string-length(@abbr) &lt; 3">Town_abandoned</xsl:if>	
-								</xsl:attribute>
-								<xsl:value-of select="@abbr" />
-							</text>
-						</g>
-					</g>
+			<g id="road_offical">
+				<xsl:for-each select="map/Roads/Offical/Road">
+					<line class="road"> 
+					  <xsl:attribute name="x1">
+					    <xsl:value-of select="@x1 * $scale"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="y1">
+					    <xsl:value-of select="@y1 * $scale"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="x2">
+					    <xsl:value-of select="@x2 * $scale"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="y2">
+					    <xsl:value-of select="@y2 * $scale"/>
+					  </xsl:attribute>
+					</line>
 				</xsl:for-each>
-			</g>
-			-->
-			<g>
-				<line class="road" x1="409" y1="-518" x2="409" y2="-545" /><!-- North Road/Lazuli -->
 			</g>
 			
 			<!--Unofficial Roads-->
-			<g id="roadunofficial" style="visibility: hidden;">
-				<line class="road_unofficial" x1="-90" y1="-125" x2="-200" y2="-125" /><!-- Rothbard Shortcut -->
+			<g id="road_unoffical" style="visibility: hidden;">
+				<xsl:for-each select="map/Roads/Unoffical/Road">
+					<line class="road_unofficial"> 
+					
+					  <xsl:attribute name="x1">
+					    <xsl:value-of select="(@x1 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="y1">
+					    <xsl:value-of select="(@y1 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="x2">
+					    <xsl:value-of select="(@x2 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="y2">
+					    <xsl:value-of select="(@y2 * $scale)"/>
+					  </xsl:attribute>
+					
+					</line>
+				</xsl:for-each>
 			</g>
 			
-			<g id="railline" style="visibility: visible;">
-			<!-- Railway -->
-			
-				<!-- Lines -->
-				<line class="rail_lineb" x1="-168" y1="1" x2="-1840" y2="10" /><!-- Liberty to NotHCF -->
-			
-				<!-- Stations -->
-				<g>
-					<circle class="railwayy" r="20" cx="-811" cy="492" /><!-- Columbia -->
-				</g>
+						<!--Historic Roads-->
+			<g id="road_historic" style="visibility: hidden;">
+				<xsl:for-each select="map/Roads/Historic/Road">
+					<line class="road_historic"> 
+					
+					  <xsl:attribute name="x1">
+					    <xsl:value-of select="(@x1 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="y1">
+					    <xsl:value-of select="(@y1 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="x2">
+					    <xsl:value-of select="(@x2 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="y2">
+					    <xsl:value-of select="(@y2 * $scale)"/>
+					  </xsl:attribute>
+					
+					</line>
+				</xsl:for-each>
 			</g>
-				
+			
+			<!--Rails-->
+			<g id="railline">
+				<xsl:for-each select="map/Roads/Rails/Rail">
+					<line class="railway"> 
+					
+					  <xsl:attribute name="x1">
+					    <xsl:value-of select="(@x1 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="y1">
+					    <xsl:value-of select="(@y1 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="x2">
+					    <xsl:value-of select="(@x2 * $scale)"/>
+					  </xsl:attribute>
+					
+					  <xsl:attribute name="y2">
+					    <xsl:value-of select="(@y2 * $scale)"/>
+					  </xsl:attribute>
+					  
+					  <xsl:attribute name="stroke">
+					    <xsl:value-of select="@color"/>
+					  </xsl:attribute>
+					</line>
+				</xsl:for-each>
+			</g>
+			
 			<!-- Towns Inhabited -->
-			<g>
-				<xsl:for-each select="map/Towns/Town[not(contains(@status, 'uninhabited'))]">
-					<g>
+			<g id="town_inhabited">
+				<xsl:for-each select="map/Towns/Inhabited/Town">					
+	 				<g onmouseout="hide_Town_coords()" >
 						<xsl:attribute name="transform">
-							<xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,')')" />
+						  <xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,')')" />
+					  </xsl:attribute>
+
+						<xsl:attribute name="onmousemove">
+							<xsl:value-of select="concat('show_Town_coords(evt,',@x,',',@z,',',$scale,',','&quot;',@name,'&quot;)')" />
 						</xsl:attribute>
-						
-	 				<g onmouseout="hide_Town_coords()">
-							<xsl:attribute name="onmousemove">
-								<xsl:value-of select="concat('show_Town_coords(evt,',@x,',',@z,',',$scale,',','&quot;',@name,'&quot;)')" />
+							
+					  <circle r="16" class="Town" />
+
+					  <xsl:if test="contains(@status, 'griefed')">
+						  <g transform="translate(-16,-16) scale(.4)">
+							  <circle r="16" class="griefed" />
+							  <text y="10" class="griefed">!</text>
+						  </g>
+					  </xsl:if>
+					  <xsl:if test="contains(@status, 'locked')">
+						  <g transform="translate(8,-18) scale(.4)">
+						  	<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+						  	<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />f
+						  </g>
+					  </xsl:if>
+							
+						<text y="5">
+							<xsl:attribute name="class">
+								<xsl:if test="string-length(@abbr) &lt; 3">Town</xsl:if>
+								<xsl:if test="string-length(@abbr) &gt; 2">Town_small</xsl:if>
 							</xsl:attribute>
-							<circle r="16">
-								<xsl:attribute name="class">
-									<xsl:if test="contains(@status, 'uninhabited')">Town_abandoned</xsl:if>
-									<xsl:if test="not(contains(@status, 'uninhabited'))">Town</xsl:if>
-								</xsl:attribute>
-							</circle>
-							<xsl:if test="contains(@status, 'griefed')">
-								<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
-									<circle r="16" class="griefed" />
-									<text y="10" class="griefed">!</text>
-								</g>
-							</xsl:if>
-							<xsl:if test="contains(@status, 'locked')">
-								<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
-									<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
-									<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
-								</g>
-							</xsl:if>
-							<text y="5">
-								<xsl:attribute name="class">
-									<xsl:if test="string-length(@abbr) &lt; 3">Town</xsl:if>
-									<xsl:if test="string-length(@abbr) &gt; 2">Town_small</xsl:if>
-								</xsl:attribute>
-								<xsl:value-of select="@abbr" />
-							</text>
-						</g>
+							<xsl:value-of select="@abbr" />
+						</text>
 					</g>
 				</xsl:for-each>
 			</g>
 			
 						<!-- Towns Uninhabited -->
-			<g id="portaluninhabited" style="visibility: hidden;">
-				<xsl:for-each select="map/Towns/Town[contains(@status, 'uninhabited')]">
-					<g>
+						
+			<g id="town_uninhabited" style="visibility: hidden;">
+				<xsl:for-each select="map/Towns/Uninhabited/Town">					
+	 				<g onmouseout="hide_Town_coords()" >
 						<xsl:attribute name="transform">
-							<xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,')')" />
+						  <xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,')')" />
+					  </xsl:attribute>
+
+						<xsl:attribute name="onmousemove">
+							<xsl:value-of select="concat('show_Town_coords(evt,',@x,',',@z,',',$scale,',','&quot;',@name,'&quot;)')" />
 						</xsl:attribute>
-					<g onmouseout="hide_Town_coords()">
-							<xsl:attribute name="onmousemove">
-								<xsl:value-of select="concat('show_Town_coords(evt,',@x,',',@z,',',$scale,',','&quot;',@name,'&quot;)')" />
+							
+					  <circle r="16" class="Town_Uninhabited" />
+
+					  <xsl:if test="contains(@status, 'griefed')">
+						  <g transform="translate(-16,-16) scale(.4)">
+							  <circle r="16" class="griefed" />
+							  <text y="10" class="griefed">!</text>
+						  </g>
+					  </xsl:if>
+					  <xsl:if test="contains(@status, 'locked')">
+						  <g transform="translate(8,-18) scale(.4)">
+						  	<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
+						  	<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />f
+						  </g>
+					  </xsl:if>
+							
+						<text y="5">
+							<xsl:attribute name="class">
+								<xsl:if test="string-length(@abbr) &lt; 3">Town</xsl:if>
+								<xsl:if test="string-length(@abbr) &gt; 2">Town_small</xsl:if>
 							</xsl:attribute>
-							<xsl:if test="@offset">
-								<xsl:attribute name="transform">
-									<xsl:value-of select="concat('translate(',@offset,')')" />
-								</xsl:attribute>
-							</xsl:if>
-							<circle r="16">
-								<xsl:attribute name="class">
-									<xsl:if test="contains(@status, 'uninhabited')">Town_abandoned</xsl:if>
-									<xsl:if test="not(contains(@status, 'uninhabited'))">Town</xsl:if>
-								</xsl:attribute>
-							</circle>
-							<xsl:if test="contains(@status, 'griefed')">
-								<g transform="translate(-16,-16) scale(.6)" filter="url(#dropshadow)">
-									<circle r="16" class="griefed" />
-									<text y="10" class="griefed">!</text>
-								</g>
-							</xsl:if>
-							<xsl:if test="contains(@status, 'locked')">
-								<g transform="translate(10,-18) scale(.5)" filter="url(#dropshadow)">
-									<path class="lock" d="M0 0 L 28 0 L 28 20 L 0 20 Z" />
-									<path class="lock_shackle" d="M6 0 L 6 -7 Q 14 -20 22 -7 L 22 0" />
-								</g>
-							</xsl:if>
-							<text y="5">
-								<xsl:attribute name="class">
-									<xsl:if test="string-length(@abbr) &gt; 2">Town_abandoned_small</xsl:if>
-									<xsl:if test="string-length(@abbr) &lt; 3">Town_abandoned</xsl:if>	
-								</xsl:attribute>
-								<xsl:value-of select="@abbr" />
-							</text>
-						</g>
+							<xsl:value-of select="@abbr" />
+						</text>
 					</g>
 				</xsl:for-each>
 			</g>
-
 			
 			<g id="Town_coords" visibility="hidden" x="0" y="0">
 				<rect class="Town_coords" x="-100" y="-17" width="200" height="55" filter="url(#dropshadow)"/>
