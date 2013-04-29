@@ -41,9 +41,9 @@
 	    <River x1="0" x2="1000" y1="0" y2="2000" Name="test6"/>
 	  </Rivers>
 	  
-	  <Ocians>
-	    <Ocian Coordinates="0,0 1000,1000 3000,3000"/>
-	  </Ocians>
+	  <Oceans>
+    	    <Ocean Coordinates="0,0 1000,1000 3000,3000" Name="test7"/>
+    	  </Oceans>>
 	  
   </Nature>
 
