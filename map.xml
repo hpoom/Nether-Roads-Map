@@ -2,124 +2,50 @@
 <?xml-stylesheet href="map.xslt" type="text/xsl" ?>
 <map>
 	<Towns>
-		<Town x="1" z="0" abbr="00" name="0,0" />
-		<Town x="505" z="321" abbr="Agr" name="Agraria" status="locked, uninhabited" />
-		<Town x="-1027" z="-921" abbr="AH" name="Al Hasayah" />
-		<Town x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked"/>	
-		<Town x="-226" z="62" abbr="Arg" name="Argonath" status="locked"/>
-		<Town x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked, uninhabited"/>
-		<Town x="103" z="37" abbr="Amn" name="Amnesty" />
-		<Town x="527" z="-683" abbr="Atl" name="Atlantis" staus="griefed" />	
-		<Town x="-923" z="290" abbr="Atm" name="Atmora" status="uninhabited, locked"/>	
-		<Town x="-364" z="0" abbr="Ava" name="Avalon" status="locked"/>	
-		<Town x="-739" z="-772" abbr="Ave" name="Avernum" status="uninhabited" />
-		<Town x="636" z="703" abbr="Ba" name="Baycity" status="locked"/>
-		<Town x="-673" z="738" abbr="BB" name="Barnabie Beaches" status="uninhabited, locked"/>
-		<Town x="316" z="56" abbr="Bel" name="Belgrade" status="locked"/>
-		<Town x="-1035" z="-325" abbr="Bez" name="Bereza" status="locked"/>
-		<Town x="-12" z="850" abbr="Ben" name="Berlin" status="locked griefed" />
-		<Town x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />
-		<Town x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />
-		<Town x="-462" z="-925" abbr="CD" name="Camp Dilison" />
-		<Town x="764" z="529" abbr="CM" name="Camp Maulgish" />
-		<Town x="-714" z="398" abbr="Ca" name="Caracas" />
-		<Town x="709" z="1177" abbr="Cbn" name="Carbon" />
-		<Town x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
-		<Town x="-70" z="2" abbr="Che" name="Chesterstead" status="griefed" />
-		<Town x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
-		<Town x="-811" z="492" abbr="Col" name="Columbia" />
-		<Town x="491" z="230" abbr="Com" name="Communa" status="locked griefed" />
-		<Town x="-402" z="-550" abbr="Cx" name="Conflux" status="uninhabited"/>
-		<Town x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>	
-		<Town x="383" z="55" abbr="Coo" name="Cookland" />
-		<Town x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="uninhabited" />
-		<Town x="934" z="1021" abbr="Da" name="Danzig" status="locked" />
-		<Town x="574" z="274" abbr="Dzl" name="Danzilona" status="locked, griefed"/>
-		<Town x="673" z="1295" abbr="DK" name="Datan-Kegeth"/>
-		<Town x="-819" z="-448" abbr="De" name="Derpenshire" status="uninhabited, griefed"/>
-		<Town x="-844" z="488" abbr="DW" name="DWRC" />
-		<Town x="-385" z="-121" abbr="Epi" name="Epicus" status="uninhabited" />
-		<Town x="1050" z="839" abbr="Eph" name="Ephemerisle" status="locked"/>
-		<Town x="-216" z="-1239" abbr="EL" name="ExtraLand" status="locked"/>
-		<Town x="-30" z="-55" abbr="Fe" name="Fellowship" status="locked"/>
-		<Town x="461" z="560" abbr="FPJ" name="Fort PJ" />
-		<Town x="-986" z="-1209" abbr="Fra" name="Fraustengard" status="uninhabited" />
-		<Town x="40" z="-57" abbr="Fre" name="Freyrgard" />
-		<Town x="-369" z="-1255" abbr="Fro" name="Frosthome" status="uninhabited" />
-		<Town x="257" z="177" abbr="Fy" name="Fyfe" status="uninhabited, griefed" />
-		<Town x="540" z="400" abbr="Ge" name="Gerald" status="locked, uninhabited, griefed" />
-		<Town x="6" z="-695" abbr="Go" name="Gorgeview"/>
-		<Town x="-808" z="-592" abbr="Ha" name="Haven" />
-		<Town x="-506" z="693" abbr="HB" name="Hudson Bay" />
-		<Town x="56" z="-373" abbr="Ho" name="Hoyt" status="uninhabited" />
-		<Town x="-912" z="-321" abbr="Ic" name="Icengrad" status="locked, griefed, uninhabited" />
-		<Town x="-78" z="-520" abbr="IK" name="In Kind" status="uninhabited" />
-		<Town x="-1071" z="-713" abbr="Im" name="Immelopolis" />
-		<Town x="-840" z="-167" abbr="Io" name="Io" status="uninhabited, griefed" />
-		<Town x="-179" z="244" abbr="Ir" name="Ironwood" />
-		<Town x="516" z="1324" abbr="IB" name="Isla Barata"/>
-		<Town x="-438" z="309" abbr="JH" name="Jack's Hold" status="uninhabited, griefed"/>
-		<Town x="-844" z="-552" abbr="JM" name="Javier's Mound" />
-		<Town x="375" z="1630" abbr="Ke" name="Keiname" status="locked"/>
-		<Town x="-800" z="593" abbr="KK" name="Kings Keep" />
-		<Town x="-577" z="748" abbr="Ki" name="Kizantium" status="locked"/>
-		<Town x="398" z="148" abbr="Ko" name="Kodiak" status="uninhabited" />
-		<Town x="409" z="-515" abbr="La" name="Lazuli" status="uninhabited" />
-		<Town x="-168" z="1" abbr="Li" name="Liberty" />
-		<Town x="348" z="185" abbr="Lu" name="Lubeck" status="locked"/>
-		<Town x="-299" z="-1238" abbr="LF" name="Lugus Fens" status="locked"/>
-		<Town x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
-		<Town x="-368" z="501" abbr="Me" name="Melonwood" />
-		<Town x="452" z="610" abbr="Mc" name="Mercer" />
-		<Town x="-1344" z="950" abbr="Mo" name="Montagna" status="locked"/>
-		<Town x="1325" z="1317" abbr="Mu" name="Mushville" />
-		<Town x="-1" z="247" abbr="My" name="Myra" status="locked"/>
-		<Town x="-624" z="-123" abbr="Mrd" name="Myriad" status="locked"/>
-		<Town x="-1378" z="-601" abbr="NA" name="New Aerilon" status="locked"/>
-		<Town x="413" z="-263" abbr="NAg" name="New Agora" status="locked"/>
-		<Town x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
-		<Town x="1250" z="1248" abbr="Ni" name="Nine" />
-		<Town x="-1840" z="10" abbr="Not" name="NotHCF" />
-		<Town x="-407" z="237" abbr="OP" name="Obsidian Plains" />
-		<Town x="311" z="-384" abbr="OAg" name="Old Agora" status="uninhabited, griefed" />
-		<Town x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
-		<Town x="-738" z="-374" abbr="PT" name="Panda Towers" status="uninhabited" />
-		<Town x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
-		<Town x="-249" z="-2" abbr="Po" name="Populi" />
-		<Town x="-701" z="-831" abbr="Pr" name="Prisma" status="locked" />
-		<Town x="83" z="-200" abbr="Qa" name="Qarth" offset="25,-10" status="uninhabited" />
-		<Town x="-684" z="488" abbr="Ra" name="Rapture" />
-		<Town x="132" z="2" abbr="RD" name="Reid Dale" />
-		<Town x="438" z="-470" abbr="Ri" name="Rift" status="uninhabited, locked"/>
-		<Town x="-996" z="-1090" abbr="Rom" name="Romford" status="uninhabited" />
-		<Town x="2" z="-137" abbr="Ro" name="Rothbard" />
-		<Town x="-471" z="-154" abbr="Sa" name="Saga" status="uninhabited" />
-		<Town x="-1013" z="-556" abbr="Sky" name="Sky City" status="uninhabited, locked" />
-		<Town x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
-		<Town x="-1294" z="-1266" abbr="SPR" name="SPQR" status="locked"/>
-		<Town x="357" z="1737" abbr="Te" name="Terminus" status="locked"/>
-		<Town x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" status="uninhabited" />
-		<Town x="-618" z="251" abbr="Tig" name="Tigerstaden" />
-		<Town x="14" z="-525" abbr="Tin" name="Tinto"/>
-		<Town x="-1082" z="-490" abbr="To" name="TokieStan" status="uninhabited, griefed" />
-		<Town x="-227" z="34" abbr="Tmb" name="Tombstone" status="griefed" />
-		<Town x="72" z="-267" abbr="Tra" name="Traith" status="uninhabited, griefed" />
-		<Town x="-354" z="391" abbr="Tf" name="Treefell" />
-		<Town x="356" z="-542" abbr="Tro" name="Tropico Commune" status="uninhabited" />
-		<Town x="699" z="699" abbr="TH" name="TuxHold" status="uninhabited" />
-		<Town x="-1415" z="-1087" abbr="Vlc" name="Valcar" />
-		<Town x="-10" z="500" abbr="Vln" name="Valenwood" status="locked" />
-		<Town x="-242" z="240" abbr="Van" name="Vanaheimr" status="uninhabited, locked"/>
-		<Town x="-1171" z="-165" abbr="Vi" name="Vilvos" status="uninhabited, griefed" />
-		<Town x="-85" z="32" abbr="Vd" name="Vindictam" status="uninhabited, griefed" />
-		<Town x="469" z="-541" abbr="Wi" name="Winterfell" status="locked" />
-		<Town x="-928" z="-911" abbr="Wol" name="Wolvania"/>
-		<Town x="-543" z="269" abbr="Won" name="Wonderland" status="locked"/>
-		<Town x="-802" z="-817" abbr="Xa" name="Xanadu" status="uninhabited" />
-		<Town x="-715" z="-721" abbr="YF" name="Yellow Flower" status="uninhabited" />
+	  <Inhabited>
+	    <Town x="1" z="0" abbr="00" name="0,0" />
+	    <Town x="527" z="-683" abbr="Atl" name="Atlantis" status="griefed, locked" />	
+	  </Inhabited>
+	  
+	  <Uninhabited>
+	    <Town x="505" z="321" abbr="Agr" name="Agraria" status="locked" />
+	    <Town x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked, griefed"/>
+	  </Uninhabited>
 	</Towns>
+	
 	<Roads>
-	  <Road x1="409" y1="-518" x2="409" y2="-545" status= ""/>
-	  <Road x1="109" y1="-518" x2="109" y2="-545" status= "unoffical"/>
-	</Roads>
+	  <Offical>
+	    <Road x1="0" x2="1000" y1="0" y2="1000" Name="test"/>
+	  </Offical>
+	
+	  <Unoffical>
+	    <Road x1="0" x2="2000" y1="0" y2="1000" Name="test2"/>
+	  </Unoffical>
+	
+	  <Historic>
+	    <Road x1="0" x2="1000" y1="0" y2="2000" Name="test3"/>
+	  </Historic>
+	 
+	  <Canals>
+	    <Road x1="0" x2="3000" y1="0" y2="2000" Name="test4"/>
+	  </Canals>
+	  
+	  <Rails>
+	    <Rail x1="0" x2="1000" y1="0" y2="3000" color="black" Name="test5"/>
+	  </Rails>
+	  
+	</Roads> 
+	
+	<Nature>
+	  <Rivers>
+	    <River x1="0" x2="1000" y1="0" y2="2000" Name="test6"/>
+	  </Rivers>
+	  
+	  <Ocians>
+	    <Ocian Coordinates="0,0 1000,1000 3000,3000"/>
+	  </Ocians>
+	  
+  </Nature>
+
+	
 </map>
