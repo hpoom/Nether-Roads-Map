@@ -1,4 +1,3 @@
-
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -101,6 +100,14 @@
 				stroke-width: 2;
 			}
 			
+			polygon.ocean {
+				fill:#ddddff;
+				fill-opacity:.75;
+				stroke: blue;
+				stroke-width: 2;
+				stroke-opacity: .25;
+			}
+			
 			polygon.compass_north {
 				fill: cyan;
 				stroke: black;
@@ -132,31 +139,49 @@
 				stroke-width: 1;
 			}
 			
-			line.road {
-				stroke: #066;
+			polyline.road {
+			  fill:none;
+			  
+				stroke: #f6f;
 				stroke-width: 3;
 			}
 			
-			line.road_unofficial {
+			polyline.road_unofficial {
+				fill:none;
 				stroke: #770;
 				stroke-width: 3;
 				stroke-dasharray: 8, 1, 4, 1;
 			}
 			
-			line.road_historic {
+			polyline.road_historic {
+				fill:none;
 				stroke: #ADA96E;
 				stroke-width: 1.25;
 				stroke-dasharray: 4, 1, 4, 1;
 			}
 			
-				line.railway {
+			polyline.rail {
+			  fill:none;
 				stroke-width: 6;
 			}
 			
+			
+			polyline.river {
+			  fill:none;
+				stroke:#b9bff9;
+				stroke-width: 4;
+			}
+			
+			polyline.canal {
+			  fill:none;
+				stroke:#008080;
+				stroke-width: 3;
+			}
+						
 			rect.background {
 				fill: none;
-				stroke: lightgreen;
-				stroke-width: 1.5;
+				stroke: gray;
+				stroke-width: 1;
 			}
 			
 			text.range {
@@ -271,6 +296,7 @@
 			rect.toggleButton {
 				fill: silver;
 			}
+			
 		]]>
 		</style>
 		
@@ -350,7 +376,7 @@
 		<![CDATA[
 			function toggleVisibilityUnofficial() 
 			{
-				var road_historic = document.getElementById("road_unoffical");
+				var road_historic = document.getElementById("road_unofficial");
 				road_historic.style.display = "";
 				if(road_historic.style.visibility == "hidden" ) {
 				road_historic.style.visibility = "visible";
@@ -462,19 +488,50 @@
 		
 		
 		<!-- Background -->
-		
-		<circle transform="translate(1000,1000)" class="map">
-		  <xsl:attribute name="r">
-		    <xsl:value-of select="$mapsize * $scale" />
-      </xsl:attribute>
-      <xsl:attribute name="transform">
+		<g>
+		  <xsl:attribute name="transform">
         <xsl:value-of select="concat('translate(',$mapsize * $scale,',',$mapsize * $scale,')')" />
       </xsl:attribute>
-    </circle>
-    
-    <!-- nature -->
-    
-    <!-- Ocians -->
+
+		  <circle class="map">
+		    <xsl:attribute name="r">
+		      <xsl:value-of select="$mapsize * $scale" />
+        </xsl:attribute>
+      </circle>
+    			<!-- Rivers -->
+			
+			<!-- Oceans -->
+			
+			<g id="ocean">
+				<xsl:for-each select="map/Nature/Oceans/Ocean">
+				  <polygon class="ocean">
+		        <xsl:attribute name="points">
+				      <xsl:for-each select="Point">
+				        <xsl:value-of select="@x*$scale"/>
+			          <xsl:text>,</xsl:text>
+			          <xsl:value-of select="@y*$scale"/>
+			          <xsl:text> </xsl:text>
+				      </xsl:for-each>
+				    </xsl:attribute>
+					</polygon>
+				</xsl:for-each>
+			</g>
+			
+			<g id="river">
+				<xsl:for-each select="map/Nature/Rivers/River">
+				  <polyline class="river">
+		        <xsl:attribute name="points">
+				      <xsl:for-each select="Point">
+				        <xsl:value-of select="@x*$scale"/>
+			          <xsl:text>,</xsl:text>
+			          <xsl:value-of select="@y*$scale"/>
+			          <xsl:text> </xsl:text>
+				      </xsl:for-each>
+				    </xsl:attribute>
+					</polyline>
+				</xsl:for-each>
+			</g>
+    </g>
     
     
 		
@@ -1653,103 +1710,88 @@
 			
 			<g id="road_offical">
 				<xsl:for-each select="map/Roads/Offical/Road">
-					<line class="road"> 
-					  <xsl:attribute name="x1">
-					    <xsl:value-of select="@x1 * $scale"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="y1">
-					    <xsl:value-of select="@y1 * $scale"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="x2">
-					    <xsl:value-of select="@x2 * $scale"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="y2">
-					    <xsl:value-of select="@y2 * $scale"/>
-					  </xsl:attribute>
-					</line>
+				  <polyline class="road">
+		        <xsl:attribute name="points">
+				      <xsl:for-each select="Point">
+				        <xsl:value-of select="@x*$scale"/>
+			          <xsl:text>,</xsl:text>
+			          <xsl:value-of select="@y*$scale"/>
+			          <xsl:text> </xsl:text>
+				      </xsl:for-each>
+				    </xsl:attribute>
+					</polyline>
 				</xsl:for-each>
 			</g>
-			
+						
 			<!--Unofficial Roads-->
-			<g id="road_unoffical" style="visibility: hidden;">
+			<g id="road_unofficial" style="visibility: hidden;">
 				<xsl:for-each select="map/Roads/Unoffical/Road">
-					<line class="road_unofficial"> 
-					
-					  <xsl:attribute name="x1">
-					    <xsl:value-of select="(@x1 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="y1">
-					    <xsl:value-of select="(@y1 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="x2">
-					    <xsl:value-of select="(@x2 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="y2">
-					    <xsl:value-of select="(@y2 * $scale)"/>
-					  </xsl:attribute>
-					
-					</line>
+				  <polyline class="road_unofficial">
+		        <xsl:attribute name="points">
+				      <xsl:for-each select="Point">
+				        <xsl:value-of select="@x*$scale"/>
+			          <xsl:text>,</xsl:text>
+			          <xsl:value-of select="@y*$scale"/>
+			          <xsl:text> </xsl:text>
+				      </xsl:for-each>
+				    </xsl:attribute>
+					</polyline>
 				</xsl:for-each>
 			</g>
 			
 						<!--Historic Roads-->
 			<g id="road_historic" style="visibility: hidden;">
 				<xsl:for-each select="map/Roads/Historic/Road">
-					<line class="road_historic"> 
-					
-					  <xsl:attribute name="x1">
-					    <xsl:value-of select="(@x1 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="y1">
-					    <xsl:value-of select="(@y1 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="x2">
-					    <xsl:value-of select="(@x2 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="y2">
-					    <xsl:value-of select="(@y2 * $scale)"/>
-					  </xsl:attribute>
-					
-					</line>
+				  <polyline class="road_historic">
+		        <xsl:attribute name="points">
+				      <xsl:for-each select="Point">
+				        <xsl:value-of select="@x*$scale"/>
+			          <xsl:text>,</xsl:text>
+			          <xsl:value-of select="@y*$scale"/>
+			          <xsl:text> </xsl:text>
+				      </xsl:for-each>
+				    </xsl:attribute>
+					</polyline>
 				</xsl:for-each>
 			</g>
 			
 			<!--Rails-->
+			
 			<g id="railline">
 				<xsl:for-each select="map/Roads/Rails/Rail">
-					<line class="railway"> 
-					
-					  <xsl:attribute name="x1">
-					    <xsl:value-of select="(@x1 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="y1">
-					    <xsl:value-of select="(@y1 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="x2">
-					    <xsl:value-of select="(@x2 * $scale)"/>
-					  </xsl:attribute>
-					
-					  <xsl:attribute name="y2">
-					    <xsl:value-of select="(@y2 * $scale)"/>
-					  </xsl:attribute>
-					  
-					  <xsl:attribute name="stroke">
+					<polyline class="rail">
+				    <xsl:attribute name="points">
+				      <xsl:for-each select="Point">
+				        <xsl:value-of select="@x*$scale"/>
+			          <xsl:text>,</xsl:text>
+			          <xsl:value-of select="@y*$scale"/>
+			          <xsl:text> </xsl:text>
+				      </xsl:for-each>
+				    </xsl:attribute>
+				    <xsl:attribute name="stroke">
 					    <xsl:value-of select="@color"/>
 					  </xsl:attribute>
-					</line>
+					</polyline>
+				</xsl:for-each>
+			</g>					 
+					
+			
+			<!--Canals-->
+			<g id="road_canal">
+				<xsl:for-each select="map/Roads/Canals/Road">
+					<polyline class="canal"> 
+						<xsl:attribute name="points">
+				      <xsl:for-each select="Point">
+				        <xsl:value-of select="@x*$scale"/>
+			          <xsl:text>,</xsl:text>
+			          <xsl:value-of select="@y*$scale"/>
+			          <xsl:text> </xsl:text>
+				      </xsl:for-each>
+				    </xsl:attribute>
+					</polyline>
 				</xsl:for-each>
 			</g>
+
 			
 			<!-- Towns Inhabited -->
 			<g id="town_inhabited">
