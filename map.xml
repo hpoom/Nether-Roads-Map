@@ -1,105 +1,105 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="map.xslt" type="text/xsl" ?>
 <map>
- 
+
 	<Towns>
 
-	  <Inhabited>
+		<Inhabited>
 
-	    <Town name="0,0" x="1" z="0" abbr="00" />
-	    <Town name="Atlantis" x="527" z="-683" abbr="Atl" status="griefed, locked" />	
-	    
-	    </Inhabited>
-	  
-	  <Uninhabited>
+			<Town name="0,0" x="1" z="0" abbr="00" />
+			<Town name="Atlantis" x="527" z="-683" abbr="Atl" status="griefed, locked" />	
+			
+			</Inhabited>
+		
+		<Uninhabited>
 
-	    <Town name="Agraria" x="505" z="321" abbr="Agr" status="locked" />
-	    <Town name="Alpha Sierra" x="-537" z="-417" abbr="AS" status="locked, griefed"/>
-	    
-	    </Uninhabited>
-	    </Towns>
+			<Town name="Agraria" x="505" z="321" abbr="Agr" status="locked" />
+			<Town name="Alpha Sierra" x="-537" z="-417" abbr="AS" status="locked, griefed"/>
+			
+			</Uninhabited>
+			</Towns>
 	
 	<Roads>
 
-	  <Offical>
+		<Offical>
 
-	    <Road Name="test">
-	      <Point x="0" z="0"/>
-	      <Point x="1000" z="1000"/>
-	      </Road>
+			<Road Name="test">
+				<Point x="0" z="0"/>
+				<Point x="1000" z="1000"/>
+				</Road>
 
-	      </Offical>
+				</Offical>
 	
-	  <Unoffical>
+		<Unoffical>
 
- 	    <Road Name="test2">
-	      <Point x="0" z="0"/>
-	      <Point x="1000" z="5000"/>
-	      </Road>
-        </Unoffical>
+ 			<Road Name="test2">
+				<Point x="0" z="0"/>
+				<Point x="1000" z="5000"/>
+				</Road>
+				</Unoffical>
 	
-	  <Historic>
+		<Historic>
 
-	    <Road Name="test3">
-	      <Point x="0" z="0"/>
-	      <Point x="1000" z="2000"/>
-	      </Road>
+			<Road Name="test3">
+				<Point x="0" z="0"/>
+				<Point x="1000" z="2000"/>
+				</Road>
 
-	      </Historic>
+				</Historic>
 	 
-	  <Canals>
+		<Canals>
 
-  	  <Road Name="test4">
-	      <Point x="0" z="0"/>
-	      <Point x="4000" z="2000"/>
-	      </Road>
+			<Road Name="test4">
+				<Point x="0" z="0"/>
+				<Point x="4000" z="2000"/>
+				</Road>
 
-	      </Canals>
-	  
-	  <Rails>
+				</Canals>
+		
+		<Rails>
 
-	    <Rail color="black" Name="test5">
-	      <Point x="0" z="0"/>
-	      <Point x="2000" z="3000"/>
-	      </Rail>
+			<Rail color="black" Name="test5">
+				<Point x="0" z="0"/>
+				<Point x="2000" z="3000"/>
+				</Rail>
 
-	      </Rails>
-        </Roads> 
+				</Rails>
+				</Roads> 
 	
 	<Nature>
 
-	  <Rivers>
+		<Rivers>
 
-	    <River Name="test6">
-	      <Point x="0" z="0" />
-	      <Point x="5000" z="7000"/>
+			<River Name="test6">
+				<Point x="0" z="0" />
+				<Point x="5000" z="7000"/>
 
-  	    </River>
-    	  </Rivers>
-	  
-	  <Oceans>
+				</River>
+				</Rivers>
+		
+		<Oceans>
 
-	    <Ocean name="test7">
-   			<Point x="0" z="0"/>
-   			<Point x="1000" z="0"/>
-   			<Point x="1000" z="1000"/>
-   			<Point x="0" z="1000"/>
-	      </Ocean>
+			<Ocean name="test7">
+	 			<Point x="0" z="0"/>
+	 			<Point x="1000" z="0"/>
+	 			<Point x="1000" z="1000"/>
+	 			<Point x="0" z="1000"/>
+				</Ocean>
 
-     	  </Oceans>
-    
-    <Islands>
-    
-    	<Island name="test8">
-   			<Point x="4000" z="-4000"/>
- 	     	<Point x="4000" z="0"/>
-       	<Point x="0" z="4000"/>
-      	<Point x="-4000" z="-2000"/>
- 	    	</Island>
-   		
-   			</Islands>
-       	</Nature>
-   
+		 		</Oceans>
+		
+		<Islands>
+		
+			<Island name="test8">
+	 			<Point x="4000" z="-4000"/>
+ 			 	<Point x="4000" z="0"/>
+			 	<Point x="0" z="4000"/>
+				<Point x="-4000" z="-2000"/>
+ 				</Island>
+	 		
+	 			</Islands>
+			 	</Nature>
+	 
 	<Lables>
 		<Mapmarkers>
 	
@@ -122,4 +122,4 @@
 			
 			</Mapmarkers>
 			</Lables>
-    	</map>
+			</map>
