@@ -6,42 +6,19 @@
 
 		<Inhabited>
 
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
-			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />
+			<Town name="New Pepino" x="-375" z="-2000" abbr="NP" />			
+			<Town name="Atlantis" x="527" z="-683" abbr="Atl" status="griefed, locked" />	
 			
-<!--			<Town name="Atlantis" x="527" z="-683" abbr="Atl" status="griefed, locked" />	-->
-			
-			</Inhabited>
+		</Inhabited>
 		
-		<Uninhabited>
+	<Uninhabited>
 
-<!--			<Town name="Agraria" x="505" z="321" abbr="Agr" status="locked" />-->
-<!--			<Town name="Alpha Sierra" x="-537" z="-417" abbr="AS" status="locked, griefed"/>-->
+			<Town name="Agraria" x="505" z="321" abbr="Agr" status="locked" />
+			<Town name="Alpha Sierra" x="-537" z="-417" abbr="AS" status="locked, griefed"/>
 			
-			</Uninhabited>
-			</Towns>
+		</Uninhabited>
+
+	</Towns>
 	
 	<Roads>
 
@@ -51,79 +28,81 @@
 				<Point x="0" z="0"/>
 				<Point x="1000" z="1000"/>
 				<Point x="1000" z="3000"/>
-				</Road>
+			</Road>
 
-				</Offical>
+		</Offical>
 	
 		<Unoffical>
-
-<!-- 			<Road Name="test2">-->
-<!--				<Point x="0" z="0"/>-->
-<!--				<Point x="1000" z="5000"/>-->
-<!--				</Road>-->
-				</Unoffical>
+		
+ 			<Road Name="test2">
+				<Point x="0" z="0"/>
+				<Point x="1000" z="5000"/>
+			</Road>
+			
+		</Unoffical>
 	
 		<Historic>
 
-<!--			<Road Name="test3">-->
-<!--				<Point x="0" z="0"/>-->
-<!--				<Point x="1000" z="2000"/>-->
-<!--				</Road>-->
+			<Road Name="test3">
+				<Point x="0" z="0"/>
+				<Point x="1000" z="2000"/>
+			</Road>
 
-				</Historic>
+		</Historic>
 	 
 		<Canals>
 
-<!--			<Road Name="test4">-->
-<!--				<Point x="0" z="0"/>-->
-<!--				<Point x="4000" z="2000"/>-->
-<!--				</Road>-->
+			<Road Name="test4">
+				<Point x="0" z="0"/>
+				<Point x="4000" z="2000"/>
+			</Road>
 
-				</Canals>
+		</Canals>
 		
 		<Rails>
 
-<!--			<Rail color="black" Name="test5">-->
-<!--				<Point x="0" z="0"/>-->
-<!--				<Point x="2000" z="3000"/>-->
-<!--				</Rail>-->
+			<Rail color="black" Name="test5">
+				<Point x="0" z="0"/>
+				<Point x="2000" z="3000"/>
+			</Rail>
 
-				</Rails>
-				</Roads> 
+		</Rails>
+
+	</Roads> 
 	
 	<Nature>
 
 		<Rivers>
 
-<!--			<River Name="test6">-->
-<!--				<Point x="0" z="0" />-->
-<!--				<Point x="5000" z="7000"/>-->
-<!--				</River>-->
+			<River Name="test6">
+				<Point x="0" z="0" />
+				<Point x="5000" z="7000"/>
+			</River>
 
-				</Rivers>
+		</Rivers>
 		
 		<Oceans>
 
-<!--			<Ocean name="test7">-->
-<!--	 			<Point x="0" z="0"/>-->
-<!--	 			<Point x="1000" z="0"/>-->
-<!--	 			<Point x="1000" z="1000"/>-->
-<!--	 			<Point x="0" z="1000"/>-->
-<!--				</Ocean>-->
+			<Ocean name="test7">
+	 			<Point x="0" z="0"/>
+	 			<Point x="1000" z="0"/>
+	 			<Point x="1000" z="1000"/>
+	 			<Point x="0" z="1000"/>
+			</Ocean>
 
 		 		</Oceans>
 		
 		<Islands>
 		
-<!--			<Island name="test8">-->
-<!--	 			<Point x="4000" z="-4000"/>-->
-<!-- 			 	<Point x="4000" z="0"/>-->
-<!--			 	<Point x="0" z="4000"/>-->
-<!--				<Point x="-4000" z="-2000"/>-->
-<!-- 				</Island>-->
+			<Island name="test8">
+	 			<Point x="4000" z="-4000"/>
+ 			 	<Point x="4000" z="0"/>
+			 	<Point x="0" z="4000"/>
+				<Point x="-4000" z="-2000"/>
+			</Island>
 	 		
-	 			</Islands>
-			 	</Nature>
+			</Islands>
+	 	</Nature>
 	 
 	<Lables>
 		<Mapmarkers>
@@ -139,6 +118,6 @@
 			<Marker value="1000"/>
 			<Marker value="0"/>
 			
-			</Mapmarkers>
-			</Lables>
-			</map>
+		</Mapmarkers>
+	</Lables>
+</map>
