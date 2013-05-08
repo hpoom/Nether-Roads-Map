@@ -13,7 +13,7 @@ Historical Data
 
 [2.x](http://www.hpoom.co.uk/CivCraft/map.php)
 
-[3.x](https://dl.dropboxusercontent.com/u/28610774/map.html)
+[3.x](http://strongman332.github.io/Civcraft-Road-Map/)
 
 Features
 --------
