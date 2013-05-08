@@ -23,4 +23,3 @@ git commit -a -m "Auto Build $TODAY;$HOUR" && ( echo Please log in && ((git push
 echo Cleaning
 cd ..
 rm -r -f gh-pages
-read -p "Press enter to continue" nothing
