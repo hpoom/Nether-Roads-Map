@@ -19,7 +19,7 @@ echo Generating map.svg
 xalan -in map.xml -xsl map.xslt -out gh-pages/map.svg
 cd gh-pages
 git add map.svg
-git commit -a -m "Auto Build $TODAY;$HOUR" && ( echo Please log in && ((git push origin gh-pages||git push origin gh-pages||git push origin gh-pages) && (clear && echo SUCCESS!)) || (clear; echo FAILED!)) || (clear; echo UPTODATE!)
+git commit -a -m "Auto Build $TODAY;$HOUR" && ( echo Please log in && ((git push origin gh-pages||git push origin gh-pages) && echo SUCCESS!) ||  echo FAILED!) ||  echo UPTODATE!
 echo Cleaning
 cd ..
 rm -r -f gh-pages
