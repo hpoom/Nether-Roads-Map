@@ -9,11 +9,11 @@ Provide a Road Map for Civcraft.
 Historical Data
 ---------------
 
-[1.x](http://i.imgur.com/AtJ5c.jpg)
+[latest 1.x map](http://i.imgur.com/AtJ5c.jpg)
 
-[2.x](http://www.hpoom.co.uk/CivCraft/map.php)
+[latest 2.x map](http://www.hpoom.co.uk/CivCraft/map.php)
 
-[3.x](http://strongman332.github.io/Civcraft-Road-Map/)
+[latest 3.x map](http://strongman332.github.io/Civcraft-Road-Map/)
 
 Features
 --------
