@@ -1,3 +1,10 @@
+#GenerateAndPublish.sh
+#
+#use to publish map to gh-pages (http://strongman332.github.io/Civcraft-Road-Map/)
+#use GenerateTestMap.sh for testing
+#
+#depends- xalan git
+
 echo Cleaning
 rm -r -f gh-pages
 echo Clone gh-pages from github
