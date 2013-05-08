@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:template match="/">
@@ -11,8 +13,8 @@
 
 		<xsl:variable name="scale" select=".1" />
 		<xsl:variable name="mapsize" select="10000" />
-    
     <svg 
+	    xmlns:svg="http://www.w3.org/2000/svg"
     	xmlns="http://www.w3.org/2000/svg" 
     	version="1.1"
 			xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -21,7 +23,7 @@
     	height="600"
 			>
 			
-			<!--    	viewBox="0 0 100% 100%"-->
+			<!-- onload="init(evt)"   	viewBox="0 0 100% 100%"-->
 			
 <!-- 			<xsl:attribute name="width"> -->
 <!-- 				<xsl:value-of select="2 * $mapsize * $scale" /> -->
@@ -30,32 +32,29 @@
 <!-- 				<xsl:value-of select="2 * $mapsize * $scale" /> -->
 <!-- 			</xsl:attribute> -->
    
-  <style>
-  		.territory:hover{
-			fill:           #22aa44;
-		}
-  		.compass{
-  			fill:			#fff;
-  			stroke:			#000;
-  			stroke-width:	1.5;
-  		}
-   		.button{
-		    fill:           	#225EA8;
-			stroke:   			#0C2C84;
-			stroke-miterlimit:	6;
-			stroke-linecap:		round;
-		}
-		.button:hover{
-			stroke-width:   	2;
-		}
-		.plus-minus{
-			fill:	#fff;
-			pointer-events: none;
-		}
-  </style>
-  
   <style type="text/css">
 				<![CDATA[
+			 		.territory:hover{
+						fill:           #22aa44;
+					}
+						.compass{
+							fill:			#fff;
+							stroke:			#000;
+							stroke-width:	1.5;
+						}
+				 		.button{
+							fill:           	#225EA8;
+						stroke:   			#0C2C84;
+						stroke-miterlimit:	6;
+						stroke-linecap:		round;
+					}
+					.button:hover{
+						stroke-width:   	2;
+					}
+					.plus-minus{
+						fill:	#fff;
+						pointer-events: none;
+					}
 
 				  .compass{
 						fill:  #fff;
@@ -87,7 +86,7 @@
 
 					text.link {
 						text-decoration: underline;
-						fill: navy;
+						fill: Black;
 						font-weight: bold;
 						font-size: 14px;
 						font-family: serif;
@@ -250,13 +249,13 @@
 
 					text.range {
 						fill: gray;
-						font-size: 11px;
+						font-size: 25px;
 						text-anchor: end;
 					}
 
 					text.range_v {
 						fill: gray;
-						font-size: 11px;
+						font-size: 25px;
 						text-anchor: end;
 					}
 
@@ -342,7 +341,7 @@
 						stroke-width:2;
 						stroke: black;
 						fill-opacity:1;
-						stroke-opacity:.1;
+						stroke-opacity:1;
 					}
 
 					text.Town_coords {
@@ -359,14 +358,56 @@
 					}
 
 					rect.toggleButton {
-						fill: silver;
+						fill: #E87600;
 					}
+					
+					.draggable {
+        		cursor: move;
+      		}
 				]]>
 			</style>
-			<script type="text/ecmascript">
-				<![CDATA[
+			<script type="text/ecmascript"><![CDATA[
 
-					var transMatrix = [.5,0,0,.5,0,0];
+					var transMatrix = [.5,0,0,.5,12,-200];					
+					var selectedElement = 0;
+					var currentX = 0;
+					var currentY = 0;
+					var currentMatrix = 0;
+
+					function selectElement(evt) {
+						selectedElement = evt.target;
+						currentX = evt.clientX;
+						currentY = evt.clientY;
+						currentMatrix = selectedElement.getAttributeNS(null, "transform").slice(7,-1).split(' ');
+		
+						for(var i=0; i<currentMatrix.length; i++) {
+							currentMatrix[i] = parseFloat(currentMatrix[i]);
+						}
+				
+						selectedElement.setAttributeNS(null, "onmousemove", "moveElement(evt)");
+						selectedElement.setAttributeNS(null, "onmouseout", "deselectElement(evt)");
+						selectedElement.setAttributeNS(null, "onmouseup", "deselectElement(evt)");
+					}
+				
+					function moveElement(evt) {
+						var dx = evt.clientX - currentX;
+						var dy = evt.clientY - currentY;
+						currentMatrix[4] += dx;
+						currentMatrix[5] += dy;
+			
+						selectedElement.setAttributeNS(null, "transform", "matrix(" + currentMatrix.join(' ') + ")");
+						currentX = evt.clientX;
+						currentY = evt.clientY;
+					}
+				
+					function deselectElement(evt) {
+						if(selectedElement != 0){
+							selectedElement.removeAttributeNS(null, "onmousemove");
+							selectedElement.removeAttributeNS(null, "onmouseout");
+							selectedElement.removeAttributeNS(null, "onmouseup");
+							selectedElement = 0;
+						}
+					}
 						
 					function init(evt)
 					{
@@ -547,10 +588,25 @@
 					</feMerge>
 				</filter>
 			</defs>
+			
+			<rect style="stroke: none; stroke-width:2; fill:white" x="1" y="1" width="1022" height="598"/>
 
-			<g id="map-matrix" transform="matrix(.5 0 0 .5 0 0)">        
-				<rect fill="white" x="0" y="0" width="100%" height="100%" />
+			<g id="map-matrix"  transform="matrix(.5 0 0 .5 12 -200)" onmousedown="selectElement(evt)">        
+				<rect style="fill:white">
+					<xsl:attribute name="x">
+						<xsl:value-of select="0"/>
+					</xsl:attribute>
+					<xsl:attribute name="y">
+						<xsl:value-of select="0"/>
+					</xsl:attribute>
 
+					<xsl:attribute name="height">
+						<xsl:value-of select="2 * $mapsize * $scale"/>
+					</xsl:attribute>
+					<xsl:attribute name="width">
+						<xsl:value-of select="2 * $mapsize * $scale"/>
+					</xsl:attribute>
+				</rect>
 				<g>
 					<xsl:attribute name="transform">
 						<xsl:value-of	select="concat('translate(',$mapsize * $scale,',',$mapsize * $scale,')')" />
@@ -686,7 +742,7 @@
 						
 						<text class="range">
 							<xsl:attribute name="transform">
-								<xsl:value-of select="concat('translate(',(-5),',',(-$mapsize * $scale+15),')')" />
+								<xsl:value-of select="concat('translate(',(-5),',',(-$mapsize * $scale+25),')')" />
 							</xsl:attribute>
 							<xsl:attribute name="x">
 								<xsl:value-of select="@value*$scale" />
@@ -715,7 +771,7 @@
 
 						<text class="range_v">
 							<xsl:attribute name="transform">
-								<xsl:value-of select="concat('translate(',(-$mapsize * $scale+35),',',(-5),')')" />
+								<xsl:value-of select="concat('translate(',(-$mapsize * $scale+95),',',(-5),')')" />
 							</xsl:attribute>
 							<xsl:attribute name="y">
 								<xsl:value-of select="@value*$scale" />
@@ -725,7 +781,7 @@
 
 						<text class="range">
 							<xsl:attribute name="transform">
-								<xsl:value-of select="concat('translate(',(-5),',',(-$mapsize * $scale+15),')')" />
+								<xsl:value-of select="concat('translate(',(-5),',',(-$mapsize * $scale+25),')')" />
 							</xsl:attribute>
 							<xsl:attribute name="x">
 								<xsl:value-of select="-@value*$scale" />
@@ -755,7 +811,7 @@
 
 						<text class="range_v">
 							<xsl:attribute name="transform">
-								<xsl:value-of select="concat('translate(',(-$mapsize * $scale+35),',',(-5),')')" />
+								<xsl:value-of select="concat('translate(',(-$mapsize * $scale+95),',',(-5),')')" />
 							</xsl:attribute>
 							<xsl:attribute name="y">
 								<xsl:value-of select="-@value*$scale" />
@@ -764,6 +820,53 @@
 						</text>
 
 					</xsl:for-each>
+					
+					<line style="stroke:gray;stroke-width:2">						
+						<xsl:attribute name="x1">
+							<xsl:value-of select="0"/>
+						</xsl:attribute>
+						<xsl:attribute name="y1">
+							<xsl:value-of select="($mapsize * $scale)"/>
+						</xsl:attribute>							
+						<xsl:attribute name="x2">
+							<xsl:value-of select="0"/>
+						</xsl:attribute>
+						<xsl:attribute name="y2">
+							<xsl:value-of select="(-$mapsize * $scale)"/>
+						</xsl:attribute>						
+					</line>
+					
+					<line style="stroke:gray;stroke-width:2">						
+						<xsl:attribute name="y1">
+							<xsl:value-of select="0"/>
+						</xsl:attribute>
+						<xsl:attribute name="x1">
+							<xsl:value-of select="($mapsize * $scale)"/>
+						</xsl:attribute>							
+						<xsl:attribute name="y2">
+							<xsl:value-of select="0"/>
+						</xsl:attribute>
+						<xsl:attribute name="x2">
+							<xsl:value-of select="(-$mapsize * $scale)"/>
+						</xsl:attribute>						
+					</line>
+					
+					<rect style="stroke: gray; stroke-width:1; fill:none">
+						<xsl:attribute name="x">
+							<xsl:value-of select="-$mapsize * $scale"/>
+						</xsl:attribute>
+						<xsl:attribute name="y">
+							<xsl:value-of select="-$mapsize * $scale"/>
+						</xsl:attribute>
+
+						<xsl:attribute name="height">
+							<xsl:value-of select="2 * $mapsize * $scale"/>
+						</xsl:attribute>
+						<xsl:attribute name="width">
+							<xsl:value-of select="2 * $mapsize * $scale"/>
+						</xsl:attribute>
+					</rect>
+					
 				</g>
 
 				
@@ -940,7 +1043,7 @@
 						</xsl:for-each>
 					</g>
 
-					<g id="Town_coords" visibility="hidden" x="0" y="0">
+					<g id="Town_coords" visibility="hidden">
 						<rect class="Town_coords" x="-100" y="-17" width="200" height="55"
 							filter="url(#dropshadow)" />
 						<text class="Town_coords_name" y="5" id="Town_coords_name">Unknown</text>
@@ -955,12 +1058,161 @@
 				]]>
 				</script>
 			</g>
+			
+			<!--navigation-->
+			<g transform="translate(30,30)" filter="url(#dropshadow)">
+				<g transform="translate(69,69) scale(.3)" filter="url(#dropshadow)">
+					<path class="roadcrew_sign_background" d="M-200 0 L0 200 L200 0 L0 -200 Z" />
+					<path transform="scale(0.97)" class="roadcrew_sign_border"
+					d="M-190 -10 Q -200 0 -190 10 L -10 190 Q 0 200 10 190 L 190 10 Q 200 0 190 -10 L 10 -190 Q 0 -200 -10 -190 Z" />
+					<g transform="translate(0,-45)">
+						<text class="roadcrew_sign">
+							<tspan x="0" y="25">CIVCRAFT</tspan>
+							<tspan x="0" y="85">ROADCREW</tspan>
+						</text>
+					</g>
+				</g>
+				<g transform="translate(19,-22)">
+					<path class="button" onclick="pan( 0, 50)" d="M50 10 l12   20 a40, 70 0 0,0 -24,  0z" />
+				</g>
+				<g transform="translate(-22,19)">
+					<path class="button" onclick="pan( 50, 0)" d="M10 50 l20  -12 a70, 40 0 0,0   0, 24z" />
+				</g>
+				<g transform="translate(19,60)">
+					<path class="button" onclick="pan( 0,-50)" d="M50 90 l12  -20 a40, 70 0 0,1 -24,  0z" />
+				</g>
+				<g transform="translate(60,19)">
+					<path class="button" onclick="pan(-50, 0)" d="M90 50 l-20 -12 a70, 40 0 0,1   0, 24z" />
+				</g>
+				
+				<circle class="button"  cx="69" cy="103" r="8" onclick="zoom(0.8)"/>
+				<circle class="button"  cx="69" cy="35" r="8" onclick="zoom(1.25)"/>
+	
+				<rect class="plus-minus" x="65" y="101.5" width="8" height="3"/>
+				<rect class="plus-minus" x="65" y="33.5" width="8" height="3"/>
+				<rect class="plus-minus" x="67.5" y="31" width="3" height="8"/>
+			</g>
+			
+						<!-- Buttons -->
+				<g transform="translate(925,65) scale(1)">		
+					<!-- Historic Road Toggle Button -->
+					<g transform="translate(1, 140)" onclick="toggleVisibility();" filter="url(#dropshadow)">
+						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+						<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+
+						<g id="invert1" style="stroke: white">
+							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+							<!-- Top Line -->
+							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+							<!-- Left Line -->
+						</g>
+						<g id="invert2" style="stroke: black">
+							<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+							<!-- Right Line -->
+							<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+							<!-- Bottom Line -->
+						</g>
+
+						<g>
+							<text class="scale">
+								<tspan x="-30" y="-7">Show</tspan>
+								<tspan x="-30" y="5">Historic</tspan>
+								<tspan x="-30" y="17">Roads</tspan>
+							</text>
+						</g>
+					</g>
+
+					<!--CityList -->
+
+					<g transform="translate(0, 0)" onclick="toggleVisibilitycitylist();"
+						filter="url(#dropshadow)">
+						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+						<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+						<g id="invert3" style="stroke: white">
+							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+							<!-- Top Line -->
+							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+							<!-- Left Line -->
+						</g>
+						<g id="invert4" style="stroke: black">
+							<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+							<!-- Right Line -->
+							<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+							<!-- Bottom Line -->
+						</g>
+
+						<g>
+							<text class="scale">
+								<tspan x="-30" y="-2">Show</tspan>
+								<tspan x="-30" y="12">City List</tspan>
+								<tspan x="-30" y="17">
+								</tspan>
+							</text>
+						</g>
+					</g>
+
+					<!-- Unofficial Road Toggle Button -->
+					<g transform="translate(0, 70)" onclick="toggleVisibilityUnofficial();"
+						filter="url(#dropshadow)">
+						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+						<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+						<g id="invert5" style="stroke: white">
+							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+							<!-- Top Line -->
+							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+							<!-- Left Line -->
+						</g>
+						<g id="invert6" style="stroke: black">
+							<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+							<!-- Right Line -->
+							<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+							<!-- Bottom Line -->
+						</g>
+
+						<g>
+							<text class="scale">
+								<tspan x="-30" y="-7">Show</tspan>
+								<tspan x="-30" y="5">Unofficial</tspan>
+								<tspan x="-30" y="17">Roads</tspan>
+							</text>
+						</g>
+					</g>
+
+
+					<!-- Uninhabited Toggle Button -->
+
+					<g transform="translate(0, 210)" onclick="toggleVisibilityUninhabited();"
+						filter="url(#dropshadow)">
+						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+						<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+						<g id="invert7" style="stroke: white">
+							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+							<!-- Top Line -->
+							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+							<!-- Left Line -->
+						</g>
+						<g id="invert8" style="stroke: black">
+							<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+							<!-- Right Line -->
+							<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+							<!-- Bottom Line -->
+						</g>
+						<g>
+							<text class="scale">
+								<tspan x="-43" y="-7">Show</tspan>
+								<tspan x="-43" y="5">Uninhabited</tspan>
+								<tspan x="-43" y="17">Towns</tspan>
+							</text>
+						</g>
+					</g>
+				</g>
+
 
 			<!-- citylist -->
-			<g id="citylist" transform="translate(525, 60) scale(1)" style="visibility: hidden;">
-				<rect x="-30" y="-30" height="380" class="citylist" filter="url(#dropshadow)">
+			<g id="citylist" transform="translate(230, 70) scale(1)" style="visibility: hidden;">
+				<rect x="-30" y="-30" height="490" class="citylist" filter="url(#dropshadow)">
 					<xsl:attribute name="width">
-						<xsl:value-of select="200 * ceiling(count(map/Towns/Inhabited/Town) div 10.0) + 30" />
+						<xsl:value-of select="630" />
 					</xsl:attribute>
 				</rect>
 
@@ -968,8 +1220,8 @@
 					<xsl:variable name="i">
 						<xsl:number count="map/Towns/Inhabited/Town" />
 					</xsl:variable>
-					<xsl:variable name="x" select="floor(($i - 1) div 10.0)" />
-					<xsl:variable name="y" select="($i - 1) - ($x * 10.0)" />
+					<xsl:variable name="x" select="floor(($i - 1) div 13.0)" />
+					<xsl:variable name="y" select="($i - 1) - ($x * 13.0)" />
 					<g onmouseout="hide_Town_coords_citylist()">
 						<xsl:attribute name="onmousemove">
 							<xsl:value-of select="concat('show_Town_coords_citylist(evt,',@x,',',@z,',&quot;',@name,'&quot;,',200 * $x,',',36 * $y,')')" />
@@ -1007,192 +1259,50 @@
 						</text>
 					</g>
 				</xsl:for-each>
-				<g id="Town_coords_citylist" visibility="hidden" x="0" y="0">
+			</g>
+			
+			<g transform="translate(512, 585)">
+				<rect style="fill: #E87600;" x="-205" y="-18" width="410" height="25" filter="url(#dropshadow)"/>
+				<rect style="stroke: black; stroke-width:2; fill:none" x="-202" y="-16" width="405" height="21"/>
+				<a xlink:href="http://www.reddit.com/r/CivcraftRoads" target="_blank">
+					<text class="link">
+						w w w . r e d d i t . c o m / r / C i v c r a f t R o a
+						d s
+					</text>
+				</a>
+			</g>
+			
+			<g id="citylist" transform="translate(230, 70) scale(1)" style="visibility: hidden;">
+				<g id="Town_coords_citylist" visibility="hidden">
 					<rect class="Town_coords" x="-100" y="-17" width="200" height="55" filter="url(#dropshadow)" />
 					<text class="Town_coords_name" y="5" id="Town_coords_name_citylist">Unknown</text>
 					<text class="Town_coords" y="28" id="Town_coords_overworld_citylist">
 					O: 	0,0
 					</text>
 				</g>
-			<script type="text/ecmascript">
-				<![CDATA[
-					Town_coords_citylist = document.getElementById('Town_coords_citylist');
-					Town_coords_overworld_citylist = document.getElementById('Town_coords_overworld_citylist');
-					Town_coords_name_citylist = document.getElementById('Town_coords_name_citylist');
-				]]>
-			</script>
-
+				<script type="text/ecmascript">
+					<![CDATA[
+						Town_coords_citylist = document.getElementById('Town_coords_citylist');
+						Town_coords_overworld_citylist = document.getElementById('Town_coords_overworld_citylist');
+						Town_coords_name_citylist = document.getElementById('Town_coords_name_citylist');
+					]]>
+				</script>
 			</g>
 			
 			
-			<!-- Title Block -->
-				<g transform="translate(-20,0) scale(1)">
-					<!-- Roadcrew Sign -->
-					
-					<!-- Historic Road Toggle Button -->
-					<g transform="translate(80, 200)" onclick="toggleVisibility();" filter="url(#dropshadow)">
-						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
-
-						<g id="invert1" style="stroke: white">
-							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" />
-							<!-- Top Line -->
-							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" />
-							<!-- Left Line -->
-						</g>
-						<g id="invert2" style="stroke: black">
-							<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" />
-							<!-- Right Line -->
-							<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" />
-							<!-- Bottom Line -->
-						</g>
-
-						<g>
-							<text class="scale">
-								<tspan x="-30" y="-7">Show</tspan>
-								<tspan x="-30" y="5">Historic</tspan>
-								<tspan x="-30" y="17">Roads</tspan>
-							</text>
-						</g>
-					</g>
-
-					<!--Rail Toggle Button -->
-
-					<g transform="translate(440, 200)" onclick="toggleVisibilitycitylist();"
-						filter="url(#dropshadow)">
-						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
-
-						<g id="invert3" style="stroke: white">
-							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" />
-							<!-- Top Line -->
-							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" />
-							<!-- Left Line -->
-						</g>
-						<g id="invert4" style="stroke: black">
-							<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" />
-							<!-- Right Line -->
-							<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" />
-							<!-- Bottom Line -->
-						</g>
-
-						<g>
-							<text class="scale">
-								<tspan x="-30" y="-7">Show</tspan>
-								<tspan x="-30" y="5">City List</tspan>
-								<tspan x="-30" y="17">
-								</tspan>
-							</text>
-						</g>
-					</g>
-
-					<!-- Unofficial Road Toggle Button -->
-					<g transform="translate(200, 200)" onclick="toggleVisibilityUnofficial();"
-						filter="url(#dropshadow)">
-						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
-
-						<g id="invert5" style="stroke: white">
-							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" />
-							<!-- Top Line -->
-							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" />
-							<!-- Left Line -->
-						</g>
-						<g id="invert6" style="stroke: black">
-							<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" />
-							<!-- Right Line -->
-							<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" />
-							<!-- Bottom Line -->
-						</g>
-
-						<g>
-							<text class="scale">
-								<tspan x="-30" y="-7">Show</tspan>
-								<tspan x="-30" y="5">Unofficial</tspan>
-								<tspan x="-30" y="17">Roads</tspan>
-							</text>
-						</g>
-					</g>
-
-
-					<!-- Uninhabited Toggle Button -->
-
-					<g transform="translate(320, 200)" onclick="toggleVisibilityUninhabited();"
-						filter="url(#dropshadow)">
-						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
-						<g id="invert7" style="stroke: white">
-							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="2" />
-							<!-- Top Line -->
-							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="2" />
-							<!-- Left Line -->
-						</g>
-						<g id="invert8" style="stroke: black">
-							<line x1="50" y1="-25" x2="50" y2="25" stroke-wdith="2" />
-							<!-- Right Line -->
-							<line x1="-50" y1="25" x2="50" y2="25" stroke-wdith="2" />
-							<!-- Bottom Line -->
-						</g>
-						<g>
-							<text class="scale">
-								<tspan x="-40" y="-7">Show</tspan>
-								<tspan x="-40" y="5">Uninhabited</tspan>
-								<tspan x="-40" y="17">Towns</tspan>
-							</text>
-						</g>
-					</g>
-				</g>
 				
-			<g>
-				<g transform="translate(500, 40)">
-					<rect style="fill: #E87600;" x="-150" y="-26" width="300" height="34" filter="url(#dropshadow)"/>
-					<rect style="stroke: black; stroke-width:2; fill:none" x="-148" y="-24" width="296" height="30"/>
-					<text class="title">
-						<tspan x="0" y="0">CIVCRAFT ROAD MAP</tspan>
-					</text>
-				</g>
-				<g transform="translate(500, 590)">
-					<a xlink:href="http://www.reddit.com/r/CivcraftRoads" target="_blank">
-						<text class="link">
-							w w w . r e d d i t . c o m / r / C i v c r a f t R o a
-							d s
-						</text>
-					</a>
-				</g>
+			
+			<g transform="translate(512, 40)">
+				<rect style="fill: #E87600;" x="-150" y="-26" width="300" height="34" filter="url(#dropshadow)"/>
+				<rect style="stroke: black; stroke-width:2; fill:none" x="-148" y="-24" width="296" height="30"/>
+				<text class="title">
+					<tspan x="0" y="0">CIVCRAFT ROAD MAP</tspan>
+				</text>
 			</g>
 				
-  		<g transform="translate(20,20)" filter="url(#dropshadow)">
-				<g transform="translate(69,69) scale(.3)" filter="url(#dropshadow)">
-					<path class="roadcrew_sign_background" d="M-200 0 L0 200 L200 0 L0 -200 Z" />
-					<path transform="scale(0.97)" class="roadcrew_sign_border"
-					d="M-190 -10 Q -200 0 -190 10 L -10 190 Q 0 200 10 190 L 190 10 Q 200 0 190 -10 L 10 -190 Q 0 -200 -10 -190 Z" />
-					<g transform="translate(0,-45)">
-						<text class="roadcrew_sign">
-							<tspan x="0" y="25">CIVCRAFT</tspan>
-							<tspan x="0" y="85">ROADCREW</tspan>
-						</text>
-					</g>
-				</g>
-			<g transform="translate(19,-20)">
-				<path class="button" onclick="pan( 0, 50)" d="M50 10 l12   20 a40, 70 0 0,0 -24,  0z" />
-			</g>
-			<g transform="translate(-20,19)">
-				<path class="button" onclick="pan( 50, 0)" d="M10 50 l20  -12 a70, 40 0 0,0   0, 24z" />
-			</g>
-			<g transform="translate(19,60)">
-				<path class="button" onclick="pan( 0,-50)" d="M50 90 l12  -20 a40, 70 0 0,1 -24,  0z" />
-			</g>
-			<g transform="translate(60,19)">
-				<path class="button" onclick="pan(-50, 0)" d="M90 50 l-20 -12 a70, 40 0 0,1   0, 24z" />
-			</g>
-			
-			<circle class="button"  cx="69" cy="103" r="8" onclick="zoom(0.8)"/>
-			<circle class="button"  cx="69" cy="35" r="8" onclick="zoom(1.25)"/>
-
-			<rect class="plus-minus" x="65" y="101.5" width="8" height="3"/>
-			<rect class="plus-minus" x="65" y="33.5" width="8" height="3"/>
-			<rect class="plus-minus" x="67.5" y="31" width="3" height="8"/>
-			
-			</g>
-				    
+  		
+			<rect style="stroke: black; stroke-width:2; fill:none" x="1" y="1" width="1022" height="598"/>
 		</svg>
-		
 	</xsl:template>
 </xsl:stylesheet>
 
