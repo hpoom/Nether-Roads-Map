@@ -24,7 +24,7 @@ Curent
 - SVG version of the map
 - browser navigation
 - Show Uninhabited towns different to active towns
-- Show old roads and current roads.
+- Show old roads and current roads
 - Show scale
 - Show coords of Towns
 
@@ -37,10 +37,10 @@ dependencies
 ------------
 
 To View
--Firefox
--IE9+
--Chrome(with minor issues)
+- Firefox
+- IE9+
+- Chrome(with minor issues)
 
 To Build
--git
--xalan
+- git
+- xalan
