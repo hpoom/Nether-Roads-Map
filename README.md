@@ -32,3 +32,15 @@ Future
 - Road/land/water names
 - future roads
 - drag and drop
+
+dependencies
+------------
+
+To View
+-Firefox
+-IE9+
+-Chrome(with minor issues)
+
+To Build
+-git
+-xalan
