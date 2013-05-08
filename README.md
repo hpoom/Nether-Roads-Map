@@ -4,23 +4,31 @@ CivCraft Nether Roads Map
 Mission
 -------
 
-The plan is to provide a Nether Road Map for CivCraft in many formats.
-Would like to have raw data in this Git Repository as well as markup version of maps and images or links to images. 
+Provide a Road Map for Civcraft.
 
 Historical Data
 ---------------
 
-This is the [old map](http://i.imgur.com/AtJ5c.jpg)
+[1.x](http://i.imgur.com/AtJ5c.jpg)
 
-Hosted version of the [latest map](http://www.hpoom.co.uk/CivCraft/map.php)
+[2.x](http://www.hpoom.co.uk/CivCraft/map.php)
+
+[3.x](https://dl.dropboxusercontent.com/u/28610774/map.html)
 
 Features
 --------
 
-+ Raw Data in many formats (JSON,CSV)
-+ HTML version of the map using Google Charts
+Curent
+- Show land/sea
+- Raw Data in XML
 - SVG version of the map
-- Show abandoned towns different to active towns
-- Show old roads, current roads, and proposed roads,
+- browser navigation
+- Show Uninhabited towns different to active towns
+- Show old roads and current roads.
 - Show scale
-- Show coords of nether portals
+- Show coords of Towns
+
+Future
+- Road/land/water names
+- future roads
+- drag and drop
