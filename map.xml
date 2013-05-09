@@ -7,7 +7,7 @@
 		<Inhabited>
 
 			<Town name="New New Pepino" x="-375" z="-2000" abbr="NP" />			
-			<Town name="Atlantis" x="527" z="-683" abbr="Atl" status="griefed, locked" />	
+			<Town name="The Metropolis" x="7071" z="7071" abbr="MET"/>	
 			
 		</Inhabited>
 		
