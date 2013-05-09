@@ -208,6 +208,7 @@
 					polyline.rail {
 						fill:none;
 						stroke-width: 6;
+						stroke-dasharray: 8, 4, 8, 4;
 					}
 
 
