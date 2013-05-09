@@ -194,14 +194,14 @@
 					polyline.road_unofficial {
 						fill:none;
 						stroke: #770;
-						stroke-width: 3;
+						stroke-width: 2;
 						stroke-dasharray: 8, 1, 4, 1;
 					}
 
 					polyline.road_historic {
 						fill:none;
 						stroke: #ADA96E;
-						stroke-width: 3;
+						stroke-width: 2;
 						stroke-dasharray: 4, 1, 4, 1;
 					}
 
@@ -222,6 +222,7 @@
 						fill:none;
 						stroke:#0060f0;
 						stroke-width: 3;
+						stroke-dasharray: 8, 2, 8, 4;
 					}
 
 					rect.background {
