@@ -162,6 +162,7 @@
 						fill: black;
 						font-size: 12px;
 						font-weight: bold;
+						font-family: sans-serif;
 					}
 
 					text.scale_right {
@@ -470,6 +471,33 @@
 						}
 
 						var invert2 = document.getElementById("invert2");
+						invert2.style.display = "";
+						if(invert2.style.stroke == "black" ) {
+							invert2.style.stroke = "white";
+						}else{
+							invert2.style.stroke = "black";
+						}
+					}
+					
+					function toggleVisibilitymapkey()
+					{
+						var road_historic = document.getElementById("mapkey");
+						road_historic.style.display = "";
+						if(road_historic.style.visibility == "hidden" ) {
+							road_historic.style.visibility = "visible";
+						}else{
+							road_historic.style.visibility = "hidden";
+						}
+
+						var invert1 = document.getElementById("invert9");
+						invert1.style.display = "";
+						if(invert1.style.stroke == "white" ) {
+							invert1.style.stroke = "black";
+						}else{
+							invert1.style.stroke = "white";
+						}
+
+						var invert2 = document.getElementById("invert10");
 						invert2.style.display = "";
 						if(invert2.style.stroke == "black" ) {
 							invert2.style.stroke = "white";
@@ -929,7 +957,7 @@
 
 
 					<!--Canals -->
-					<g id="road_canal">
+					<g id="roadcanal">
 						<xsl:for-each select="map/Roads/Canals/Road">
 							<polyline class="canal">
 								<xsl:attribute name="points">
@@ -1075,118 +1103,145 @@
 			</g>
 			
 						<!-- Buttons -->
-				<g transform="translate(925,65) scale(1)">		
-					<!-- Historic Road Toggle Button -->
-					<g transform="translate(1, 140)" onclick="toggleVisibility();" filter="url(#dropshadow)">
-						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
-						<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
 
-						<g id="invert1" style="stroke: white">
-							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
-							<!-- Top Line -->
-							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
-							<!-- Left Line -->
-						</g>
-						<g id="invert2" style="stroke: black">
-							<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
-							<!-- Right Line -->
-							<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
-							<!-- Bottom Line -->
-						</g>
-
-						<g>
-							<text class="scale">
-								<tspan x="-30" y="-7">Show</tspan>
-								<tspan x="-30" y="5">Historic</tspan>
-								<tspan x="-30" y="17">Roads</tspan>
-							</text>
-						</g>
+			<g transform="translate(925,65) scale(1)">
+				<!--CityList -->
+				<g transform="translate(0, 0)" onclick="toggleVisibilitycitylist();"
+					filter="url(#dropshadow)">
+					<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+					<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+					<g id="invert3" style="stroke: white">
+						<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+						<!-- Top Line -->
+						<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+						<!-- Left Line -->
+					</g>
+					<g id="invert4" style="stroke: black">
+						<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+						<!-- Right Line -->
+						<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+						<!-- Bottom Line -->
 					</g>
 
-					<!--CityList -->
-
-					<g transform="translate(0, 0)" onclick="toggleVisibilitycitylist();"
-						filter="url(#dropshadow)">
-						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
-						<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
-						<g id="invert3" style="stroke: white">
-							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
-							<!-- Top Line -->
-							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
-							<!-- Left Line -->
-						</g>
-						<g id="invert4" style="stroke: black">
-							<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
-							<!-- Right Line -->
-							<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
-							<!-- Bottom Line -->
-						</g>
-
-						<g>
-							<text class="scale">
-								<tspan x="-30" y="-2">Show</tspan>
-								<tspan x="-30" y="12">City List</tspan>
-								<tspan x="-30" y="17">
-								</tspan>
-							</text>
-						</g>
-					</g>
-
-					<!-- Unofficial Road Toggle Button -->
-					<g transform="translate(0, 70)" onclick="toggleVisibilityUnofficial();"
-						filter="url(#dropshadow)">
-						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
-						<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
-						<g id="invert5" style="stroke: white">
-							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
-							<!-- Top Line -->
-							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
-							<!-- Left Line -->
-						</g>
-						<g id="invert6" style="stroke: black">
-							<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
-							<!-- Right Line -->
-							<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
-							<!-- Bottom Line -->
-						</g>
-
-						<g>
-							<text class="scale">
-								<tspan x="-30" y="-7">Show</tspan>
-								<tspan x="-30" y="5">Unofficial</tspan>
-								<tspan x="-30" y="17">Roads</tspan>
-							</text>
-						</g>
-					</g>
-
-
-					<!-- Uninhabited Toggle Button -->
-
-					<g transform="translate(0, 210)" onclick="toggleVisibilityUninhabited();"
-						filter="url(#dropshadow)">
-						<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
-						<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
-						<g id="invert7" style="stroke: white">
-							<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
-							<!-- Top Line -->
-							<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
-							<!-- Left Line -->
-						</g>
-						<g id="invert8" style="stroke: black">
-							<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
-							<!-- Right Line -->
-							<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
-							<!-- Bottom Line -->
-						</g>
-						<g>
-							<text class="scale">
-								<tspan x="-43" y="-7">Show</tspan>
-								<tspan x="-43" y="5">Uninhabited</tspan>
-								<tspan x="-43" y="17">Towns</tspan>
-							</text>
-						</g>
+					<g>
+						<text class="scale">
+							<tspan x="-30" y="-2">Show</tspan>
+							<tspan x="-30" y="12">City List</tspan>
+							<tspan x="-30" y="17">
+							</tspan>
+						</text>
 					</g>
 				</g>
+			
+				<g transform="translate(0, 70)" onclick="toggleVisibilitymapkey();"
+					filter="url(#dropshadow)">
+					<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+					<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+					<g id="invert9" style="stroke: white">
+						<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+						<!-- Top Line -->
+						<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+						<!-- Left Line -->
+					</g>
+					<g id="invert10" style="stroke: black">
+						<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+						<!-- Right Line -->
+						<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+						<!-- Bottom Line -->
+					</g>
+
+					<g>
+						<text class="scale">
+							<tspan x="-30" y="-2">Show</tspan>
+							<tspan x="-30" y="12">Map Key</tspan>
+							<tspan x="-30" y="17">
+							</tspan>
+						</text>
+					</g>
+				</g>
+
+				<!-- Unofficial Road Toggle Button -->
+				<g transform="translate(0, 140)" onclick="toggleVisibilityUnofficial();"
+					filter="url(#dropshadow)">
+					<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+					<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+					<g id="invert5" style="stroke: white">
+						<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+						<!-- Top Line -->
+						<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+						<!-- Left Line -->
+					</g>
+					<g id="invert6" style="stroke: black">
+						<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+						<!-- Right Line -->
+						<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+						<!-- Bottom Line -->
+					</g>
+
+					<g>
+						<text class="scale">
+							<tspan x="-30" y="-7">Show</tspan>
+							<tspan x="-30" y="5">Unofficial</tspan>
+							<tspan x="-30" y="17">Roads</tspan>
+						</text>
+					</g>
+				</g>
+			
+				<!-- Historic Road Toggle Button -->
+				<g transform="translate(1, 210)" onclick="toggleVisibility();" filter="url(#dropshadow)">
+					<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+					<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+
+					<g id="invert1" style="stroke: white">
+						<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+						<!-- Top Line -->
+						<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+						<!-- Left Line -->
+					</g>
+					<g id="invert2" style="stroke: black">
+						<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+						<!-- Right Line -->
+						<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+						<!-- Bottom Line -->
+					</g>
+
+					<g>
+						<text class="scale">
+							<tspan x="-30" y="-7">Show</tspan>
+							<tspan x="-30" y="5">Historic</tspan>
+							<tspan x="-30" y="17">Roads</tspan>
+						</text>
+					</g>
+				</g>
+
+
+			<!-- Uninhabited Toggle Button -->
+
+			<g transform="translate(0, 280)" onclick="toggleVisibilityUninhabited();"
+				filter="url(#dropshadow)">
+				<rect class="toggleButton" x="-50" y="-25" width="100" height="50" />
+				<rect style="stroke: black; stroke-width:2; fill:none" x="-48" y="-23" width="96" height="46"/>
+				<g id="invert7" style="stroke: white">
+					<line x1="-50" y1="-25" x2="49" y2="-25" stroke-width="1" />
+					<!-- Top Line -->
+					<line x1="-50" y1="-25" x2="-50" y2="24" stroke-width="1" />
+					<!-- Left Line -->
+				</g>
+				<g id="invert8" style="stroke: black">
+					<line x1="50" y1="-25" x2="50" y2="25" stroke-width="1" />
+					<!-- Right Line -->
+					<line x1="-50" y1="25" x2="50" y2="25" stroke-width="1" />
+					<!-- Bottom Line -->
+				</g>
+				<g>
+					<text class="scale">
+						<tspan x="-43" y="-7">Show</tspan>
+						<tspan x="-43" y="5">Uninhabited</tspan>
+						<tspan x="-43" y="17">Towns</tspan>
+					</text>
+				</g>
+			</g>
+		</g>
 
 
 			<!-- citylist -->
@@ -1240,6 +1295,68 @@
 						</text>
 					</g>
 				</xsl:for-each>
+			</g>
+			
+			<!-- mapkey -->
+			
+			<g id="mapkey" transform="translate(230, 70) scale(1)" style="visibility: hidden;">
+				<rect x="-30" y="-30" height="490" width ="630" class="citylist" filter="url(#dropshadow)"/>
+				<g transform="translate(0,100)">
+					<g transform="translate(0,0)">
+						<polyline class="road" points="0,0 470,0"/>
+						<g transform="translate(465, 5)">
+							<rect style="fill: #E87600;" x="-10" y="-22" width="120" height="32" filter="url(#dropshadow)"/>
+							<rect style="stroke: black; stroke-width:2; fill:none" x="-8" y="-20" width="117" height="29"/>
+							<text class="scale">
+								<tspan x="0" y="-1">Offical Road</tspan>
+							</text>
+						</g>
+					</g>
+				
+					<g transform="translate(0,50)">
+						<polyline class="rail" stroke="#669966" points="0,0 470,0"/>
+						<g transform="translate(465, 5)">
+							<rect style="fill: #E87600;" x="-10" y="-22" width="120" height="32" filter="url(#dropshadow)"/>
+							<rect style="stroke: black; stroke-width:2; fill:none" x="-8" y="-20" width="117" height="29"/>
+							<text class="scale">
+								<tspan x="0" y="-1">Rail Road</tspan>
+							</text>
+						</g>
+					</g>
+				
+					<g transform="translate(0,100)">
+						<polyline class="canal" points="0,0 470,0"/>
+						<g transform="translate(465, 5)">
+							<rect style="fill: #E87600;" x="-10" y="-22" width="120" height="32" filter="url(#dropshadow)"/>
+							<rect style="stroke: black; stroke-width:2; fill:none" x="-8" y="-20" width="117" height="29"/>
+							<text class="scale">
+								<tspan x="0" y="-1">Canal</tspan>
+							</text>
+						</g>
+					</g>
+				
+					<g transform="translate(0,150)">
+						<polyline class="road_unofficial" points="0,0 470,0"/>
+						<g transform="translate(465, 5)">
+							<rect style="fill: #E87600;" x="-10" y="-22" width="120" height="32" filter="url(#dropshadow)"/>
+							<rect style="stroke: black; stroke-width:2; fill:none" x="-8" y="-20" width="117" height="29"/>
+							<text class="scale">
+								<tspan x="0" y="-1">Unoffical Road</tspan>
+							</text>
+						</g>
+					</g>
+				
+					<g transform="translate(0,200)">
+						<polyline class="road_historic" points="0,0 470,0"/>
+						<g transform="translate(465, 5)">
+							<rect style="fill: #E87600;" x="-10" y="-22" width="120" height="32" filter="url(#dropshadow)"/>
+							<rect style="stroke: black; stroke-width:2; fill:none" x="-8" y="-20" width="117" height="29"/>
+							<text class="scale">
+								<tspan x="0" y="-1">Historic Road</tspan>
+							</text>
+						</g>
+					</g>				
+				</g>
 			</g>
 			
 			<g transform="translate(512, 585)">
