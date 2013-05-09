@@ -37,25 +37,7 @@
 			 		.territory:hover{
 						fill:           #22aa44;
 					}
-						.compass{
-							fill:			#fff;
-							stroke:			#000;
-							stroke-width:	1.5;
-						}
-				 		.button{
-							fill:           	#225EA8;
-						stroke:   			#0C2C84;
-						stroke-miterlimit:	6;
-						stroke-linecap:		round;
-					}
-					.button:hover{
-						stroke-width:   	2;
-					}
-					.plus-minus{
-						fill:	#fff;
-						pointer-events: none;
-					}
-
+					
 				  .compass{
 						fill:  #fff;
 						stroke:  #000;
@@ -85,7 +67,6 @@
 					}
 
 					text.link {
-						text-decoration: underline;
 						fill: Black;
 						font-weight: bold;
 						font-size: 14px;
@@ -205,8 +186,8 @@
 					polyline.road {
 						fill:none;
 
-						stroke: #f6f;
-						stroke-width: 3;
+						stroke: #c0c;
+						stroke-width: 4;
 					}
 
 					polyline.road_unofficial {
@@ -219,7 +200,7 @@
 					polyline.road_historic {
 						fill:none;
 						stroke: #ADA96E;
-						stroke-width: 1.25;
+						stroke-width: 3;
 						stroke-dasharray: 4, 1, 4, 1;
 					}
 
@@ -232,12 +213,12 @@
 					polyline.river {
 						fill:none;
 						stroke:#D6ECF2;
-						stroke-width: 2;
+						stroke-width: 3;
 					}
 
 					polyline.canal {
 						fill:none;
-						stroke:#008080;
+						stroke:#0060f0;
 						stroke-width: 3;
 					}
 

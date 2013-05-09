@@ -61,7 +61,7 @@
 		
 		<Rails>
 
-			<Rail color="black" Name="test5">
+			<Rail color="#669966" Name="test5">
 				<Point x="0" z="0"/>
 				<Point x="2000" z="3000"/>
 			</Rail>
