@@ -91,7 +91,12 @@
 	 
 	<Lables>
 		<Mapmarkers>
-	
+
+			<Marker value="14000"/>
+			<Marker value="13000"/>
+			<Marker value="12000"/>	
+			<Marker value="11000"/>	
+			<Marker value="10000"/>
 			<Marker value="9000"/>
 			<Marker value="8000"/>
 			<Marker value="7000"/>

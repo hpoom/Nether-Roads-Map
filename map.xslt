@@ -11,8 +11,8 @@
 
 		<!-- Town List -->
 
-		<xsl:variable name="scale" select=".1" />
-		<xsl:variable name="mapsize" select="10000" />
+		<xsl:variable name="scale" select=".095" />
+		<xsl:variable name="mapsize" select="15000" />
     <svg 
 	    xmlns:svg="http://www.w3.org/2000/svg"
     	xmlns="http://www.w3.org/2000/svg" 
@@ -352,7 +352,7 @@
 			</style>
 			<script type="text/ecmascript"><![CDATA[
 
-					var transMatrix = [.5,0,0,.5,12,-200];					
+					var transMatrix = [.356, 0, 0, .356, 5, -207];					
 					var selectedElement = 0;
 					var currentX = 0;
 					var currentY = 0;
@@ -432,7 +432,7 @@
 					{
 						Town_coords_name.textContent = name;
 						Town_coords_overworld.textContent = (x) + "," + (y);
-						Town_coords.setAttribute("transform", "translate(" + ( x * scale)+ "," + (y * scale + 34) + ")");
+						Town_coords.setAttribute("transform", "translate(" + ( x * scale)+ "," + (y * scale + 50) + ")scale(1.52)");
 						Town_coords.setAttributeNS(null, "visibility", "visible");
 					}
 
@@ -602,7 +602,7 @@
 			
 			<rect style="stroke: none; stroke-width:2; fill:white" x="1" y="1" width="1022" height="598"/>
 
-			<g id="map-matrix"  transform="matrix(.5 0 0 .5 12 -200)" onmousedown="selectElement(evt)">        
+			<g id="map-matrix"  transform="matrix(.356 0 0 .356 5 -207)" onmousedown="selectElement(evt)">        
 				<rect style="fill:white">
 					<xsl:attribute name="x">
 						<xsl:value-of select="0"/>
@@ -782,7 +782,7 @@
 
 						<text class="range_v">
 							<xsl:attribute name="transform">
-								<xsl:value-of select="concat('translate(',(-$mapsize * $scale+95),',',(-5),')')" />
+								<xsl:value-of select="concat('translate(',(-$mapsize * $scale+90),',',(-5),')')" />
 							</xsl:attribute>
 							<xsl:attribute name="y">
 								<xsl:value-of select="@value*$scale" />
@@ -822,7 +822,7 @@
 
 						<text class="range_v">
 							<xsl:attribute name="transform">
-								<xsl:value-of select="concat('translate(',(-$mapsize * $scale+95),',',(-5),')')" />
+								<xsl:value-of select="concat('translate(',(-$mapsize * $scale+90),',',(-5),')')" />
 							</xsl:attribute>
 							<xsl:attribute name="y">
 								<xsl:value-of select="-@value*$scale" />
@@ -980,7 +980,7 @@
 						<xsl:for-each select="map/Towns/Inhabited/Town">
 							<g onmouseout="hide_Town_coords()">
 								<xsl:attribute name="transform">
-									<xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,')')" />
+									<xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,') scale(1.52)')" />
 								</xsl:attribute>
 
 								<xsl:attribute name="onmousemove">
@@ -1020,7 +1020,7 @@
 						<xsl:for-each select="map/Towns/Uninhabited/Town">
 							<g onmouseout="hide_Town_coords()">
 								<xsl:attribute name="transform">
-									<xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,')')" />
+									<xsl:value-of select="concat('translate(',@x * $scale,',',@z * $scale,')scale(1.52)')" />
 								</xsl:attribute>
 
 								<xsl:attribute name="onmousemove">
@@ -1054,8 +1054,8 @@
 						</xsl:for-each>
 					</g>
 
-					<g id="Town_coords" visibility="hidden">
-						<rect class="Town_coords" x="-100" y="-17" width="200" height="55"
+					<g id="Town_coords" visibility="hidden" transform="scale(1.52)">
+						<rect class="Town_coords" x="-100" y="-17" width="200" height="50"
 							filter="url(#dropshadow)" />
 						<text class="Town_coords_name" y="5" id="Town_coords_name">Unknown</text>
 						<text class="Town_coords" y="28" id="Town_coords_overworld">O: 0,0</text>
