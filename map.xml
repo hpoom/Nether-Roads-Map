@@ -1,121 +1,113 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="map.xslt" type="text/xsl" ?>
 <map>
-	<portals>
-		<portal x="1" z="0" abbr="00" name="0,0" />
-		<portal x="505" z="321" abbr="Agr" name="Agraria" status="locked, uninhabited" />
-		<portal x="-1027" z="-921" abbr="AH" name="Al Hasayah" />
-		<portal x="-1121" z="-547" abbr="Ari" name="Aristopolis" status="locked"/>	
-		<portal x="-226" z="62" abbr="Arg" name="Argonath" status="locked"/>
-		<portal x="-537" z="-417" abbr="AS" name="Alpha Sierra" status="locked, uninhabited"/>
-		<portal x="103" z="37" abbr="Amn" name="Amnesty" />
-		<portal x="527" z="-683" abbr="Atl" name="Atlantis" staus="griefed" />	
-		<portal x="-923" z="290" abbr="Atm" name="Atmora" status="uninhabited, locked"/>	
-		<portal x="-364" z="0" abbr="Ava" name="Avalon" status="locked"/>	
-		<portal x="-739" z="-772" abbr="Ave" name="Avernum" status="uninhabited" />
-		<portal x="636" z="703" abbr="Ba" name="Baycity" status="locked"/>
-		<portal x="-673" z="738" abbr="BB" name="Barnabie Beaches" status="uninhabited, locked"/>
-		<portal x="316" z="56" abbr="Bel" name="Belgrade" status="locked"/>
-		<portal x="-1035" z="-325" abbr="Bez" name="Bereza" status="locked"/>
-		<portal x="-12" z="850" abbr="Ben" name="Berlin" status="locked griefed" />
-		<portal x="-368" z="-752" abbr="Br" name="Brandersbury" status="locked, uninhabited" />
-		<portal x="-453" z="806" abbr="Bj" name="Bjornstahl" status="uninhabited" />
-		<portal x="-462" z="-925" abbr="CD" name="Camp Dilison" />
-		<portal x="764" z="529" abbr="CM" name="Camp Maulgish" />
-		<portal x="-714" z="398" abbr="Ca" name="Caracas" />
-		<portal x="709" z="1177" abbr="Cbn" name="Carbon" />
-		<portal x="-778" z="-899" abbr="CC" name="Central City" status="uninhabited, griefed" />
-		<portal x="-70" z="2" abbr="Che" name="Chesterstead" status="griefed" />
-		<portal x="843" z="1090" abbr="Cp" name="Chiapas" status="locked" />
-		<portal x="-811" z="492" abbr="Col" name="Columbia" />
-		<portal x="491" z="230" abbr="Com" name="Communa" status="locked griefed" />
-		<portal x="-402" z="-550" abbr="Cx" name="Conflux" status="uninhabited"/>
-		<portal x="560" z="546" abbr="Con" name="Constanstinople" status="uninhabited, locked"/>	
-		<portal x="383" z="55" abbr="Coo" name="Cookland" />
-		<portal x="-978" z="-251" abbr="CF" name="Cutlasso's Fort" status="uninhabited" />
-		<portal x="934" z="1021" abbr="Da" name="Danzig" status="locked" />
-		<portal x="574" z="274" abbr="Dzl" name="Danzilona" status="locked, griefed"/>
-		<portal x="673" z="1295" abbr="DK" name="Datan-Kegeth"/>
-		<portal x="-819" z="-448" abbr="De" name="Derpenshire" status="uninhabited, griefed"/>
-		<portal x="-844" z="488" abbr="DW" name="DWRC" />
-		<portal x="-385" z="-121" abbr="Epi" name="Epicus" status="uninhabited" />
-		<portal x="1050" z="839" abbr="Eph" name="Ephemerisle" status="locked"/>
-		<portal x="-216" z="-1239" abbr="EL" name="ExtraLand" status="locked"/>
-		<portal x="-30" z="-55" abbr="Fe" name="Fellowship" status="locked"/>
-		<portal x="461" z="560" abbr="FPJ" name="Fort PJ" />
-		<portal x="-986" z="-1209" abbr="Fra" name="Fraustengard" status="uninhabited" />
-		<portal x="40" z="-57" abbr="Fre" name="Freyrgard" />
-		<portal x="-369" z="-1255" abbr="Fro" name="Frosthome" status="uninhabited" />
-		<portal x="257" z="177" abbr="Fy" name="Fyfe" status="uninhabited, griefed" />
-		<portal x="540" z="400" abbr="Ge" name="Gerald" status="locked, uninhabited, griefed" />
-		<portal x="6" z="-695" abbr="Go" name="Gorgeview"/>
-		<portal x="-808" z="-592" abbr="Ha" name="Haven" />
-		<portal x="-506" z="693" abbr="HB" name="Hudson Bay" />
-		<portal x="56" z="-373" abbr="Ho" name="Hoyt" status="uninhabited" />
-		<portal x="-912" z="-321" abbr="Ic" name="Icengrad" status="locked, griefed, uninhabited" />
-		<portal x="-78" z="-520" abbr="IK" name="In Kind" status="uninhabited" />
-		<portal x="-1071" z="-713" abbr="Im" name="Immelopolis" />
-		<portal x="-840" z="-167" abbr="Io" name="Io" status="uninhabited, griefed" />
-		<portal x="-179" z="244" abbr="Ir" name="Ironwood" />
-		<portal x="516" z="1324" abbr="IB" name="Isla Barata"/>
-		<portal x="-438" z="309" abbr="JH" name="Jack's Hold" status="uninhabited, griefed"/>
-		<portal x="-844" z="-552" abbr="JM" name="Javier's Mound" />
-		<portal x="375" z="1630" abbr="Ke" name="Keiname" status="locked"/>
-		<portal x="-800" z="593" abbr="KK" name="Kings Keep" />
-		<portal x="-577" z="748" abbr="Ki" name="Kizantium" status="locked"/>
-		<portal x="398" z="148" abbr="Ko" name="Kodiak" status="uninhabited" />
-		<portal x="409" z="-515" abbr="La" name="Lazuli" status="uninhabited" />
-		<portal x="-168" z="1" abbr="Li" name="Liberty" />
-		<portal x="348" z="185" abbr="Lu" name="Lubeck" status="locked"/>
-		<portal x="-299" z="-1238" abbr="LF" name="Lugus Fens" status="locked"/>
-		<portal x="-614" z="-618" abbr="MA" name="Mount Augusta" status="locked" />
-		<portal x="-368" z="501" abbr="Me" name="Melonwood" />
-		<portal x="452" z="610" abbr="Mc" name="Mercer" />
-		<portal x="-1344" z="950" abbr="Mo" name="Montagna" status="locked"/>
-		<portal x="1325" z="1317" abbr="Mu" name="Mushville" />
-		<portal x="-1" z="247" abbr="My" name="Myra" status="locked"/>
-		<portal x="-624" z="-123" abbr="Mrd" name="Myriad" status="locked"/>
-		<portal x="-1378" z="-601" abbr="NA" name="New Aerilon" status="locked"/>
-		<portal x="413" z="-263" abbr="NAg" name="New Agora" status="locked"/>
-		<portal x="-59" z="-366" abbr="NK" name="New Krumsville" status="uninhabited, locked" />
-		<portal x="1250" z="1248" abbr="Ni" name="Nine" />
-		<portal x="-1840" z="10" abbr="Not" name="NotHCF" />
-		<portal x="-407" z="237" abbr="OP" name="Obsidian Plains" />
-		<portal x="311" z="-384" abbr="OAg" name="Old Agora" status="uninhabited, griefed" />
-		<portal x="382" z="-610" abbr="Ou" name="Ouroborealis" status="uninhabited" />
-		<portal x="-738" z="-374" abbr="PT" name="Panda Towers" status="uninhabited" />
-		<portal x="-636" z="740" abbr="Pi" name="Piedmont" status="uninhabited, griefed" />
-		<portal x="-249" z="-2" abbr="Po" name="Populi" />
-		<portal x="-701" z="-831" abbr="Pr" name="Prisma" status="locked" />
-		<portal x="83" z="-200" abbr="Qa" name="Qarth" offset="25,-10" status="uninhabited" />
-		<portal x="-684" z="488" abbr="Ra" name="Rapture" />
-		<portal x="132" z="2" abbr="RD" name="Reid Dale" />
-		<portal x="438" z="-470" abbr="Ri" name="Rift" status="uninhabited, locked"/>
-		<portal x="-996" z="-1090" abbr="Rom" name="Romford" status="uninhabited" />
-		<portal x="2" z="-137" abbr="Ro" name="Rothbard" />
-		<portal x="-471" z="-154" abbr="Sa" name="Saga" status="uninhabited" />
-		<portal x="-1013" z="-556" abbr="Sky" name="Sky City" status="uninhabited, locked" />
-		<portal x="-665" z="93" abbr="Sov" name="Sovngarde" status="locked"/>
-		<portal x="-1294" z="-1266" abbr="SPR" name="SPQR" status="locked"/>
-		<portal x="357" z="1737" abbr="Te" name="Terminus" status="locked"/>
-		<portal x="83" z="-200" abbr="TGS" name="The Great Sunflower" offset="-10,-25" status="uninhabited" />
-		<portal x="-618" z="251" abbr="Tig" name="Tigerstaden" />
-		<portal x="14" z="-525" abbr="Tin" name="Tinto"/>
-		<portal x="-1082" z="-490" abbr="To" name="TokieStan" status="uninhabited, griefed" />
-		<portal x="-227" z="34" abbr="Tmb" name="Tombstone" status="griefed" />
-		<portal x="72" z="-267" abbr="Tra" name="Traith" status="uninhabited, griefed" />
-		<portal x="-354" z="391" abbr="Tf" name="Treefell" />
-		<portal x="356" z="-542" abbr="Tro" name="Tropico Commune" status="uninhabited" />
-		<portal x="699" z="699" abbr="TH" name="TuxHold" status="uninhabited" />
-		<portal x="-1415" z="-1087" abbr="Vlc" name="Valcar" />
-		<portal x="-10" z="500" abbr="Vln" name="Valenwood" status="locked" />
-		<portal x="-242" z="240" abbr="Van" name="Vanaheimr" status="uninhabited, locked"/>
-		<portal x="-1171" z="-165" abbr="Vi" name="Vilvos" status="uninhabited, griefed" />
-		<portal x="-85" z="32" abbr="Vd" name="Vindictam" status="uninhabited, griefed" />
-		<portal x="469" z="-541" abbr="Wi" name="Winterfell" status="locked" />
-		<portal x="-928" z="-911" abbr="Wol" name="Wolvania"/>
-		<portal x="-543" z="269" abbr="Won" name="Wonderland" status="locked"/>
-		<portal x="-802" z="-817" abbr="Xa" name="Xanadu" status="uninhabited" />
-		<portal x="-715" z="-721" abbr="YF" name="Yellow Flower" status="uninhabited" />
-	</portals>
+
+	<Towns>
+
+		<Inhabited>
+
+			<Town name="0,0" x="0" z="0" abbr="00" />			
+<!--			<Town name="The Metropolis" x="-7071" z="-7071" abbr="MET"/>	-->
+			
+		</Inhabited>
+		
+	<Uninhabited>
+
+<!--			<Town name="Agraria" x="505" z="321" abbr="Agr" status="locked" />-->
+<!--			<Town name="Alpha Sierra" x="-537" z="-417" abbr="AS" status="locked, griefed"/>-->
+			
+		</Uninhabited>
+
+	</Towns>
+	
+	<Roads>
+
+		<Offical>
+
+<!--			<Road Name="test">-->
+<!--				<Point x="0" z="0"/>-->
+<!--				<Point x="1000" z="1000"/>-->
+<!--				<Point x="1000" z="3000"/>-->
+<!--			</Road>-->
+
+		</Offical>
+	
+		<Unoffical>
+					
+		</Unoffical>
+	
+		<Historic>
+
+		</Historic>
+	 
+		<Canals>
+
+		</Canals>
+		
+		<Rails>
+
+<!--			<Rail color="#669966" Name="test5">-->
+<!--				<Point x="0" z="0"/>-->
+<!--				<Point x="2000" z="3000"/>-->
+<!--			</Rail>-->
+
+		</Rails>
+
+	</Roads> 
+	
+	<Nature>
+
+		<Rivers>
+
+<!--			<River Name="test6">-->
+<!--				<Point x="0" z="0" />-->
+<!--				<Point x="5000" z="7000"/>-->
+<!--			</River>-->
+
+		</Rivers>
+		
+		<Oceans>
+
+<!--			<Ocean name="test7">-->
+<!--	 			<Point x="0" z="0"/>-->
+<!--	 			<Point x="1000" z="0"/>-->
+<!--	 			<Point x="1000" z="1000"/>-->
+<!--	 			<Point x="0" z="1000"/>-->
+<!--			</Ocean>-->
+
+		 		</Oceans>
+		
+		<Islands>
+		
+<!--			<Island name="test8">-->
+<!--	 			<Point x="4000" z="-4000"/>-->
+<!-- 			 	<Point x="4000" z="0"/>-->
+<!--			 	<Point x="0" z="4000"/>-->
+<!--				<Point x="-4000" z="-2000"/>-->
+<!--			</Island>-->
+	 		
+			</Islands>
+	 	</Nature>
+	 
+	<Lables>
+		<Mapmarkers>
+
+			<Marker value="14000"/>
+			<Marker value="13000"/>
+			<Marker value="12000"/>	
+			<Marker value="11000"/>	
+			<Marker value="10000"/>
+			<Marker value="9000"/>
+			<Marker value="8000"/>
+			<Marker value="7000"/>
+			<Marker value="6000"/>
+			<Marker value="5000"/>
+			<Marker value="4000"/>
+			<Marker value="3000"/>
+			<Marker value="2000"/>
+			<Marker value="1000"/>
+			<Marker value="0"/>
+			
+		</Mapmarkers>
+	</Lables>
 </map>
