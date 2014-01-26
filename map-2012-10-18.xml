@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="map-2013-10-18.xslt" type="text/xsl" ?>
+<?xml-stylesheet href="map-2012-10-18.xslt" type="text/xsl" ?>
 <map>
 	<portals>
 		<portal x="1" z="0" abbr="00" name="0,0" />
